@@ -1,0 +1,20 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Irons and Leber(2016)]{irons-leber2016}
+Jessica~L Irons and Andrew~B Leber.
+\newblock Choosing attentional control settings in a dynamically changing
+  environment.
+\newblock \emph{Attention, Perception, \& Psychophysics}, pages 1--18, 2016.
+
+\bibitem[Kristj{\'a}nsson et~al.(2014)Kristj{\'a}nsson, J{\'o}hannesson, and
+  Thornton]{kristjansson2014}
+{\'A}rni Kristj{\'a}nsson, {\'O}mar~I J{\'o}hannesson, and Ian~M Thornton.
+\newblock Common attentional constraints in visual foraging.
+\newblock \emph{PloS one}, 9\penalty0 (6):\penalty0 e100752, 2014.
+
+\end{thebibliography}
