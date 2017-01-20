@@ -19,7 +19,7 @@ levels(fixdat$subj) = 1:12
 cbPalette <- c("#56B4E9", "#E69F00")
 
 rtdat = readRDS(file="../data/processedRTandAccData.Rda")
-medianRT = aggregate(RT~subj, rtdat, "median2")
+medianRT = aggregate(RT~subj, rtdat, "median")
 
 # classify every fixation as homo (left), central, or hetro (right)
 centralWidth = 64 #change to 1 visual degree
@@ -53,9 +53,9 @@ for (nf in 2:12)
   metricVal = rbind(metricVal, data.frame(nfix=nf, r=r))
 }
 
-plt = ggplot(metricVal, aes(x=nfix, y=r)) + geom_point()
-plt = plt + scale_x_continuous(name = "including first x fixations")
-plt = plt + scale_y_continuous(name = "Pearson's r")
+plt = ggplot(metricVal, aes(x=nfix, y=r^2)) + geom_point()
+plt = plt + scale_x_continuous(name = "including first x fixations", breaks=c(2,4,6,8,10))
+plt = plt + scale_y_continuous(name = expression(R^2))
 plt = plt + theme_bw()
 ggsave("r_by_nfix.pdf", width=4, height=4)
 
@@ -64,7 +64,7 @@ d = aggregate(propHetro ~ subj, data=filter(aggData, fixNum<=nf), "mean")
 cordf = merge(d, medianRT)
  plt = ggplot(cordf, aes(x=propHetro, y=RT)) + geom_point()
  plt = plt + geom_smooth(method=lm)
- plt = plt + scale_x_continuous("mean(prop. of first 3 fixations on hetro. side", limits=c(0,1))
+ plt = plt + scale_x_continuous("mean prop. of first 3 fixations on hetro. side", limits=c(0,1))
  plt = plt + scale_y_continuous("median reaction time (secs")
  plt = plt + theme_bw()
 ggsave("best_r_scatter.pdf", width=4, height=4)
