@@ -2,7 +2,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{newtxtext,newtxmath}
 \usepackage{graphicx}
-\usepackage{subfig}
+\usepackage{subfigure}
 \usepackage[round, comma, sort&compress, longnamesfirst]{natbib} 
 % \usepackage[left=2cm,top=3cm,right=1.5cm,bottom=2cm,bindingoffset=0.5cm]{geometry}
 \usepackage{enumerate}
@@ -61,6 +61,14 @@ The study consists of three different paradigms from the visual search literatur
 \subsubsection{A: Split-half array search}
 
 In order to characterise an individual's behaviour in this task, we will compute the proportion of the first $n$ fixations that were on heterogeneous (difficult) side of the stimuli, over all target absent trials\footnote{Only take correct trials?}. \cite{nowakowsak2017} demonstrated a strong correlation between an this metric (for $n=5$) and reaction times ($r=$). However, a re-analysis of their data shows that an even stronger correlation is obtained with $n=3$ (see Figure \ref{fig:nowakowskaBestN})
+
+\begin{figure}
+\centering
+\subfigure[][]{\includegraphics[width=6cm]{../NowakowskaClarkeHunt2017/scripts/r_by_nfix.pdf}}
+\subfigure[][]{\includegraphics[width=6cm]{../NowakowskaClarkeHunt2017/scripts/best_r_scatter.pdf}}
+\caption{Selecting the best $n$.}
+\label{fig:nowakowskaBestN}
+\end{figure}
 
 \subsubsection{B: Attentional Control}
 

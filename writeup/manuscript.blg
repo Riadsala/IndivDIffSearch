@@ -1,48 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
+This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript.aux
 The style file: plainnat.bst
 Database file #1: literature.bib
-Warning--I didn't find a database entry for "nowakowsak2017"
-You've used 2 entries,
+You've used 3 entries,
             2773 wiz_defined-function locations,
-            609 strings with 5227 characters,
-and the built_in function-call counts, 1006 in all, are:
-= -- 89
-> -- 51
+            613 strings with 5393 characters,
+and the built_in function-call counts, 1419 in all, are:
+= -- 123
+> -- 81
 < -- 2
-+ -- 17
-- -- 15
-* -- 80
-:= -- 155
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 11
-chr.to.int$ -- 2
-cite$ -- 4
-duplicate$ -- 46
-empty$ -- 82
-format.name$ -- 19
-if$ -- 210
++ -- 27
+- -- 24
+* -- 114
+:= -- 222
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 17
+chr.to.int$ -- 3
+cite$ -- 6
+duplicate$ -- 66
+empty$ -- 113
+format.name$ -- 29
+if$ -- 294
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 2
-newline$ -- 18
-num.names$ -- 8
-pop$ -- 20
+missing$ -- 3
+newline$ -- 23
+num.names$ -- 12
+pop$ -- 32
 preamble$ -- 1
-purify$ -- 9
+purify$ -- 14
 quote$ -- 0
-skip$ -- 38
+skip$ -- 53
 stack$ -- 0
-substring$ -- 44
-swap$ -- 7
+substring$ -- 46
+swap$ -- 8
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 22
+type$ -- 33
 warning$ -- 0
-while$ -- 10
+while$ -- 13
 width$ -- 0
-write$ -- 33
-(There was 1 warning)
+write$ -- 45
