@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  3 FEB 2017 12:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  3 FEB 2017 13:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -559,7 +559,7 @@ LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<../NowakowskaClarkeHunt2017/scripts/r_by_nfix.pdf, id=9, 289.08pt x 289.08pt>
+<../NowakowskaClarkeHunt2017/scripts/r_by_nfix.pdf, id=8, 289.08pt x 289.08pt>
 File: ../NowakowskaClarkeHunt2017/scripts/r_by_nfix.pdf Graphic file (type pdf)
 
 
@@ -568,8 +568,8 @@ Package pdftex.def Info: ../NowakowskaClarkeHunt2017/scripts/r_by_nfix.pdf used
  on input line 67.
 (pdftex.def)             Requested size: 170.71652pt x 170.71451pt.
 
-<../NowakowskaClarkeHunt2017/scripts/best_r_scatter.pdf, id=10, 289.08pt x 289.
-08pt>
+<../NowakowskaClarkeHunt2017/scripts/best_r_scatter.pdf, id=9, 289.08pt x 289.0
+8pt>
 File: ../NowakowskaClarkeHunt2017/scripts/best_r_scatter.pdf Graphic file (type
  pdf)
  <use ../NowakowskaClarkeHunt2017/scripts/best_r_scatter.pdf>
@@ -577,9 +577,10 @@ Package pdftex.def Info: ../NowakowskaClarkeHunt2017/scripts/best_r_scatter.pdf
  used on input line 68.
 (pdftex.def)             Requested size: 170.71652pt x 170.71451pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.95pt on input line 83.
+(Font)              scaled to size 10.95pt on input line 79.
  [2 <../NowakowskaClarkeHunt2017/scripts/r_by_nfix.pdf> <../NowakowskaClarkeHun
-t2017/scripts/best_r_scatter.pdf>] (./manuscript.bbl) [3] (./manuscript.aux) ) 
+t2017/scripts/best_r_scatter.pdf>] (./manuscript.bbl [3]) [4] (./manuscript.aux
+) ) 
 Here is how much of TeX's memory you used:
  5498 strings out of 493014
  73347 string characters out of 6133351
@@ -587,22 +588,21 @@ Here is how much of TeX's memory you used:
  8906 multiletter control sequences out of 15000+600000
  53881 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,10n,43p,853b,307s stack positions out of 5000i,500n,10000p,200000b,80000s
-{
-/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/
-local/texlive/2016/texmf-dist/fonts/enc/dvips/base/ec.enc}{/usr/local/texlive/2
-016/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2016/te
-xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/
-type1/public/newtx/ntxsups-Regular.pfb></usr/local/texlive/2016/texmf-dist/font
-s/type1/public/tex-gyre/qtmb.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
-1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
-ic/tex-gyre/qtmri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/tx
-fonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8
-a.pfb>
-Output written on manuscript.pdf (3 pages, 107202 bytes).
+ 38i,10n,43p,853b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/
+usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/ec.enc}{/usr/local/texli
+ve/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2016/texmf-d
+ist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/local/texlive/2016/texmf-dist/fo
+nts/type1/public/newtx/ntxsups-Regular.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/public/tex-gyre/qtmb.pfb></usr/local/texlive/2016/texmf-dist/fonts/
+type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
+public/tex-gyre/qtmri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/ut
+mri8a.pfb>
+Output written on manuscript.pdf (4 pages, 107645 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex manuscript"] 1486125843 "manuscript.aux" "manuscript.bbl" "manuscript" 1486126012
+["bibtex manuscript"] 1486127246 "manuscript.aux" "manuscript.bbl" "manuscript" 1486127246
   "/usr/local/texlive/2016/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
   "literature.bib" 1485770881 850 f76aa00e2a7dd8b206777084ed01eeb9 ""
-  "manuscript.aux" 1486126012 2213 342f99c29d8ad689ed168b074b46a246 ""
+  "manuscript.aux" 1486127246 2239 2a569c72dbc2b7bb0937aad10b0b9f91 ""
   "manuscript.bcf" 0 -1 0 ""
   (generated)
-  "manuscript.blg"
   "manuscript.bbl"
-["pdflatex"] 1486126011 "manuscript.tex" "manuscript.pdf" "manuscript" 1486126012
+  "manuscript.blg"
+["pdflatex"] 1486127246 "manuscript.tex" "manuscript.pdf" "manuscript" 1486127246
   "../NowakowskaClarkeHunt2017/scripts/best_r_scatter.pdf" 1485770881 6650 cf86da34a8f14d381ed29a49f8cc1e1a ""
   "../NowakowskaClarkeHunt2017/scripts/r_by_nfix.pdf" 1485770881 4783 4572bcc6e041eced5ca7a23c0ebe9c17 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -118,9 +118,9 @@
   "/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1480934217 1888048 f2c5faed5981a516f406b2ccc20bff71 ""
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1480934268 3873397 ba0378c97a795c5cff48f4fc0adab3c2 ""
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
-  "manuscript.aux" 1486126012 2213 342f99c29d8ad689ed168b074b46a246 ""
-  "manuscript.bbl" 1486125843 1113 13d4057331a188b243d8c2ce7476beef "bibtex manuscript"
-  "manuscript.tex" 1486126011 5013 cc1da731d9df3bb80cad8ca766f063b9 ""
+  "manuscript.aux" 1486127246 2239 2a569c72dbc2b7bb0937aad10b0b9f91 ""
+  "manuscript.bbl" 1486127246 1113 13d4057331a188b243d8c2ce7476beef "bibtex manuscript"
+  "manuscript.tex" 1486127243 5189 70a0f4f358d78717fad7de5ca62f8b3b ""
   (generated)
   "manuscript.log"
   "manuscript.aux"

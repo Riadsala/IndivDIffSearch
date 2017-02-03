@@ -161,12 +161,6 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsups-Regular-t1.tfm
 OUTPUT manuscript.pdf
 INPUT /usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/newtx/ntxmi.vf
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/txmi.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/rntxmi.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/txfonts/txmi.vf
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
 INPUT ../NowakowskaClarkeHunt2017/scripts/r_by_nfix.pdf
 INPUT ../NowakowskaClarkeHunt2017/scripts/r_by_nfix.pdf
 INPUT ../NowakowskaClarkeHunt2017/scripts/r_by_nfix.pdf
@@ -174,6 +168,12 @@ INPUT ../NowakowskaClarkeHunt2017/scripts/best_r_scatter.pdf
 INPUT ../NowakowskaClarkeHunt2017/scripts/best_r_scatter.pdf
 INPUT ../NowakowskaClarkeHunt2017/scripts/best_r_scatter.pdf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/newtx/ntxmi.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/txmi.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/rntxmi.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/txfonts/txmi.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/newtx/ntxmia.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/txmia.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsyralt.tfm
@@ -192,8 +192,8 @@ INPUT manuscript.bbl
 INPUT manuscript.aux
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/ec.enc
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/ntxsups-Regular.pfb
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb
