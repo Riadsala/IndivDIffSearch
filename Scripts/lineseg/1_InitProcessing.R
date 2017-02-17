@@ -1,3 +1,4 @@
+
 library(dplyr)
 as.numeric.factor <- function(x) {as.numeric(levels(x))[x]}
 
@@ -23,7 +24,14 @@ ProcessASC <- function(asc, ss)
 	trialDone   = grep("Done", asc)
 	nTrials = length(trialStarts)
 
-	fixDat = data.frame(observer=numeric(), session=numeric(), trial=numeric(), n=numeric(), x=numeric(), y=numeric(), dur=numeric())
+	if (length(trialEnds)!=nTrials)
+	{
+		# we probably have an early response or something
+		trialEnds=trialEnds[-min(which(trialEnds[1:nTrials]<trialStarts))]
+		trialDone=trialDone[-min(which(trialDone[1:nTrials]<trialStarts))]
+	}
+
+	fixDat = data.frame(observer=numeric(), session=numeric(), trial=numeric(), targSide=character(), esaySide=character(), n=numeric(), x=numeric(), y=numeric(), dur=numeric())
 	detDat = data.frame(observer=numeric(), session=numeric(), trial=numeric(), targPres=character(), targSide=character(), row=character(), column=character(), easySide=character(), responseKey=character(), rt=numeric())
 
 	for (t in 1:nTrials)
@@ -31,6 +39,18 @@ ProcessASC <- function(asc, ss)
 		# first get fixations
 		trial   = asc[trialStarts[t]:trialEnds[t]]		
 		fixationLines = grep("EFIX", trial)
+
+
+		# get details of trial
+		details   = asc[trialEnds[t]:trialDone[t]]		
+		trial_id = GetDetail(details, "TRIALNO")
+		trial_id = as.numeric(unlist(strsplit(trial_id, "_"))[2])
+		targPres = GetDetail(details, "TargPres")
+		targSide = GetDetail(details, "TargSide")
+		row = GetDetail(details, "Row")
+		column = GetDetail(details, "Column")
+		easySide = GetDetail(details, "Easy_Side")
+		response = 	GetDetail(details, "Key")
 
 		startTime = unlist(strsplit(unlist(asc[trialStarts[t]])[2], " "))[1]
 	
@@ -41,7 +61,9 @@ ProcessASC <- function(asc, ss)
 			trialDat = data.frame(
 				observer=pp, 
 				session=ss,
-				trial=t, 				
+				trial=trial_id,
+				targSide = targSide,
+				easySide = easySide, 				
 				x=as.numeric.factor(fixations$V4), y=as.numeric.factor(fixations$V5), dur=as.numeric.factor(fixations$V3))
 
 			# convert to stimulus coordinates
@@ -52,20 +74,12 @@ ProcessASC <- function(asc, ss)
 		}
 
 		endTime = unlist(strsplit(unlist(asc[trialEnds[t]])[2], " "))[1]
-		# now get details of trial
-		details   = asc[trialEnds[t]:trialDone[t]]		
 		
-		targPres = GetDetail(details, "TargPres")
-		targSide = GetDetail(details, "TargSide")
-		row = GetDetail(details, "Row")
-		column = GetDetail(details, "Column")
-		easySide = GetDetail(details, "Easy_Side")
-		response = 	GetDetail(details, "Key")
 
 		trialDat = data.frame(
 			observer=pp, 
 			session=ss,
-			trial=t, 
+			trial=trial_id,
 			targPres=targPres, 
 			targSide=targSide, 
 			row=row, 
@@ -106,7 +120,7 @@ for (pp in participants)
 		resDat = rbind(resDat, data.frame(observer=pp, session=ss, xRes=resolution[3], yRes=resolution[4]))
 	}
 }
-rm(ss, pp)
+rm(ss, pp, filename, dat)
 
 ##### Tidy up trlDat
 
@@ -114,7 +128,8 @@ rm(ss, pp)
 levels(trlDat$targPres) = c("present", "absent")
 levels(trlDat$targSide) = c("right", "absent", "left")
 levels(trlDat$easySide) = c("left", "right")
-
+levels(fixDat$targSide) = c("right", "absent", "left")
+levels(fixDat$easySide) = c("left", "right")
 # convert some things to factors
 trlDat$observer = as.factor(trlDat$observer)
 trlDat$session = as.factor(trlDat$session)
@@ -127,6 +142,15 @@ relSide[trlDat$targSide=="right" & trlDat$easySide=="left"] = "hard"
 relSide[trlDat$targSide=="left" & trlDat$easySide=="right"] = "hard"
 relSide[trlDat$targSide=="absent"] = "absent"
 trlDat$targSide = as.factor(relSide)
+
+relSide =fixDat$TargSide
+relSide[fixDat$targSide=="left" & fixDat$easySide=="left"] = "easy"
+relSide[fixDat$targSide=="right" & fixDat$easySide=="right"] = "easy"
+relSide[fixDat$targSide=="right" & fixDat$easySide=="left"] = "hard"
+relSide[fixDat$targSide=="left" & fixDat$easySide=="right"] = "hard"
+relSide[fixDat$targSide=="absent"] = "absent"
+fixDat$targSide = as.factor(relSide)
+
 rm(relSide)
 
 # code up correct or not
@@ -134,11 +158,7 @@ trlDat$acc = 0
 trlDat$acc[(trlDat$responseKey=="Key_l") & (trlDat$targPres=="present")] = 1
 trlDat$acc[(trlDat$responseKey=="Key_r") & (trlDat$targPres=="absent")] = 1
 
-# remove trials which are invalid for one reason or another
-trlDat = filter(trlDat, responseKey!="Key_x")
 
-# save
-saveRDS(trlDat, "scratch/processedRTandAccData.Rda")
 
 ##### Tidy up fixDat
 
@@ -146,7 +166,7 @@ saveRDS(trlDat, "scratch/processedRTandAccData.Rda")
 fixDat$observer = as.factor(fixDat$observer)
 fixDat$session = as.factor(fixDat$session)
 
-# centre x and y
+# centre x and y 
 for (pp in participants)
 {
 	for (ss in 1:2)
@@ -156,6 +176,7 @@ for (pp in participants)
 		idx = which(fixDat$observer==pp & fixDat$session==ss)
 		fixDat$x[idx] = (fixDat$x[idx] - resX/2)/(resX/2)
 		fixDat$y[idx] = (fixDat$y[idx] - resY/2)/(resY/2)
+
 	}
 }
 
@@ -163,14 +184,14 @@ for (pp in participants)
 # only take fixations that fall within screen
 fixDat = filter(fixDat, x>-1, x<1, y>-1, y<1)
 
-# swap x +/- based on easySide
-trialsToSwap = paste(trlDat$observer, trlDat$session, trlDat$trial)
-trialsToSwap[which(trlDat$easySide=="right")]
+# flip fixations relative to easySide
+fixDat$x[which(fixDat$easySide=="right")] = -fixDat$x[which(fixDat$easySide=="right")]  
 
-id = paste(fixDat$observer, fixDat$session, fixDat$trial)
-for (ii in trialsToSwap)
-{
-	fixDat$x[which(id == ii)] = -fixDat$x[which(id == ii)] 
-}
 
 saveRDS(fixDat, "scratch/processedFixationData.Rda")
+
+# remove trials which are invalid for one reason or another
+trlDat = filter(trlDat, responseKey!="Key_x")
+
+# save
+saveRDS(trlDat, "scratch/processedRTandAccData.Rda")

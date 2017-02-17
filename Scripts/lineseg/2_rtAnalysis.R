@@ -19,9 +19,10 @@ ggsave("scratch/densityRT.pdf", width=6, height=4)
 
 # how does accuracy change from session to session
 accDat  = aggregate(data=trlDat, acc ~ observer + session + targSide, FUN="mean")
-plt = ggplot(accDat, aes(x=as.numeric(session), y=acc, colour=targSide, group=observer:targSide))
+plt = ggplot(accDat, aes(x=as.numeric(session), y=acc, colour=observer, linetype=targSide, group=observer:targSide))
 plt = plt + geom_point() + geom_smooth(method=lm)
-plt
+ggsave("scratch/acc_by_session.pdf")
+
 
 # remove incorrect trials
 rtDat = (filter(trlDat, acc==1) 
@@ -39,7 +40,11 @@ names(rtDat)[3:4] = c("session1", "session2")
 plt = ggplot(rtDat, aes(x=session1, y=session2, colour=targSide))
 plt = plt + geom_point()
 plt = plt + geom_smooth(method="lm")
-plt
+plt = plt + theme_bw()
+plt = plt + geom_abline(slope=1, linetype=2)
+plt = plt + scale_x_continuous("session 1: log reaction time (ms)")
+plt = plt + scale_y_continuous("session 2: log reaction time (ms)")
+ggsave("scratch/rt_correlation.pdf")
 
 
 
