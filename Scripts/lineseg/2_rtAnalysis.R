@@ -1,27 +1,51 @@
 library(ggplot2)
 library(scales)
 library(dplyr)
+library(lme4)
+library(tidyr)
+
 
 # read in processed data
-rtdat = readRDS(file="scratch/processedRTandAccData.Rda")
+trlDat = readRDS(file="scratch/processedRTandAccData.Rda")
 
 #  set colour palette
 cbPalette <- c("#E69F00", "#56B4E9","#B5CB8B")
 
-plt = ggplot(trlDat, aes(x=rt, fill=targSide)) + geom_density(alpha=0.7)
+plt = ggplot(trlDat, aes(x=log(rt), fill=targSide)) + geom_density(alpha=0.7)
 plt = plt + theme_bw() + theme(legend.justification=c(1,1), legend.position=c(1,1))
-plt = plt + scale_fill_discrete(name='target position') +  scale_fill_brewer(palette="Set2")
+plt = plt + scale_fill_brewer(name='target position', palette="Set2")
 plt = plt + scale_x_continuous(name="reaction time (seconds)")
 ggsave("scratch/densityRT.pdf", width=6, height=4)
 
-#
- library(lme4)
+# how does accuracy change from session to session
+accDat  = aggregate(data=trlDat, acc ~ observer + session + targSide, FUN="mean")
+plt = ggplot(accDat, aes(x=as.numeric(session), y=acc, colour=targSide, group=observer:targSide))
+plt = plt + geom_point() + geom_smooth(method=lm)
+plt
 
-# # let us first look at accuracy for target present and absent
-accdat  = aggregate(data=rtdat, acc ~ subj + targSide, FUN="mean")
+# remove incorrect trials
+rtDat = (filter(trlDat, acc==1) 
+	%>% group_by(observer, session, targSide)
+	%>% summarise(
+		logrt = mean(log(rt))))
+		# n = length(rt),
+		# sderr = sd(log(rt)/sqrt(n)),
+		# upper = logrt + 1.96*sderr,
+		# lower = logrt - 1.96*sderr))
 
-aggregate(data=accdat, acc~targSide, FUN="mean")
-write.csv(accdat, "../data/accDat12pps.txt", row.names=F)
+rtDat = spread(rtDat,  session, logrt)
+names(rtDat)[3:4] = c("session1", "session2")
+
+plt = ggplot(rtDat, aes(x=session1, y=session2, colour=targSide))
+plt = plt + geom_point()
+plt = plt + geom_smooth(method="lm")
+plt
+
+
+
+
+
+
 
 # # now lets look at RTs... 
 # # first we need to filter out incorrect trials

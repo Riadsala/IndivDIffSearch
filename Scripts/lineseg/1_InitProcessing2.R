@@ -82,12 +82,13 @@ ProcessASC <- function(asc, ss)
 	return(list(fixDat, detDat))
 }
 
-participants = c(1,2,3)
+participants = c(1,2,3,4,7)
 datFolder = '../../Data/'
 
 fixDat = data.frame(observer=numeric(), trial=numeric(), n=numeric(), x=numeric(), y=numeric(), dur=numeric())
 trlDat = data.frame(observer=numeric(), trial=numeric(), targPres=character(), targSide=character(), row=character(), column=character(), easySide=character(), responseKey=character())
-	
+
+resDat = data.frame(observer=numeric(), session=numeric(), xRes=numeric(), yRes=numeric())	
 for (pp in participants)
 {
 	for (ss in 1:2)
@@ -98,16 +99,27 @@ for (pp in participants)
 
 		fixDat = rbind(fixDat, dat[[1]])
 		trlDat = rbind(trlDat, dat[[2]])
+
+		# get screen res for this file
+		resMSG = asc[grep("GAZE_COORDS", asc )[1]]
+		resolution=as.numeric(unlist(strsplit(unlist(resMSG)[2], " "))[3:6])
+		resDat = rbind(resDat, data.frame(observer=pp, session=ss, xRes=resolution[3], yRes=resolution[4]))
 	}
 }
+rm(ss, pp)
 
+##### Tidy up trlDat
 
 # recode factors
 levels(trlDat$targPres) = c("present", "absent")
 levels(trlDat$targSide) = c("right", "absent", "left")
 levels(trlDat$easySide) = c("left", "right")
 
-# record targSide to be easy or hard!
+# convert some things to factors
+trlDat$observer = as.factor(trlDat$observer)
+trlDat$session = as.factor(trlDat$session)
+
+# recode targSide to be easy or hard!
 relSide =trlDat$TargSide
 relSide[trlDat$targSide=="left" & trlDat$easySide=="left"] = "easy"
 relSide[trlDat$targSide=="right" & trlDat$easySide=="right"] = "easy"
@@ -115,5 +127,50 @@ relSide[trlDat$targSide=="right" & trlDat$easySide=="left"] = "hard"
 relSide[trlDat$targSide=="left" & trlDat$easySide=="right"] = "hard"
 relSide[trlDat$targSide=="absent"] = "absent"
 trlDat$targSide = as.factor(relSide)
+rm(relSide)
+
+# code up correct or not
+trlDat$acc = 0
+trlDat$acc[(trlDat$responseKey=="Key_l") & (trlDat$targPres=="present")] = 1
+trlDat$acc[(trlDat$responseKey=="Key_r") & (trlDat$targPres=="absent")] = 1
+
+# remove trials which are invalid for one reason or another
+trlDat = filter(trlDat, responseKey!="Key_x")
+
+# save
+saveRDS(trlDat, "scratch/processedRTandAccData.Rda")
+
+##### Tidy up fixDat
+
+# convert some things to factors
+fixDat$observer = as.factor(fixDat$observer)
+fixDat$session = as.factor(fixDat$session)
+
+# centre x and y
+for (pp in participants)
+{
+	for (ss in 1:2)
+	{
+		resX = filter(resDat, observer==pp, session==ss)$xRes
+		resY = filter(resDat, observer==pp, session==ss)$yRes
+		idx = which(fixDat$observer==pp & fixDat$session==ss)
+		fixDat$x[idx] = (fixDat$x[idx] - resX/2)/(resX/2)
+		fixDat$y[idx] = (fixDat$y[idx] - resY/2)/(resY/2)
+	}
+}
 
 
+# only take fixations that fall within screen
+fixDat = filter(fixDat, x>-1, x<1, y>-1, y<1)
+
+# swap x +/- based on easySide
+trialsToSwap = paste(trlDat$observer, trlDat$session, trlDat$trial)
+trialsToSwap[which(trlDat$easySide=="right")]
+
+id = paste(fixDat$observer, fixDat$session, fixDat$trial)
+for (ii in trialsToSwap)
+{
+	fixDat$x[which(id == ii)] = -fixDat$x[which(id == ii)] 
+}
+
+saveRDS(fixDat, "scratch/processedFixationData.Rda")
