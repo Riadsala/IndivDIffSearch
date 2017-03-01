@@ -96,7 +96,8 @@ ProcessASC <- function(asc, ss)
 	return(list(fixDat, detDat))
 }
 
-participants = c(1,2,3,4,7)
+participants = 1:32
+participants = participants[-18]
 datFolder = '../../Data/'
 
 fixDat = data.frame(observer=numeric(), trial=numeric(), n=numeric(), x=numeric(), y=numeric(), dur=numeric())
@@ -105,8 +106,10 @@ trlDat = data.frame(observer=numeric(), trial=numeric(), targPres=character(), t
 resDat = data.frame(observer=numeric(), session=numeric(), xRes=numeric(), yRes=numeric())	
 for (pp in participants)
 {
-	for (ss in 1:2)
+	print(pp)
+	for (ss in c('a', 'b'))
 	{
+		print(ss)
 		filename = paste(datFolder, pp, '/lineseg/Ul', pp, ss, '.asc', sep="")
 		asc = strsplit(readLines(filename), "\t")
 		dat = ProcessASC(asc, ss)
@@ -121,7 +124,7 @@ for (pp in participants)
 	}
 }
 rm(ss, pp, filename, dat)
-
+ 
 ##### Tidy up trlDat
 
 # recode factors
@@ -169,7 +172,7 @@ fixDat$session = as.factor(fixDat$session)
 # centre x and y 
 for (pp in participants)
 {
-	for (ss in 1:2)
+	for (ss in c('a', 'b'))
 	{
 		resX = filter(resDat, observer==pp, session==ss)$xRes
 		resY = filter(resDat, observer==pp, session==ss)$yRes
