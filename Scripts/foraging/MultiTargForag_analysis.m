@@ -9,10 +9,10 @@
 % 
 % Instructions:
 % 
-% 1) Ensure all data files are in the same folder as this file
+% 1) Ensure this file is in the same folder as the individual data folders
 % 
 % 2) Update the list of subject numbers:
- sublist = [1,2,3,4,7]; 
+ sublist = [1:17,19:30,32]; % Missing: 18, 31 first session
 % 
 % 3) Hit run
 % 
@@ -47,17 +47,17 @@ for s = 1:length(sublist)
     data2 = [];
     
      subNo = sublist(s)
-     if subNo < 7
+     if subNo < 5
         version = 1;    % old version of exp 
      else
         version = 2;
      end
         
      % Get Data from both sessions
-     datafilename1 = strcat('Data_',expname,'_',num2str(version),'_',num2str(subNo),'.txt');
+     datafilename1 = strcat(num2str(subNo),'/foraging/Data_',expname,'_',num2str(version),'_',num2str(subNo),'.txt');
      data1 = dlmread(datafilename1,'',3,0);
      
-     datafilename2 = strcat('Data_',expname,'_',num2str(version),'_',num2str(subNo),'a.txt');
+     datafilename2 = strcat(num2str(subNo),'/foraging/Data_',expname,'_',num2str(version),'_',num2str(subNo),'a.txt');
      data2 = dlmread(datafilename2,'',3,0);
      
      % Open one file to get the header info
@@ -73,41 +73,46 @@ for s = 1:length(sublist)
      
      if cond == 1
          condorder = [1,2]; % Feature first, then Conj
+         featuredata = data1;
+         conjdata = data2;
      else
          condorder = [2,1]; % Conj first, then feature
+         featuredata = data2;
+         conjdata = data1;
      end
+     
+     
      
      fclose(fid);
      
      % Add new column with new trial number to separate prac trials from
      % exp trials
-     newtrial = size(data1,2)+1;
+     newtrial = size(featuredata,2)+1;
      newtrialcount = 1;
-     data1(1,newtrial) = newtrialcount;
-     for c = 2:size(data1,1)
-         if data1(c,click) <= data1(c-1,click)  %If click number doesn't increase, then it's a new trial
+     featuredata(1,newtrial) = newtrialcount;
+     for c = 2:size(featuredata,1)
+         if featuredata(c,click) <= featuredata(c-1,click)  %If click number doesn't increase, then it's a new trial
              newtrialcount = newtrialcount + 1;
          end
-         data1(c,newtrial) = newtrialcount;
+         featuredata(c,newtrial) = newtrialcount;
      end
      newtrialcount = 1;
-     data2(1,newtrial) = newtrialcount;
-     for c = 2:size(data2,1)
-         if data2(c,click) <= data2(c-1,click)
+     conjdata(1,newtrial) = newtrialcount;
+     for c = 2:size(conjdata,1)
+         if conjdata(c,click) <= conjdata(c-1,click)
              newtrialcount = newtrialcount + 1;
          end
-         data2(c,newtrial) = newtrialcount;
+         conjdata(c,newtrial) = newtrialcount;
      end
      
-     % Add new column with search type (feature or conj) to file then join togethe
-     searchtype = size(data1,2)+1;
-     data1(:,searchtype) = condorder(1);
-     data2(:,searchtype) = condorder(2);
-     ntrials = [data1(end,newtrial),data2(end,newtrial)];
-     subdata = [data1;data2];    
+     % Add new column with search type (feature or conj) to file then join
+     % together
+     searchtype = size(featuredata,2)+1;  
+     featuredata(:,searchtype) = 1;
+     conjdata(:,searchtype) = 2;
+     ntrials = [featuredata(end,newtrial),conjdata(end,newtrial)];
+     subdata = [featuredata;conjdata];    
      
-     %Exclude Prac trials 
-     %subdata = subdata((subdata(:,trial)>5),:);
      
      % Add interclick RT, excluding click misses
      clickRT = size(subdata,2)+1;
@@ -122,8 +127,8 @@ for s = 1:length(sublist)
      end
      
      % Save new data
-%     trialoutputfile = strcat('CombinedData_',expname,'_',num2str(subNo),'.txt');
-%     dlmwrite(trialoutputfile,subdata,'delimiter','\t','precision',6);  
+     trialoutputfile = strcat(num2str(subNo),'/foraging/CombinedData_',expname,'_',num2str(subNo),'.txt');
+     dlmwrite(trialoutputfile,subdata,'delimiter','\t','precision',6);  
     
      
      %%%%%%%%%%%%%%%%%%%%%%
@@ -136,7 +141,7 @@ for s = 1:length(sublist)
 
             % Extra data for trial t and condition st. Exclude click misses
             trialsubdata = subdata((subdata(:,newtrial)==t)&(subdata(:,searchtype)==st)&(subdata(:,targclick)>0),:);
-
+            
             % Count runs
             if trialsubdata(end,targclick) == 40    % only do it for correct trials
                 rt = trialsubdata(end,RT);
@@ -173,12 +178,12 @@ for s = 1:length(sublist)
      
      
     % Save trial data
-%     trialoutputfile = strcat('TrialData_',expname,'_',num2str(subNo),'.txt');
-%     header = {'SubNo','SearchType_(1=Feat_2=Conj)','TrialNum','RT','RunNumber','AvRunLength'};
-%     txt=sprintf('%s\t',header{:});
-%     txt(end)='';
-%     dlmwrite(trialoutputfile,txt,'');
-%     dlmwrite(trialoutputfile,tdata,'-append','delimiter','\t','precision',6);
+     trialoutputfile = strcat(num2str(subNo),'/foraging/TrialData_',expname,'_',num2str(subNo),'.txt');
+     header = {'SubNo','SearchType_(1=Feat_2=Conj)','TrialNum','RT','RunNumber','AvRunLength'};
+     txt=sprintf('%s\t',header{:});
+     txt(end)='';
+     dlmwrite(trialoutputfile,txt,'');
+     dlmwrite(trialoutputfile,tdata,'-append','delimiter','\t','precision',6);
     
     %%%%%%%%%%%%%%%%%%%
     % Record mean data
