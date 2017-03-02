@@ -6,10 +6,10 @@
 % 
 % Instructions:
 % 
-% 1) Ensure all data files are in the same folder as this file
+% 1) Ensure this file is in the same folder as the individual data folders
 % 
 % 2) Update the list of subject numbers:
- sublist = [1,2,3,4,7]; 
+ sublist = [1:17,19:31]; % Missing: 18, 32
 % 
 % 3) Hit run
 % 
@@ -48,7 +48,7 @@ for s = 1:length(sublist)
     
     subNo = sublist(s)
     
-     datafilename = strcat('Data_',expname,'_',num2str(subNo),'_sess',num2str(session),'.txt');
+     datafilename = strcat(num2str(subNo),'/adaptchoice/Data_',expname,'_',num2str(subNo),'_sess',num2str(session),'.txt');
      datafile = dlmread(datafilename,'',4,0);
      
      colnums = size(datafile,2);
