@@ -8,6 +8,9 @@ library(tidyr)
 # read in processed data
 trlDat = readRDS(file="scratch/processedRTandAccData.Rda")
 
+# only take correct trials
+trlDat = filter(trlDat, acc==1)
+
 #  set colour palette
 cbPalette <- c("#E69F00", "#56B4E9","#B5CB8B")
 

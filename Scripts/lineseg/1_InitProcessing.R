@@ -24,7 +24,7 @@ ProcessASC <- function(asc, ss)
 	trialDone   = grep("Done", asc)
 	nTrials = length(trialStarts)
 
-	if (length(trialEnds)!=nTrials)
+	while (length(trialEnds)!=nTrials)
 	{
 		# we probably have an early response or something
 		trialEnds=trialEnds[-min(which(trialEnds[1:nTrials]<trialStarts))]
@@ -96,7 +96,7 @@ ProcessASC <- function(asc, ss)
 	return(list(fixDat, detDat))
 }
 
-participants = 1:32
+participants = 1:31
 participants = participants[-18]
 datFolder = '../../Data/'
 
