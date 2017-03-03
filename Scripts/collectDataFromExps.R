@@ -18,3 +18,9 @@ cor.test(dat$lineseg_meanlogrt_hard, dat$ac_rt)
 
 
 write.csv(dat, "summaryData.csv")
+
+plt = ggplot(dat, aes(x=ls_meanlogrt_hard, y=ac_rt)) 
+plt = plt + geom_point()
+plt = plt + geom_smooth(method=lm)
+plt
+ggsave("ls_ac.pdf")

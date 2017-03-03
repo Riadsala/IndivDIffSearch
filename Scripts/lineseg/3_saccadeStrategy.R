@@ -79,7 +79,7 @@ ggsave("scratch/stratVrt.pdf")
 
 names(aggData) = c("observer", "ls_propHetro_absent", "ls_medianRT_hard", "ls_meanlogrt_hard")
 
-write.csv(aggData, "scratch/lineseg_output.csv")
+write.csv(aggData, "scratch/lineseg_output.csv", row.names=F)
 
 
 
