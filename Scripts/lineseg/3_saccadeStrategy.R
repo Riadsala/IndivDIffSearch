@@ -50,7 +50,8 @@ ggsave("scratch/strategyBySessionAndPerson.pdf", width=12, height=5)
 
 
 
-
+###########
+# output data for cross experiment correlations!
 
 # base statistic for correlation on only first 3 fixations
 aggDataSS = (filter(fixDat, side!="central", n>1, n<=5, targSide=="absent") 
@@ -64,17 +65,21 @@ aggDataSS = (filter(fixDat, side!="central", n>1, n<=5, targSide=="absent")
 aggDataRT = (filter(trlDat, targSide=="hard") 
   %>% group_by(observer) 
     %>% summarise(
-     medianRT = median(rt)))
+     medianRT = median(rt),
+     meanLogRT = mean(log(rt))))
 
 
 
 aggData = merge(aggDataSS, aggDataRT)
 
+
 plt = ggplot(aggData, aes(x=propHetro, y=medianRT, colour=observer))
 plt = plt + geom_point() 
 ggsave("scratch/stratVrt.pdf")
 
+names(aggData) = c("observer", "ls_propHetro_absent", "ls_medianRT_hard", "ls_meanlogrt_hard")
+
+write.csv(aggData, "scratch/lineseg_output.csv")
 
 
-aggData = spread(aggData,  session, logrt)
-names(aggData)[3:4] = c("session1", "session2")
+
