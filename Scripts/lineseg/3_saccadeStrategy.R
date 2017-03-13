@@ -41,7 +41,7 @@ aggData = (filter(fixDat, side!="central", n<12, n>1, targSide=="absent")
      upperS = binom.confint(propHetro*nTrials,nTrials, method='wilson')$upper))
 
 
-plt = ggplot(aggData, aes(x=n, y=propHetro, ymin=lowerS, ymax=upperS, colour=session))
+plt = ggplot(filter(aggData, n<=5), aes(x=n, y=propHetro, ymin=lowerS, ymax=upperS, colour=session))
 plt = plt + geom_point() + geom_path() + geom_errorbar()
 plt = plt + theme_bw() + facet_wrap(~observer, nrow=3)
 plt = plt + scale_x_continuous(name="fixation number", breaks=c(2,4,6,8,10))

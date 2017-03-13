@@ -29,8 +29,9 @@ cor.test(dat$lineseg_meanlogrt_hard, dat$ac_rt)
 
 write.csv(dat, "summaryData.csv")
 
-plt = ggplot(dat, aes(x=ls_meanlogrt_hard, y=ac_rt)) 
+plt = ggplot(dat, aes(x=ls_meanlogrt_hard, y=ac_meanlogrt)) 
 plt = plt + geom_point()
-plt = plt + geom_smooth(method=lm)
-plt
-ggsave("ls_ac.pdf")
+# plt = plt + geom_smooth(method=lm)
+plt = plt + theme_bw() + scale_x_continuous("split screen log (rt) - hard targets")
+plt = plt + scale_y_continuous("adaptive choice log (rt)")
+ggsave("ls_ac.pdf", width=4, height=4)
