@@ -66,6 +66,9 @@ for s = 1:length(sublist)
      
      % Fix error in code - exclude switches/reps for error trials
      datafile(datafile(:,Acc)==0,repsw) = NaN;
+     
+     logRT = 20;
+     datafile(:,logRT) = log(datafile(:,RT));
 
      %% Get Means %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -90,6 +93,8 @@ for s = 1:length(sublist)
     % Mean acc & RT
     MeanAcc(s,1) = nanmean(datafile(:,Acc)); %Accuracy
     MeanRT(s,1) = nanmean(datafile(:,RT)); % RT
+    MedianRT(s,1) = nanmedian(datafile(:,RT)); % RT
+    LogRT(s,1) = nanmedian(datafile(:,logRT)); % RT
     
     %Proportion Efficient trials on Plat
     SubPlatEfficient(s,1) = (size(datafile((datafile(:,Acc)==1)&(datafile(:,plat)>0)&(datafile(:,optchoice)==1),:),1))/(size(datafile((datafile(:,Acc)==1)&(datafile(:,plat)>0),:),1)); %Accuracy trials, plat, efficient
@@ -177,5 +182,13 @@ txt(end)='';
 dlmwrite(outputfile1,txt,'');
 dlmwrite(outputfile1,printoutswitches,'-append','delimiter','\t','precision',6);
 
-
+% Draw plot of choices across a run
+Fig1 = figure;
+run = 1:12;
+plot(run,mean(StartOptPercents,1),'b',run,mean(EndOptPercents,1),'r')
+axis([1 12 .2 .8])
+legend('StartOptimal','EndOptimal')
+xlabel('Position in run (from start plateau to end transition)') 
+ylabel('Proportion Optimal choices') 
+saveas(Fig1,'AC_groupplot.pdf')  
 end
