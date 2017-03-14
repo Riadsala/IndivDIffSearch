@@ -39,6 +39,8 @@ RT = 10;
 
 expname = 'MultiTargForag';
 alldata = [];
+runnumTrialsFeat = [];
+runnumTrialsConj = [];
 
 for s = 1:length(sublist)
     
@@ -144,7 +146,8 @@ for s = 1:length(sublist)
             
             % Count runs
             if trialsubdata(end,targclick) == 40    % only do it for correct trials
-                rt = trialsubdata(end,RT);
+                rt = trialsubdata(end,RT)*1000;
+                logrt = log(rt*1000);
                 prevtarg = trialsubdata(1,targset);
                 runnum = 1;
                 runlengths = [];
@@ -160,7 +163,7 @@ for s = 1:length(sublist)
                     prevtarg = currenttarg;
                 end
                 avrunlength = mean(runlengths);
-                condtdata(t,:) = [subNo,st,t,rt,runnum,avrunlength];
+                condtdata(t,:) = [subNo,st,t,rt,runnum,avrunlength,logrt];
             end
         end
         
@@ -186,15 +189,24 @@ for s = 1:length(sublist)
      dlmwrite(trialoutputfile,tdata,'-append','delimiter','\t','precision',6);
     
     %%%%%%%%%%%%%%%%%%%
+    
+    % Compile all trials for plotting
+    runnumTrialsFeat = [runnumTrialsFeat;tdata((tdata(:,2)==1),5)];
+    runnumTrialsConj = [runnumTrialsConj;tdata((tdata(:,2)==2),5)];
+    
     % Record mean data
     alldata(s,1) = subNo;
     alldata(s,2) = nanmean(tdata((tdata(:,2)==1),4));   % Feature RT
-    alldata(s,3) = nanmean(tdata((tdata(:,2)==1),5));   % Feature run num
-    alldata(s,4) = nanmean(tdata((tdata(:,2)==1),6));   % Feature run length
-    alldata(s,5) = nanmean(tdata((tdata(:,2)==2),4));   % Conj RT
-    alldata(s,6) = nanmean(tdata((tdata(:,2)==2),5));   % Conj run num
-    alldata(s,7) = nanmean(tdata((tdata(:,2)==2),6));   % Conj run length
-        
+    alldata(s,3) = nanmedian(tdata((tdata(:,2)==1),4));   % Feature Median RT
+    alldata(s,4) = nanmean(tdata((tdata(:,2)==1),7));   % Feature log RT
+    alldata(s,5) = nanmean(tdata((tdata(:,2)==1),5));   % Feature run num
+    alldata(s,6) = nanmean(tdata((tdata(:,2)==1),6));   % Feature run length
+    alldata(s,7) = nanmean(tdata((tdata(:,2)==2),4));   % Conj RT
+    alldata(s,8) = nanmedian(tdata((tdata(:,2)==2),4));   % Conj Median RT
+    alldata(s,9) = nanmean(tdata((tdata(:,2)==2),7));   % Conj log RT  
+    alldata(s,10) = nanmean(tdata((tdata(:,2)==2),5));   % Conj run num
+    alldata(s,11) = nanmean(tdata((tdata(:,2)==2),6));   % Conj run length
+      
 end % SubNo
 
 %% Output %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -202,10 +214,29 @@ end % SubNo
 format long g
 
 allsubsoutputfile = strcat('Data_',expname,'_allsubs.txt');
-header = {'SubNo','Feature_RT','Feature_RunNum','Feature_RunLength','Conj_RT','Conj_RunNum','Conj_RunLength'};
+header = {'SubNo','Feature_meanRT','Feature_medianRT','Feature_logRT','Feature_RunNum','Feature_RunLength','Conj_meanRT','Conj_medianRT','Conj_logRT','Conj_RunNum','Conj_RunLength'};
 txt=sprintf('%s\t',header{:});
 txt(end)='';
 dlmwrite(allsubsoutputfile,txt,'');
 dlmwrite(allsubsoutputfile,alldata,'-append','delimiter','\t','precision',6);
+
+% Plot histogram of number of runs  across all feature and conj trials
+Fig1 = figure;
+edges = 1:40;
+histogram(runnumTrialsFeat,edges)
+xlabel('Number of Runs per trial') 
+ylabel('Total number of trials') 
+saveas(Fig1,'FG_Histogram_FeatTrials.pdf')  
+
+Fig2 = figure;
+edges = 1:40;
+histogram(runnumTrialsConj,edges)
+xlabel('Number of Runs per trial') 
+ylabel('Total number of trials') 
+saveas(Fig2,'FG_Histogram_ConjTrials.pdf')  
+
+% save data for histograms
+dlmwrite('FG_DataforHist_FeatTrials',runnumTrialsFeat,'delimiter','\t','precision',6);
+dlmwrite('FG_DataforHist_ConjTrials',runnumTrialsConj,'delimiter','\t','precision',6);
 
 end
