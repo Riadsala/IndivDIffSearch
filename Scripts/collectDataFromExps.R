@@ -13,9 +13,11 @@ dat = merge(lineseg, adapt)
 dat = merge(dat, forage)
 
 
-rtdat = select(dat, ls_meanlogrt_hard, ac_meanlogrt, fg_meanlogrt_feature, fg_meanlogrt_cong)
+rtdat = select(dat, lsA_meanlogrt_hard, lsB_meanlogrt_hard, ac_meanlogrt, fg_meanlogrt_feature, fg_meanlogrt_cong)
 
-cor(rtdat)
+cor(rtddat
+
+	at)
 
 
 str(cor(dat[,-1]))
@@ -24,7 +26,7 @@ str(cor(dat[,-1]))
 
 plot(dat$lineseg_meanlogrt_hard, dat$ac_rt)
 
-cor.test(dat$lineseg_meanlogrt_hard, dat$ac_rt)
+cor.test(dat$lsB_meanlogrt_hard, dat$lsA_meanlogrt_hard)
 
 
 write.csv(dat, "summaryData.csv")

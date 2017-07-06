@@ -59,7 +59,7 @@ aggDataSS = (filter(fixDat, side!="central", n>1, n<=5, targSide=="absent", sess
     %>% summarise(
      propHetro_a=mean(side=="hetro")))
 
-aggDataSSb = (filter(fixDat, side!="central", n>1, n<=5, targSide=="absent", session=="a") 
+aggDataSSb = (filter(fixDat, side!="central", n>1, n<=5, targSide=="absent", session=="b") 
   %>% group_by(observer) 
     %>% summarise(
      propHetro_b=mean(side=="hetro")))
