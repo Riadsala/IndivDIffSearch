@@ -97,7 +97,7 @@ ggsave("./scratch/start_compare_median_rt.pdf", width = figYn, height = figYn)
 # use session B only
 # --------------------------------------------------------------------------------
 
-write_csv(filter(dat2, targSide=="b"), "scratch/lineseg_output.csv")
+write_csv(filter(dat2, session == "b"), "scratch/lineseg_output.csv")
 
 
 

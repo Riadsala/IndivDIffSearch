@@ -1,39 +1,20 @@
-library(ggplot2)
-library(dplyr)
+library(tidyverse)
 
 
-lineseg = read.csv("lineseg/scratch/lineseg_output.csv")
-adapt   = read.csv("adaptchoice/Data_AdaptChoice_allsubs_Summary.txt", sep="\t")
-forage  = read.csv("foraging/Data_MultiTargForag_allsubs.txt", sep="\t")
+lineseg <- read_csv("lineseg/scratch/lineseg_output.csv")
+adapt   <- read_delim("adaptchoice/Data_AdaptChoice_allsubs_Summary.txt", delim = "\t")
+forage  <- read_delim("foraging/Data_MultiTargForag_allsubs.txt", delim = "\t;")
 
 names(adapt) = c("observer", "ac_acc", "ac_rt", "ac_propOpt", "ac_switchRate", "ac_meanlogrt", "ac_medianrt")
 names(forage) = c("observer", "fg_meanrt_feature", "fg_medianrt_feature", "fg_meanlogrt_feature", "fg_runnum_feature", "fg_runlength_feature","fg_meanrt_cong", "fg_medianrt_cong", "fg_meanlogrt_cong", "fg_runnum_cong", "fg_runlength_cong")
+lineseg <- select(lineseg, observer, prop_homo, median_rt, meanlogrt)
+names(lineseg) <- c("observer", "ls_prop_homo", "ls_median_rt", "ls_mean_log_rt")
 
-dat = merge(lineseg, adapt)
-dat = merge(dat, forage)
-
-
-rtdat = select(dat, lsA_meanlogrt_hard, lsB_meanlogrt_hard, ac_meanlogrt, fg_meanlogrt_feature, fg_meanlogrt_cong)
-
-cor(rtddat
-
-	at)
+dat = full_join(lineseg, adapt)
+dat = full_join(dat, forage)
 
 
-str(cor(dat[,-1]))
+write_csv(dat, "summaryData.csv")
 
 
 
-plot(dat$lineseg_meanlogrt_hard, dat$ac_rt)
-
-cor.test(dat$lsB_meanlogrt_hard, dat$lsA_meanlogrt_hard)
-
-
-write.csv(dat, "summaryData.csv")
-
-plt = ggplot(dat, aes(x=ls_meanlogrt_hard, y=ac_meanlogrt)) 
-plt = plt + geom_point()
-# plt = plt + geom_smooth(method=lm)
-plt = plt + theme_bw() + scale_x_continuous("split screen log (rt) - hard targets")
-plt = plt + scale_y_continuous("adaptive choice log (rt)")
-ggsave("ls_ac.pdf", width=4, height=4)
