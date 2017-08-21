@@ -125,8 +125,10 @@ for (pp in participants) {
 		asc = strsplit(readLines(filename), "\t")
 		dat = process_acs(asc, ss)
 
+		# combine data.
 		fixDat = bind_rows(fixDat, dat[[1]])
 		trlDat = bind_rows(trlDat, dat[[2]])
+
 
 		# get screen res for this file
 		resMSG = asc[grep("GAZE_COORDS", asc )[1]]

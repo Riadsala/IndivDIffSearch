@@ -11,6 +11,26 @@ figYn <- 4
 trlDat <- readRDS(file = "scratch/processedRTandAccData.Rda")
 fixDat <- readRDS(file = "scratch/processedFixationData.Rda")
 
+
+# # fix suspected coding bug
+
+# person10_a_fix <- filter(fixDat, observer == 10, session == 'a')
+# person11_a_fix <- filter(fixDat, observer == 11, session == 'a')
+# person10_a_fix$observer <- 11
+# person11_a_fix$observer <- 10
+# fixDat <- filter(fixDat, !(observer == 10 & session == 'a'))
+# fixDat <- filter(fixDat, !(observer == 11 & session == 'a'))
+# fixDat <- rbind(fixDat, person10_a_fix, person11_a_fix)
+
+# person10_a_trl <- filter(trlDat, observer == 10, session == 'a')
+# person11_a_trl <- filter(trlDat, observer == 11, session == 'a')
+# person10_a_trl$observer <- 11
+# person11_a_trl$observer <- 10
+# trlDat <- filter(trlDat, !(observer == 10 & session == 'a'))
+# trlDat <- filter(trlDat, !(observer == 11 & session == 'a'))
+# trlDat <- rbind(trlDat, person10_a_trl, person11_a_trl)
+
+
 # -----------------------------------------------------------------------------
 # look at accuracy 
 # -----------------------------------------------------------------------------
@@ -22,6 +42,8 @@ acc_dat  <- (trlDat %>%
 		accuracy = mean(accuracy),
 		lower = binom.confint(nTrials*accuracy, nTrials, method = 'exact')$lower,
 		upper = binom.confint(nTrials*accuracy, nTrials, method = 'exact')$upper))
+
+
 acc_dat <- select(acc_dat, -nTrials)
 	
 plt <- ggplot(acc_dat, aes(x = targSide, y = accuracy, fill = session))
@@ -34,7 +56,6 @@ ggsave("scratch/acc_by_session_by_person.pdf", width=2*figXn, height=2*figYn)
 acc_dat %>% unite(accuracy, accuracy, lower, upper) -> acc_dat
 acc_dat <- spread(acc_dat, key = session, value = accuracy )
 
-#  Why are there NAs???
 
 acc_dat %>% 
 	separate(a, into = c("a_acc", "a_lower", "a_upper"), sep = "_", convert = TRUE) %>%
