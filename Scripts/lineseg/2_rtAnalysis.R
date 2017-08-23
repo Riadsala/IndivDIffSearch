@@ -8,34 +8,32 @@ figXn <- 6
 figYn <- 4
 
 # read in processed data
-trlDat <- readRDS(file = "scratch/processedRTandAccData.Rda")
-fixDat <- readRDS(file = "scratch/processedFixationData.Rda")
+trl_dat <- readRDS(file = "scratch/processedRTandAccData.Rda")
 
+# fix suspected coding bug
 
-# # fix suspected coding bug
-
-# person10_a_fix <- filter(fixDat, observer == 10, session == 'a')
-# person11_a_fix <- filter(fixDat, observer == 11, session == 'a')
+# person10_a_fix <- filter(fix_dat, observer == 10, session == 'a')
+# person11_a_fix <- filter(fix_dat, observer == 11, session == 'a')
 # person10_a_fix$observer <- 11
 # person11_a_fix$observer <- 10
-# fixDat <- filter(fixDat, !(observer == 10 & session == 'a'))
-# fixDat <- filter(fixDat, !(observer == 11 & session == 'a'))
-# fixDat <- rbind(fixDat, person10_a_fix, person11_a_fix)
+# fix_dat <- filter(fix_dat, !(observer == 10 & session == 'a'))
+# fix_dat <- filter(fix_dat, !(observer == 11 & session == 'a'))
+# fix_dat <- rbind(fix_dat, person10_a_fix, person11_a_fix)
 
-# person10_a_trl <- filter(trlDat, observer == 10, session == 'a')
-# person11_a_trl <- filter(trlDat, observer == 11, session == 'a')
+# person10_a_trl <- filter(trl_dat, observer == 10, session == 'a')
+# person11_a_trl <- filter(trl_dat, observer == 11, session == 'a')
 # person10_a_trl$observer <- 11
 # person11_a_trl$observer <- 10
-# trlDat <- filter(trlDat, !(observer == 10 & session == 'a'))
-# trlDat <- filter(trlDat, !(observer == 11 & session == 'a'))
-# trlDat <- rbind(trlDat, person10_a_trl, person11_a_trl)
+# trl_dat <- filter(trl_dat, !(observer == 10 & session == 'a'))
+# trl_dat <- filter(trl_dat, !(observer == 11 & session == 'a'))
+# trl_dat <- rbind(trl_dat, person10_a_trl, person11_a_trl)
 
 
 # -----------------------------------------------------------------------------
 # look at accuracy 
 # -----------------------------------------------------------------------------
 
-acc_dat  <- (trlDat %>% 
+acc_dat  <- (trl_dat %>% 
 	group_by(observer, session, targSide) %>% 
 	summarise(
 		nTrials = length(accuracy),
@@ -50,8 +48,12 @@ plt <- ggplot(acc_dat, aes(x = targSide, y = accuracy, fill = session))
 plt <- plt + geom_bar(stat = "identity", position = position_dodge()) 
 plt <- plt + scale_x_discrete(name = "target condition")
 plt <- plt + facet_wrap( ~ observer)
-plt <- plt + theme_hc() + scale_fill_ptol()
+plt <- plt + theme_bw() + scale_fill_ptol()
 ggsave("scratch/acc_by_session_by_person.pdf", width=2*figXn, height=2*figYn)
+
+# remove people with poor target easy/absent accuracy
+acc_dat <- filter(acc_dat, !(observer %in% c(4, 21, 33)))
+trl_dat <- filter(trl_dat, !(observer %in% c(4, 21, 33)))
 
 acc_dat %>% unite(accuracy, accuracy, lower, upper) -> acc_dat
 acc_dat <- spread(acc_dat, key = session, value = accuracy )
@@ -69,22 +71,25 @@ plt <- ggplot(filter(acc_dat, targSide == "hard"),
 	aes(x = a_acc, xmin = a_lower, xmax = a_upper,
 	  y = b_acc, ymin = b_lower, ymax = b_upper))
 plt <- plt + geom_abline(slope=1, linetype=2)
-plt <- plt + geom_errorbar(size=0.25) + geom_errorbarh(size=0.25)
+plt <- plt + geom_errorbar(size=0.25, colour = "grey") 
+plt <- plt + geom_errorbarh(size=0.25, colour = "grey")
 plt <- plt + geom_point() 
-plt <- plt + geom_smooth(method = "lm", se=FALSE, colour="black")
+plt <- plt + geom_smooth(method = "lm", colour="black", fullrange = TRUE)
+plt <- plt + coord_cartesian(xlim=c(0,1), ylim=c(0,1)) 
 plt <- plt + geom_text(
-	label = paste("italic(r) == ",r), x = 0.25, y = 0.8, parse = TRUE)
-plt <- plt + scale_x_continuous(name = "accuracy session a ", limits = c(0, 1))
-plt <- plt + scale_y_continuous(name = "accuracy session b ", limits = c(0, 1))
-plt <- plt + theme_minimal() + scale_color_ptol(name = "target condition")
+	label = paste("r = ",r), x = 0.25, y = 0.875, family="Times")
+plt <- plt + scale_x_continuous(name = "session a: accuracy (hard)", limits = c(-0.50, 1.5))
+plt <- plt + scale_y_continuous(name = "session b: accuracy (hard)", limits = c(-0.50, 1.5))
+plt <- plt + theme_bw() + scale_color_ptol(name = "target condition")
+plt <- plt + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
 ggsave("scratch/acc_correlation.pdf", width=figYn, height=figYn)
+ggsave("scratch/acc_correlation.png", width=figYn, height=figYn)
 
 
 # remove person 15 as they never found the hard targets
-trlDat <- filter(trlDat, observer != 15)
-fixDat <- filter(fixDat, observer != 15)
+trl_dat <- filter(trl_dat, observer != 15)
 
-acc_dat  <- (trlDat %>% 
+acc_dat  <- (trl_dat %>% 
 	group_by(observer, session, targSide) %>% 
 	summarise(
 		nTrials = length(accuracy),
@@ -100,14 +105,14 @@ plt <- plt + theme_hc() + scale_fill_ptol()
 ggsave("scratch/acc_by_session.pdf", width=figXn, height=figYn)
 
 # only take correct trials
-trlDat <- filter(trlDat, accuracy == 1)
-fixDat <- filter(left_join(fixDat, trlDat), accuracy==1)
+trl_dat <- filter(trl_dat, accuracy == 1)
+
 
 # -----------------------------------------------------------------------------
 # look at RT 
 # -----------------------------------------------------------------------------
 
-plt <- ggplot(trlDat, aes(x = rt/1000, fill = targSide)) 
+plt <- ggplot(trl_dat, aes(x = rt/1000, fill = targSide)) 
 plt <- plt + geom_density(alpha=0.7)
 plt <- plt + scale_fill_ptol(name = "target position") + theme_hc()
 plt <- plt + scale_x_continuous(name = "reaction time (seconds)", 
@@ -120,10 +125,10 @@ plt <- plt + theme(
 ggsave("scratch/densityRT.pdf", width=figXn, height=figYn)
 
 
-rt_dat <- (filter(trlDat) 
+rt_dat <- (filter(trl_dat) 
 	%>% group_by(observer, session, targSide)
 	%>% summarise(
-		logrt = mean(log(rt,2)),
+		logrt = mean(log(rt, 2)),
 		n = length(rt),
 		sderr = sd(log(rt,2)/sqrt(n)),
 		upper = logrt + 1.96*sderr,
@@ -149,8 +154,10 @@ absent_r = round(with(filter(rt_dat, targSide == "absent"),
 r_df = tibble(
 	text = c(
 		paste("r = ", easy_r), paste("r = ", hard_r), paste("r = ", absent_r) ),
-	x = c(9.5, 10.55, 13.75), y = c(10.25, 11.5, 11.25), targSide = c("easy", "hard", "absent"))
+	x = c(9.5, 10.55, 13.75), y = c(10.25, 12, 11.25), targSide = c("easy", "hard", "absent"))
 
+a_labels = c(500, 1000, 2000, 4000, 8000, 16000)
+a_breaks = log(a_labels, 2)
 plt <- ggplot(rt_dat, aes(
 	x = a_log2rt,#, ,
 	y = b_log2rt,#, ,
@@ -158,6 +165,64 @@ plt <- ggplot(rt_dat, aes(
 plt <- plt + geom_abline(slope=1, linetype=2)
 plt <- plt + geom_point() 
 plt <- plt + geom_errorbar(size=0.25, aes(ymin = b_lower, ymax = b_upper)) + geom_errorbarh(size=0.25, aes(xmin = a_lower, xmax = a_upper))
+plt <- plt + geom_smooth(method="lm", se=FALSE)
+plt <- plt + theme_bw() + scale_color_ptol(name = "target condition")
+plt <- plt + scale_x_continuous("session a: reaction time (ms)", 
+	limits = c(9, 14), breaks = a_breaks, labels = a_labels)
+plt <- plt + scale_y_continuous("session b: reaction time (ms)", 
+	limits = c(9, 14), breaks = a_breaks, labels = a_labels)
+plt <- plt + theme(
+	legend.justification = c(-0.05,1), 
+	legend.position = c(0,0.99),
+	legend.background = element_rect(fill="white"),
+	panel.grid.major = element_blank(), 
+	panel.grid.minor = element_blank())
+plt <- plt + geom_text(data=r_df, aes(x = x, y = y, label = text, colour=targSide), 
+	show.legend = FALSE, family="Times")
+ggsave("scratch/rt_correlation.pdf", width=figYn, height=figYn)
+ggsave("scratch/rt_correlation.png", width=figYn, height=figYn)
+
+
+
+# Look at search efficiency 
+
+rt_dat <- (filter(trl_dat) 
+	%>% group_by(observer, session, targSide)
+	%>% summarise(
+		median_rt = median(rt),
+		n = length(rt)))
+
+acc_dat <- select(acc_dat, observer, session, targSide, accuracy)
+rt_dat  <- select(rt_dat, observer, session, targSide, median_rt)
+dat <- merge(acc_dat, rt_dat)
+
+dat$eff <- dat$median_rt / dat$accuracy
+dat <- select(dat, observer, session, targSide, eff)
+dat <- spread(dat, key = session, value = eff )
+
+
+easy_r = round(with(filter(dat, targSide == "easy"), 
+	cor.test(a, b)$estimate),2)
+
+hard_r = round(with(filter(dat, targSide == "hard"), 
+	cor.test(a, b)$estimate),2)
+
+absent_r = round(with(filter(dat, targSide == "absent"), 
+	cor.test(a, b)$estimate),2)
+
+r_df = tibble(
+	text = c(
+		paste("r = ", easy_r), paste("r = ", hard_r), paste("r = ", absent_r) ),
+	x = c(9.5, 10.55, 13.75), y = c(10.25, 11.5, 11.25), targSide = c("easy", "hard", "absent"))
+
+
+plt <- ggplot(dat, aes(
+	x = a,#, ,
+	y = b,#, ,
+	colour=targSide))
+plt <- plt + geom_abline(slope=1, linetype=2)
+plt <- plt + geom_point() 
+# plt <- plt + geom_errorbar(size=0.25, aes(ymin = b_lower, ymax = b_upper)) + geom_errorbarh(size=0.25, aes(xmin = a_lower, xmax = a_upper))
 plt <- plt + geom_smooth(method="lm", se=FALSE)
 plt <- plt + theme_minimal() + scale_color_ptol(name = "target condition")
 plt <- plt + scale_x_continuous("session 1: log reaction time (ms)")
@@ -167,10 +232,6 @@ plt <- plt + theme(
 	legend.position = c(0,1),
 	legend.background = element_rect(fill="white"))
 plt <- plt + geom_text(data=r_df, aes(x = x, y = y, label = text, colour=targSide), show.legend = FALSE)
-ggsave("scratch/rt_correlation.pdf", width=figYn, height=figYn)
-
-
-
-
+ggsave("scratch/eff_correlation.pdf", width=figYn, height=figYn)
 
 

@@ -13,21 +13,21 @@ trl_dat <- readRDS(file="scratch/processedRTandAccData.Rda")
 
 # fix suspected coding bug
 
-person10_a_fix <- filter(fix_dat, observer == 10, session == 'a')
-person11_a_fix <- filter(fix_dat, observer == 11, session == 'a')
-person10_a_fix$observer <- 11
-person11_a_fix$observer <- 10
-fix_dat <- filter(fix_dat, !(observer == 10 & session == 'a'))
-fix_dat <- filter(fix_dat, !(observer == 11 & session == 'a'))
-fix_dat <- rbind(fix_dat, person10_a_fix, person11_a_fix)
+# person10_a_fix <- filter(fix_dat, observer == 10, session == 'a')
+# person11_a_fix <- filter(fix_dat, observer == 11, session == 'a')
+# person10_a_fix$observer <- 11
+# person11_a_fix$observer <- 10
+# fix_dat <- filter(fix_dat, !(observer == 10 & session == 'a'))
+# fix_dat <- filter(fix_dat, !(observer == 11 & session == 'a'))
+# fix_dat <- rbind(fix_dat, person10_a_fix, person11_a_fix)
 
-person10_a_trl <- filter(trl_dat, observer == 10, session == 'a')
-person11_a_trl <- filter(trl_dat, observer == 11, session == 'a')
-person10_a_trl$observer <- 11
-person11_a_trl$observer <- 10
-trl_dat <- filter(trl_dat, !(observer == 10 & session == 'a'))
-trl_dat <- filter(trl_dat, !(observer == 11 & session == 'a'))
-trl_dat <- rbind(trl_dat, person10_a_trl, person11_a_trl)
+# person10_a_trl <- filter(trl_dat, observer == 10, session == 'a')
+# person11_a_trl <- filter(trl_dat, observer == 11, session == 'a')
+# person10_a_trl$observer <- 11
+# person11_a_trl$observer <- 10
+# trl_dat <- filter(trl_dat, !(observer == 10 & session == 'a'))
+# trl_dat <- filter(trl_dat, !(observer == 11 & session == 'a'))
+# trl_dat <- rbind(trl_dat, person10_a_trl, person11_a_trl)
 
 # only take correct trials
 trl_dat <- filter(trl_dat, accuracy == 1)
@@ -37,9 +37,9 @@ fix_dat <- filter(left_join(fix_dat, trl_dat), accuracy == 1)
 trl_dat <- filter(trl_dat, observer != 15)
 fix_dat <- filter(fix_dat, observer != 15)
 
-# remove person 21 as they missed over half of easy targets in session 1
-trl_dat <- filter(trl_dat, observer != 21)
-fix_dat <- filter(fix_dat, observer != 21)
+# remove people with poor target easy/absent accuracy
+fix_dat <- filter(fix_dat, !(observer %in% c(4, 21, 33)))
+trl_dat <- filter(trl_dat, !(observer %in% c(4, 21, 33)))
 
 # classify every fixation as homo (left), central, or hetro (right)
 centralWidth <- 0.1 # used to be 64 pixels! #change to 1 visual degree
@@ -57,25 +57,24 @@ agg_dat = (filter(fix_dat, side!="central", n<6, n>1, targSide=="absent")
       lowerS = binom.confint(propHetro*nTrials,nTrials, method='wilson')$lower,
       upperS = binom.confint(propHetro*nTrials,nTrials, method='wilson')$upper))
 
-# we want to reorder participants by how good they were in session 1
-(fix_dat %>% filter(session == 'a', n>1, n<=6) 
-  %>% group_by(observer) 
-  %>% summarise(propHetro = mean(side == 'hetero'))) -> new_order
 
-# agg_dat$observer <- fct_reorder(agg_dat$observer, agg_dat$propHetro, fun=mean)
+agg_dat$observer <- fct_reorder(agg_dat$observer, agg_dat$propHetro, fun=mean)
 
 plt <- ggplot(filter(agg_dat, n<=15), 
-  aes(x=n, y=propHetro, ymin=lowerS, ymax=upperS, colour=session))
+  aes(x=n, y=propHetro, ymin = lowerS, ymax = upperS, colour = session))
 plt <- plt + geom_point() + geom_path() + geom_errorbar()
-plt <- plt + facet_wrap(~observer, nrow=3)
+plt <- plt + facet_wrap(~observer, nrow = 4)
 plt <- plt + scale_x_continuous(
-  name="fixation number", breaks=c(2,4,6,8,10))
+  name = "fixation number", breaks = c(2,4,6,8,10))
 plt <- plt + scale_y_continuous(
-  name="proportion of fixations to heterogeneous side", limits=c(0,1))
+  name = "proportion of fixations to heterogeneous side", limits = c(0,1), breaks = c(0,1))
 plt <- plt + theme_bw() + scale_colour_ptol()
-ggsave("scratch/strategyBySessionAndPersonFixMaybe.pdf", width=10, height=6)
-
-
+plt <- plt + theme(
+  legend.justification = c(1,0), 
+  legend.position = c(1,0),
+  legend.background = element_rect(fill="white"))
+ggsave("scratch/strategyBySessionAndPerson.pdf", width = 10, height=6)
+ggsave("scratch/strategyBySessionAndPerson.png", width = 10, height=6)
 
 
 
@@ -152,12 +151,14 @@ plt <- ggplot(t_rt_dat, aes(x = a_strat, y = b_strat))
 plt <- plt + geom_point()
 plt <- plt + geom_abline()
 plt <- plt + geom_smooth(method = lm, se = T)
-plt <- plt + scale_x_continuous("prop. hetero. fixations (session a)", 
+plt <- plt + scale_x_continuous("session a: prop. hetero. fixations", 
   limits = c(0, 1), expand = c(0,0))
-plt <- plt + scale_y_continuous("prop. hetero. fixations (session b)", 
+plt <- plt + scale_y_continuous("session b: prop. hetero. fixations", 
     limits = c(0, 1), expand = c(0,0))
-plt <- plt + theme_bw() + scale_colour_ptol()
-plt
+plt <- plt + theme_minimal() + scale_colour_ptol()
+plt <- plt + geom_text(label = "r = 0.72", x = 0.25, y = 0.75)
+ggsave("../scratch/strat_corr.pdf", width = figXn, height = figYn)
+ggsave("../scratch/strat_corr.png", width = figXn, height = figYn)
 # --------------------------------------------------------------------------------
 # output data for cross experiment correlations!
 # base statistic for correlation on only first 3 fixations

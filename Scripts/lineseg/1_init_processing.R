@@ -109,7 +109,7 @@ process_acs <- function(asc, ss) {
 	return(list(fixDat,trlDat))
 }
 
-participants <- 1:31
+participants <- 1:40
 participants <- participants[-18]
 datFolder <- '../../Data/'
 
@@ -118,9 +118,9 @@ trlDat <- tibble(observer=numeric(), session=character(), trial=numeric(), targP
 resDat <- tibble(observer=numeric(), session=character(), xRes=numeric(), yRes=numeric())	
 
 for (pp in participants) {
-	# print(pp)
+	print(pp)
 	for (ss in c('a', 'b')) 	{
-		# print(ss)
+		print(ss)
 		filename = paste(datFolder, pp, '/lineseg/Ul', pp, ss, '.asc', sep="")
 		asc = strsplit(readLines(filename), "\t")
 		dat = process_acs(asc, ss)
