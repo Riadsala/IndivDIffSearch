@@ -110,7 +110,11 @@ process_acs <- function(asc, ss) {
 }
 
 participants <- 1:40
-participants <- participants[-18]
+# participant 18 is missing (check?)
+# participant 32 only completed session A
+participants <- participants[!(participants %in% c(18, 32))] 
+
+
 datFolder <- '../../Data/'
 
 fixDat <- tibble(observer=numeric(), session=character(), trial=numeric(), n=numeric(), x=numeric(), y=numeric(), dur=numeric())

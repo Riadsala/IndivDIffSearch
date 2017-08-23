@@ -225,8 +225,8 @@ plt <- plt + geom_point()
 # plt <- plt + geom_errorbar(size=0.25, aes(ymin = b_lower, ymax = b_upper)) + geom_errorbarh(size=0.25, aes(xmin = a_lower, xmax = a_upper))
 plt <- plt + geom_smooth(method="lm", se=FALSE)
 plt <- plt + theme_minimal() + scale_color_ptol(name = "target condition")
-plt <- plt + scale_x_continuous("session 1: log reaction time (ms)")
-plt <- plt + scale_y_continuous("session 2: log reaction time (ms)")
+plt <- plt + scale_x_continuous("session a: log reaction time (ms)")
+plt <- plt + scale_y_continuous("session b: log reaction time (ms)")
 plt <- plt + theme(
 	legend.justification = c(0,1), 
 	legend.position = c(0,1),
