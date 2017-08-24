@@ -5,12 +5,16 @@ lineseg <- read_csv("lineseg/scratch/lineseg_output.csv")
 adapt   <- read_delim("adaptchoice/Data_AdaptChoice_allsubs_Summary.txt", delim = "\t")
 forage  <- read_delim("foraging/Data_MultiTargForag_allsubs.txt", delim = "\t;")
 
-names(adapt) = c("observer", "ac_acc", "ac_rt", "ac_propOpt", "ac_switchRate", "ac_meanlogrt", "ac_medianrt")
-names(forage) = c("observer", "fg_meanrt_feature", "fg_medianrt_feature", "fg_meanlogrt_feature", "fg_runnum_feature", "fg_runlength_feature","fg_meanrt_cong", "fg_medianrt_cong", "fg_meanlogrt_cong", "fg_runnum_cong", "fg_runlength_cong")
-lineseg <- select(lineseg, observer, prop_homo, median_rt, meanlogrt)
-names(lineseg) <- c("observer", "ls_prop_homo", "ls_median_rt", "ls_mean_log_rt")
+adapt <- select_(adapt, "SubNo", "Acc", "RT", "ProportionOptimalChoices", "SwitchRate", "Log2RT")
+names(adapt) = c("observer", "ac_acc", "ac_rt", "ac_propOpt", "ac_switchRate", "ac_meanlog2rt")
 
-dat = full_join(lineseg, adapt)
+forage <- select_(forage, "SubNo", "Feature_log2RT", "Conj_log2RT")
+names(forage) = c("observer", "fg_feat_log2", "fg_conj_log2")
+
+lineseg <- select(lineseg, observer, prop_homo, prop_hetero, median_rt, meanlogrt)
+names(lineseg) <- c("observer", "ls_prop_homo", "ls_prop_hetero", "ls_median_rt", "ls_mean_log_rt")
+
+dat = full_join(lineseg, adapt, by = "observer")
 dat = full_join(dat, forage)
 
 

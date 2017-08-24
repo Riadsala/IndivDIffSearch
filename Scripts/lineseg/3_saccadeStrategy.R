@@ -76,20 +76,20 @@ plt <- plt + theme(
 ggsave("scratch/strategyBySessionAndPerson.pdf", width = 10, height=6)
 ggsave("scratch/strategyBySessionAndPerson.png", width = 10, height=6)
 
-
-
 # --------------------------------------------------------------------------------
 # how well does search strategy predict RT?
 # --------------------------------------------------------------------------------
 (left_join(fix_dat, trl_dat) 
-  %>% filter(n > 1, n <= 3, side != "central")
+  %>% filter(n > 1, n <= 6, side != "central")
   %>% group_by(observer, session, trial, targSide) 
   %>% summarise(
     prop_homo = mean(side == "homo"),
+    prop_hetero = mean(side == "hetero"),
     rt    = unique(rt))
   %>% group_by(observer, session, targSide) 
   %>% summarise(
     prop_homo  = mean(prop_homo),
+    prop_hetero  = mean(prop_hetero),
     median_rt = median(rt),
     meanlogrt = mean(log(rt,2)))
   ) -> dat
@@ -108,7 +108,7 @@ r_df = tibble(
     paste("r =", r_sess_b)),
   x = c(0.90, 0.90), y = c(11, 10), session = c("a", "b"))
 
-a_labels = c(625, 1250, 2500, 5000, 10000)
+a_labels = c(500, 1000, 2000, 4000, 8000)
 a_breaks = log(a_labels, 2)
 
 plt <- ggplot(dat2, aes(x = prop_homo, y = meanlogrt, colour = session))
@@ -116,8 +116,9 @@ plt <- plt + geom_point() + geom_smooth(method = lm, fullrange = TRUE)
 plt <- plt + theme_bw() + scale_colour_ptol()
 plt <- plt + scale_x_continuous("prop. homogeneous fixations (absent)", 
   limits = c(0, 1), breaks = c(0, 1), expand = c(0, 0))
-plt <- plt + scale_y_continuous("median reaction time for hard trials (secs)",
-  limits = c(min(a_breaks), max(a_breaks)), breaks = a_breaks, labels = a_labels, expand = c(0, 0))
+plt <- plt + scale_y_continuous("mean log reaction time for hard trials (ms)",
+  limits = c(min(a_breaks), 14), breaks = a_breaks, labels = a_labels, expand = c(0, 0))
+plt <- plt + coord_cartesian(xlim=c(0,1), ylim=c(9.5, 13.5))
 plt <- plt + theme(
   legend.justification = c(-0.05,1), 
   legend.position = c(0,0.99),
@@ -168,13 +169,12 @@ plt <- plt + theme(panel.grid.major = element_blank(), panel.grid.minor = elemen
 plt <- plt + geom_text(label = "r = 0.72", x = 0.25, y = 0.85)
 ggsave("scratch/strat_corr.pdf", width = figYn, height = figYn)
 ggsave("scratch/strat_corr.png", width = figYn, height = figYn)
+
 # --------------------------------------------------------------------------------
 # output data for cross experiment correlations!
 # base statistic for correlation on only first 3 fixations
 # use session B only
 # --------------------------------------------------------------------------------
-
-
 
 
 write_csv(filter(dat2, session == "b"), "scratch/lineseg_output.csv")
