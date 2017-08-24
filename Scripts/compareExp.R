@@ -20,14 +20,14 @@ y_breaks = log(y_labels, 2)
 
 plt <- ggplot(dat, aes(x = ls_mean_log_rt, y = ac_meanlog2rt))
 plt <- plt + geom_point() 
-plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE)
+plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE, linetype = 0)
 plt <- plt + theme_bw()
 plt <- plt + scale_x_continuous("split-half: mean log rt (ms)",
-	  limits = c(8, 14), breaks = x_breaks, labels = x_labels, expand = c(0, .1))
+	  limits = c(8.9, 15), breaks = x_breaks, labels = x_labels, expand = c(0, 0))
 plt <- plt + scale_y_continuous("adaptive choice: mean log rt (ms)",
-	  limits = c(min(y_breaks), 14), breaks = y_breaks, labels = y_labels, expand = c(0, 0))
+	  limits = c(y_breaks[1], y_breaks[3] ), breaks = y_breaks, labels = y_labels, expand = c(0, 0))
 plt <- plt + geom_text(label=paste("r =", r), x= 10.25, y=12)
-plt <- plt + coord_cartesian(xlim=c(min(x_breaks),max(x_breaks)), ylim=c(y_breaks[1],max(y_breaks)))
+plt <- plt + coord_cartesian(xlim=c(min(x_breaks),max(x_breaks)+0.2), ylim=c(y_breaks[1],max(y_breaks)))
 plt <- plt + theme(
   panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank())
@@ -38,31 +38,50 @@ ggsave("scratch/ls_v_ac_mean_log2rt.png", width = figYn, height = figYn)
 r_feat <- round(with(dat, cor.test(ls_mean_log_rt, fg_feat_log2)$estimate), 3)
 r_cong <- round(with(dat, cor.test(ls_mean_log_rt, fg_conj_log2)$estimate), 3)
 
-y_labels = c(1500, 3000, 6000)
-y_breaks = log(y_labels, 2)
+y_breaks = c(14.13571, 14.70995, 15.28771)
+y_labels = round(2^y_breaks)
 
 plt <- ggplot(dat, aes(x = ls_mean_log_rt, y = fg_feat_log2))
 plt <- plt + geom_point() 
-plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE)
+plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE, linetype=0)
 plt <- plt + theme_bw()
-plt <- plt + scale_x_continuous("split-half: median rt (ms)")
-plt <- plt + scale_y_continuous("foraging - feature: xxxx rt (ms)")
-plt <- plt + geom_text(label=paste("italic(r) ==", r_feat), parse = TRUE, x= 4000, y=22500)
-# plt <- plt + ggtitle('Attentional Control and Foraging (feautre)')
+plt <- plt + scale_x_continuous("split-half: mean log rt (ms)",
+    limits = c(8, 14.1), breaks = x_breaks, labels = x_labels, expand = c(0, 0))
+plt <- plt + scale_y_continuous("foraging (feature): mean log rt (ms)",
+    limits = c(y_breaks[1], y_breaks[3]), breaks = y_breaks, labels = y_labels,expand = c(0, 0))
+plt <- plt + coord_cartesian(xlim=c(min(x_breaks),max(x_breaks)+0.2), ylim=c(y_breaks[1],max(y_breaks)))
+# plt <- plt + geom_text(label=paste("italic(r) ==", r_feat), parse = TRUE, x= 4000, y=22500)
+plt <- plt + theme(
+  panel.grid.major = element_blank(), 
+  panel.grid.minor = element_blank())
 ggsave("scratch/ls_v_fg_feature_rt.pdf", width = figYn, height = figYn)
 ggsave("scratch/ls_v_fg_feature_rt.png", width = figYn, height = figYn)
 
+y_breaks = c(14.28771, 14.91998, 15.55075)
+y_labels = round(2^y_breaks)
+
 plt <- ggplot(dat, aes(x = ls_mean_log_rt, y = fg_conj_log2))
 plt <- plt + geom_point() 
-plt <- plt + geom_smooth(method = lm, colour = "black")
-plt <- plt + theme_minimal()
-plt <- plt + scale_x_continuous("split-half: median rt (ms)")
-plt <- plt + scale_y_continuous("foraging - conjunction: xxxx rt (ms)")
-plt <- plt + geom_text(label=paste("italic(r) ==", r_cong), parse = TRUE, x= 4000, y=22500)
-# plt <- plt + ggtitle('Attentional Control and Foraging (conjunction)')
+plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE, linetype=0)
+plt <- plt + theme_bw()
+plt <- plt + scale_x_continuous("split-half: mean log rt (ms)",
+   limits = c(8, 14.1), breaks = x_breaks, labels = x_labels, expand = c(0, 0))
+plt <- plt + scale_y_continuous("foraging (conjunction): mean log rt (ms)",
+    limits = c(y_breaks[1], y_breaks[3]), breaks = y_breaks, labels = y_labels,expand = c(0, 0))
+# plt <- plt + geom_text(label=paste("italic(r) ==", r_cong), parse = TRUE, x= 4000, y=22500)
+plt <- plt + coord_cartesian(xlim=c(min(x_breaks),max(x_breaks)+0.2), ylim=c(y_breaks[1],max(y_breaks)))
+plt <- plt + theme(
+  panel.grid.major = element_blank(), 
+  panel.grid.minor = element_blank())
 ggsave("scratch/ls_v_fg_conj_rt.pdf", width = figYn, height = figYn)
 ggsave("scratch/ls_v_fg_conj_rt.png", width = figYn, height = figYn)
 
+x_labels = c(1500, 3000, 6000)
+x_breaks = log(x_labels, 2)
+
+
+y_breaks = c(14.13571, 14.71171, 15.28771)
+y_labels = round(2^y_breaks)
 
 
 r_feat <- round(with(dat, cor.test(ac_meanlog2rt, fg_feat_log2)$estimate), 3)
@@ -70,23 +89,34 @@ r_cong <- round(with(dat, cor.test(ac_meanlog2rt, fg_conj_log2)$estimate), 3)
 
 plt <- ggplot(dat, aes(x = ac_meanlog2rt, y = fg_feat_log2))
 plt <- plt + geom_point() 
-plt <- plt + geom_smooth(method = lm, colour = "black")
-plt <- plt + theme_minimal()
-plt <- plt + scale_x_continuous("adaptive choice: median rt (ms)")
-plt <- plt + scale_y_continuous("foraging - feature: xxxx rt (ms)")
-plt <- plt + geom_text(label=paste("italic(r) ==", r_feat), parse = TRUE, x= 4000, y=22500)
-# plt <- plt + ggtitle('Attentional Control and Foraging (feautre)')
+plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE, linetype=0)
+plt <- plt + theme_bw()
+plt <- plt + scale_x_continuous("adaptive choice: mean log rt (ms)",
+    limits = c(x_breaks[1], x_breaks[3]+0.05), breaks = x_breaks, labels = x_labels, expand = c(0, 0))
+plt <- plt + scale_y_continuous("foraging (feature): mean log rt (ms)",
+    limits = c(y_breaks[1], y_breaks[3]), breaks = y_breaks, labels = y_labels, expand = c(0, 0))
+plt <- plt + geom_text(label=paste("r =", r_feat), x= 11, y= 15)
+plt <- plt + theme(
+  panel.grid.major = element_blank(), 
+  panel.grid.minor = element_blank())
 ggsave("scratch/ac_v_fg_feature_rt.pdf", width = figYn, height = figYn)
 ggsave("scratch/ac_v_fg_feature_rt.png", width = figYn, height = figYn)
 
+
+y_breaks = c(14.28771, 14.91998, 15.55075)
+y_labels = round(2^y_breaks)
 plt <- ggplot(dat, aes(x = ac_meanlog2rt, y = fg_conj_log2))
 plt <- plt + geom_point() 
-plt <- plt + geom_smooth(method = lm, colour = "black")
-plt <- plt + theme_minimal()
-plt <- plt + scale_x_continuous("adaptive choice: median rt (ms)")
-plt <- plt + scale_y_continuous("foraging - conjunction: xxxx rt (ms)")
-plt <- plt + geom_text(label=paste("italic(r) ==", r_cong), parse = TRUE, x= 4000, y=22500)
-# plt <- plt + ggtitle('Attentional Control and Foraging (conjunction)')
+plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE, linetype=0)
+plt <- plt + theme_bw()
+plt <- plt + scale_x_continuous("adaptive choice: mean log rt (ms)",
+    limits = c(x_breaks[1], x_breaks[3]+0.05), breaks = x_breaks, labels = x_labels, expand = c(0, 0))
+plt <- plt + scale_y_continuous("foraging (feature): mean log rt (ms)",
+    limits = c(y_breaks[1], y_breaks[3]), breaks = y_breaks, labels = y_labels, expand = c(0, 0))
+plt <- plt + geom_text(label=paste("r =", r_feat), x= 11, y= 15)
+plt <- plt + theme(
+  panel.grid.major = element_blank(), 
+  panel.grid.minor = element_blank())
 ggsave("scratch/ac_v_fg_conj_rt.pdf", width = figYn, height = figYn)
 ggsave("scratch/ac_v_fg_conj_rt.png", width = figYn, height = figYn)
 
