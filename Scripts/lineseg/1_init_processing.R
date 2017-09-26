@@ -109,7 +109,7 @@ process_acs <- function(asc, ss) {
 	return(list(fixDat,trlDat))
 }
 
-participants <- 1:40
+participants <- 1:47
 # participant 18 is missing (check?)
 # participant 32 only completed session A
 participants <- participants[!(participants %in% c(18, 32))] 
