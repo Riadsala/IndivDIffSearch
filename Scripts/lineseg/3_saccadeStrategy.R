@@ -74,7 +74,7 @@ ggsave("scratch/strategyBySessionAndPerson.png", width = 10, height=6)
     prop_hetero  = mean(prop_hetero),
     median_rt = median(rt),
     meanlogrt = mean(log(rt,2)))
-  %>% filter(n_trials > 1)) -> dat
+  %>% filter(n_trials > 10)) -> dat
 
 (dat %>% 
   filter(targSide == "absent") %>% 
