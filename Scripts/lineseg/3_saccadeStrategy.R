@@ -11,35 +11,20 @@ figYn <- 4
 fix_dat <- readRDS(file="scratch/processedFixationData.Rda")
 trl_dat <- readRDS(file="scratch/processedRTandAccData.Rda")
 
-# fix suspected coding bug
-
-# person10_a_fix <- filter(fix_dat, observer == 10, session == 'a')
-# person11_a_fix <- filter(fix_dat, observer == 11, session == 'a')
-# person10_a_fix$observer <- 11
-# person11_a_fix$observer <- 10
-# fix_dat <- filter(fix_dat, !(observer == 10 & session == 'a'))
-# fix_dat <- filter(fix_dat, !(observer == 11 & session == 'a'))
-# fix_dat <- rbind(fix_dat, person10_a_fix, person11_a_fix)
-
-# person10_a_trl <- filter(trl_dat, observer == 10, session == 'a')
-# person11_a_trl <- filter(trl_dat, observer == 11, session == 'a')
-# person10_a_trl$observer <- 11
-# person11_a_trl$observer <- 10
-# trl_dat <- filter(trl_dat, !(observer == 10 & session == 'a'))
-# trl_dat <- filter(trl_dat, !(observer == 11 & session == 'a'))
-# trl_dat <- rbind(trl_dat, person10_a_trl, person11_a_trl)
 
 # only take correct trials
-trl_dat <- filter(trl_dat, accuracy == 1)
+
 fix_dat <- filter(left_join(fix_dat, trl_dat), accuracy == 1)
+trl_dat <- filter(trl_dat, accuracy == 1)
+
 
 # remove person 15 as they never found the hard targets
 trl_dat <- filter(trl_dat, observer != 15)
 fix_dat <- filter(fix_dat, observer != 15)
 
 # remove people with poor target easy/absent accuracy
-fix_dat <- filter(fix_dat, !(observer %in% c(4, 21, 33)))
-trl_dat <- filter(trl_dat, !(observer %in% c(4, 21, 33)))
+fix_dat <- filter(fix_dat, !(observer %in% c(4, 21, 33, 56, 58)))
+trl_dat <- filter(trl_dat, !(observer %in% c(4, 21, 33, 56, 58)))
 
 # classify every fixation as homo (left), central, or hetro (right)
 centralWidth <- 0.1 # used to be 64 pixels! #change to 1 visual degree
@@ -56,7 +41,6 @@ agg_dat = (filter(fix_dat, side!="central", n<6, n>1, targSide=="absent")
       propHetro=mean(side=="hetero"), 
       lowerS = binom.confint(propHetro*nTrials,nTrials, method='wilson')$lower,
       upperS = binom.confint(propHetro*nTrials,nTrials, method='wilson')$upper))
-
 
 agg_dat$observer <- fct_reorder(agg_dat$observer, agg_dat$propHetro, fun=mean)
 
@@ -79,6 +63,7 @@ ggsave("scratch/strategyBySessionAndPerson.png", width = 10, height=6)
 # --------------------------------------------------------------------------------
 # how well does search strategy predict RT?
 # --------------------------------------------------------------------------------
+
 (left_join(fix_dat, trl_dat) 
   %>% filter(n > 1, n <= 6, side != "central")
   %>% group_by(observer, session, trial, targSide) 
@@ -88,37 +73,44 @@ ggsave("scratch/strategyBySessionAndPerson.png", width = 10, height=6)
     rt    = unique(rt))
   %>% group_by(observer, session, targSide) 
   %>% summarise(
+    n_trials = length(trial),
     prop_homo  = mean(prop_homo),
     prop_hetero  = mean(prop_hetero),
     median_rt = median(rt),
     meanlogrt = mean(log(rt,2)))
-  ) -> dat
+  %>% filter(n_trials > 10)) -> dat
 
-dat2 <- filter(dat, targSide == "absent")
-dat2$meanlogrt <- filter(dat, targSide == "hard")$meanlogrt
+(dat %>% 
+  filter(targSide == "absent") %>% 
+  select(observer, session, prop_homo, prop_hetero)) -> dat_absent
+(dat %>%
+  filter(targSide == "hard") %>%
+  select(observer, session, meanlogrt)) -> dat_hard
 
-r_sess_a = with(filter(dat2, session == "a"), cor.test(prop_homo, meanlogrt))
+dat <- full_join(dat_absent, dat_hard)
+
+r_sess_a = with(filter(dat, session == "a"), cor.test(prop_homo, meanlogrt))
 r_sess_a = format(round(r_sess_a$estimate, 2), nsmall = 2)
-r_sess_b = with(filter(dat2, session == "b"), cor.test(prop_homo, meanlogrt))
+r_sess_b = with(filter(dat, session == "b"), cor.test(prop_homo, meanlogrt))
 r_sess_b = format(round(r_sess_b$estimate, 2), nsmall = 2)
 
 r_df = tibble(
   text = c(
     paste("r = ", r_sess_a), 
     paste("r =", r_sess_b)),
-  x = c(0.90, 0.90), y = c(11, 10), session = c("a", "b"))
+  x = c(0.90, 0.90), y = c(12, 11), session = c("a", "b"))
 
-a_labels = c(500, 1000, 2000, 4000, 8000)
+a_labels = c(1000, 2000, 4000, 8000)
 a_breaks = log(a_labels, 2)
 
-plt <- ggplot(dat2, aes(x = prop_homo, y = meanlogrt, colour = session))
+plt <- ggplot(dat, aes(x = prop_homo, y = meanlogrt, colour = session))
 plt <- plt + geom_point() + geom_smooth(method = lm, fullrange = TRUE)
 plt <- plt + theme_bw() + scale_colour_ptol()
 plt <- plt + scale_x_continuous("prop. homogeneous fixations (absent)", 
   limits = c(0, 1), breaks = c(0, 1), expand = c(0, 0))
 plt <- plt + scale_y_continuous("mean log reaction time for hard trials (ms)",
   limits = c(min(a_breaks), 14), breaks = a_breaks, labels = a_labels, expand = c(0, 0))
-plt <- plt + coord_cartesian(xlim=c(0,1), ylim=c(9.5, 13.5))
+plt <- plt + coord_cartesian(xlim=c(0,1), ylim=c(10.5, 14.5))
 plt <- plt + theme(
   legend.justification = c(-0.05,1), 
   legend.position = c(0,0.99),
@@ -127,14 +119,14 @@ plt <- plt + theme(
   panel.grid.minor = element_blank())
 plt <- plt + geom_text(data=r_df, 
   aes(x = x, y = y, label = text, colour=session), show.legend = FALSE)
-ggsave("./scratch/start_compare_meanlog_rt.pdf", width = figYn, height = figYn)
-ggsave("./scratch/start_compare_meanlog_rt.png", width = figYn, height = figYn)
+ggsave("./scratch/strat_compare_meanlog_rt.pdf", width = figYn, height = figYn)
+ggsave("./scratch/strat_compare_meanlog_rt.png", width = figYn, height = figYn)
 
 # --------------------------------------------------------------------------------
 # how consistent is stratety between session a and b?
 # --------------------------------------------------------------------------------
 
-agg_dat = (filter(fix_dat, side!="central", n<=3, n>1, targSide=="absent") 
+agg_dat = (filter(fix_dat, side!="central", n<=5, n>1, targSide=="absent") 
   %>% group_by(observer, session) 
     %>% summarise(
       nTrials=length(trial),
@@ -176,8 +168,4 @@ ggsave("scratch/strat_corr.png", width = figYn, height = figYn)
 # use session B only
 # --------------------------------------------------------------------------------
 
-
-write_csv(filter(dat2, session == "b"), "scratch/lineseg_output.csv")
-
-
-
+write_csv(filter(dat, session == "b"), "scratch/lineseg_output.csv")

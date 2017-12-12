@@ -41,7 +41,6 @@ acc_dat  <- (trl_dat %>%
 		lower = binom.confint(nTrials*accuracy, nTrials, method = 'exact')$lower,
 		upper = binom.confint(nTrials*accuracy, nTrials, method = 'exact')$upper))
 
-
 acc_dat <- select(acc_dat, -nTrials)
 	
 plt <- ggplot(acc_dat, aes(x = targSide, y = accuracy, fill = session))
@@ -52,8 +51,8 @@ plt <- plt + theme_bw() + scale_fill_ptol()
 ggsave("scratch/acc_by_session_by_person.pdf", width=2*figXn, height=2*figYn)
 
 # remove people with poor target easy/absent accuracy
-acc_dat <- filter(acc_dat, !(observer %in% c(4, 21, 33)))
-trl_dat <- filter(trl_dat, !(observer %in% c(4, 21, 33)))
+acc_dat <- filter(acc_dat, !(observer %in% c(4, 21, 33, 56, 58)))
+trl_dat <- filter(trl_dat, !(observer %in% c(4, 21, 33, 56, 58)))
 
 acc_dat %>% unite(accuracy, accuracy, lower, upper) -> acc_dat
 acc_dat <- spread(acc_dat, key = session, value = accuracy )
@@ -87,7 +86,7 @@ ggsave("scratch/acc_correlation.png", width=figYn, height=figYn)
 
 
 # remove person 15 as they never found the hard targets
-trl_dat <- filter(trl_dat, observer != 15)
+# trl_dat <- filter(trl_dat, observer != 15)
 
 acc_dat  <- (trl_dat %>% 
 	group_by(observer, session, targSide) %>% 
@@ -154,9 +153,9 @@ absent_r = round(with(filter(rt_dat, targSide == "absent"),
 r_df = tibble(
 	text = c(
 		paste("r = ", easy_r), paste("r = ", hard_r), paste("r = ", absent_r) ),
-	x = c(9.5, 10.55, 13.75), y = c(10.25, 12, 11.25), targSide = c("easy", "hard", "absent"))
+	x = c(12.5, 10.55, 13.75), y = c(10.75, 12, 11.25), targSide = c("easy", "hard", "absent"))
 
-a_labels = c(500, 1000, 2000, 4000, 8000, 16000)
+a_labels = c(1000, 2000, 4000, 8000, 16000)
 a_breaks = log(a_labels, 2)
 plt <- ggplot(rt_dat, aes(
 	x = a_log2rt,#, ,
@@ -168,9 +167,9 @@ plt <- plt + geom_errorbar(size=0.25, aes(ymin = b_lower, ymax = b_upper)) + geo
 plt <- plt + geom_smooth(method="lm", se=FALSE)
 plt <- plt + theme_bw() + scale_color_ptol(name = "target condition")
 plt <- plt + scale_x_continuous("session a: reaction time (ms)", 
-	limits = c(9, 14), breaks = a_breaks, labels = a_labels)
+	limits = c(10, 14), breaks = a_breaks, labels = a_labels)
 plt <- plt + scale_y_continuous("session b: reaction time (ms)", 
-	limits = c(9, 14), breaks = a_breaks, labels = a_labels)
+	limits = c(10, 14), breaks = a_breaks, labels = a_labels)
 plt <- plt + theme(
 	legend.justification = c(-0.05,1), 
 	legend.position = c(0,0.99),

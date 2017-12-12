@@ -15,7 +15,7 @@ get_detail <- function(str, detail) {
 process_acs <- function(asc, ss) {
 	# FACES_DRAWN marks start of trial. 
 	# It is called this as matlab code was reused from Anna's old experiment
-	trialStarts <- grep("FACES_DRAWN", asc)
+	trialStarts <- grep("DISPLAY_ON", asc)
 	trialEnds   <- grep("TRIAL_OVER", asc)
 	trialDone   <- grep("Done", asc)
 	nTrials <- length(trialStarts)
@@ -110,8 +110,8 @@ process_acs <- function(asc, ss) {
 }
 
 participants <- 1:66
-participants <- participants[!(participants %in% c(18, 32, 48, 49, 57))] 
-# need to check what is up with 49.
+participants <- participants[!(participants %in% c(18, 32, 48, 57))] 
+
 
 datFolder <- '../../Data/'
 
