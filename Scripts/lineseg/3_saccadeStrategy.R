@@ -85,7 +85,7 @@ ggsave("scratch/strategyBySessionAndPerson.png", width = 10, height=6)
   select(observer, session, prop_homo, prop_hetero)) -> dat_absent
 (dat %>%
   filter(targSide == "hard") %>%
-  select(observer, session, meanlogrt)) -> dat_hard
+  select(observer, session, meanlogrt, median_rt)) -> dat_hard
 
 dat <- full_join(dat_absent, dat_hard)
 

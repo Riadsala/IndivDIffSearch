@@ -16,7 +16,7 @@ names(lineseg) <- c("observer", "ls_prop_homo", "ls_prop_hetero", "ls_median_rt"
 
 dat = full_join(lineseg, adapt, by = "observer")
 dat = full_join(dat, forage)
-
+ 
 
 write_csv(dat, "summaryData.csv")
 
