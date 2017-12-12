@@ -18,10 +18,6 @@ fix_dat <- filter(left_join(fix_dat, trl_dat), accuracy == 1)
 trl_dat <- filter(trl_dat, accuracy == 1)
 
 
-# remove person 15 as they never found the hard targets
-trl_dat <- filter(trl_dat, observer != 15)
-fix_dat <- filter(fix_dat, observer != 15)
-
 # remove people with poor target easy/absent accuracy
 fix_dat <- filter(fix_dat, !(observer %in% c(4, 21, 33, 56, 58)))
 trl_dat <- filter(trl_dat, !(observer %in% c(4, 21, 33, 56, 58)))
