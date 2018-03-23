@@ -208,7 +208,7 @@ plt <- ggplot(dat, aes(x = ac_propOpt, y = fg_conj_run_num))
 plt <- plt + geom_point() 
 plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE, linetype = 0)
 plt <- plt + theme_bw()
-plt <- plt + scale_x_continuous("split-half: prop. hetero. fixations",
+plt <- plt + scale_x_continuous("adaptive choice: prop. optimal",
     limits = c(0, 1), expand = c(0, 0), breaks = c(0,1))
 plt <- plt + scale_y_continuous("foraging (conjunction): number of runs",
     limits = c(0, 20), expand = c(0, 0))
@@ -225,7 +225,7 @@ plt <- ggplot(dat, aes(x = ac_propOpt, y = fg_conj_run_length))
 plt <- plt + geom_point() 
 plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE, linetype = 0)
 plt <- plt + theme_bw()
-plt <- plt + scale_x_continuous("split-half: prop. hetero. fixations",
+plt <- plt + scale_x_continuous("adaptive choice: prop. optimal",
     limits = c(0, 1), expand = c(0, 0), breaks = c(0,1))
 plt <- plt + scale_y_continuous("foraging (conjunction): mean run length",
     limits = c(-10, 30), expand = c(0, 0))
