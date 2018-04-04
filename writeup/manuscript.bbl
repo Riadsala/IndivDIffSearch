@@ -1,9 +1,28 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{boot2009}
+Walter~R Boot, Ensar Becic, and Arthur~F Kramer.
+\newblock Stable individual differences in search strategy?: The effect of task
+  demands and motivational factors on scanning strategy in visual search.
+\newblock {\em Journal of Vision}, 9(3):7--7, 2009.
+
+\bibitem{boot2006}
+Walter~R Boot, Arthur~F Kramer, Ensar Becic, Douglas~A Wiegmann, and Tate
+  Kubose.
+\newblock Detecting transient changes in dynamic displays: The more you look,
+  the less you see.
+\newblock {\em Human Factors}, 48(4):759--773, 2006.
 
 \bibitem{brainard1997}
 David~H Brainard.
 \newblock The psychophysics toolbox.
 \newblock {\em Spatial vision}, 10:433--436, 1997.
+
+\bibitem{clarke2016}
+Alasdair~DF Clarke, Patrick Green, Mike~J Chantler, and Amelia~R Hunt.
+\newblock Human search for a target on a textured background is consistent with
+  a stochastic model.
+\newblock {\em Journal of vision}, 16(7):4--4, 2016.
 
 \bibitem{irons-leber2017}
 Jessica Irons and Andrew Leber.
@@ -28,9 +47,32 @@ Jessica~L Irons and Andrew~B Leber.
 \newblock Common attentional constraints in visual foraging.
 \newblock {\em PloS one}, 9(6):e100752, 2014.
 
+\bibitem{mackworth1948}
+Norman~H Mackworth.
+\newblock The breakdown of vigilance during prolonged visual search.
+\newblock {\em Quarterly Journal of Experimental Psychology}, 1(1):6--21, 1948.
+
+\bibitem{najemnik-geisler2008}
+Jiri Najemnik and Wilson~S Geisler.
+\newblock Eye movement statistics in humans are consistent with an optimal
+  search strategy.
+\newblock {\em Journal of Vision}, 8(3):4--4, 2008.
+
 \bibitem{nowakowsak2017}
 Anna Nowakowska, Alasdair D~F Clarke, and Amelia~R Hunt.
 \newblock Human visual search behaviour is far from ideal.
 \newblock {\em Proceedings of the Royal Society B: Biological Sciences}, 2017.
+
+\bibitem{proulx2011}
+Michael~J Proulx.
+\newblock Individual differences and metacognitive knowledge of visual search
+  strategy.
+\newblock {\em PLoS One}, 6(10):e27043, 2011.
+
+\bibitem{sobel2007}
+Kenith~V Sobel, Matthew~P Gerrie, Bradley~J Poole, and Michael~J Kane.
+\newblock Individual differences in working memory capacity and visual search:
+  The roles of top-down and bottom-up processing.
+\newblock {\em Psychonomic Bulletin \& Review}, 14(5):840--845, 2007.
 
 \end{thebibliography}
