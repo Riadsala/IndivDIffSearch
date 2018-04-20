@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex manuscript"] 1524153223 "manuscript.aux" "manuscript.bbl" "manuscript" 1524153224
+["bibtex manuscript"] 1524218812 "manuscript.aux" "manuscript.bbl" "manuscript" 1524218813
   "/usr/local/texlive/2016/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "literature.bib" 1524151036 6221 c2e8c3684e4b0c93c7eb0a2d0da727d5 ""
-  "manuscript.aux" 1524153224 5501 d75b2da3c959523b4d74af6651c4003b ""
+  "manuscript.aux" 1524218813 5501 4535a1e9165802da4e01b82e516aa6da ""
   "manuscript.bcf" 0 -1 0 ""
   (generated)
-  "manuscript.bbl"
   "manuscript.blg"
-["pdflatex"] 1524153223 "manuscript.tex" "manuscript.pdf" "manuscript" 1524153224
+  "manuscript.bbl"
+["pdflatex"] 1524218812 "manuscript.tex" "manuscript.pdf" "manuscript" 1524218813
   "../Scripts/lineseg/scratch/acc_correlation.pdf" 1513083082 9411 fdde7ac2caffe1b879ea4c0f78502d88 ""
   "../Scripts/lineseg/scratch/rt_correlation.pdf" 1513083083 16151 144d5da4227dd81e4f11d49d64f535ec ""
   "../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf" 1513088130 8740 21e17c1960c34837fa20cd79064e82af ""
@@ -160,14 +160,14 @@
   "figures/adaptive.png" 1521818849 56825 624e4f0fe0e16b6bd99b2cb313c6b1e9 ""
   "figures/foraging.png" 1521821399 41089 9903e24c44c1c60cb2d69a891bdf6e31 ""
   "figures/split-half.png" 1521818768 315829 fbda65b00e3321404a4bf6ced36804a3 ""
-  "manuscript.aux" 1524153224 5501 d75b2da3c959523b4d74af6651c4003b ""
-  "manuscript.bbl" 1524153223 2961 362d72e50b6fdd2781101fdaab93efbe "bibtex manuscript"
-  "manuscript.out" 1524153224 1451 1a041691177ed1480fc3c99129383b02 ""
-  "manuscript.tex" 1524153222 17247 467a10828796179e6c0433468305d048 ""
+  "manuscript.aux" 1524218813 5501 4535a1e9165802da4e01b82e516aa6da ""
+  "manuscript.bbl" 1524218812 2961 362d72e50b6fdd2781101fdaab93efbe "bibtex manuscript"
+  "manuscript.out" 1524218813 1451 1a041691177ed1480fc3c99129383b02 ""
+  "manuscript.tex" 1524218810 17792 b7cdb8f395311ac256799a9590feb7fe ""
   "openaccesslogo_bw.pdf" 1502201048 13234 9c37d6436deac165264324b958c1144b ""
   "rsos.cls" 1502287564 49103 05b96d9a1fdef2036ff21250993f1be3 ""
   (generated)
   "manuscript.out"
-  "manuscript.log"
   "manuscript.pdf"
+  "manuscript.log"
   "manuscript.aux"
