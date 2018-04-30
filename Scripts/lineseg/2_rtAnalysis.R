@@ -4,8 +4,8 @@ library(ggthemes)
 library(scales)   
 library(binom)
 
-figXn <- 6
-figYn <- 4
+figXn <- 3.5
+figYn <- 2.5
 
 # read in processed data
 trl_dat <- readRDS(file = "scratch/processedRTandAccData.Rda")
@@ -75,10 +75,10 @@ plt <- plt + geom_errorbarh(size=0.25, colour = "grey")
 plt <- plt + geom_point() 
 plt <- plt + geom_smooth(method = "lm", colour="black", fullrange = TRUE)
 plt <- plt + coord_cartesian(xlim=c(0,1), ylim=c(0,1)) 
-plt <- plt + geom_text(
-	label = paste("r = ",r), x = 0.25, y = 0.875, family="Times")
-plt <- plt + scale_x_continuous(name = "session a: accuracy (hard)", limits = c(-0.50, 1.5))
-plt <- plt + scale_y_continuous(name = "session b: accuracy (hard)", limits = c(-0.50, 1.5))
+# plt <- plt + geom_text(
+# 	label = paste("r = ",r), x = 0.25, y = 0.875, family="Times")
+plt <- plt + scale_x_continuous(name = "a: accuracy (hard)", limits = c(-0.50, 1.5))
+plt <- plt + scale_y_continuous(name = "b: accuracy (hard)", limits = c(-0.50, 1.5))
 plt <- plt + theme_bw() + scale_color_ptol(name = "target condition")
 plt <- plt + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
 ggsave("scratch/acc_correlation.pdf", width=figYn, height=figYn)
@@ -155,82 +155,89 @@ r_df = tibble(
 		paste("r = ", easy_r), paste("r = ", hard_r), paste("r = ", absent_r) ),
 	x = c(12.5, 10.55, 13.75), y = c(10.75, 12, 11.25), targSide = c("easy", "hard", "absent"))
 
-a_labels = c(1000, 2000, 4000, 8000, 16000)
-a_breaks = log(a_labels, 2)
+a_labels = c(1, 2, 4, 8, 16)
+a_breaks = log(1000*a_labels, 2)
+levels(rt_dat$targSide) = c("homo", "hetero", "absent")
+
 plt <- ggplot(rt_dat, aes(
 	x = a_log2rt,#, ,
 	y = b_log2rt,#, ,
 	colour=targSide))
 plt <- plt + geom_abline(slope=1, linetype=2)
 plt <- plt + geom_point() 
-plt <- plt + geom_errorbar(size=0.25, aes(ymin = b_lower, ymax = b_upper)) + geom_errorbarh(size=0.25, aes(xmin = a_lower, xmax = a_upper))
+plt <- plt + geom_errorbar(size=0.25, alpha = 0.5, aes(ymin = b_lower, ymax = b_upper))
+plt <- plt + geom_errorbarh(size=0.25, alpha = 0.5, aes(xmin = a_lower, xmax = a_upper))
 plt <- plt + geom_smooth(method="lm", se=FALSE)
 plt <- plt + theme_bw() + scale_color_ptol(name = "target condition")
-plt <- plt + scale_x_continuous("session a: reaction time (ms)", 
-	limits = c(10, 14), breaks = a_breaks, labels = a_labels)
-plt <- plt + scale_y_continuous("session b: reaction time (ms)", 
-	limits = c(10, 14), breaks = a_breaks, labels = a_labels)
-plt <- plt + theme(
-	legend.justification = c(-0.05,1), 
-	legend.position = c(0,0.99),
-	legend.background = element_rect(fill="white"),
-	panel.grid.major = element_blank(), 
-	panel.grid.minor = element_blank())
-plt <- plt + geom_text(data=r_df, aes(x = x, y = y, label = text, colour=targSide), 
-	show.legend = FALSE, family="Times")
+plt <- plt + scale_x_continuous("a: reaction time (s)", 
+	limits = c(10.7, 14.5), breaks = a_breaks, labels = a_labels)
+plt <- plt + scale_y_continuous("b: reaction time (s)", 
+	limits = c(10.7, 14.5), breaks = a_breaks, labels = a_labels)
+plt <- plt + theme_bw()
+# plt <- plt + theme(
+# 	legend.justification = c(-0.05,1), 
+# 	legend.position = c(0,0.99),
+# 	legend.background = element_rect(fill="white"),
+# 	panel.grid.major = element_blank(), 
+# 	panel.grid.minor = element_blank())
+plt <- plt + theme(legend.justification=c(0,1), legend.position=c(0,1),legend.title=element_blank(),
+	legend.background = element_rect(fill = alpha("white",0.1)),
+    panel.grid.major = element_blank(), panel.grid.minor = element_blank())
+# plt <- plt + geom_text(data=r_df, aes(x = x, y = y, label = text, colour=targSide), 
+	# show.legend = FALSE, family="Times")
 ggsave("scratch/rt_correlation.pdf", width=figYn, height=figYn)
 ggsave("scratch/rt_correlation.png", width=figYn, height=figYn)
+plt
 
 
+# # Look at search efficiency 
 
-# Look at search efficiency 
+# rt_dat <- (filter(trl_dat) 
+# 	%>% group_by(observer, session, targSide)
+# 	%>% summarise(
+# 		median_rt = median(rt),
+# 		n = length(rt)))
 
-rt_dat <- (filter(trl_dat) 
-	%>% group_by(observer, session, targSide)
-	%>% summarise(
-		median_rt = median(rt),
-		n = length(rt)))
+# acc_dat <- select(acc_dat, observer, session, targSide, accuracy)
+# rt_dat  <- select(rt_dat, observer, session, targSide, median_rt)
+# dat <- merge(acc_dat, rt_dat)
 
-acc_dat <- select(acc_dat, observer, session, targSide, accuracy)
-rt_dat  <- select(rt_dat, observer, session, targSide, median_rt)
-dat <- merge(acc_dat, rt_dat)
-
-dat$eff <- dat$median_rt / dat$accuracy
-dat <- select(dat, observer, session, targSide, eff)
-dat <- spread(dat, key = session, value = eff )
-
-
-easy_r = round(with(filter(dat, targSide == "easy"), 
-	cor.test(a, b)$estimate),2)
-
-hard_r = round(with(filter(dat, targSide == "hard"), 
-	cor.test(a, b)$estimate),2)
-
-absent_r = round(with(filter(dat, targSide == "absent"), 
-	cor.test(a, b)$estimate),2)
-
-r_df = tibble(
-	text = c(
-		paste("r = ", easy_r), paste("r = ", hard_r), paste("r = ", absent_r) ),
-	x = c(9.5, 10.55, 13.75), y = c(10.25, 11.5, 11.25), targSide = c("easy", "hard", "absent"))
+# dat$eff <- dat$median_rt / dat$accuracy
+# dat <- select(dat, observer, session, targSide, eff)
+# dat <- spread(dat, key = session, value = eff )
 
 
-plt <- ggplot(dat, aes(
-	x = a,#, ,
-	y = b,#, ,
-	colour=targSide))
-plt <- plt + geom_abline(slope=1, linetype=2)
-plt <- plt + geom_point() 
-# plt <- plt + geom_errorbar(size=0.25, aes(ymin = b_lower, ymax = b_upper)) + geom_errorbarh(size=0.25, aes(xmin = a_lower, xmax = a_upper))
-plt <- plt + geom_smooth(method="lm", se=FALSE)
-plt <- plt + theme_minimal() + scale_color_ptol(name = "target condition")
-plt <- plt + scale_x_continuous("session a: log reaction time (ms)")
-plt <- plt + scale_y_continuous("session b: log reaction time (ms)")
-plt <- plt + theme(
-	legend.justification = c(0,1), 
-	legend.position = c(0,1),
-	legend.background = element_rect(fill="white"))
-plt <- plt + geom_text(data=r_df, aes(x = x, y = y, label = text, colour=targSide), show.legend = FALSE)
-ggsave("scratch/eff_correlation.pdf", width=figYn, height=figYn)
+# easy_r = round(with(filter(dat, targSide == "easy"), 
+# 	cor.test(a, b)$estimate),2)
+
+# hard_r = round(with(filter(dat, targSide == "hard"), 
+# 	cor.test(a, b)$estimate),2)
+
+# absent_r = round(with(filter(dat, targSide == "absent"), 
+# 	cor.test(a, b)$estimate),2)
+
+# r_df = tibble(
+# 	text = c(
+# 		paste("r = ", easy_r), paste("r = ", hard_r), paste("r = ", absent_r) ),
+# 	x = c(9.5, 10.55, 13.75), y = c(10.25, 11.5, 11.25), targSide = c("easy", "hard", "absent"))
+
+
+# plt <- ggplot(dat, aes(
+# 	x = a,#, ,
+# 	y = b,#, ,
+# 	colour=targSide))
+# plt <- plt + geom_abline(slope=1, linetype=2)
+# plt <- plt + geom_point() 
+# # plt <- plt + geom_errorbar(size=0.25, aes(ymin = b_lower, ymax = b_upper)) + geom_errorbarh(size=0.25, aes(xmin = a_lower, xmax = a_upper))
+# plt <- plt + geom_smooth(method="lm", se=FALSE)
+# plt <- plt + theme_minimal() + scale_color_ptol(name = "target condition")
+# plt <- plt + scale_x_continuous("session a: log reaction time (ms)")
+# plt <- plt + scale_y_continuous("session b: log reaction time (ms)")
+# plt <- plt + theme(
+# 	legend.justification = c(0,1), 
+# 	legend.position = c(0,1),
+# 	legend.background = element_rect(fill="white"))
+# plt <- plt + geom_text(data=r_df, aes(x = x, y = y, label = text, colour=targSide), show.legend = FALSE)
+# ggsave("scratch/eff_correlation.pdf", width=figYn, height=figYn)
 
 
