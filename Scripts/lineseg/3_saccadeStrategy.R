@@ -5,8 +5,8 @@ library(binom)
 library(lme4)
 library(scales)
 
-figXn <- 6
-figYn <- 4
+figXn <- 3.5
+figYn <- 2.5
  
 fix_dat <- readRDS(file="scratch/processedFixationData.Rda")
 trl_dat <- readRDS(file="scratch/processedRTandAccData.Rda")
@@ -61,7 +61,7 @@ ggsave("scratch/strategyBySessionAndPerson.png", width = 10, height=6)
 # --------------------------------------------------------------------------------
 
 (left_join(fix_dat, trl_dat) 
-  %>% filter(n > 1, n <= 6, side != "central")
+  %>% filter(n > 1, n <= 5, side != "central")
   %>% group_by(observer, session, trial, targSide) 
   %>% summarise(
     prop_homo = mean(side == "homo"),
@@ -71,24 +71,29 @@ ggsave("scratch/strategyBySessionAndPerson.png", width = 10, height=6)
   %>% summarise(
     n_trials = length(trial),
     prop_homo  = mean(prop_homo),
+    lowerS = binom.confint(prop_homo*n_trials, n_trials, method='wilson')$lower,
+    upperS = binom.confint(prop_homo*n_trials, n_trials, method='wilson')$upper,
     prop_hetero  = mean(prop_hetero),
     median_rt = median(rt),
-    meanlogrt = mean(log(rt,2)))
-  %>% filter(n_trials > 10)) -> dat
+    meanlogrt = mean(log(rt,2)),
+    sderr = sd(log(rt,2)/sqrt(n_trials)),
+    upperRT = meanlogrt + 1.96*sderr,
+    lowerRT = meanlogrt - 1.96*sderr)
+  %>% filter(n_trials > 10) -> dat)
 
 (dat %>% 
   filter(targSide == "absent") %>% 
-  select(observer, session, prop_homo, prop_hetero)) -> dat_absent
+  select(observer, session, prop_homo, prop_hetero, lowerS, upperS)) -> dat_absent
 (dat %>%
   filter(targSide == "hard") %>%
-  select(observer, session, meanlogrt, median_rt)) -> dat_hard
+  select(observer, session, meanlogrt, lowerRT, upperRT)) -> dat_hard
 
 dat <- full_join(dat_absent, dat_hard)
 
 r_sess_a = with(filter(dat, session == "a"), cor.test(prop_homo, meanlogrt))
-r_sess_a = format(round(r_sess_a$estimate, 2), nsmall = 2)
+# r_sess_a = format(round(r_sess_a$estimate, 2), nsmall = 2)
 r_sess_b = with(filter(dat, session == "b"), cor.test(prop_homo, meanlogrt))
-r_sess_b = format(round(r_sess_b$estimate, 2), nsmall = 2)
+# r_sess_b = format(round(r_sess_b$estimate, 2), nsmall = 2)
 
 r_df = tibble(
   text = c(
@@ -96,25 +101,26 @@ r_df = tibble(
     paste("r =", r_sess_b)),
   x = c(0.90, 0.90), y = c(12, 11), session = c("a", "b"))
 
-a_labels = c(1000, 2000, 4000, 8000)
-a_breaks = log(a_labels, 2)
+a_labels = c(1, 2, 4, 8, 16)
+a_breaks = log(1000*a_labels, 2)
 
-plt <- ggplot(dat, aes(x = prop_homo, y = meanlogrt, colour = session))
+plt <- ggplot(dat, aes(x = prop_homo, xmin = lowerS, xmax = upperS, y = meanlogrt, ymin = lowerRT, ymax = upperRT, colour = session))
+plt <- plt + geom_errorbar(size=0.25, colour = "grey")
+plt <- plt + geom_errorbarh(size=0.25, colour = "grey")
 plt <- plt + geom_point() + geom_smooth(method = lm, fullrange = TRUE)
 plt <- plt + theme_bw() + scale_colour_ptol()
-plt <- plt + scale_x_continuous("prop. homogeneous fixations (absent)", 
-  limits = c(0, 1), breaks = c(0, 1), expand = c(0, 0))
-plt <- plt + scale_y_continuous("mean log reaction time for hard trials (ms)",
-  limits = c(min(a_breaks), 14), breaks = a_breaks, labels = a_labels, expand = c(0, 0))
-plt <- plt + coord_cartesian(xlim=c(0,1), ylim=c(10.5, 14.5))
+plt <- plt + scale_x_continuous("prop. homo fixations ", 
+  limits = c(0, 1), breaks = c(0, 1))
+plt <- plt + scale_y_continuous("reaction time (s)",
+  limits = c(min(a_breaks), 14.5), breaks = a_breaks, labels = a_labels, expand = c(0, 0))
+# plt <- plt + coord_cartesian(xlim=c(0,1), ylim=c(10.5, 14.5))
 plt <- plt + theme(
   legend.justification = c(-0.05,1), 
   legend.position = c(0,0.99),
-  legend.background = element_rect(fill="white"),
+  legend.key = element_rect(fill = "white"),
+  legend.background = element_rect(fill="white", colour = "white"),
   panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank())
-plt <- plt + geom_text(data=r_df, 
-  aes(x = x, y = y, label = text, colour=session), show.legend = FALSE)
 ggsave("./scratch/strat_compare_meanlog_rt.pdf", width = figYn, height = figYn)
 ggsave("./scratch/strat_compare_meanlog_rt.png", width = figYn, height = figYn)
 
@@ -143,18 +149,22 @@ agg_dat = (filter(fix_dat, side!="central", n<=5, n>1, targSide=="absent")
 cor.test(t_rt_dat$a_strat, t_rt_dat$b_strat)
 
 
-plt <- ggplot(t_rt_dat, aes(x = a_strat, y = b_strat))
+plt <- ggplot(t_rt_dat, aes(x = a_strat, y = b_strat, xmin = a_lower, xmax = a_upper, ymin = b_lower, ymax = b_upper))
+plt <- plt + geom_errorbar(size=0.25, colour = "grey") 
+plt <- plt + geom_errorbarh(size=0.25, colour = "grey")
 plt <- plt + geom_point()
 plt <- plt + geom_abline( linetype=2)
 plt <- plt + geom_smooth(method = lm, se = T, colour = "black", fullrange = TRUE)
-plt <- plt + scale_x_continuous("session a: prop. hetero. fixations", 
-  limits = c(0, 1), expand = c(0,0))
-plt <- plt + scale_y_continuous("session b: prop. hetero. fixations", 
-    limits = c(-1, 2), expand = c(0,0))
+plt <- plt + scale_x_continuous("a: prop. hetero. fixations", 
+  limits = c(0, 1), breaks = c(0,1))
+plt <- plt + scale_y_continuous("b: prop. hetero. fixations", 
+    limits = c(-1, 2), breaks = c(0,1))
 plt <- plt + coord_cartesian(xlim=c(0,1), ylim=c(0,1)) 
 plt <- plt + theme_bw() + scale_color_ptol(name = "target condition")
-plt <- plt + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
-plt <- plt + geom_text(label = "r = 0.72", x = 0.25, y = 0.85)
+plt <- plt + theme(legend.title=element_blank(),
+ panel.grid.major = element_blank(),
+ panel.grid.minor = element_blank())
+# plt <- plt + geom_text(label = "r = 0.72", x = 0.25, y = 0.85)
 ggsave("scratch/strat_corr.pdf", width = figYn, height = figYn)
 ggsave("scratch/strat_corr.png", width = figYn, height = figYn)
 
