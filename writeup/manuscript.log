@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  30 APR 2018 11:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  1 MAY 2018 10:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -741,39 +741,17 @@ File: ../Scripts/scratch/ls_v_ac_mean_log2rt.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/ls_v_ac_mean_log2rt.pdf>
 Package pdftex.def Info: ../Scripts/scratch/ls_v_ac_mean_log2rt.pdf used on inp
-ut line 172.
+ut line 171.
 (pdftex.def)             Requested size: 142.26378pt x 142.26357pt.
 
-<../Scripts/scratch/ls_v_fg_conj_rt.pdf, id=194, 289.08pt x 289.08pt>
-File: ../Scripts/scratch/ls_v_fg_conj_rt.pdf Graphic file (type pdf)
+<../Scripts/scratch/ls_v_ac_opt.pdf, id=194, 289.08pt x 289.08pt>
+File: ../Scripts/scratch/ls_v_ac_opt.pdf Graphic file (type pdf)
 
-<use ../Scripts/scratch/ls_v_fg_conj_rt.pdf>
-Package pdftex.def Info: ../Scripts/scratch/ls_v_fg_conj_rt.pdf used on input l
-ine 173.
+<use ../Scripts/scratch/ls_v_ac_opt.pdf>
+Package pdftex.def Info: ../Scripts/scratch/ls_v_ac_opt.pdf used on input line 
+172.
 (pdftex.def)             Requested size: 142.26378pt x 142.26357pt.
-
-<../Scripts/scratch/ac_v_fg_feature_rt.pdf, id=195, 289.08pt x 289.08pt>
-File: ../Scripts/scratch/ac_v_fg_feature_rt.pdf Graphic file (type pdf)
-
-<use ../Scripts/scratch/ac_v_fg_feature_rt.pdf>
-Package pdftex.def Info: ../Scripts/scratch/ac_v_fg_feature_rt.pdf used on inpu
-t line 174.
-(pdftex.def)             Requested size: 142.26378pt x 142.26357pt.
-
-<../Scripts/scratch/ac_v_fg_conj_rt.pdf, id=196, 289.08pt x 289.08pt>
-File: ../Scripts/scratch/ac_v_fg_conj_rt.pdf Graphic file (type pdf)
-
-<use ../Scripts/scratch/ac_v_fg_conj_rt.pdf>
-Package pdftex.def Info: ../Scripts/scratch/ac_v_fg_conj_rt.pdf used on input l
-ine 175.
-(pdftex.def)             Requested size: 142.26378pt x 142.26357pt.
-File: ../Scripts/scratch/ls_v_ac_mean_log2rt.pdf Graphic file (type pdf)
-
-<use ../Scripts/scratch/ls_v_ac_mean_log2rt.pdf>
-Package pdftex.def Info: ../Scripts/scratch/ls_v_ac_mean_log2rt.pdf used on inp
-ut line 176.
-(pdftex.def)             Requested size: 142.26378pt x 142.26357pt.
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 177.
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 173.
  (./manuscript.bbl
 Overfull \vbox (21.51176pt too high) has occurred while \output is active []
 
@@ -781,36 +759,35 @@ Overfull \vbox (21.51176pt too high) has occurred while \output is active []
 [5 <../Scripts/lineseg/scratch/acc_correlation.pdf> <../Scripts/lineseg/scratch
 /rt_correlation.pdf> <../Scripts/lineseg/scratch/strat_corr.pdf> <../Scripts/li
 neseg/scratch/strat_compare_meanlog_rt.pdf>]
-Overfull \vbox (21.51176pt too high) has occurred while \output is active []
-
-
-[6 <../Scripts/scratch/ls_v_ac_mean_log2rt.pdf> <../Scripts/scratch/ls_v_fg_con
-j_rt.pdf> <../Scripts/scratch/ac_v_fg_feature_rt.pdf> <../Scripts/scratch/ac_v_
-fg_conj_rt.pdf>]
 Underfull \hbox (badness 1360) in paragraph at lines 45--47
 []\T1/ppl/m/n/9 Ómar I Jóhan-nes-son, Ian M Thorn-ton, Irene J Smith, An-drey C
 hetverikov, and Arni
  []
 
-) Setting LastPage
+
+Overfull \vbox (21.51176pt too high) has occurred while \output is active []
+
+
+[6 <../Scripts/scratch/ls_v_ac_mean_log2rt.pdf> <../Scripts/scratch/ls_v_ac_opt
+.pdf>]) Setting LastPage
 Overfull \vbox (21.4162pt too high) has occurred while \output is active []
 
 
 [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
  (./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 192.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 1A041691177ED1480FC3C99129383B02;1451.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 196.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
  ) 
 Here is how much of TeX's memory you used:
- 8510 strings out of 493014
- 123953 string characters out of 6133351
- 213428 words of memory out of 5000000
- 11784 multiletter control sequences out of 15000+600000
+ 8497 strings out of 493014
+ 123499 string characters out of 6133351
+ 213457 words of memory out of 5000000
+ 11776 multiletter control sequences out of 15000+600000
  84032 words of font info for 154 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
  41i,19n,30p,1024b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -830,10 +807,10 @@ w/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helve
 tic/uhvro8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/up
 lr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on manuscript.pdf (7 pages, 557830 bytes).
+Output written on manuscript.pdf (7 pages, 544946 bytes).
 PDF statistics:
- 365 PDF objects out of 1000 (max. 8388607)
- 309 compressed objects within 4 object streams
- 59 named destinations out of 1000 (max. 500000)
- 236 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 338 PDF objects out of 1000 (max. 8388607)
+ 287 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 

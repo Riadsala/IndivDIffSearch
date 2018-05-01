@@ -109,7 +109,7 @@ process_acs <- function(asc, ss) {
 	return(list(fixDat,trlDat))
 }
 
-participants <- 1:66
+participants <- 1:68
 participants <- participants[!(participants %in% c(18, 32, 48, 57))] 
 
 
