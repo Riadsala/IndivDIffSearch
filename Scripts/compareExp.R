@@ -12,28 +12,28 @@ dat <- read_csv("summaryData.csv")
 #  split-half v adaptive choice
 r <- round(with(dat, cor.test(ls_mean_log_rt, ac_meanlog2rt)$estimate), 3)
 
-x_labels = c(500, 1000, 2000, 4000, 8000)
-x_breaks = log(x_labels, 2)
+x_labels = c(1,2, 3, 4, 5, 6, 7, 8)
+x_breaks = log(1000* x_labels, 2)
 
-y_labels = c(1500, 3000, 6000)
-y_breaks = log(y_labels, 2)
+y_labels = c(2, 2.5, 3, 3.5, 4, 4.5, 5)
+y_breaks = log(1000*y_labels, 2)
 
 plt <- ggplot(dat, aes(x = ls_mean_log_rt, y = ac_meanlog2rt))
 plt <- plt + geom_point() 
 plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE, linetype = 0)
 plt <- plt + theme_bw()
-plt <- plt + scale_x_continuous("split-half: mean log rt (ms)",
-	  limits = c(8.9, 15), breaks = x_breaks, labels = x_labels, expand = c(0, 0))
-plt <- plt + scale_y_continuous("adaptive choice: mean log rt (ms)",
-	  limits = c(y_breaks[1], y_breaks[3] ), breaks = y_breaks, labels = y_labels, expand = c(0, 0))
-plt <- plt + geom_text(label=paste("r =", r), x= 10.25, y=12)
-plt <- plt + coord_cartesian(xlim=c(min(x_breaks),max(x_breaks)+0.2), ylim=c(y_breaks[1],max(y_breaks)))
+plt <- plt + scale_x_continuous("split-half: mean log rt (s)",
+	  limits = c(0, 14.5 ), breaks = x_breaks, labels = x_labels)
+plt <- plt + scale_y_continuous("adaptive choice: mean log rt (s)",
+	  breaks = y_breaks, labels = y_labels)
+plt <- plt + coord_cartesian(xlim=c(9.9, 13.1), ylim=c(11,12.3))
 plt <- plt + theme(
   panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank())
 # plt <- plt + ggtitle('Split-half and Attentional Control')
 ggsave("scratch/ls_v_ac_mean_log2rt.pdf", width = figYn, height = figYn)
 ggsave("scratch/ls_v_ac_mean_log2rt.png", width = figYn, height = figYn)
+plt
 
 
 #  split-half with forgaging feature

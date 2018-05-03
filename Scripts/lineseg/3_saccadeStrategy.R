@@ -107,12 +107,12 @@ a_breaks = log(1000*a_labels, 2)
 plt <- ggplot(dat, aes(x = prop_homo, xmin = lowerS, xmax = upperS, y = meanlogrt, ymin = lowerRT, ymax = upperRT, colour = session))
 plt <- plt + geom_errorbar(size=0.25, colour = "grey")
 plt <- plt + geom_errorbarh(size=0.25, colour = "grey")
-plt <- plt + geom_point() + geom_smooth(method = lm, fullrange = TRUE)
+plt <- plt + geom_point() + geom_smooth(method = lm, fullrange = TRUE, se = F)
 plt <- plt + theme_bw() + scale_colour_ptol()
 plt <- plt + scale_x_continuous("prop. homo fixations ", 
   limits = c(0, 1), breaks = c(0, 1))
 plt <- plt + scale_y_continuous("reaction time (s)",
-  limits = c(min(a_breaks), 14.5), breaks = a_breaks, labels = a_labels, expand = c(0, 0))
+  limits = c(10.7, 14.5), breaks = a_breaks, labels = a_labels, expand = c(0, 0))
 # plt <- plt + coord_cartesian(xlim=c(0,1), ylim=c(10.5, 14.5))
 plt <- plt + theme(
   legend.justification = c(-0.05,1), 
@@ -121,6 +121,7 @@ plt <- plt + theme(
   legend.background = element_rect(fill="white", colour = "white"),
   panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank())
+plt
 ggsave("./scratch/strat_compare_meanlog_rt.pdf", width = figYn, height = figYn)
 ggsave("./scratch/strat_compare_meanlog_rt.png", width = figYn, height = figYn)
 
@@ -156,7 +157,7 @@ plt <- plt + geom_point()
 plt <- plt + geom_abline( linetype=2)
 plt <- plt + geom_smooth(method = lm, se = T, colour = "black", fullrange = TRUE)
 plt <- plt + scale_x_continuous("a: prop. hetero. fixations", 
-  limits = c(0, 1), breaks = c(0,1))
+  limits = c(-1, 2), breaks = c(0,1))
 plt <- plt + scale_y_continuous("b: prop. hetero. fixations", 
     limits = c(-1, 2), breaks = c(0,1))
 plt <- plt + coord_cartesian(xlim=c(0,1), ylim=c(0,1)) 
