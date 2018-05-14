@@ -10,25 +10,6 @@ figYn <- 2.5
 # read in processed data
 trl_dat <- readRDS(file = "scratch/processedRTandAccData.Rda")
 
-# fix suspected coding bug
-
-# person10_a_fix <- filter(fix_dat, observer == 10, session == 'a')
-# person11_a_fix <- filter(fix_dat, observer == 11, session == 'a')
-# person10_a_fix$observer <- 11
-# person11_a_fix$observer <- 10
-# fix_dat <- filter(fix_dat, !(observer == 10 & session == 'a'))
-# fix_dat <- filter(fix_dat, !(observer == 11 & session == 'a'))
-# fix_dat <- rbind(fix_dat, person10_a_fix, person11_a_fix)
-
-# person10_a_trl <- filter(trl_dat, observer == 10, session == 'a')
-# person11_a_trl <- filter(trl_dat, observer == 11, session == 'a')
-# person10_a_trl$observer <- 11
-# person11_a_trl$observer <- 10
-# trl_dat <- filter(trl_dat, !(observer == 10 & session == 'a'))
-# trl_dat <- filter(trl_dat, !(observer == 11 & session == 'a'))
-# trl_dat <- rbind(trl_dat, person10_a_trl, person11_a_trl)
-
-
 # -----------------------------------------------------------------------------
 # look at accuracy 
 # -----------------------------------------------------------------------------
@@ -46,8 +27,10 @@ acc_dat <- select(acc_dat, -nTrials)
 plt <- ggplot(acc_dat, aes(x = targSide, y = accuracy, fill = session))
 plt <- plt + geom_bar(stat = "identity", position = position_dodge()) 
 plt <- plt + scale_x_discrete(name = "target condition")
+plt <- plt + scale_y_continuous(breaks = c(0,1))
 plt <- plt + facet_wrap( ~ observer)
 plt <- plt + theme_bw() + scale_fill_ptol()
+plt <- plt + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
 ggsave("scratch/acc_by_session_by_person.pdf", width=2*figXn, height=2*figYn)
 
 # remove people with poor target easy/absent accuracy
