@@ -232,7 +232,7 @@ fixDat$y <- with(fixDat, ifelse(y > -1 & y <1, y, NaN))
 # remove trials which are invalid for one reason or another
 trlDat <- filter(trlDat, responseKey != "Key_x")
 # remove trial with incredible short rt
-trlDat <- filter(trlDat, rt > 100)
+# trlDat <- filter(trlDat, rt > 100)
 
 # now remove excluded trials from fixDat
 incTrials <- with(trlDat, paste(observer, session, trial))

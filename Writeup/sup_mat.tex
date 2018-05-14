@@ -1,8 +1,8 @@
 \documentclass[a4paper, oneside, 11pt, onecolumn]{article}
 
-
+\usepackage{multirow}
 \usepackage{graphicx}
-\usepackage{subfig}
+\usepackage{subfigure}
 \usepackage[round, comma, sort&compress, longnamesfirst]{natbib} 
 \usepackage[left=2cm,top=3cm,right=1.5cm,bottom=2cm,bindingoffset=0.5cm]{geometry}
 \usepackage{enumerate}
@@ -25,8 +25,6 @@
 
 \author{A. D. F. Clarke\thanks{a.clarke@essex.ac.uk}}
  \affil{School of Psychology, University of Essex, UK}
-
-
 
 \maketitle
 
@@ -63,22 +61,66 @@ Interestingly, it was not the same participants who had to be removed in each pa
 \centering
 \small
 \begin{tabular}{cc|c}
- 		&				& Number of participants\\
- 		\hline
-Split-half & Adaptive Choice & \\
-Split-half & Foraging & \\
-Adaptive Choice & Adaptive Choice & \\
-
-
+ 			&					& Number of participants\\
+\hline
+Split-half 	& Adaptive Choice 	& \\
+Split-half 	& Foraging 			& \\
+Adaptive Choice & Foraging 		& \\
 \end{tabular}
-
 \caption{Number of participants available for each comparison}
 \label{tab:num_per_paradigm}
 \end{table*}
 
+\section{Data processing}
 
+\subsection{Split-Half}
 
+179 trials with invalid key responses were removed. After removing data from the five outlier participants (see above), all remaining incorrect trials ($n=2529$) were removed, leaving a total of 16187 trials over 59 participants.
 
+\subsubsection{Reaction Times}
+As expected, reaction times were highly skewed (Figure \ref{fig:splithalf_rt_dists_all}), so were $\log_2$ transformed (in ms units) before the participant means were calculated for each session and target condition (Figure )
+
+\begin{figure}
+\centering
+\subfigure[]{\includegraphics[width=14cm]{../Scripts/lineseg/scratch/rt_dists.pdf}}
+\subfigure[]{\includegraphics[width=14cm]{../Scripts/lineseg/scratch/rt_dists_mean.pdf}}
+\caption{Distribution of reaction times in split-half paradigm.}
+\label{fig:splithalf_rt_dists_all}
+\end{figure}
+
+\subsubsection{Eye movements}
+
+340,138 fixations were recorded. Of these, 7701 fell outside of the stimuli area and were removed. Fixations landing within a vertical strip consisting of $10\%$ of the stimuli's width were classed as \textit{central}. All remaining fixations were then classed as landing on the \textit{homogeneous} or \textit{heterogeneous} half of the stimulus. Initial fixations were not included in the analysis. Numbers of fixations are given in Table \ref{tab:num_fix}.
+
+\begin{table*}
+\centering
+\small
+\begin{tabular}{c|c|r|r|r}
+ 		&	& $1<n$	& $2 \leq n \leq 5$ & $2 \leq n \leq 3$\\
+\hline
+\multirow{3}{*}{easy} 
+& central		& 3931 	& 3689	& \\
+& homogeneous 	& 12452	& 8312 	&\\
+& heterogeneous & 5955	& 3241 	&\\
+\hline
+\multirow{3}{*}{hard} 
+& central		& 3804 	& 2439	& \\
+& homogeneous 	& 8781	& 3188	&	\\
+& heterogeneous & 29912	& 5294	&\\
+\hline
+\multirow{3}{*}{absent} 
+& central		& 16885 & 8303	& \\
+& homogeneous 	& 41356	& 12576	&\\
+& heterogeneous & 192348& 5763	&\\
+\hline
+\end{tabular}
+\caption{Number of fixations recorded for each condition.}
+\label{tab:num_fix}
+\end{table*}
+
+\subsection{Adaptive Choice}
+
+\subsection{Foraging}
 
 
 

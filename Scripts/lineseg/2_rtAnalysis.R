@@ -29,9 +29,9 @@ plt <- plt + geom_bar(stat = "identity", position = position_dodge())
 plt <- plt + scale_x_discrete(name = "target condition")
 plt <- plt + scale_y_continuous(breaks = c(0,1))
 plt <- plt + facet_wrap( ~ observer)
-plt <- plt + theme_bw() + scale_fill_ptol()
+plt <- plt + theme_bw() + scale_fill_ptol() + theme(legend.position="top")
 plt <- plt + theme(axis.text.x  = element_text(angle=90, vjust=0.5))
-ggsave("scratch/acc_by_session_by_person.pdf", width=2*figXn, height=2*figYn)
+ggsave("scratch/acc_by_session_by_person.pdf", width=2*figXn, height=2.5*figYn)
 
 # remove people with poor target easy/absent accuracy
 acc_dat <- filter(acc_dat, !(observer %in% c(4, 21, 33, 56, 58)))
@@ -94,6 +94,17 @@ trl_dat <- filter(trl_dat, accuracy == 1)
 # look at RT 
 # -----------------------------------------------------------------------------
 
+# look at distributions
+
+plt <- ggplot(trl_dat, aes(x = rt))
+plt <- plt + geom_histogram(binWidth = 1)
+plt <- plt + facet_wrap(~ targSide)
+plt <- plt + theme_bw()
+plt <- plt + scale_x_continuous(name = "reaction time (seconds)", limits = c(0, 50000))
+ggsave("scratch/rt_dists.pdf", width = 2*figXn, height = figYn)
+
+
+
 plt <- ggplot(trl_dat, aes(x = rt/1000, fill = targSide)) 
 plt <- plt + geom_density(alpha=0.7)
 plt <- plt + scale_fill_ptol(name = "target position") + theme_hc()
@@ -115,6 +126,25 @@ rt_dat <- (filter(trl_dat)
 		sderr = sd(log(rt,2)/sqrt(n)),
 		upper = logrt + 1.96*sderr,
 		lower = logrt - 1.96*sderr))
+
+
+plt <- ggplot(rt_dat, aes(x = logrt))
+plt <- plt + geom_histogram(binwidth = 0.25)
+plt <- plt + facet_wrap(~ targSide)
+plt <- plt + theme_bw()
+plt <- plt + scale_x_continuous(name = "mean log2 reaction time (ms)")
+ggsave("scratch/rt_dists_mean.pdf", width = 2*figXn, height = figYn)
+
+
+
+plt <- ggplot(trl_dat, aes(x = logrt/1000))
+plt <- plt + geom_histogram(binWidth = 1)
+plt <- plt + facet_wrap(~ targSide)
+plt <- plt + theme_bw()
+plt <- plt + scale_x_continuous(name = "reaction time (seconds)", limits = c(0, 50))
+ggsave("scratch/rt_dists.pdf", width = 2*figXn, height = figYn)
+
+
 
 rt_dat <- select(rt_dat, observer, session, targSide, logrt, lower, upper)
 rt_dat %>% unite(logrt, logrt, lower, upper) -> rt_dat
@@ -172,55 +202,5 @@ ggsave("scratch/rt_correlation.pdf", width=figYn, height=figYn)
 ggsave("scratch/rt_correlation.png", width=figYn, height=figYn)
 plt
 
-
-# # Look at search efficiency 
-
-# rt_dat <- (filter(trl_dat) 
-# 	%>% group_by(observer, session, targSide)
-# 	%>% summarise(
-# 		median_rt = median(rt),
-# 		n = length(rt)))
-
-# acc_dat <- select(acc_dat, observer, session, targSide, accuracy)
-# rt_dat  <- select(rt_dat, observer, session, targSide, median_rt)
-# dat <- merge(acc_dat, rt_dat)
-
-# dat$eff <- dat$median_rt / dat$accuracy
-# dat <- select(dat, observer, session, targSide, eff)
-# dat <- spread(dat, key = session, value = eff )
-
-
-# easy_r = round(with(filter(dat, targSide == "easy"), 
-# 	cor.test(a, b)$estimate),2)
-
-# hard_r = round(with(filter(dat, targSide == "hard"), 
-# 	cor.test(a, b)$estimate),2)
-
-# absent_r = round(with(filter(dat, targSide == "absent"), 
-# 	cor.test(a, b)$estimate),2)
-
-# r_df = tibble(
-# 	text = c(
-# 		paste("r = ", easy_r), paste("r = ", hard_r), paste("r = ", absent_r) ),
-# 	x = c(9.5, 10.55, 13.75), y = c(10.25, 11.5, 11.25), targSide = c("easy", "hard", "absent"))
-
-
-# plt <- ggplot(dat, aes(
-# 	x = a,#, ,
-# 	y = b,#, ,
-# 	colour=targSide))
-# plt <- plt + geom_abline(slope=1, linetype=2)
-# plt <- plt + geom_point() 
-# # plt <- plt + geom_errorbar(size=0.25, aes(ymin = b_lower, ymax = b_upper)) + geom_errorbarh(size=0.25, aes(xmin = a_lower, xmax = a_upper))
-# plt <- plt + geom_smooth(method="lm", se=FALSE)
-# plt <- plt + theme_minimal() + scale_color_ptol(name = "target condition")
-# plt <- plt + scale_x_continuous("session a: log reaction time (ms)")
-# plt <- plt + scale_y_continuous("session b: log reaction time (ms)")
-# plt <- plt + theme(
-# 	legend.justification = c(0,1), 
-# 	legend.position = c(0,1),
-# 	legend.background = element_rect(fill="white"))
-# plt <- plt + geom_text(data=r_df, aes(x = x, y = y, label = text, colour=targSide), show.legend = FALSE)
-# ggsave("scratch/eff_correlation.pdf", width=figYn, height=figYn)
 
 
