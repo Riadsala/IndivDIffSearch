@@ -85,14 +85,14 @@ The study consists of three different paradigms from the visual search literatur
 \label{fig:exampleStimuli}
 \end{figure}
 
-The display was presented on a 17-inch CRT monitor with a resolution of $1024 \times 
-768$. Stimulus generation, presentation and data collection were controlled by MATLAB and psychophysics toolbox \cite{brainard1997} run on a Powermac. 
+The display was presented on a 17-inch CRT monitor with a resolution of $1400 \times 
+1050$. However, due to a miscommunication, some participants (\textbf{get exact numbers from script}) were run at $1024 \times 768$ or $1600 \times 1200$. Stimulus generation, presentation and data collection were controlled by MATLAB and psychophysics toolbox \cite{brainard1997} run on a Powermac. 
 
 A brief overview of each paradigm is given below, with full details in \textit{supplementary materials}. 
 
 \subsubsection{Split-half Array Search}
 
-Stimuli consisted of arrays of black oriented line segments against a grey background. The target was oriented $45^{\circ}$ clockwise, while the distractor items had a random orientation with a mean of $45^{\circ}$ anti-clockwise. The variance was low ($18^{\circ}$) on one half of the display to create a homogeneous texture, and high ($95^{\circ}$) on the other side to create a heterogeneous texture. This means that when the target is present on the homogeneous side of the stimulus, it can be easily be detected with peripheral vision, but when it is in the heterogeneous half, it is much harder to detect. There were a total of 160 trials and homo- and heterogeneous sides of the display were randomly varied from trial to trial. The position of the dominant eye was recorded using a desktop-mounted EyeLink 1000 eye tracker (SR Research, Canada).
+Stimuli consisted of arrays of black oriented line segments against a grey background. Each line segment had a length of $\approx$$1.6^{\circ}$ of visual angle irrespective of screen resolution. The target was oriented $45^{\circ}$ clockwise, while the distractor items had a random orientation with a mean of $45^{\circ}$ anti-clockwise. The variance was low ($18^{\circ}$) on one half of the display to create a homogeneous texture, and high ($95^{\circ}$) on the other side to create a heterogeneous texture. This means that when the target is present on the homogeneous side of the stimulus, it can be easily be detected with peripheral vision, but when it is in the heterogeneous half, it is much harder to detect. There were a total of 160 trials and homo- and heterogeneous sides of the display were randomly varied from trial to trial. The position of the dominant eye was recorded using a desktop-mounted EyeLink 1000 eye tracker (SR Research, Canada). 
 
 This paradigm was carried out twice to give us an estimate of how consistent participants are in their search strategy over time. The two sessions were identical.
 
@@ -100,7 +100,25 @@ This paradigm was carried out twice to give us an estimate of how consistent par
 
 The ACVS was based on the task described in \cite{irons-leber2016}, with a few changes.
 
-Each search display was composed of 54 small squares (size? What was viewing distance \& screen size?) arranged in three concentric rings around fixation, with 12, 18 and 24 items in the inner, middle and outer rings respectively. Of the 54 squares, 13 were red, 13 were blue, 14 were green and 14 were "variable". Variable distractors change colours from trial-to-trial according to a 24 trial cyclical pattern: the distractors would be red for 5 trials (called a "red plateau"), then across a period of 7 trials, they would change colour from almost red to magenta (at the fourth trial in the transition) to almost blue. The variable distractor would then be blue for 5 trials (blue plateau), and then transition back from almost blue through magenta to almost red. 
+% These are the sizes of the boxes for each resolution, I'm not sure how best to incorporate this into the text though... here's a table for the meantime;
+\begin{table*}
+	\centering
+	\small
+	\begin{tabular}{cc|c}
+	    Experiment	    &	Resolution	     & Size of stim \\
+		\hline
+		Adaptive Choice & $1024 \times 768$  & $\approx$$1.8^{\circ}$ \\
+		Adaptive Choice & $1400 \times 1050$ & $\approx$$1.3^{\circ}$ \\
+		Adaptive Choice & $1600 \times 1200$ & $\approx$$1.1^{\circ}$ \\
+		Foraging        & $1024 \times 768$  & $\approx$$1^{\circ}$ \\
+		Foraging        & $1400 \times 1050$ & $\approx$$0.7^{\circ}$ \\
+		Foraging        & $1600 \times 1200$ & $\approx$$0.6^{\circ}$ \\
+	\end{tabular}
+	\caption{Size of stimuli for each experiment and screen resolution}
+	\label{tab:Screen_Res}
+\end{table*}
+
+Each search display was composed of 54 small squares (size? What was viewing distance \& screen size?) arranged in three concentric rings around fixation, with 12, 18 and 24 items in the inner, middle and outer rings respectively. The same screen was used as in the Split-half Array Search, however, due to changes of screen resolution, the size of the squares changed. Participants, were sat $\approx$47cm from the screen. Of the 54 squares, 13 were red, 13 were blue, 14 were green and 14 were "variable". Variable distractors change colours from trial-to-trial according to a 24 trial cyclical pattern: the distractors would be red for 5 trials (called a "red plateau"), then across a period of 7 trials, they would change colour from almost red to magenta (at the fourth trial in the transition) to almost blue. The variable distractor would then be blue for 5 trials (blue plateau), and then transition back from almost blue through magenta to almost red. 
 
 A white digit appeared inside each square. Two targets - a red square and a blue square each with a digit between 2 and 5 - were embedded in every search display. The two target digits were always different, to enable us to distinguish the chosen target. The remaining red, blue and variable squares all contained digits between 6-9. Green squares could contain any digit between 2-9. The location of the targets and distractor within the search display were randomized on each trial.
 
@@ -174,6 +192,7 @@ The results above demonstrate that we have successfully replicated the previous 
 \subfigure[][]{\includegraphics[width=3.25cm]{../Scripts/scratch/ls_v_ac_mean_log2rt.pdf}}
 \subfigure[][]{\includegraphics[width=3.25cm]{../Scripts/scratch/ls_v_ac_opt.pdf}}
 \caption{Correlation between the split-half and adaptive choice paradigms for (a) reaction times and (b) optimal behaviour.}
+\label{fig:between_para_rt}
 \end{figure}
 
 Given the low correlations between reaction times, it seems unlikely that we will find that individuals who search efficiently and optimally in one paradigm will search well in another (the original motivation for our study). The analysis supports this hypothesis. For example, the correlation between the proportion of fixations to the heterogeneous side of the display in the split-half paradigm, and proportion of optimal targets found in the adaptive choice task is $r=-0.03$. Further results are presented in supplementary materials. 

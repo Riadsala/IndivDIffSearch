@@ -142,7 +142,12 @@ for (pp in participants) {
 }
 
 rm(ss, pp, filename)
- 
+# get number of participants that did each resolution 
+temp <- resDat %>%
+  group_by(xRes,session) %>%
+  summarise(num_participants = n())
+
+
 ##### Tidy up trlDat
 
 # convert some things to factors
