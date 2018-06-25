@@ -3,9 +3,10 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript.aux
 The style file: plain.bst
 Database file #1: literature.bib
+Warning--I didn't find a database entry for "irons-leber2018"
 You've used 14 entries,
             2118 wiz_defined-function locations,
-            594 strings with 6616 characters,
+            595 strings with 6631 characters,
 and the built_in function-call counts, 4837 in all, are:
 = -- 476
 > -- 233
@@ -44,3 +45,4 @@ warning$ -- 0
 while$ -- 50
 width$ -- 16
 write$ -- 155
+(There was 1 warning)
