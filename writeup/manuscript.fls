@@ -147,7 +147,6 @@ INPUT ./manuscript.out
 INPUT ./manuscript.out
 OUTPUT manuscript.out
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplb8t.tfm
 INPUT OPENSCIENCE.pdf
 INPUT ./OPENSCIENCE.pdf
 INPUT ./OPENSCIENCE.pdf
@@ -269,14 +268,10 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/adobe/palatino/pplr8t.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT figures/split-half.png
 INPUT ./figures/split-half.png
 INPUT ./figures/split-half.png
@@ -289,6 +284,8 @@ INPUT ./figures/foraging.png
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
@@ -298,9 +295,12 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplb8t.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplri8t.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/adobe/palatino/pplri8t.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf

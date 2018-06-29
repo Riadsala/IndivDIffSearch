@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  25 JUN 2018 14:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  29 JUN 2018 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -520,12 +520,12 @@ Underfull \hbox (badness 1436) in paragraph at lines 45--46
 
 
 Underfull \hbox (badness 3428) in paragraph at lines 45--46
-\T1/ppl/m/n/9 tired-ness [[][]10[][]], information-processing abil-ity, speed-
+\T1/ppl/m/n/9 tired-ness [[][]11[][]], information-processing abil-ity, speed-
  []
 
 
 Underfull \hbox (badness 4819) in paragraph at lines 45--46
-\T1/ppl/m/n/9 search strate-gies [[][]3[][]]. Al-though their ex-is-tence has
+\T1/ppl/m/n/9 search strate-gies [[][]2[][]]. Al-though their ex-is-tence has
  []
 
 
@@ -559,94 +559,78 @@ Underfull \hbox (badness 1609) in paragraph at lines 47--48
  []
 
 
-Underfull \hbox (badness 3668) in paragraph at lines 49--50
-[]\T1/ppl/m/n/9 A strik-ing ex-am-ple of the ef-fect of strat-egy is
+Underfull \hbox (badness 4168) in paragraph at lines 47--48
+\T1/ppl/m/n/9 dif-fer-ences. Search strat-egy can also vary in how
  []
 
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 55.
-
-LaTeX Warning: Citation `irons-leber2018' on page 1 undefined on input line 55.
-
-
-
-Underfull \hbox (badness 1147) in paragraph at lines 55--56
-\T1/ppl/m/n/9 Ar-rays [[][]12[][]] who aimed to dis-crim-i-nate be-tween the
- []
-
-<OPENSCIENCE.pdf, id=98, 153.57375pt x 33.12375pt>
+<OPENSCIENCE.pdf, id=91, 153.57375pt x 33.12375pt>
 File: OPENSCIENCE.pdf Graphic file (type pdf)
  <use OPENSCIENCE.pdf>
-Package pdftex.def Info: OPENSCIENCE.pdf used on input line 61.
+Package pdftex.def Info: OPENSCIENCE.pdf used on input line 51.
 (pdftex.def)             Requested size: 153.57336pt x 33.12366pt.
 
-Overfull \hbox (11.30959pt too wide) in paragraph at lines 61--61
+Overfull \hbox (11.30959pt too wide) in paragraph at lines 51--51
 [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.47508pt on input line 61.
+(Font)              scaled to size 11.47508pt on input line 51.
 
-Overfull \hbox (13.63518pt too wide) in paragraph at lines 61--61
+Overfull \hbox (13.63518pt too wide) in paragraph at lines 51--51
 [][]\T1/phv/m/n/13.5 rsos.royalsocietypublishing.org[] 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 15.30011pt on input line 61.
-<openaccesslogo_bw.pdf, id=100, 20.075pt x 32.12pt>
+(Font)              scaled to size 15.30011pt on input line 51.
+<openaccesslogo_bw.pdf, id=93, 20.075pt x 32.12pt>
 File: openaccesslogo_bw.pdf Graphic file (type pdf)
-
-<use openaccesslogo_bw.pdf>
-Package pdftex.def Info: openaccesslogo_bw.pdf used on input line 61.
+ <use openaccesslogo_bw.pdf>
+Package pdftex.def Info: openaccesslogo_bw.pdf used on input line 51.
 (pdftex.def)             Requested size: 20.07494pt x 32.1199pt.
 
-<RS_crossmark_logo.pdf, id=101, 37.1508pt x 46.1725pt>
+<RS_crossmark_logo.pdf, id=94, 37.1508pt x 46.1725pt>
 File: RS_crossmark_logo.pdf Graphic file (type pdf)
 
 <use RS_crossmark_logo.pdf>
-Package pdftex.def Info: RS_crossmark_logo.pdf used on input line 61.
+Package pdftex.def Info: RS_crossmark_logo.pdf used on input line 51.
 (pdftex.def)             Requested size: 37.15071pt x 46.17236pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 61.
+(Font)              scaled to size 8.50006pt on input line 51.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.50006pt on input line 61.
-LaTeX Font Info:    Try loading font information for U+msa on input line 61.
+(Font)              scaled to size 8.50006pt on input line 51.
+LaTeX Font Info:    Try loading font information for U+msa on input line 51.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 61.
+LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+euex on input line 61.
+LaTeX Font Info:    Try loading font information for U+euex on input line 51.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueuex.fd
 File: ueuex.fd 2013/01/14 v3.01 Euler extra symbols
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 17.00012pt on input line 61.
+(Font)              scaled to size 17.00012pt on input line 51.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.90009pt on input line 61.
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 61.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 61.
+(Font)              scaled to size 11.90009pt on input line 51.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 51.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 51.
 
-Overfull \hbox (170.71654pt too wide) in paragraph at lines 61--61
+Overfull \hbox (170.71654pt too wide) in paragraph at lines 51--51
 [] 
  []
 
 
-Overfull \vbox (250.7527pt too high) detected at line 61
- []
-
-
-Overfull \hbox (11.48364pt too wide) in paragraph at lines 61--61
+Overfull \hbox (11.48364pt too wide) in paragraph at lines 51--51
 $[]$|  $[]$ 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.25003pt on input line 61.
+(Font)              scaled to size 4.25003pt on input line 51.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -655,26 +639,26 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-<RSOS_Pubs_Logo_Line_CMYK.pdf, id=103, 153.57375pt x 20.075pt>
+<RSOS_Pubs_Logo_Line_CMYK.pdf, id=96, 153.57375pt x 20.075pt>
 File: RSOS_Pubs_Logo_Line_CMYK.pdf Graphic file (type pdf)
 
 <use RSOS_Pubs_Logo_Line_CMYK.pdf>
-Package pdftex.def Info: RSOS_Pubs_Logo_Line_CMYK.pdf used on input line 62.
+Package pdftex.def Info: RSOS_Pubs_Logo_Line_CMYK.pdf used on input line 52.
 (pdftex.def)             Requested size: 153.57336pt x 20.07494pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.37505pt on input line 62.
-LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 62.
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 62.
+(Font)              scaled to size 6.37505pt on input line 52.
+LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 52.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 52.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <7.5> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.4625pt on input line 62.
+(Font)              scaled to size 4.4625pt on input line 52.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 3.18752pt on input line 62.
+(Font)              scaled to size 3.18752pt on input line 52.
 
 Overfull \hbox (14.27687pt too wide) has occurred while \output is active
 []  [][][][][][] 
@@ -685,62 +669,56 @@ Overfull \hbox (14.27687pt too wide) has occurred while \output is active
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./OPENS
 CIENCE.pdf> <./openaccesslogo_bw.pdf> <./RS_crossmark_logo.pdf> <./RSOS_Pubs_Lo
-go_Line_CMYK.pdf>] <figures/split-half.png, id=145, 1009.7725pt x 734.745pt>
+go_Line_CMYK.pdf>] <figures/split-half.png, id=134, 1009.7725pt x 734.745pt>
 File: figures/split-half.png Graphic file (type png)
 
 <use figures/split-half.png>
-Package pdftex.def Info: figures/split-half.png used on input line 86.
+Package pdftex.def Info: figures/split-half.png used on input line 58.
 (pdftex.def)             Requested size: 117.3001pt x 85.35826pt.
 
-<figures/adaptive.png, id=147, 778.91pt x 786.94pt>
+<figures/adaptive.png, id=136, 778.91pt x 786.94pt>
 File: figures/adaptive.png Graphic file (type png)
  <use figures/adaptive.png>
-Package pdftex.def Info: figures/adaptive.png used on input line 87.
+Package pdftex.def Info: figures/adaptive.png used on input line 59.
 (pdftex.def)             Requested size: 84.47995pt x 85.35826pt.
 
-<figures/foraging.png, id=148, 1606.0pt x 933.4875pt>
+<figures/foraging.png, id=137, 1606.0pt x 933.4875pt>
 File: figures/foraging.png Graphic file (type png)
 
 <use figures/foraging.png>
-Package pdftex.def Info: figures/foraging.png used on input line 88.
+Package pdftex.def Info: figures/foraging.png used on input line 60.
 (pdftex.def)             Requested size: 146.83728pt x 85.35826pt.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.22505pt on input line 89.
+(Font)              scaled to size 7.22505pt on input line 61.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.22505pt on input line 89.
+(Font)              scaled to size 7.22505pt on input line 61.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8.5> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 89.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 61.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 7.22505pt on input line 89.
+(Font)              scaled to size 7.22505pt on input line 61.
 
-Underfull \hbox (badness 10000) detected at line 89
+Underfull \hbox (badness 10000) detected at line 61
 []
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.65005pt on input line 95.
+(Font)              scaled to size 7.65005pt on input line 84.
 
 Overfull \vbox (21.4162pt too high) has occurred while \output is active []
 
 
 [2 <./figures/split-half.png> <./figures/adaptive.png> <./figures/foraging.png>
 ]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 94.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 10.20007pt on input line 98.
 
-
-LaTeX Warning: Citation `irons-leber2018' on page 3 undefined on input line 106
-.
-
-
 Underfull \hbox (badness 10000) detected at line 123
 []
- []
-
-
-Underfull \hbox (badness 1048) in paragraph at lines 136--137
-\T1/ppl/m/n/9 The for-ag-ing task was based on [[][]9[][]] and [[][]8[][]]. Par
--tic-i-pants com-pleted the fea-ture for-ag-ing
  []
 
 
@@ -752,14 +730,14 @@ Overfull \vbox (21.4162pt too high) has occurred while \output is active []
 
 
 [4]
-<../Scripts/lineseg/scratch/acc_correlation.pdf, id=186, 180.675pt x 180.675pt>
+<../Scripts/lineseg/scratch/acc_correlation.pdf, id=189, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/acc_correlation.pdf Graphic file (type pdf)
 <use ../Scripts/lineseg/scratch/acc_correlation.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/acc_correlation.pdf used on
  input line 179.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/rt_correlation.pdf, id=187, 180.675pt x 180.675pt>
+<../Scripts/lineseg/scratch/rt_correlation.pdf, id=190, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/rt_correlation.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/rt_correlation.pdf>
@@ -767,7 +745,7 @@ Package pdftex.def Info: ../Scripts/lineseg/scratch/rt_correlation.pdf used on
 input line 180.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/strat_corr.pdf, id=188, 180.675pt x 180.675pt>
+<../Scripts/lineseg/scratch/strat_corr.pdf, id=191, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/strat_corr.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/strat_corr.pdf>
@@ -775,7 +753,7 @@ Package pdftex.def Info: ../Scripts/lineseg/scratch/strat_corr.pdf used on inpu
 t line 181.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf, id=189, 180.675pt x 1
+<../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf, id=192, 180.675pt x 1
 80.675pt>
 File: ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf Graphic file (typ
 e pdf)
@@ -784,18 +762,13 @@ Package pdftex.def Info: ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pd
 f used on input line 182.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-
-LaTeX Warning: Citation `irons-leber2018' on page 5 undefined on input line 192
-.
-
-
 Overfull \vbox (21.51176pt too high) has occurred while \output is active []
 
 
 [5 <../Scripts/lineseg/scratch/acc_correlation.pdf> <../Scripts/lineseg/scratch
 /rt_correlation.pdf> <../Scripts/lineseg/scratch/strat_corr.pdf> <../Scripts/li
 neseg/scratch/strat_compare_meanlog_rt.pdf>]
-<../Scripts/scratch/ls_v_ac_mean_log2rt.pdf, id=240, 289.08pt x 289.08pt>
+<../Scripts/scratch/ls_v_ac_mean_log2rt.pdf, id=244, 289.08pt x 289.08pt>
 File: ../Scripts/scratch/ls_v_ac_mean_log2rt.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/ls_v_ac_mean_log2rt.pdf>
@@ -803,50 +776,50 @@ Package pdftex.def Info: ../Scripts/scratch/ls_v_ac_mean_log2rt.pdf used on inp
 ut line 205.
 (pdftex.def)             Requested size: 92.47145pt x 92.46779pt.
 
-<../Scripts/scratch/ls_v_ac_opt.pdf, id=241, 289.08pt x 289.08pt>
+<../Scripts/scratch/ls_v_ac_opt.pdf, id=245, 289.08pt x 289.08pt>
 File: ../Scripts/scratch/ls_v_ac_opt.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/ls_v_ac_opt.pdf>
 Package pdftex.def Info: ../Scripts/scratch/ls_v_ac_opt.pdf used on input line 
 206.
 (pdftex.def)             Requested size: 92.47145pt x 92.46779pt.
- (./manuscript.bbl
+
 Overfull \vbox (21.51176pt too high) has occurred while \output is active []
 
 
 [6 <../Scripts/scratch/ls_v_ac_mean_log2rt.pdf> <../Scripts/scratch/ls_v_ac_opt
-.pdf>]
-Underfull \hbox (badness 1360) in paragraph at lines 44--46
+.pdf>] (./manuscript.bbl
+Underfull \hbox (badness 1360) in paragraph at lines 51--53
 []\T1/ppl/m/n/9 Ómar I Jóhan-nes-son, Ian M Thorn-ton, Irene J Smith, An-drey C
 hetverikov, and Arni
  []
 
-) Setting LastPage
+
 Overfull \vbox (21.4162pt too high) has occurred while \output is active []
 
 
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
+[7]) Setting LastPage
+Overfull \vbox (21.51176pt too high) has occurred while \output is active []
+
+
+[8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
  (./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 235.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 235.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 1A041691177ED1480FC3C99129383B02;1451.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 232.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
  ) 
 Here is how much of TeX's memory you used:
- 8449 strings out of 493014
- 122768 string characters out of 6133351
- 215377 words of memory out of 5000000
- 11733 multiletter control sequences out of 15000+600000
+ 8453 strings out of 493014
+ 122829 string characters out of 6133351
+ 215452 words of memory out of 5000000
+ 11734 multiletter control sequences out of 15000+600000
  79712 words of font info for 133 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
- 41i,19n,30p,1164b,406s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,19n,30p,1201b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texli
@@ -861,10 +834,10 @@ pe1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
 w/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palat
 ino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/upl
 ri8a.pfb>
-Output written on manuscript.pdf (7 pages, 544521 bytes).
+Output written on manuscript.pdf (8 pages, 548112 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
- 287 compressed objects within 3 object streams
- 57 named destinations out of 1000 (max. 500000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 297 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
  226 words of extra memory for PDF output out of 10000 (max. 10000000)
 

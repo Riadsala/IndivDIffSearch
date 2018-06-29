@@ -5,12 +5,6 @@ Tatiana~A Amor, Mirko Lukovi{\'c}, Hans~J Herrmann, and Jos{\'e}~S Andrade.
 \newblock Influence of scene structure and content on visual search strategies.
 \newblock {\em Journal of The Royal Society Interface}, 14(132):20170406, 2017.
 
-\bibitem{boot2009}
-Walter~R Boot, Ensar Becic, and Arthur~F Kramer.
-\newblock Stable individual differences in search strategy?: The effect of task
-  demands and motivational factors on scanning strategy in visual search.
-\newblock {\em Journal of Vision}, 9(3):7--7, 2009.
-
 \bibitem{boot2006}
 Walter~R Boot, Arthur~F Kramer, Ensar Becic, Douglas~A Wiegmann, and Tate
   Kubose.
@@ -31,14 +25,27 @@ Alasdair~DF Clarke, Patrick Green, Mike~J Chantler, and Amelia~R Hunt.
 
 \bibitem{dawkins1971}
 Marian Dawkins.
-\newblock Shifts of ‘attention’ in chicks during feeding.
+\newblock Shifts of `attention' in chicks during feeding.
 \newblock {\em Animal Behaviour}, 19(3):575 -- 582, 1971.
+
+\bibitem{gilchrist2006}
+Iain~D Gilchrist and Monika Harvey.
+\newblock Evidence for a systematic component within scan paths in visual
+  search.
+\newblock {\em Visual Cognition}, 14(4-8):704--715, 2006.
+
+\bibitem{irons-leber2018}
+Jessica~L Irons and Andrew~B Leber.
+\newblock Characterizing individual variation in the strategic use of
+  attentional control.
+\newblock {\em Journal of Experimental Psychology: Human Perception and
+  Performance}, pages 1--18, 2016.
 
 \bibitem{irons-leber2016}
 Jessica~L Irons and Andrew~B Leber.
 \newblock Choosing attentional control settings in a dynamically changing
   environment.
-\newblock {\em Attention, Perception, \& Psychophysics}, pages 1--18, 2016.
+\newblock {\em Attention, Perception, \& Psychophysics}, 2018.
 
 \bibitem{johannesson2016}
 {\'O}mar~I J{\'o}hannesson, Ian~M Thornton, Irene~J Smith, Andrey Chetverikov,
@@ -78,5 +85,12 @@ Kenith~V Sobel, Matthew~P Gerrie, Bradley~J Poole, and Michael~J Kane.
 \newblock Individual differences in working memory capacity and visual search:
   The roles of top-down and bottom-up processing.
 \newblock {\em Psychonomic Bulletin \& Review}, 14(5):840--845, 2007.
+
+\bibitem{vogel2008}
+Edward~K Vogel and Edward Awh.
+\newblock How to exploit diversity for scientific gain: Using individual
+  differences to constrain cognitive theory.
+\newblock {\em Current Directions in Psychological Science}, 17(2):171--176,
+  2008.
 
 \end{thebibliography}
