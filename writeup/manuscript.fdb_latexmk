@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex manuscript"] 1530270846 "manuscript.aux" "manuscript.bbl" "manuscript" 1530270848
+["bibtex manuscript"] 1530541647 "manuscript.aux" "manuscript.bbl" "manuscript" 1530541649
   "/usr/local/texlive/2016/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "literature.bib" 1530265131 7780 9386f6b571eca0792330286ca6ed2962 ""
-  "manuscript.aux" 1530270847 5842 ddc01d7d28b1f4bd80a9aeac8c837057 ""
+  "literature.bib" 1530541621 8019 5e22ac932a3ed26999b30e0b4912e960 ""
+  "manuscript.aux" 1530541648 5887 50bbc95841aeed6fa1efa165fd648c11 ""
   "manuscript.bcf" 0 -1 0 ""
   (generated)
-  "manuscript.bbl"
   "manuscript.blg"
-["pdflatex"] 1530270847 "manuscript.tex" "manuscript.pdf" "manuscript" 1530270848
+  "manuscript.bbl"
+["pdflatex"] 1530541647 "manuscript.tex" "manuscript.pdf" "manuscript" 1530541649
   "../Scripts/lineseg/scratch/acc_correlation.pdf" 1526296255 9089 ef5d844876ab82b7d1146e3e351856dd ""
   "../Scripts/lineseg/scratch/rt_correlation.pdf" 1526296186 15491 817e6d441ca9006555df9d2e9439e08b ""
   "../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf" 1525167289 10986 41469cb0733762fc2da3b6bd1d41586e ""
@@ -152,14 +152,14 @@
   "figures/adaptive.png" 1521818849 56825 624e4f0fe0e16b6bd99b2cb313c6b1e9 ""
   "figures/foraging.png" 1521821399 41089 9903e24c44c1c60cb2d69a891bdf6e31 ""
   "figures/split-half.png" 1521818768 315829 fbda65b00e3321404a4bf6ced36804a3 ""
-  "manuscript.aux" 1530270847 5842 ddc01d7d28b1f4bd80a9aeac8c837057 ""
-  "manuscript.bbl" 1530270847 3584 0222702e23c8a65e5d3e49fd657ec146 "bibtex manuscript"
-  "manuscript.out" 1530270847 1451 1a041691177ed1480fc3c99129383b02 ""
-  "manuscript.tex" 1530270845 23564 fc573da1f5b1e684345ed688dd160498 ""
+  "manuscript.aux" 1530541648 5887 50bbc95841aeed6fa1efa165fd648c11 ""
+  "manuscript.bbl" 1530541647 3747 23cfb238bb3ddf07ba4d302bd99ed1d1 "bibtex manuscript"
+  "manuscript.out" 1530541648 1451 1a041691177ed1480fc3c99129383b02 ""
+  "manuscript.tex" 1530541642 23591 d228dcaee4325daf013a4a21353ec0c5 ""
   "openaccesslogo_bw.pdf" 1502201048 13234 9c37d6436deac165264324b958c1144b ""
   "rsos.cls" 1502287564 49103 05b96d9a1fdef2036ff21250993f1be3 ""
   (generated)
   "manuscript.pdf"
-  "manuscript.log"
   "manuscript.aux"
   "manuscript.out"
+  "manuscript.log"
