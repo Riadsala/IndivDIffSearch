@@ -1,10 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{amor2017}
-Tatiana~A Amor, Mirko Lukovi{\'c}, Hans~J Herrmann, and Jos{\'e}~S Andrade.
-\newblock Influence of scene structure and content on visual search strategies.
-\newblock {\em Journal of The Royal Society Interface}, 14(132):20170406, 2017.
-
 \bibitem{boot2006}
 Walter~R Boot, Arthur~F Kramer, Ensar Becic, Douglas~A Wiegmann, and Tate
   Kubose.
@@ -69,7 +64,7 @@ Jiri Najemnik and Wilson~S Geisler.
   search strategy.
 \newblock {\em Journal of Vision}, 8(3):4--4, 2008.
 
-\bibitem{nowakowsak2017}
+\bibitem{nowakowska2017}
 Anna Nowakowska, Alasdair D~F Clarke, and Amelia~R Hunt.
 \newblock Human visual search behaviour is far from ideal.
 \newblock {\em Proceedings of the Royal Society B: Biological Sciences}, 2017.
@@ -103,5 +98,11 @@ Edward~K Vogel and Edward Awh.
   differences to constrain cognitive theory.
 \newblock {\em Current Directions in Psychological Science}, 17(2):171--176,
   2008.
+
+\bibitem{wolfe2015}
+Jeremy Wolfe, Matthew Cain, Krista Ehinger, and Trafton Drew.
+\newblock Guided search 5.0: Meeting the challenge of hybrid search and
+  multiple-target foraging.
+\newblock {\em Journal of vision}, 15(12):1106--1106, 2015.
 
 \end{thebibliography}
