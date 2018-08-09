@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  9 AUG 2018 14:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  9 AUG 2018 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -691,19 +691,25 @@ work-ing mem-ory or trait
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 78--79
+Underfull \hbox (badness 1490) in paragraph at lines 77--78
+\T1/ppl/m/n/9 The meth-ods and planned anal-y-sis for this study were reg-is-te
+red on the Open Sci-ence
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 80--81
 \T1/ppl/m/n/9 64 stu-dents from the Uni-ver-sity of Ab-erdeen took part in this
  study. Par-tic-i-pants were
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.20007pt on input line 88.
+(Font)              scaled to size 10.20007pt on input line 90.
 
 Overfull \vbox (21.51176pt too high) has occurred while \output is active []
 
 
 [3]
-Underfull \hbox (badness 10000) detected at line 113
+Underfull \hbox (badness 10000) detected at line 115
 []
  []
 
@@ -716,37 +722,58 @@ Overfull \vbox (21.51176pt too high) has occurred while \output is active []
 
 
 [5]
-<../Scripts/lineseg/scratch/acc_correlation.pdf, id=201, 180.675pt x 180.675pt>
+<../Scripts/lineseg/scratch/acc_correlation.pdf, id=200, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/acc_correlation.pdf Graphic file (type pdf)
 <use ../Scripts/lineseg/scratch/acc_correlation.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/acc_correlation.pdf used on
- input line 169.
+ input line 173.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/rt_correlation.pdf, id=202, 180.675pt x 180.675pt>
+<../Scripts/lineseg/scratch/rt_correlation.pdf, id=201, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/rt_correlation.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/rt_correlation.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/rt_correlation.pdf used on 
-input line 170.
+input line 174.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/strat_corr.pdf, id=203, 180.675pt x 180.675pt>
+<../Scripts/lineseg/scratch/strat_corr.pdf, id=202, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/strat_corr.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/strat_corr.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/strat_corr.pdf used on inpu
-t line 171.
+t line 175.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf, id=204, 180.675pt x 1
+<../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf, id=203, 180.675pt x 1
 80.675pt>
 File: ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf Graphic file (typ
 e pdf)
  <use ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pd
-f used on input line 172.
+f used on input line 176.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
+
+<../Scripts/adaptchoice/AC_OptCh_x_SwRate.png, id=210, 803.0pt x 803.0pt>
+File: ../Scripts/adaptchoice/AC_OptCh_x_SwRate.png Graphic file (type png)
+
+<use ../Scripts/adaptchoice/AC_OptCh_x_SwRate.png>
+Package pdftex.def Info: ../Scripts/adaptchoice/AC_OptCh_x_SwRate.png used on i
+nput line 190.
+(pdftex.def)             Requested size: 92.47145pt x 92.47171pt.
+
+<../Scripts/adaptchoice/AC_groupplot.pdf, id=211, 614.295pt x 794.97pt>
+File: ../Scripts/adaptchoice/AC_groupplot.pdf Graphic file (type pdf)
+
+<use ../Scripts/adaptchoice/AC_groupplot.pdf>
+Package pdftex.def Info: ../Scripts/adaptchoice/AC_groupplot.pdf used on input 
+line 191.
+(pdftex.def)             Requested size: 92.47145pt x 119.6649pt.
+
+Underfull \hbox (badness 10000) detected at line 192
+[]
+ []
+
 
 Overfull \vbox (21.51176pt too high) has occurred while \output is active []
 
@@ -754,26 +781,44 @@ Overfull \vbox (21.51176pt too high) has occurred while \output is active []
 [6 <../Scripts/lineseg/scratch/acc_correlation.pdf> <../Scripts/lineseg/scratch
 /rt_correlation.pdf> <../Scripts/lineseg/scratch/strat_corr.pdf> <../Scripts/li
 neseg/scratch/strat_compare_meanlog_rt.pdf>]
-<../Scripts/scratch/ls_v_ac_mean_log2rt.pdf, id=256, 289.08pt x 289.08pt>
+<../Scripts/foraging/FG_IndivDiffsFig.png, id=258, 1405.25pt x 803.0pt>
+File: ../Scripts/foraging/FG_IndivDiffsFig.png Graphic file (type png)
+
+<use ../Scripts/foraging/FG_IndivDiffsFig.png>
+Package pdftex.def Info: ../Scripts/foraging/FG_IndivDiffsFig.png used on input
+ line 202.
+(pdftex.def)             Requested size: 384.1122pt x 219.49626pt.
+
+Underfull \hbox (badness 10000) detected at line 203
+[]
+ []
+
+
+Overfull \vbox (21.4162pt too high) has occurred while \output is active []
+
+
+[7 <../Scripts/adaptchoice/AC_OptCh_x_SwRate.png> <../Scripts/adaptchoice/AC_gr
+oupplot.pdf> <../Scripts/foraging/FG_IndivDiffsFig.png>]
+<../Scripts/scratch/ls_v_ac_mean_log2rt.pdf, id=274, 289.08pt x 289.08pt>
 File: ../Scripts/scratch/ls_v_ac_mean_log2rt.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/ls_v_ac_mean_log2rt.pdf>
 Package pdftex.def Info: ../Scripts/scratch/ls_v_ac_mean_log2rt.pdf used on inp
-ut line 195.
+ut line 214.
 (pdftex.def)             Requested size: 92.47145pt x 92.46779pt.
 
-<../Scripts/scratch/ls_v_ac_opt.pdf, id=257, 289.08pt x 289.08pt>
+<../Scripts/scratch/ls_v_ac_opt.pdf, id=275, 289.08pt x 289.08pt>
 File: ../Scripts/scratch/ls_v_ac_opt.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/ls_v_ac_opt.pdf>
 Package pdftex.def Info: ../Scripts/scratch/ls_v_ac_opt.pdf used on input line 
-196.
+215.
 (pdftex.def)             Requested size: 92.47145pt x 92.46779pt.
  (./manuscript.bbl
-Overfull \vbox (21.4162pt too high) has occurred while \output is active []
+Overfull \vbox (21.51176pt too high) has occurred while \output is active []
 
 
-[7 <../Scripts/scratch/ls_v_ac_mean_log2rt.pdf> <../Scripts/scratch/ls_v_ac_opt
+[8 <../Scripts/scratch/ls_v_ac_mean_log2rt.pdf> <../Scripts/scratch/ls_v_ac_opt
 .pdf>]
 Underfull \hbox (badness 1360) in paragraph at lines 59--61
 []\T1/ppl/m/n/9 Ómar I Jóhan-nes-son, Ian M Thorn-ton, Irene J Smith, An-drey C
@@ -784,25 +829,25 @@ hetverikov, and Arni
 Overfull \vbox (21.51176pt too high) has occurred while \output is active []
 
 
-[8]) Setting LastPage
+[9]) Setting LastPage
 Overfull \vbox (21.51176pt too high) has occurred while \output is active []
 
 
-[9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
+[10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 247.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 247.
  (./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 247.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 247.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 1A041691177ED1480FC3C99129383B02;1451.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
+(rerunfilecheck)             Checksum: FBA80CEBF0E885DD745F8DA2401B801A;1448.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 247.
  ) 
 Here is how much of TeX's memory you used:
- 8460 strings out of 493014
- 122965 string characters out of 6133351
- 215633 words of memory out of 5000000
- 11737 multiletter control sequences out of 15000+600000
+ 8484 strings out of 493014
+ 123703 string characters out of 6133351
+ 215770 words of memory out of 5000000
+ 11751 multiletter control sequences out of 15000+600000
  78263 words of font info for 131 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
  41i,19n,30p,1463b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -819,10 +864,10 @@ onts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
 w/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palat
 ino/uplri8a.pfb>
-Output written on manuscript.pdf (9 pages, 541541 bytes).
+Output written on manuscript.pdf (10 pages, 753907 bytes).
 PDF statistics:
- 360 PDF objects out of 1000 (max. 8388607)
- 309 compressed objects within 4 object streams
- 66 named destinations out of 1000 (max. 500000)
- 226 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 378 PDF objects out of 1000 (max. 8388607)
+ 321 compressed objects within 4 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

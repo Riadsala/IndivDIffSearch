@@ -1,13 +1,16 @@
 # Fdb version 3
-["bibtex manuscript"] 1533821411 "manuscript.aux" "manuscript.bbl" "manuscript" 1533821466
+["bibtex manuscript"] 1533824729 "manuscript.aux" "manuscript.bbl" "manuscript" 1533825106
   "/usr/local/texlive/2016/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "literature.bib" 1533821377 9398 b8687fbe78516a440c6193f95329c890 ""
-  "manuscript.aux" 1533821466 6103 97016e21b5e544d72ab1acb0874ab1ff ""
+  "literature.bib" 1533824586 9398 ce46c02435c724ca5a185103dfd51280 ""
+  "manuscript.aux" 1533825106 6589 ae4062c906ab68f032c88b5bb85d9592 ""
   "manuscript.bcf" 0 -1 0 ""
   (generated)
-  "manuscript.bbl"
   "manuscript.blg"
-["pdflatex"] 1533821465 "manuscript.tex" "manuscript.pdf" "manuscript" 1533821466
+  "manuscript.bbl"
+["pdflatex"] 1533825105 "manuscript.tex" "manuscript.pdf" "manuscript" 1533825106
+  "../Scripts/adaptchoice/AC_OptCh_x_SwRate.png" 1521816855 76563 c6c55f06378d86acbc803b57d5811c92 ""
+  "../Scripts/adaptchoice/AC_groupplot.pdf" 1499350250 2561 06bb204c799ed42570988e8db25066cb ""
+  "../Scripts/foraging/FG_IndivDiffsFig.png" 1521816855 216364 c28098d8b7111fdb6adfe05cf39f40e2 ""
   "../Scripts/lineseg/scratch/acc_correlation.pdf" 1526296255 9089 ef5d844876ab82b7d1146e3e351856dd ""
   "../Scripts/lineseg/scratch/rt_correlation.pdf" 1526296186 15491 817e6d441ca9006555df9d2e9439e08b ""
   "../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf" 1525167289 10986 41469cb0733762fc2da3b6bd1d41586e ""
@@ -148,14 +151,14 @@
   "figures/adaptive.png" 1521818849 56825 624e4f0fe0e16b6bd99b2cb313c6b1e9 ""
   "figures/foraging.png" 1521821399 41089 9903e24c44c1c60cb2d69a891bdf6e31 ""
   "figures/split-half.png" 1521818768 315829 fbda65b00e3321404a4bf6ced36804a3 ""
-  "manuscript.aux" 1533821466 6103 97016e21b5e544d72ab1acb0874ab1ff ""
-  "manuscript.bbl" 1533821411 4699 f4cdff164374d47160aca2c0dbed67ed "bibtex manuscript"
-  "manuscript.out" 1533821466 1451 1a041691177ed1480fc3c99129383b02 ""
-  "manuscript.tex" 1533821465 26510 b13a9a6a63e9b8ddb4a0d8312420560e ""
+  "manuscript.aux" 1533825106 6589 ae4062c906ab68f032c88b5bb85d9592 ""
+  "manuscript.bbl" 1533824729 4699 06beb341097782cadc787c6560a74dfa "bibtex manuscript"
+  "manuscript.out" 1533825106 1448 fba80cebf0e885dd745f8da2401b801a ""
+  "manuscript.tex" 1533825103 27749 092b91b83a2f174d767f45ec2582728f ""
   "openaccesslogo_bw.pdf" 1502201048 13234 9c37d6436deac165264324b958c1144b ""
   "rsos.cls" 1502287564 49103 05b96d9a1fdef2036ff21250993f1be3 ""
   (generated)
-  "manuscript.out"
-  "manuscript.aux"
-  "manuscript.pdf"
   "manuscript.log"
+  "manuscript.pdf"
+  "manuscript.aux"
+  "manuscript.out"
