@@ -18,6 +18,13 @@ Alasdair~DF Clarke, Patrick Green, Mike~J Chantler, and Amelia~R Hunt.
   a stochastic model.
 \newblock {\em Journal of vision}, 16(7):4--4, 2016.
 
+\bibitem{cornelissen2002}
+Frans~W Cornelissen, Enno~M Peters, and John Palmer.
+\newblock The eyelink toolbox: eye tracking with matlab and the psychophysics
+  toolbox.
+\newblock {\em Behavior Research Methods, Instruments, \& Computers},
+  34(4):613--617, 2002.
+
 \bibitem{dawkins1971}
 Marian Dawkins.
 \newblock Shifts of `attention' in chicks during feeding.
@@ -41,6 +48,12 @@ Jessica~L Irons and Andrew~B Leber.
 \newblock Choosing attentional control settings in a dynamically changing
   environment.
 \newblock {\em Attention, Perception, \& Psychophysics}, 2018.
+
+\bibitem{johannesson2017}
+{\'O}mar~I. J{\'o}hannesson, {\'A}rni Kristj{\'a}nsson, and Ian~M. Thornton.
+\newblock Are foraging patterns in humans related to working memory and
+  inhibitory control?
+\newblock {\em Japanese Psychological Research}, 59(2):152--166.
 
 \bibitem{johannesson2016}
 {\'O}mar~I J{\'o}hannesson, Ian~M Thornton, Irene~J Smith, Andrey Chetverikov,
@@ -91,6 +104,11 @@ Kenith~V Sobel, Matthew~P Gerrie, Bradley~J Poole, and Michael~J Kane.
 Gijsbert Stoet.
 \newblock Sex differences in search and gathering skills.
 \newblock {\em Evolution and Human Behavior}, 32(6):416--422, 2011.
+
+\bibitem{treisman1980}
+Anne~M Treisman and Garry Gelade.
+\newblock A feature-integration theory of attention.
+\newblock {\em Cognitive psychology}, 12(1):97--136, 1980.
 
 \bibitem{vogel2008}
 Edward~K Vogel and Edward Awh.

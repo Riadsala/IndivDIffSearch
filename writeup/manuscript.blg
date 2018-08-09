@@ -1,48 +1,48 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/W32TeX)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript.aux
 The style file: plain.bst
 Database file #1: literature.bib
-Warning--I didn't find a database entry for "nowakowsak2017"
-You've used 18 entries,
+Warning--empty year in johannesson2017
+You've used 21 entries,
             2118 wiz_defined-function locations,
-            622 strings with 7247 characters,
-and the built_in function-call counts, 6089 in all, are:
-= -- 605
-> -- 284
+            640 strings with 7779 characters,
+and the built_in function-call counts, 7136 in all, are:
+= -- 709
+> -- 333
 < -- 1
-+ -- 114
-- -- 94
-* -- 478
-:= -- 1041
-add.period$ -- 54
-call.type$ -- 18
-change.case$ -- 101
++ -- 135
+- -- 110
+* -- 566
+:= -- 1215
+add.period$ -- 63
+call.type$ -- 21
+change.case$ -- 118
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 201
-empty$ -- 464
-format.name$ -- 94
-if$ -- 1228
+cite$ -- 22
+duplicate$ -- 234
+empty$ -- 544
+format.name$ -- 110
+if$ -- 1439
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 18
-newline$ -- 93
-num.names$ -- 36
-pop$ -- 71
+int.to.str$ -- 21
+missing$ -- 21
+newline$ -- 108
+num.names$ -- 42
+pop$ -- 84
 preamble$ -- 1
-purify$ -- 83
+purify$ -- 97
 quote$ -- 0
-skip$ -- 136
+skip$ -- 157
 stack$ -- 0
-substring$ -- 460
-swap$ -- 23
+substring$ -- 545
+swap$ -- 26
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
-warning$ -- 0
-while$ -- 64
-width$ -- 20
-write$ -- 198
+type$ -- 84
+warning$ -- 1
+while$ -- 75
+width$ -- 23
+write$ -- 230
 (There was 1 warning)
