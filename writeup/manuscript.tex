@@ -46,21 +46,21 @@ As is common in cognitive psychology, most visual search literature has focused 
 In the current study, we focus on one source of individual differences in visual search: strategy. By search strategies, we refer to a collection of behaviours that all observers can freely choose from when they search a display. Examples include choosing to adopt a systematic left-to-right and top-to-bottom strategy\cite{gilchrist2006}, or the type of guided search behaviour in which locations that are more likely to contain the target are prioritised\cite{wolfe2015}. 
 \end{fmtext}
 \maketitle
-
+\twocolumn
 A striking example of the effect of strategy is given by Boot and colleagues\cite{boot2006}. They asked participants to monitor a cluttered display for an object changing colour or object onset. Large individual differences were found with respect to the number of saccades participants made while monitoring the stimulus, and this was negatively correlated with detection performance. Proulx\cite{proulx2011} demonstrated that the different weighting between top-down and bottom-up factors in a conjunction search task explained some of the variation in how participants did in an attentional capture task. However, only a third of participants were unaware of the search strategy they employed. 
 
-Eye movement strategies have also been shown to be an important source or individual differences in visual search tasks. Nowakowska, Clarke \& Hunt\cite{nowakowska2017} designed a simple search paradigm (referred to here as the Split-Half Search Array paradigm) to discriminate between optimal\cite{najemnik-geisler2008} and stochastic \cite{clarke2016} search strategies involving arrays of line segments (see Figure \ref{fig:exampleStimuli}. The line segments were arranged such that those on one side of the display all had a very similar orientation, while those on the other side had higher variance. This was done so that if the target appeared on the homogeneous side, it would be highly salient. Trials in which the target appeared on the heterogeneous side of the display would be much harder. With these stimuli, the optimal eye movement strategy is to only search the heterogeneous half of the stimulus, as targets on the homogeneous side can be detected with peripheral vision. While some participants initially searched the displays near optimally, others carried out strategies counter to this, failing to even match the performance of the stochastic searcher. Furthermore, the degree to which they made saccades in line with the optimal search strategy was strongly correlated with their reaction times. 
+Eye movement strategies have also been shown to be an important source or individual differences in visual search tasks. Nowakowska, Clarke \& Hunt\cite{nowakowska2017} designed a simple search paradigm (referred to here as the Split-Half Search Array paradigm) to discriminate between optimal\cite{najemnik-geisler2008} and stochastic \cite{clarke2016} search strategies involving arrays of line segments (see Figure \ref{fig:exampleStimuli}. The line segments were arranged such that those on one side of the display all had a very similar orientation, while those on the other side had higher variance. This was done so that if the target appeared on the homogeneous side, it would be highly salient. Trials in which the target appeared on the heterogeneous side of the display would be much harder. With these stimuli, the optimal eye movement strategy is to only search the heterogeneous half of the stimulus, as targets on the homogeneous side can be detected with peripheral vision. While some participants initially searched the displays near optimally, others carried out strategies counter to this, failing to even match the performance of the stochastic searcher. Furthermore, the degree to which they made saccades in line with the optimal search strategy was strongly correlated with their reaction times. A related version of this paradigm has been used in research in to (simulated) hemianopia\cite{nowakowska2016,nowakowska2018}. \ldots
 
 A similar range of strategies, from random to near-optimal has been found by Irons \& Leber with the Adaptive Choice Visual Search (ACVS) paradigm\cite{irons-leber2016}, designed to explore how feature-based attention is used. This paradigm involves stimuli made up of small coloured boxes (red, blue, green and a fourth colour that varies from red, through purple, to blue and back again) with numerals written inside them (See Figure \ref{fig:exampleStimuli}). The target is a defined as a red or blue box with a numeral between 1 and 4, and on each trial a target of both type is present. The participant's task is to find one of either target as quickly as possible and report the numeral. One trials in which the fourth box colour is red (or close to red), participants should search through the blue boxes and report the blue target, as there will be fewer distracters. As the fourth colour changes to through purple to blue, participants should update their strategy and search for the red target. The results showed that participants varied substantially along two key dimensions: how frequently they used the more effective target feature to search (varying from chance performance to near optimal), and how often they changed search features. Further work has shown that these differences are stable over time (between one and ten days) with test-retest correlations of around $r \approx 0.8$\cite{irons-leber2018}.
 
-\begin{figure}
+\begin{figure*}
 \centering
 \subfigure[][]{\includegraphics[height=3cm]{figures/split-half.png}}
 \subfigure[][]{\includegraphics[height=3cm]{figures/adaptive.png}}
 \subfigure[][]{\includegraphics[height=3cm]{figures/foraging.png}}
-\caption{Example stimulus from the (a) \textit{split-half}, (b) \textit{adaptive choice} and (c) \textit{foraging} paradigms}
+\caption{Example stimulus from the (a) \textit{split-half}, (b) \textit{adaptive choice} and (c) \textit{foraging} paradigms.}
 \label{fig:exampleStimuli}
-\end{figure}
+\end{figure*}
 
 Another example of differences in search strategy comes from the foraging literature \cite{kristjansson2014,johannesson2016}. In this context, foraging is a visual search task in which there are multiple targets on each trial. Participants were asked to search through a set of items from four categories, two of which were classed as targets. In the conjunction condition (i.e. searching for red-horizontal and green-vertical line segments among red-vertical and green-horizontal distracters), most observers searched in runs of one target category or another. This strategy has previously been observers in animal foraging literature \cite{dawkins1971}. However, a sub-set of observers, termed `super-searchers' showed no switch cost. 
 
@@ -68,10 +68,9 @@ Previous research has investigated the relationship between these behaviours to 
 
 A common theme emerging from the studies in the observation that individual strategies vary in their degree of effectiveness or optimality. However, ``visual search'' encompasses a wide range of specific tasks, each tapping into a different aspect of behaviour (e.g. feature-based attention, information sampling). The aim of the present study is to investigate the extent to which individual differences are stable across different visual search paradigms. Are observers who use the optimal strategy in the split-half search arrays also more optimal in the ACVS task? Does it make sense to talk about `super-searchers' who show above average performance in a range of search tasks? Are the super-foragers consistently better or worse than more typical searchers in the other two paradigms? As a secondary question, we will measure the test-retest reliability of the differences found in the split-half array paradigm. 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Methods}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The methods and planned analysis for this study were registered on the Open Science Framework\footnote{insert URL} before data collection started.
 
@@ -92,31 +91,10 @@ Stimuli consisted of arrays of black oriented line segments against a grey backg
 
 This paradigm was carried out twice to give us an estimate of how consistent participants are in their search strategy over time. The two sessions were identical.
 
+
 \subsubsection{Adaptive Choice Visual Search}
 
-The ACVS was based on the task described in \cite{irons-leber2016}, Experiment 1.
-
-% These are the sizes of the boxes for each resolution, I'm not sure how best to incorporate this into the text though... here's a table for the meantime;
-% Thanks! Stim size is not critical for our experiment, so it doesn't matter too much if it's too complicated (just habit to have it in there :)
-\begin{table*}
-	\centering
-	\small
-	\begin{tabular}{cc|c}
-	    Experiment	    &	Resolution	     & Size of stim \\
-		\hline
-		Adaptive Choice & $1024 \times 768$  & $\approx$$1.8^{\circ}$ \\
-		Adaptive Choice & $1400 \times 1050$ & $\approx$$1.3^{\circ}$ \\
-		Adaptive Choice & $1600 \times 1200$ & $\approx$$1.1^{\circ}$ \\
-		Foraging        & $1024 \times 768$  & $\approx$$1^{\circ}$ \\
-		Foraging        & $1400 \times 1050$ & $\approx$$0.7^{\circ}$ \\
-		Foraging        & $1600 \times 1200$ & $\approx$$0.6^{\circ}$ \\
-	\end{tabular}
-	\caption{Size of stimuli for each experiment and screen resolution}
-	\label{tab:Screen_Res}
-\end{table*}
-
-% Let me know if you want me to shift some of this into the Supp
-Each search display was composed of 54 small squares arranged in three concentric rings around fixation, with 12, 18 and 24 items in the inner, middle and outer rings respectively. The same screen was used as in the Split-half Array Search, however, due to changes of screen resolution, the size of the squares changed. Participants, were sat $\approx$47cm from the screen. Of the 54 squares, 13 were red, 13 were blue, 14 were green and 14 were "variable". Variable distractors change colours from trial-to-trial according to a 24 trial cyclical pattern: the distractors would be red for 5 trials (called a "red plateau"), then across a period of 7 trials, they would change colour from almost red to magenta (at the fourth trial in the transition) to almost blue. The variable distractor would then be blue for 5 trials (blue plateau), and then transition back from almost blue through magenta to almost red. 
+The ACVS was based on the task described in \cite{irons-leber2016}, Experiment 1. Each search display was composed of 54 small squares arranged in three concentric rings around fixation, with 12, 18 and 24 items in the inner, middle and outer rings respectively. The same screen was used as in the Split-half Array Search, however, due to changes of screen resolution, the size of the squares changed. Participants, were sat $\approx$47cm from the screen. Of the 54 squares, 13 were red, 13 were blue, 14 were green and 14 were "variable". Variable distractors change colours from trial-to-trial according to a 24 trial cyclical pattern: the distractors would be red for 5 trials (called a "red plateau"), then across a period of 7 trials, they would change colour from almost red to magenta (at the fourth trial in the transition) to almost blue. The variable distractor would then be blue for 5 trials (blue plateau), and then transition back from almost blue through magenta to almost red. 
 
 A white digit appeared inside each square. Two targets - a red square and a blue square each with a digit between 2 and 5 - were embedded in every search display. The two target digits were always different, to enable us to distinguish the chosen target. The remaining red, blue and variable squares all contained digits between 6-9. Green squares could contain any digit between 2-9. The location of the targets and distractor within the search display were randomized on each trial.
 
@@ -134,36 +112,14 @@ In the conjunction foraging task, search displays were composed of both circles 
 
 %% For the assignment of distractors and targets, we generated a two lists of random numbers (1-2 for easy search, and 1-4 for hard search). Pretty sure we did that because counterbalancing became very tricky once you accounted for that as well. 
 
-\subsection{Analysis Plan}
-
-% Structure-wise, would it be easier for the reader to have methods and planned analyses nested under each task?
-
-\subsubsection{Split-half array search}
-
-Only trials with a correct target absent/present response were included in the analysis. All reaction times were $\log_2$ transformed. In order to characterise an individual's behaviour in this task, we will compute the proportion of the first $n$ fixations that were on the heterogeneous (difficult) side of the stimuli, over all correct target absent trials. Previous work\cite{nowakowska2017} demonstrated a strong correlation between this metric (for $n=5$) and reaction times ($r=.53$).
-
-\subsubsection{Attentional Control}
-
-Participants with accuracy more than 3 SD below the group mean were excluded from analyses. For RT analyses, trials with RTs less than 300ms or more than 3 SD about the participant's mean were excluded. 
-
-Two measures of individual strategy use were used: 1) Optimal choices, defined as percent of plateau trials in which the individual chose the optimal target (i.e., the target with the fewest distractors. When the variable distractor was red, the optimal choice was blue, and vice versa), and 2) Switch rate, the percent of trials in which the individual switched target colour (i.e., the colour chosen on trial N was different to the colour chosen on trial N-1).  
-
-\subsubsection{Conjunction Foraging}
-
-Only completed, accurate trials were analysed. RTs were defined across the entire trial (i.e., from the start of the trial until the final target was collected). The main measure of interest was average run length per trial. A run was defined as a succession of one or more of the same target type, which was followed and preceded by the other target or no target. The average run length was the average number of target selections in a run. 
-
-\subsection{Exploratory Analysis}
-
-We will carry out additional analysis, above and beyond what has been documented above, but the exact nature of this will be contingent on the nature of the results. Something like PCA may be interesting. 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Replication of each paradigm}
 
 \subsubsection{Split-half Array Search}
-Our results are broadly in line with \cite{nowakowska2017}. Some participants performed exceptionally poorly and were removed from further analysis (full details given in the \textit{supplementary materials}).
+Our results are in line with the original split-half array study\cite{nowakowska2017}. Only trials with a correct target absent/present response were included in the analysis. Some participants performed exceptionally poorly and were removed from further analysis (full details given in the \textit{supplementary materials}). All reaction times were $\log_2$ transformed. In order to characterise an individual's behaviour in this task, we will compute the proportion of the first $n$ fixations that were on the heterogeneous (difficult) side of the stimuli, over all correct target absent trials. Previous work\cite{nowakowska2017} demonstrated a strong correlation between this metric (for $n=5$) and reaction times ($r=.53$).
 
 The correlation between accuracy and reaction times between the two sessions is shown in Figure \ref{fig:splithalf_summary}(a, b). We can clearly see that there are large differences from one participant to the next in terms of both the proportion of hard targets found, and reaction times. Furthermore, test-retest reliability appears to be reasonable, with Pearson's $r \in [0.65-0.86]$ ($95\%$ confidence interval) for accuracy in finding targets on the hard heterogeneous half of the display. We get similar scores for the correlation between sessions \textit{a} and \textit{b} for heterogeneous targets, ($r \in [0.66-0.87]$), homogeneous targets ($r \in [0.56-0.82]$) and target absent ($r \in [0.65-0.86]$). The reduced correlation for the homogeneous targets is likely due to the restricted range.
 
@@ -182,7 +138,12 @@ We can also look at the initial search strategies adopted by our participants \r
 
 \subsubsection{Adaptive Choice}
 
-The results for the ACVS were consistent with our previous findings \cite{irons-leber2016,irons-leber2018} (see Figure \ref{fig:acvs_summary}). shows that there were wide individual differences in both percent option (range $33.62\%$ – $97.50\%$, $M = 56.99$, $SD = 14.75$) and switch rate (range = $0\% - 56.68\%$, $M = 28.46$, $SD = 13.54$). Although we did not assess it here, good test-retest reliability has been found previously for both percent optimal ($r = .83$) and switch rate ($r = .77$) \cite{irons-leber2016}.
+Participants with accuracy more than 3 SD below the group mean were excluded from analyses. For RT analyses, trials with RTs less than 300ms or more than 3 SD about the participant's mean were excluded. 
+
+Two measures of individual strategy use were used: 1) Optimal choices, defined as percent of plateau trials in which the individual chose the optimal target (i.e., the target with the fewest distractors. When the variable distractor was red, the optimal choice was blue, and vice versa), and 2) Switch rate, the percent of trials in which the individual switched target colour (i.e., the colour chosen on trial N was different to the colour chosen on trial N-1).  
+
+
+The results for the ACVS were consistent with previous findings \cite{irons-leber2016,irons-leber2018} (see Figure \ref{fig:acvs_summary}). shows that there were wide individual differences in both percent option (range $33.62\%$ - $97.50\%$, $M = 56.99$, $SD = 14.75$) and switch rate (range = $0\% - 56.68\%$, $M = 28.46$, $SD = 13.54$). 
 
 \begin{figure}
 \centering
@@ -194,48 +155,40 @@ The results for the ACVS were consistent with our previous findings \cite{irons-
 
 \subsubsection{Conjunction Foraging}
 
-The multiple-target foraging results were also in line previous findings \cite{kristjansson2014,johannesson2016}. As expected, run lengths were shorter for feature foraging ($M = 3.24$, $SD = 3.19$) than conjunction foraging ($M = 10.64$, $SD = 7.01$), $t(55) = 8.03$, $p < .001$ (PREFER DIFFERENT STATS HERE? CI [-9.25,-5.55]) suggesting more frequent foraging for multiple targets concurrently when those targets were defined by features than by conjunctions. However, both showed significant individual variation: Feature run length varied between 1.87 and 20, and conjunction run length varied between 1.00 and 19.67. Figure 4 (?) depicts run length across the trials separately for each individual. Twenty ``super-searchers'' were revealed, identified by short run lengths for both feature and conjunction targets [THAT NUMBER IS JUST BASED ON EYE-BALLING THE FIGURE, BUT WE COULD COME UP WITH SOME SORT OF PRECIOUS CUT OFF – WHAT DO YOU THINK?]. 
+Only completed, accurate trials were analysed. RTs were defined across the entire trial (i.e., from the start of the trial until the final target was collected). The main measure of interest was average run length per trial. A run was defined as a succession of one or more of the same target type, which was followed and preceded by the other target or no target. The average run length was the average number of target selections in a run. 
 
-\begin{figure}
+The multiple-target foraging results were also in line previous findings \cite{kristjansson2014,johannesson2016}. As expected, run lengths were shorter for feature foraging ($M = 3.24$, $SD = 3.19$) than conjunction foraging ($M = 10.64$, $SD = 7.01$), $t(55) = 8.03$, $p < .001$ (PREFER DIFFERENT STATS HERE? CI [-9.25,-5.55]) suggesting more frequent foraging for multiple targets concurrently when those targets were defined by features than by conjunctions. However, both showed significant individual variation: Feature run length varied between 1.87 and 20, and conjunction run length varied between 1.00 and 19.67. Figure \ref{fig:foraging_summary} depicts run length across the trials separately for each individual. Twenty ``super-searchers'' were revealed, identified by short run lengths for both feature and conjunction targets. 
+
+\begin{figure*}
 \centering
 \includegraphics[width=\textwidth]{../Scripts/foraging/FG_IndivDiffsFig.png}
 \caption{What do we want this figure to actually be?}
 \label{fig:foraging_summary}
-\end{figure}
-
+\end{figure*}
 
 \subsection{Correlations Between Paradigms}
 
 The results above demonstrate that we have successfully replicated the previous findings around individual differences in visual search strategy in each of the three paradigms. Furthermore, the split-half paradigm has a test-retest reliability of $r \in [0.65. 0.86]$, similar to that of the ACVS task ($r \in [0.72, 0.9]$), suggesting that the strategies different individuals chose to use in each of these tasks are somewhat stable. Given this, we now investigate the extent to which an individual's performance in one of the tasks tells us about how well they will do in the other two. 
 
 
-The results presented above convincingly demonstrate that there are no strong correlations between the split-half, adaptive choice and foraging visual search paradigms. While we have successfully replicated the range of individual differences found in each of these studies, with a larger sample size than the original papers, the between-paradigm correlations give at most $R^2 = 0.1$, and this is a generous interpretation that would fail to pass the usual criteria for null hypothesis significance testing. Knowing how one person will behave in one of these paradigms apparently tells us very little about how they will perform in the others. This can be contrasted with the relatively high test-retest correlations of  in the split-half paradigm and  for the adaptive choice paradigm\cite{irons-leber2018}. [AM I RIGHT IN THINKING ARNI AND CO HAVE MEASURES FOR THEIR PARADIGM???]
+The results presented in Figure \ref{fig:between_para_rt} convincingly demonstrate that there are no strong correlations between the strategies by observers in split-half, adaptive choice and foraging visual search paradigms\footnote{More comparisons are presented in the \textit{supplementary materials.}}. 
 
 \begin{figure}
 \centering
-\subfigure[][]{\includegraphics[width=3.25cm]{../Scripts/scratch/ls_v_ac_mean_log2rt.pdf}}
 \subfigure[][]{\includegraphics[width=3.25cm]{../Scripts/scratch/ls_v_ac_opt.pdf}}
-\caption{Correlation between the split-half and adaptive choice paradigms for (a) reaction times and (b) optimal behaviour.}
+\subfigure[][]{\includegraphics[width=3.25cm]{../Scripts/scratch/ls_v_ac_sr.pdf}}
+\subfigure[][]{\includegraphics[width=3.25cm]{../Scripts/scratch/ls_v_fg_runlength.pdf}}
+\caption{Correlation between the optimal behaviour in the split-half and (a) adaptive choice paradigms; (b) average run length in the conjunction foraging paradigm; and (b) optimal behaviour in the adaptive choice paradigm and mean run length on the conjunction experiment.}
 \label{fig:between_para_rt}
 \end{figure}
 
+While there is no indication of a relationship between strategies across the different paradigms, perhaps there is still a correlation between the reaction times due to some participants having higher levels of motivation than others, or stable speed-accuracy trade-offs between the different tasks. Differences relating to their information-processing speed and their ability to ignore distractors would also play in to such a correlation.However, as with search strategy, we again find all the correlations to be weak, typically $0.27 < r <0.30$ but positive (Figure \ref{fig:between_para_rt}). None of these correlations are statistically significant ($p>0.05$). Even if we optimistically take all the data together as suggesting a robust correlation in reaction times from paradigm to paradigm, the upper bound of $r=0.30$ means that this correlation only accounts for at best $10\%$\footnote{i.e., $R^2 = 0.3^2 = 0.09$} an individual's performance. 
 
-
-
-
-
-
- As an initial sweep, we look at overall performance in terms of RT (note that this can be influenced not only by strategy, but also by individuals' abilities, such as their information-processing speed and their ability to ignore distractors). Are individuals who are fast on one visual search task fast on another? In all comparisons the correlations are weak, typically $0.27 < r <0.30$ but positive (Figure \ref{fig:between_para_rt}). None of these correlations are statistically significant ($p>0.05$). Even if we optimistically take all the data together as suggesting a robust correlation in reaction times from paradigm to paradigm, the upper bound of $r=0.30$ this correlation only accounts for at best $10\%$\footnote{i.e., $R^2 = 0.3^2 = 0.09$} an individual's performance. 
-
-
-
-[I WONDER IF THIS SHOULD GO BEFORE THE RT CORRELATIONS? SINCE AS YOU SAY, THIS IS THE MAIN AIM OF THE PAPER. THEN RT CORRELATIONS COULD GO AS A SECONDARY AIM] Given the low correlations between reaction times, it seems unlikely that we will find that individuals who search efficiently and optimally in one paradigm will search well in another (the original motivation for our study) [I WOULD BE INCLINED NOT TO SAY THIS, BECAUSE IT SEEMS TO MINIMIZE THE PURPOSE OF LOOKING AT STRATEGY AT ALL. IE IT SUGGESTS THAT ALL OF THE VARIATION IN STRATEGY COULD BE ENCAPSULATED BY RT. BUT THERE ARE OTHER FACTORS THAT ALSO INFLUENCE RT]. The analysis supports this hypothesis. For example, the correlation between the proportion of fixations to the heterogeneous side of the display in the split-half paradigm, and proportion of optimal targets found in the adaptive choice task is $r=-0.03$. Further results are presented in supplementary materials. 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+While we have successfully replicated the range of individual differences found in each of these studies, with a larger sample size than the original papers, the between-paradigm correlations give at most $R^2 = 0.1$, and this is a generous interpretation that would fail to pass the usual criteria for null hypothesis significance testing. Knowing how one person will behave in one of these paradigms apparently tells us very little about how they will perform in the others. This can be contrasted with the relatively high test-retest correlations of  in the split-half paradigm and  for the adaptive choice paradigm\cite{irons-leber2018}. [AM I RIGHT IN THINKING ARNI AND CO HAVE MEASURES FOR THEIR PARADIGM???]
 
 
 

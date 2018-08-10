@@ -72,9 +72,9 @@ plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE, linety
 plt <- plt + theme_bw()
 plt <- plt + scale_x_continuous("split-half: mean log rt (ms)",
    limits = c(8, 14.1), breaks = x_breaks, labels = x_labels, expand = c(0, 0))
-plt <- plt + scale_y_continuous("foraging (conjunction): mean log rt (ms)",
+plt <- plt + scale_y_continuous("foraging (conj.): mean log rt (ms)",
     limits = c(y_breaks[1], y_breaks[3]), breaks = y_breaks, labels = y_labels,expand = c(0, 0))
-plt <- plt + geom_text(label=paste("r =", r_conj), x= 12, y=14.5)
+# plt <- plt + geom_text(label=paste("r =", r_conj), x= 12, y=14.5)
 plt <- plt + coord_cartesian(xlim=c(min(x_breaks),max(x_breaks)+0.2), ylim=c(y_breaks[1],max(y_breaks)))
 plt <- plt + theme(
   panel.grid.major = element_blank(), 
@@ -100,7 +100,7 @@ plt <- plt + scale_x_continuous("adaptive choice: mean log rt (ms)",
     limits = c(x_breaks[1], x_breaks[3]+0.05), breaks = x_breaks, labels = x_labels, expand = c(0, 0))
 plt <- plt + scale_y_continuous("foraging (feature): mean log rt (ms)",
     limits = c(y_breaks[1], y_breaks[3]), breaks = y_breaks, labels = y_labels, expand = c(0, 0))
-plt <- plt + geom_text(label=paste("r =", r_feat), x= 11.1, y= 15)
+# plt <- plt + geom_text(label=paste("r =", r_feat), x= 11.1, y= 15)
 plt <- plt + theme(
   panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank())
@@ -116,7 +116,7 @@ plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE, linety
 plt <- plt + theme_bw()
 plt <- plt + scale_x_continuous("adaptive choice: mean log rt (ms)",
     limits = c(x_breaks[1], x_breaks[3]+0.05), breaks = x_breaks, labels = x_labels, expand = c(0, 0))
-plt <- plt + scale_y_continuous("foraging (conjunction): mean log rt (ms)",
+plt <- plt + scale_y_continuous("foraging (conj.): mean log rt (ms)",
     limits = c(y_breaks[1], y_breaks[3]), breaks = y_breaks, labels = y_labels, expand = c(0, 0))
 plt <- plt + geom_text(label=paste("r =", r_conj), x= 11, y= 15.2)
 plt <- plt + theme(
@@ -137,11 +137,11 @@ plt <- ggplot(dat, aes(x = ls_prop_hetero, y = ac_propOpt))
 plt <- plt + geom_point() 
 plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE, linetype = 0)
 plt <- plt + theme_bw()
-plt <- plt + scale_x_continuous("split-half: prop. hetero. fixations",
+plt <- plt + scale_x_continuous("split-half: prop. hetero. fix.",
 	  limits = c(0, 1), expand = c(0, 0), breaks = c(0,1))
 plt <- plt + scale_y_continuous("adaptive choice: prop. optimal",
 	  limits = c(0, 1), expand = c(0, 0), breaks = c(0,1))
-plt <- plt + geom_text(label=paste("r =", r), x = 0.5, y= 0.25)
+# plt <- plt + geom_text(label=paste("r =", r), x = 0.5, y= 0.25)
 plt <- plt + theme(
   panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank())
@@ -154,10 +154,10 @@ plt <- ggplot(dat, aes(x = ls_prop_hetero, y = ac_switchRate))
 plt <- plt + geom_point() 
 plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE, linetype = 0)
 plt <- plt + theme_bw()
-plt <- plt + scale_x_continuous("split-half: prop. hetero. fixations",
+plt <- plt + scale_x_continuous("split-half: prop. hetero. fix.",
 	  limits = c(0, 1), expand = c(0, 0), breaks = c(0,1))
 plt <- plt + scale_y_continuous("adaptive choice: switch rate")
-plt <- plt + geom_text(label=paste("r =", r), x= 0.25, y=0.18)
+# plt <- plt + geom_text(label=paste("r =", r), x= 0.25, y=0.18)
 plt <- plt + theme(
   panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank())
@@ -173,11 +173,11 @@ plt <- ggplot(dat, aes(x = ls_prop_hetero, y = fg_conj_run_num))
 plt <- plt + geom_point() 
 plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE, linetype = 0)
 plt <- plt + theme_bw()
-plt <- plt + scale_x_continuous("split-half: prop. hetero. fixations",
+plt <- plt + scale_x_continuous("split-half: prop. hetero. fix.",
     limits = c(0, 1), expand = c(0, 0), breaks = c(0,1))
-plt <- plt + scale_y_continuous("foraging (conjunction): number of runs",
+plt <- plt + scale_y_continuous("foraging (conj.): number of runs",
     limits = c(0, 20), expand = c(0, 0))
-plt <- plt + geom_text(label=paste("r =", r), x = 0.25, y= 2)
+# plt <- plt + geom_text(label=paste("r =", r), x = 0.25, y= 2)
 plt <- plt + theme(
   panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank())
@@ -190,11 +190,11 @@ plt <- ggplot(dat, aes(x = ls_prop_hetero, y = fg_conj_run_length))
 plt <- plt + geom_point() 
 plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE, linetype = 0)
 plt <- plt + theme_bw()
-plt <- plt + scale_x_continuous("split-half: prop. hetero. fixations",
+plt <- plt + scale_x_continuous("split-half: prop. hetero. fix.",
     limits = c(0, 1), expand = c(0, 0), breaks = c(0,1))
-plt <- plt + scale_y_continuous("foraging (conjunction): mean run length",
+plt <- plt + scale_y_continuous("foraging (conj.): run length",
     limits = c(0, 20), expand = c(0, 0))
-plt <- plt + geom_text(label=paste("r =", r), x = 0.25, y= 2)
+# plt <- plt + geom_text(label=paste("r =", r), x = 0.25, y= 2)
 plt <- plt + theme(
   panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank())
@@ -211,9 +211,9 @@ plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE, linety
 plt <- plt + theme_bw()
 plt <- plt + scale_x_continuous("adaptive choice: prop. optimal",
     limits = c(0, 1), expand = c(0, 0), breaks = c(0,1))
-plt <- plt + scale_y_continuous("foraging (conjunction): number of runs",
+plt <- plt + scale_y_continuous("foraging (conj.): number of runs",
     limits = c(0, 20), expand = c(0, 0))
-plt <- plt + geom_text(label=paste("r =", r), x = 0.25, y= 2)
+# plt <- plt + geom_text(label=paste("r =", r), x = 0.25, y= 2)
 plt <- plt + theme(
   panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank())
@@ -228,9 +228,9 @@ plt <- plt + geom_smooth(method = lm, colour = "black", fullrange = TRUE, linety
 plt <- plt + theme_bw()
 plt <- plt + scale_x_continuous("adaptive choice: prop. optimal",
     limits = c(0, 1), expand = c(0, 0), breaks = c(0,1))
-plt <- plt + scale_y_continuous("foraging (conjunction): mean run length",
+plt <- plt + scale_y_continuous("foraging (conj.): run length",
     limits = c(-10, 30), expand = c(0, 0))
-plt <- plt + geom_text(label=paste("r =", r), x = 0.25, y= 2)
+# plt <- plt + geom_text(label=paste("r =", r), x = 0.25, y= 2)
 plt <- plt + coord_cartesian(xlim=c(0, 1), ylim=c(0, 20))
 
 plt <- plt + theme(
