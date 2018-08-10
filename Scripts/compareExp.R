@@ -1,7 +1,8 @@
 library(tidyverse)
 
-figXn <- 6
-figYn <- 4
+
+figXn <- 3.5
+figYn <- 2.5
 
 dat <- read_csv("summaryData.csv")
 
