@@ -147,8 +147,8 @@ agg_dat = (filter(fix_dat, side!="central", n<=5, n>1, targSide=="absent")
   %>%  separate(b, into = c("b_strat", "b_lower", "b_upper"), sep = "_", convert = TRUE)) -> t_rt_dat
 
 
-
 cor.test(t_rt_dat$a_strat, t_rt_dat$b_strat)
+
 
 
 plt <- ggplot(t_rt_dat, aes(x = a_strat, y = b_strat, xmin = a_lower, xmax = a_upper, ymin = b_lower, ymax = b_upper))

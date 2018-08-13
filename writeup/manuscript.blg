@@ -4,45 +4,45 @@ The top-level auxiliary file: manuscript.aux
 The style file: plain.bst
 Database file #1: literature.bib
 Warning--empty year in johannesson2017
-You've used 22 entries,
+You've used 23 entries,
             2118 wiz_defined-function locations,
-            644 strings with 7979 characters,
-and the built_in function-call counts, 7438 in all, are:
-= -- 736
-> -- 356
+            649 strings with 8115 characters,
+and the built_in function-call counts, 7771 in all, are:
+= -- 771
+> -- 369
 < -- 1
-+ -- 144
-- -- 118
-* -- 587
-:= -- 1272
-add.period$ -- 66
-call.type$ -- 22
-change.case$ -- 125
++ -- 149
+- -- 122
+* -- 613
+:= -- 1327
+add.period$ -- 69
+call.type$ -- 23
+change.case$ -- 130
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 244
-empty$ -- 561
-format.name$ -- 118
-if$ -- 1497
+cite$ -- 24
+duplicate$ -- 255
+empty$ -- 588
+format.name$ -- 122
+if$ -- 1565
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 22
-newline$ -- 113
-num.names$ -- 44
-pop$ -- 91
+int.to.str$ -- 23
+missing$ -- 23
+newline$ -- 118
+num.names$ -- 46
+pop$ -- 94
 preamble$ -- 1
-purify$ -- 103
+purify$ -- 107
 quote$ -- 0
-skip$ -- 164
+skip$ -- 172
 stack$ -- 0
-substring$ -- 550
-swap$ -- 27
+substring$ -- 580
+swap$ -- 28
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
+type$ -- 92
 warning$ -- 1
-while$ -- 77
-width$ -- 24
-write$ -- 240
+while$ -- 81
+width$ -- 25
+write$ -- 251
 (There was 1 warning)
