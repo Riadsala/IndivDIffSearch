@@ -172,8 +172,8 @@ ggsave("scratch/strat_corr.png", width = figYn, height = figYn)
 
 # --------------------------------------------------------------------------------
 # output data for cross experiment correlations!
-# base statistic for correlation on only first 3 fixations
-# use session B only
+# 
+# over both sessions
 # --------------------------------------------------------------------------------
 
-write_csv(filter(dat, session == "b"), "scratch/lineseg_output.csv")
+write_csv(filter(dat, session == "b"),  "scratch/lineseg_output.csv")
