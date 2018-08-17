@@ -48,6 +48,14 @@ cor_dat <- add_r_95(dat[8], dat[14], cor_dat, 'cross paradigm')
 
 cor_dat$comparison <- fct_rev(as_factor(cor_dat$comparison))
 
+cor_dat$comparison <- fct_recode(cor_dat$comparison, 
+	`ACVS (opt) - MCFT (rl)`  = "ac_propOpt-fg_conj_run_length",
+	`ACVS (opt) - MCFT (rn)`  = "ac_propOpt-fg_conj_run_num",
+	`SHLS (opt) - MCFT (rl)` = "ls_prop_hetero-fg_conj_run_length",
+	`SHLS (opt) - MCFT (rn)` = "ls_prop_hetero-fg_conj_run_num",
+	`SHLS (opt) - ACVS (sw)` = "ls_prop_hetero-ac_switchRate",
+	`SHLS (opt) - ACVS (opt)` = "ls_prop_hetero-ac_propOpt")
+
 plt <- ggplot(cor_dat, aes(x = comparison, ymin = lower, ymax = upper, colour = type))
 plt <- plt + geom_hline(yintercept = 0, linetype = 2)
 plt <- plt + geom_linerange(size = 1)
@@ -63,4 +71,5 @@ plt <- plt + theme(
 	legend.position = "top",
 	axis.title.y = element_blank())
 
-ggsave("scratch/cor_comparison.pdf", width = 7, height = 7)
+ggsave("scratch/cor_comparison.pdf", width = 5, height = 7)
+ggsave("scratch/cor_comparison.png", width = 5, height = 7)
