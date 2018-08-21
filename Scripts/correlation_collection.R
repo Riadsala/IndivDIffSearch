@@ -16,11 +16,11 @@ cor_dat <- tibble(
 		"sh - strategy",
 		"acvs prop optimal",
 		"acvs switch rate",
-		"MCFT (rt)",
-		"MCFT (rn)"),
-	estimate = c(0,0,0, 0.73, 0.83, 0.77, 0, 0),
-	lower = c(0.65, 0.66, 0.56, 0.585, 0.72, 0.63, -1, -1),
-	upper = c(0.86, 0.87, 0.82, 0.832, 0.90, 0.87, 1, 1),
+		"MCFT feature (rn)",
+		"MCFT conjunction (rn)"),
+	estimate = c(0,0,0, 0.73, 0.83, 0.77,  0.7, 0.88),
+	lower = c(0.65, 0.66, 0.56, 0.585, 0.72, 0.63, 0.55, .81),
+	upper = c(0.86, 0.87, 0.82, 0.832, 0.90, 0.87, .8, .92),
 	type = rep('test-retest', 8))
 
 add_r_95 <- function(x1, x2, df, t) {
@@ -38,24 +38,18 @@ add_r_95 <- function(x1, x2, df, t) {
 	return(df)
 }
 
-cor_dat <- add_r_95(dat[3], dat[5], cor_dat, 'rt-strat')
-cor_dat <- add_r_95(dat[8], dat[7], cor_dat, 'rt-strat')
-cor_dat <- add_r_95(dat[13], dat[12], cor_dat, 'rt-strat')
-cor_dat <- add_r_95(dat[14], dat[12], cor_dat, 'rt-strat')
+cor_dat <- add_r_95(dat["ls_prop_hetero"], dat["ls_mean_log_rt"], cor_dat, 'rt-strat')
+cor_dat <- add_r_95(dat["ac_propOpt"], dat["ac_meanlog2rt"], cor_dat, 'rt-strat')
+cor_dat <- add_r_95(dat["fg_conj_run_num"], dat["fg_conj_log2"], cor_dat, 'rt-strat')
 
-cor_dat <- add_r_95(dat[3], dat[8], cor_dat, 'cross paradigm')
-cor_dat <- add_r_95(dat[3], dat[9], cor_dat, 'cross paradigm')
-cor_dat <- add_r_95(dat[3], dat[13], cor_dat, 'cross paradigm')
-cor_dat <- add_r_95(dat[3], dat[14], cor_dat, 'cross paradigm')
-cor_dat <- add_r_95(dat[8], dat[13], cor_dat, 'cross paradigm')
-cor_dat <- add_r_95(dat[8], dat[14], cor_dat, 'cross paradigm')
 
-cor_dat <- add_r_95(dat[5], dat[7], cor_dat,  'cross paradigm')
-# cor_dat <- add_r_95(dat[5], dat[11], cor_dat, 'cross paradigm')
-cor_dat <- add_r_95(dat[5], dat[12], cor_dat, 'cross paradigm')
-# cor_dat <- add_r_95(dat[7], dat[11], cor_dat, 'cross paradigm')
-cor_dat <- add_r_95(dat[7], dat[12], cor_dat, 'cross paradigm')
-cor_dat <- add_r_95(dat[9], dat[13], cor_dat, 'cross paradigm')
+cor_dat <- add_r_95(dat["ls_prop_hetero"], dat["ac_propOpt"], cor_dat, 'cross paradigm')
+cor_dat <- add_r_95(dat["ls_prop_hetero"], dat["fg_conj_run_num"], cor_dat, 'cross paradigm')
+cor_dat <- add_r_95(dat["ac_propOpt"], dat["fg_conj_run_num"], cor_dat, 'cross paradigm')
+
+cor_dat <- add_r_95(dat["ls_mean_log_rt"], dat["ac_meanlog2rt"], cor_dat,  'cross paradigm')
+cor_dat <- add_r_95(dat["ls_mean_log_rt"], dat["fg_conj_log2"], cor_dat, 'cross paradigm')
+cor_dat <- add_r_95(dat["ac_meanlog2rt"], dat["fg_conj_log2"], cor_dat, 'cross paradigm')
 
 cor_dat$comparison <- fct_rev(as_factor(cor_dat$comparison))
 
@@ -66,7 +60,7 @@ cor_dat$comparison <- fct_recode(cor_dat$comparison,
 	`SHLS (opt) - MCFT (rn)`  = "ls_prop_hetero-fg_conj_run_num",
 	`SHLS (opt) - ACVS (sw)`  = "ls_prop_hetero-ac_switchRate",
 	`SHLS (opt) - ACVS (opt)` = "ls_prop_hetero-ac_propOpt",
-	`ACVS (rt) - ACVS (opt)`  = "ac_propOpt-ac_rt",
+	`ACVS (rt) - ACVS (opt)`  = "ac_propOpt-ac_meanlog2rt",
 	`SHLS (opt) - SHLS (rt)`  = "ls_prop_hetero-ls_mean_log_rt",
 	`ACVS (sw)`   = "acvs switch rate",
 	`ACVS (opt)`  = "acvs prop optimal",
@@ -78,8 +72,8 @@ cor_dat$comparison <- fct_recode(cor_dat$comparison,
 	`MCFT (rl) - MCFT (rt)`  = "fg_conj_run_length-fg_conj_log2",
 	`ACVS (rt) - MCFT (rt)` = "ac_rt-fg_conj_log2",          
     `SHLS (rt) - MCFT (rt)` = "ls_mean_log_rt-fg_conj_log2", 
-  	`SHLS (rt) - ACVS (r)`   = "ls_mean_log_rt-ac_rt", 
-  	`ACVS (sw) - MCFT (rn)`  = "ac_switchRate-fg_conj_run_num")
+  	`SHLS (rt) - ACVS (rt)`   = "ls_mean_log_rt-ac_meanlog2rt", 
+  	`ACVS (rt) - MCFT (rt)`  = "ac_meanlog2rt-fg_conj_log2")
 
 
 
@@ -98,6 +92,6 @@ plt <- plt + theme(
 	legend.title = element_blank(),
 	legend.position = "top",
 	axis.title.y = element_blank())
-
+plt
 ggsave("scratch/cor_comparison.pdf", width = 5, height = 7)
 ggsave("scratch/cor_comparison.png", width = 5, height = 7)
