@@ -1,17 +1,17 @@
 # Fdb version 3
-["bibtex manuscript"] 1534756243 "manuscript.aux" "manuscript.bbl" "manuscript" 1534757360
+["bibtex manuscript"] 1535625086 "manuscript.aux" "manuscript.bbl" "manuscript" 1535625087
   "/usr/local/texlive/2016/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "literature.bib" 1534238552 10156 d1a37cfd9494b1ad6634f7a3430db621 ""
-  "manuscript.aux" 1534757360 5964 19a287d4c106a73554f30a9989c412a7 ""
+  "manuscript.aux" 1535625086 6039 3bf23f256f4631e6f50df844a6903da1 ""
   "manuscript.bcf" 0 -1 0 ""
   (generated)
-  "manuscript.blg"
   "manuscript.bbl"
-["pdflatex"] 1534757359 "manuscript.tex" "manuscript.pdf" "manuscript" 1534757360
-  "../Scripts/adaptchoice/ac_percentOpt_hist.pdf" 1534754700 4627 0ec091ffc08bf4ffd63acaf31b5d045a ""
-  "../Scripts/adaptchoice/ac_switchRate_hist.pdf" 1534754700 4553 088e30a88790a28f04ae08345428108c ""
-  "../Scripts/foraging/fg_conjRunLength_hist.pdf" 1534754700 4604 eeef1e35c9e574857d57486bf4db25fa ""
-  "../Scripts/foraging/fg_featureRunLength_hist.pdf" 1534754700 4590 8185d0005103a01b00f6090299fbdeeb ""
+  "manuscript.blg"
+["pdflatex"] 1535625086 "manuscript.tex" "manuscript.pdf" "manuscript" 1535625087
+  "../Scripts/adaptchoice/ac_percentOpt_hist.pdf" 1535624879 4587 bbe424d5d97b3dcdf54f068e83256024 ""
+  "../Scripts/adaptchoice/ac_switchRate_hist.pdf" 1535624886 4538 e1a60c05f664e84909e1b731cda7095f ""
+  "../Scripts/foraging/fg_conjRunLength_hist.pdf" 1535624942 4557 5631b59e37afa836de16375c28690a12 ""
+  "../Scripts/foraging/fg_featureRunLength_hist.pdf" 1535624948 4543 f2125f28e245f4048d40e328f88b1ce3 ""
   "../Scripts/lineseg/scratch/acc_correlation.pdf" 1526296255 9089 ef5d844876ab82b7d1146e3e351856dd ""
   "../Scripts/lineseg/scratch/rt_correlation.pdf" 1526296186 15491 817e6d441ca9006555df9d2e9439e08b ""
   "../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf" 1534517923 11607 8aef02e1f205cfc00aa7e9b0509016b1 ""
@@ -151,14 +151,14 @@
   "figures/adaptive.png" 1521818849 56825 624e4f0fe0e16b6bd99b2cb313c6b1e9 ""
   "figures/foraging.png" 1521821399 41089 9903e24c44c1c60cb2d69a891bdf6e31 ""
   "figures/split-half.png" 1521818768 315829 fbda65b00e3321404a4bf6ced36804a3 ""
-  "manuscript.aux" 1534757360 5964 19a287d4c106a73554f30a9989c412a7 ""
-  "manuscript.bbl" 1534756243 5137 049c712e832cb8cc4e00557f1ec88df3 "bibtex manuscript"
-  "manuscript.out" 1534757360 1078 3dcf1b3af429c1c24211bbe1fdae123b ""
-  "manuscript.tex" 1534757359 27317 f30fa7a8671bd664eaac374b1f698179 ""
+  "manuscript.aux" 1535625086 6039 3bf23f256f4631e6f50df844a6903da1 ""
+  "manuscript.bbl" 1535625086 5137 049c712e832cb8cc4e00557f1ec88df3 "bibtex manuscript"
+  "manuscript.out" 1535625086 1078 3dcf1b3af429c1c24211bbe1fdae123b ""
+  "manuscript.tex" 1535625084 27371 e11a7504f25f53ca22530a1b44b92581 ""
   "openaccesslogo_bw.pdf" 1502201048 13234 9c37d6436deac165264324b958c1144b ""
   "rsos.cls" 1502287564 49103 05b96d9a1fdef2036ff21250993f1be3 ""
   (generated)
-  "manuscript.aux"
+  "manuscript.pdf"
   "manuscript.out"
   "manuscript.log"
-  "manuscript.pdf"
+  "manuscript.aux"
