@@ -109,7 +109,7 @@ process_acs <- function(asc, ss) {
 	return(list(fixDat,trlDat))
 }
 
-participants <- 1:68
+participants <- 1:74
 participants <- participants[!(participants %in% c(18, 32, 48, 57))] 
 
 
@@ -244,6 +244,10 @@ incTrials <- with(trlDat, paste(observer, session, trial))
 fixDat <- filter(fixDat, paste(observer, session, trial) %in% incTrials)
 rm(incTrials)
 
+# remove people who had a 1028 x 768 resolution 
+idx <- filter(resDat, xRes == 1024)$observer
+trlDat <- filter(trlDat, !(observer %in% idx))
+fixDat <- filter(fixDat, !(observer %in% idx))
 
 # save
 saveRDS(trlDat, "scratch/processedRTandAccData.Rda")
