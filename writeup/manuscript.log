@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  1 NOV 2018 10:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  2 NOV 2018 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1202,33 +1202,28 @@ Underfull \hbox (badness 2221) in paragraph at lines 123--124
  []
 
 
-Underfull \hbox (badness 4913) in paragraph at lines 123--124
-\T1/ppl/m/n/9 ($\OT1/cmr/m/n/9 95%$ \T1/ppl/m/n/9 con-fi-dence in-ter-val) for 
-ac-cu-racy in
+Underfull \hbox (badness 1248) in paragraph at lines 123--124
+\T1/ppl/m/n/9 con-fi-dence in-ter-val) for ac-cu-racy in find-ing
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 123--124
-\T1/ppl/m/n/9 find-ing tar-gets on the hard het-ero-ge-neous
- []
-
-
-Underfull \hbox (badness 2644) in paragraph at lines 123--124
-\T1/ppl/m/n/9 half of the dis-play. We get sim-i-lar scores
+Underfull \hbox (badness 1028) in paragraph at lines 123--124
+\T1/ppl/m/n/9 in re-ac-tion times be-tween ses-sions \T1/ppl/m/it/9 a \T1/ppl/m
+/n/9 and \T1/ppl/m/it/9 b
  []
 
 
 Underfull \hbox (badness 1412) in paragraph at lines 123--124
 \T1/ppl/m/n/9 for het-ero-ge-neous tar-gets, ($\OML/cmm/m/it/9 r \OMS/cmsy/m/n/
-9 2 \OT1/cmr/m/n/9 [0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 66 \OMS/cmsy/m/n/9 ^^@ \OT
-1/cmr/m/n/9 0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 87]$\T1/ppl/m/n/9 ),
+9 2 \OT1/cmr/m/n/9 [0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 54 \OMS/cmsy/m/n/9 ^^@ \OT
+1/cmr/m/n/9 0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 81]$\T1/ppl/m/n/9 ),
  []
 
 
 Underfull \hbox (badness 3019) in paragraph at lines 123--124
 \T1/ppl/m/n/9 ho-mo-ge-neous tar-gets ($\OML/cmm/m/it/9 r \OMS/cmsy/m/n/9 2 \OT
-1/cmr/m/n/9 [0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 56 \OMS/cmsy/m/n/9 ^^@ \OT1/cmr/m
-/n/9 0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 82]$\T1/ppl/m/n/9 ) and
+1/cmr/m/n/9 [0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 52 \OMS/cmsy/m/n/9 ^^@ \OT1/cmr/m
+/n/9 0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 80]$\T1/ppl/m/n/9 ) and
  []
 
 
@@ -1291,8 +1286,8 @@ Underfull \hbox (badness 2875) in paragraph at lines 135--136
 
 Underfull \hbox (badness 1320) in paragraph at lines 135--136
 \T1/ppl/m/n/9 times in both ses-sion a, $\OML/cmm/m/it/9 r \OMS/cmsy/m/n/9 2 \O
-T1/cmr/m/n/9 [0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 56\OML/cmm/m/it/9 ; \OT1/cmr/m/n
-/9 0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 84]$ \T1/ppl/m/n/9 and
+T1/cmr/m/n/9 [0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 52\OML/cmm/m/it/9 ; \OT1/cmr/m/n
+/9 0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 82]$ \T1/ppl/m/n/9 and
  []
 
 
@@ -1646,7 +1641,7 @@ onts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
 w/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palat
 ino/uplri8a.pfb>
-Output written on manuscript.pdf (9 pages, 554816 bytes).
+Output written on manuscript.pdf (9 pages, 554718 bytes).
 PDF statistics:
  374 PDF objects out of 1000 (max. 8388607)
  317 compressed objects within 4 object streams
