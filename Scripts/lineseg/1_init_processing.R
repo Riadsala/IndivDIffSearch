@@ -109,7 +109,7 @@ process_acs <- function(asc, ss) {
 	return(list(fixDat,trlDat))
 }
 
-participants <- 1:74
+participants <- 1:75
 participants <- participants[!(participants %in% c(18, 32, 48, 57))] 
 
 
@@ -248,6 +248,9 @@ rm(incTrials)
 idx <- filter(resDat, xRes == 1024)$observer
 trlDat <- filter(trlDat, !(observer %in% idx))
 fixDat <- filter(fixDat, !(observer %in% idx))
+
+trlDat$observer <- fct_drop(trlDat$observer)
+fixDat$observer <- fct_drop(fixDat$observer)
 
 # save
 saveRDS(trlDat, "scratch/processedRTandAccData.Rda")
