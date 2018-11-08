@@ -248,6 +248,7 @@ rm(incTrials)
 idx <- filter(resDat, xRes == 1024)$observer
 trlDat <- filter(trlDat, !(observer %in% idx))
 fixDat <- filter(fixDat, !(observer %in% idx))
+resDat <- filter(resDat, !(observer %in% idx))
 
 trlDat$observer <- fct_drop(trlDat$observer)
 fixDat$observer <- fct_drop(fixDat$observer)

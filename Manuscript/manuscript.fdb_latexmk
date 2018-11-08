@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex manuscript"] 1541066753 "manuscript.aux" "manuscript.bbl" "manuscript" 1541179409
+["bibtex manuscript"] 1541066753 "manuscript.aux" "manuscript.bbl" "manuscript" 1541678142
   "/usr/local/texlive/2016/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "literature.bib" 1541066745 10460 f1efe4debd1a1c817fab94b3fecf0c9e ""
-  "manuscript.aux" 1541179409 6230 58b25028731cdbae455d4d6a3416655c ""
+  "manuscript.aux" 1541678142 6230 58b25028731cdbae455d4d6a3416655c ""
   "manuscript.bcf" 0 -1 0 ""
   (generated)
-  "manuscript.blg"
   "manuscript.bbl"
-["pdflatex"] 1541179408 "manuscript.tex" "manuscript.pdf" "manuscript" 1541179409
+  "manuscript.blg"
+["pdflatex"] 1541678141 "manuscript.tex" "manuscript.pdf" "manuscript" 1541678142
   "../Scripts/adaptchoice/ac_percentOpt_hist.pdf" 1535625113 4587 bbe424d5d97b3dcdf54f068e83256024 ""
   "../Scripts/adaptchoice/ac_switchRate_hist.pdf" 1535625113 4538 e1a60c05f664e84909e1b731cda7095f ""
   "../Scripts/foraging/fg_conjRunLength_hist.pdf" 1535625113 4557 5631b59e37afa836de16375c28690a12 ""
@@ -151,14 +151,14 @@
   "figures/adaptive.png" 1521818849 56825 624e4f0fe0e16b6bd99b2cb313c6b1e9 ""
   "figures/foraging.png" 1521821399 41089 9903e24c44c1c60cb2d69a891bdf6e31 ""
   "figures/split-half.png" 1521818768 315829 fbda65b00e3321404a4bf6ced36804a3 ""
-  "manuscript.aux" 1541179409 6230 58b25028731cdbae455d4d6a3416655c ""
+  "manuscript.aux" 1541678142 6230 58b25028731cdbae455d4d6a3416655c ""
   "manuscript.bbl" 1541066753 5363 4fb070b6320cadb5fa47aa4ea87b4e63 "bibtex manuscript"
-  "manuscript.out" 1541179409 1078 3dcf1b3af429c1c24211bbe1fdae123b ""
-  "manuscript.tex" 1541179407 29802 72e88fe782a1b7e6ea9de0b1a7fe7a56 ""
+  "manuscript.out" 1541678142 1078 3dcf1b3af429c1c24211bbe1fdae123b ""
+  "manuscript.tex" 1541678141 29973 2f27540ff2d725c1df30810fa62937a9 ""
   "openaccesslogo_bw.pdf" 1502201048 13234 9c37d6436deac165264324b958c1144b ""
   "rsos.cls" 1502287564 49103 05b96d9a1fdef2036ff21250993f1be3 ""
   (generated)
   "manuscript.log"
   "manuscript.pdf"
-  "manuscript.out"
   "manuscript.aux"
+  "manuscript.out"

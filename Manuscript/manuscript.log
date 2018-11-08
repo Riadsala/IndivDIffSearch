@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  2 NOV 2018 17:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  8 NOV 2018 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1040,8 +1040,8 @@ Underfull \hbox (badness 1077) in paragraph at lines 79--80
  []
 
 
-Underfull \hbox (badness 3260) in paragraph at lines 82--83
-\T1/ppl/m/n/9 took part in this study. Par-tic-i-pants were
+Underfull \hbox (badness 1715) in paragraph at lines 82--83
+\T1/ppl/m/n/9 took part in this study[][][][][]. Par-tic-i-pants were
  []
 
 
@@ -1091,8 +1091,19 @@ Underfull \hbox (badness 1137) in paragraph at lines 90--91
  []
 
 
-Underfull \hbox (badness 2302) in paragraph at lines 90--91
-\T1/ppl/m/n/9 Stim-u-lus gen-er-a-tion, pre-sen-ta-tion and data
+Underfull \hbox (badness 1838) in paragraph at lines 90--91
+\T1/ppl/m/n/9 CRT mon-i-tor with a res-o-lu-tions of $\OT1/cmr/m/n/9 1400 \OMS/
+cmsy/m/n/9 ^^B
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 90--91
+\T1/ppl/m/n/9 gen-er-a-tion, pre-sen-ta-tion and data col-lec-tion
+ []
+
+
+Overfull \hbox (17.50215pt too wide) in paragraph at lines 90--91
+\T1/ppl/m/n/9 were con-trolled by MAT-LAB and the psy-chophysics
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
@@ -1232,14 +1243,14 @@ Underfull \hbox (badness 2409) in paragraph at lines 123--124
  []
 
 
-<../Scripts/lineseg/scratch/acc_correlation.pdf, id=190, 180.675pt x 180.675pt>
+<../Scripts/lineseg/scratch/acc_correlation.pdf, id=192, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/acc_correlation.pdf Graphic file (type pdf)
 <use ../Scripts/lineseg/scratch/acc_correlation.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/acc_correlation.pdf used on
  input line 127.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/rt_correlation.pdf, id=191, 180.675pt x 180.675pt>
+<../Scripts/lineseg/scratch/rt_correlation.pdf, id=193, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/rt_correlation.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/rt_correlation.pdf>
@@ -1247,7 +1258,7 @@ Package pdftex.def Info: ../Scripts/lineseg/scratch/rt_correlation.pdf used on
 input line 128.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/strat_corr.pdf, id=192, 180.675pt x 180.675pt>
+<../Scripts/lineseg/scratch/strat_corr.pdf, id=194, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/strat_corr.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/strat_corr.pdf>
@@ -1255,7 +1266,7 @@ Package pdftex.def Info: ../Scripts/lineseg/scratch/strat_corr.pdf used on inpu
 t line 129.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf, id=193, 180.675pt x 1
+<../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf, id=195, 180.675pt x 1
 80.675pt>
 File: ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf Graphic file (typ
 e pdf)
@@ -1291,6 +1302,10 @@ T1/cmr/m/n/9 [0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 52\OML/cmm/m/it/9 ; \OT1/cmr/m/n
  []
 
 
+Overfull \vbox (21.51176pt too high) has occurred while \output is active []
+
+
+[5]
 Underfull \hbox (badness 1107) in paragraph at lines 140--141
 \T1/ppl/m/n/9 Participants with ac-cu-racy more than 3 SD
  []
@@ -1301,10 +1316,6 @@ Underfull \hbox (badness 1648) in paragraph at lines 140--141
  []
 
 
-Overfull \vbox (21.51176pt too high) has occurred while \output is active []
-
-
-[5]
 Underfull \hbox (badness 2096) in paragraph at lines 142--143
 \T1/ppl/m/n/9 were used: 1) Op-ti-mal choices, de-fined as
  []
@@ -1314,7 +1325,7 @@ Underfull \hbox (badness 1226) in paragraph at lines 145--146
 \T1/ppl/m/n/9 see from figure [][]3[][][] that there are in-di-vid-ual
  []
 
-<../Scripts/adaptchoice/ac_percentOpt_hist.pdf, id=205, 252.945pt x 144.54pt>
+<../Scripts/adaptchoice/ac_percentOpt_hist.pdf, id=207, 252.945pt x 144.54pt>
 File: ../Scripts/adaptchoice/ac_percentOpt_hist.pdf Graphic file (type pdf)
 
 <use ../Scripts/adaptchoice/ac_percentOpt_hist.pdf>
@@ -1322,7 +1333,7 @@ Package pdftex.def Info: ../Scripts/adaptchoice/ac_percentOpt_hist.pdf used on
 input line 149.
 (pdftex.def)             Requested size: 184.9429pt x 105.68312pt.
 
-<../Scripts/adaptchoice/ac_switchRate_hist.pdf, id=206, 252.945pt x 144.54pt>
+<../Scripts/adaptchoice/ac_switchRate_hist.pdf, id=208, 252.945pt x 144.54pt>
 File: ../Scripts/adaptchoice/ac_switchRate_hist.pdf Graphic file (type pdf)
 
 <use ../Scripts/adaptchoice/ac_switchRate_hist.pdf>
@@ -1390,7 +1401,7 @@ Overfull \vbox (21.51176pt too high) has occurred while \output is active []
 /rt_correlation.pdf> <../Scripts/lineseg/scratch/strat_corr.pdf> <../Scripts/li
 neseg/scratch/strat_compare_meanlog_rt.pdf> <../Scripts/adaptchoice/ac_percentO
 pt_hist.pdf> <../Scripts/adaptchoice/ac_switchRate_hist.pdf>]
-<../Scripts/foraging/fg_featureRunLength_hist.pdf, id=266, 252.945pt x 144.54pt
+<../Scripts/foraging/fg_featureRunLength_hist.pdf, id=267, 252.945pt x 144.54pt
 >
 File: ../Scripts/foraging/fg_featureRunLength_hist.pdf Graphic file (type pdf)
  <use ../Scripts/foraging/fg_featureRunLength_hist.pdf>
@@ -1398,7 +1409,7 @@ Package pdftex.def Info: ../Scripts/foraging/fg_featureRunLength_hist.pdf used
 on input line 163.
 (pdftex.def)             Requested size: 184.9429pt x 105.68312pt.
 
-<../Scripts/foraging/fg_conjRunLength_hist.pdf, id=267, 252.945pt x 144.54pt>
+<../Scripts/foraging/fg_conjRunLength_hist.pdf, id=268, 252.945pt x 144.54pt>
 File: ../Scripts/foraging/fg_conjRunLength_hist.pdf Graphic file (type pdf)
 
 <use ../Scripts/foraging/fg_conjRunLength_hist.pdf>
@@ -1456,7 +1467,7 @@ Underfull \hbox (badness 1448) in paragraph at lines 176--178
 \T1/ppl/m/n/9 or sta-ble speed-accuracy trade-offs be-tween
  []
 
-<../Scripts/scratch/cor_comparison.pdf, id=272, 361.35pt x 505.89pt>
+<../Scripts/scratch/cor_comparison.pdf, id=273, 361.35pt x 505.89pt>
 File: ../Scripts/scratch/cor_comparison.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/cor_comparison.pdf>
@@ -1621,8 +1632,8 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
  ) 
 Here is how much of TeX's memory you used:
- 8475 strings out of 493014
- 123665 string characters out of 6133351
+ 8476 strings out of 493014
+ 123676 string characters out of 6133351
  217761 words of memory out of 5000000
  11743 multiletter control sequences out of 15000+600000
  74133 words of font info for 128 fonts, out of 8000000 for 9000
@@ -1641,10 +1652,10 @@ onts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
 w/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palat
 ino/uplri8a.pfb>
-Output written on manuscript.pdf (9 pages, 554718 bytes).
+Output written on manuscript.pdf (9 pages, 555079 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
- 317 compressed objects within 4 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 376 PDF objects out of 1000 (max. 8388607)
+ 319 compressed objects within 4 object streams
+ 70 named destinations out of 1000 (max. 500000)
  201 words of extra memory for PDF output out of 10000 (max. 10000000)
 
