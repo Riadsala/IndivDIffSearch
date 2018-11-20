@@ -4,7 +4,17 @@ library(tidyverse)
 figXn <- 3.5
 figYn <- 2.5
 
-dat <- read_csv("summaryData.csv")
+dat <- read_csv("summaryData_75.csv")
+
+
+dat <- full_join(dat, lineseg)
+# remove people who had the wrong resolution!
+idx <- c(1, 2, 3, 4, 11, 31, 69)
+
+dat <- filter(dat, !(observer %in% idx))
+
+# numbers taken from inital parsing script for split half paradigm
+
 
 ############################################################
 # first look at rt

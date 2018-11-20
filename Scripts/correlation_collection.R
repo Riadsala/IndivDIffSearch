@@ -40,12 +40,12 @@ add_r_95 <- function(x1, x2, df, t) {
 
 cor_dat <- add_r_95(dat["ls_prop_hetero"], dat["ls_mean_log_rt"], cor_dat, 'rt-strat')
 cor_dat <- add_r_95(dat["ac_propOpt"], dat["ac_meanlog2rt"], cor_dat, 'rt-strat')
-cor_dat <- add_r_95(dat["fg_conj_run_num"], dat["fg_conj_log2"], cor_dat, 'rt-strat')
+cor_dat <- add_r_95(dat["fg_conj_run_length"], dat["fg_conj_log2"], cor_dat, 'rt-strat')
 
 
 cor_dat <- add_r_95(dat["ls_prop_hetero"], dat["ac_propOpt"], cor_dat, 'cross paradigm')
-cor_dat <- add_r_95(dat["ls_prop_hetero"], dat["fg_conj_run_num"], cor_dat, 'cross paradigm')
-cor_dat <- add_r_95(dat["ac_propOpt"], dat["fg_conj_run_num"], cor_dat, 'cross paradigm')
+cor_dat <- add_r_95(dat["ls_prop_hetero"], dat["fg_conj_run_length"], cor_dat, 'cross paradigm')
+cor_dat <- add_r_95(dat["ac_propOpt"], dat["fg_conj_run_length"], cor_dat, 'cross paradigm')
 
 cor_dat <- add_r_95(dat["ls_mean_log_rt"], dat["ac_meanlog2rt"], cor_dat,  'cross paradigm')
 cor_dat <- add_r_95(dat["ls_mean_log_rt"], dat["fg_conj_log2"], cor_dat, 'cross paradigm')
@@ -55,12 +55,12 @@ cor_dat$comparison <- fct_rev(as_factor(cor_dat$comparison))
 
 cor_dat$comparison <- fct_recode(cor_dat$comparison, 
 	`ACVS (opt) - MCFT (rl)`  = "ac_propOpt-fg_conj_run_length",
-	`ACVS (opt) - MCFT (rn)`  = "ac_propOpt-fg_conj_run_num",
+	`ACVS (opt) - MCFT (rl)`  = "ac_propOpt-fg_conj_run_length",
 	`SHLS (opt) - MCFT (rl)`  = "ls_prop_hetero-fg_conj_run_length",
-	`SHLS (opt) - MCFT (rn)`  = "ls_prop_hetero-fg_conj_run_num",
+	`SHLS (opt) - MCFT (rl)`  = "ls_prop_hetero-fg_conj_run_length",
 	`SHLS (opt) - ACVS (sw)`  = "ls_prop_hetero-ac_switchRate",
 	`SHLS (opt) - ACVS (opt)` = "ls_prop_hetero-ac_propOpt",
-	`ACVS (rt) - ACVS (opt)`  = "ac_propOpt-ac_meanlog2rt",
+	`ACVS (opt) - ACVS (rt)`  = "ac_propOpt-ac_meanlog2rt",
 	`SHLS (opt) - SHLS (rt)`  = "ls_prop_hetero-ls_mean_log_rt",
 	`ACVS (sw)`   = "acvs switch rate",
 	`ACVS (opt)`  = "acvs prop optimal",
@@ -68,7 +68,7 @@ cor_dat$comparison <- fct_recode(cor_dat$comparison,
 	`SHLS easy (rt)`  = "sh-rt a versus b easy",
 	`SHLS hard(rt)`  = "sh-rt a versus b hard",
 	`SHLS (opt)` = "sh - strategy",
-	`MCFT (rn) - MCFT (rt)`  = "fg_conj_run_num-fg_conj_log2",
+	`MCFT (rl) - MCFT (rt)`  = "fg_conj_run_length-fg_conj_log2",
 	`MCFT (rl) - MCFT (rt)`  = "fg_conj_run_length-fg_conj_log2",
 	`ACVS (rt) - MCFT (rt)` = "ac_rt-fg_conj_log2",          
     `SHLS (rt) - MCFT (rt)` = "ls_mean_log_rt-fg_conj_log2", 
@@ -76,7 +76,7 @@ cor_dat$comparison <- fct_recode(cor_dat$comparison,
   	`ACVS (rt) - MCFT (rt)`  = "ac_meanlog2rt-fg_conj_log2")
 
 
-
+cor_dat$type <- as_factor(cor_dat$type)
 
 plt <- ggplot(cor_dat, aes(x = comparison, ymin = lower, ymax = upper, colour = type))
 plt <- plt + geom_hline(yintercept = 0, linetype = 2)
