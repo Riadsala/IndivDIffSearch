@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  8 NOV 2018 11:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  21 NOV 2018 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -598,6 +598,10 @@ LaTeX Font Info:    Calculating math sizes for size <11> on input line 48.
 
 Overfull \hbox (170.71654pt too wide) in paragraph at lines 48--48
 [] 
+ []
+
+
+Overfull \vbox (43.14378pt too high) detected at line 48
  []
 
 
@@ -1311,17 +1315,12 @@ Underfull \hbox (badness 1107) in paragraph at lines 140--141
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 140--141
-\T1/ppl/m/n/9 than 300ms or more than 3 SD about the
- []
-
-
 Underfull \hbox (badness 2096) in paragraph at lines 142--143
 \T1/ppl/m/n/9 were used: 1) Op-ti-mal choices, de-fined as
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 145--146
+Underfull \hbox (badness 1226) in paragraph at lines 144--145
 \T1/ppl/m/n/9 see from figure [][]3[][][] that there are in-di-vid-ual
  []
 
@@ -1330,7 +1329,7 @@ File: ../Scripts/adaptchoice/ac_percentOpt_hist.pdf Graphic file (type pdf)
 
 <use ../Scripts/adaptchoice/ac_percentOpt_hist.pdf>
 Package pdftex.def Info: ../Scripts/adaptchoice/ac_percentOpt_hist.pdf used on 
-input line 149.
+input line 148.
 (pdftex.def)             Requested size: 184.9429pt x 105.68312pt.
 
 <../Scripts/adaptchoice/ac_switchRate_hist.pdf, id=208, 252.945pt x 144.54pt>
@@ -1338,58 +1337,65 @@ File: ../Scripts/adaptchoice/ac_switchRate_hist.pdf Graphic file (type pdf)
 
 <use ../Scripts/adaptchoice/ac_switchRate_hist.pdf>
 Package pdftex.def Info: ../Scripts/adaptchoice/ac_switchRate_hist.pdf used on 
-input line 150.
+input line 149.
 (pdftex.def)             Requested size: 184.9429pt x 105.68312pt.
 
-Underfull \hbox (badness 1325) in paragraph at lines 151--151
+Underfull \hbox (badness 1325) in paragraph at lines 150--150
 []\T1/phv/b/n/8.5 Figure 3. []\T1/phv/m/n/8.5 Histograms show-ing the range of 
 in-di-vid-ual
  []
 
 
-Underfull \hbox (badness 1189) in paragraph at lines 157--158
+Underfull \hbox (badness 1189) in paragraph at lines 156--157
 \T1/ppl/m/n/9 de-fined as a suc-ces-sion of one or more of
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 159--160
-\T1/ppl/m/n/9 also in line pre-vi-ous find-ings [[][]11[][],[][]12[][]]. As
+Underfull \hbox (badness 1603) in paragraph at lines 158--159
+\T1/ppl/m/n/9 also in line with pre-vi-ous find-ings [[][]11[][],[][]12[][]].
  []
 
 
-Overfull \hbox (4.81529pt too wide) in paragraph at lines 159--160
-\T1/ppl/m/n/9 for-ag-ing ($\OML/cmm/m/it/9 M \OT1/cmr/m/n/9 = 3\OML/cmm/m/it/9 
-:\OT1/cmr/m/n/9 24$\T1/ppl/m/n/9 , $\OML/cmm/m/it/9 SD \OT1/cmr/m/n/9 = 3\OML/c
-mm/m/it/9 :\OT1/cmr/m/n/9 19$\T1/ppl/m/n/9 ) than con-junc-tion
+Underfull \hbox (badness 2126) in paragraph at lines 158--159
+\T1/ppl/m/n/9 As ex-pected, run lengths were shorter for
  []
 
 
-Underfull \hbox (badness 7238) in paragraph at lines 159--160
-\T1/ppl/m/n/9 CI [-9.25,-5.55]) sug-gest-ing more fre-quent
+Underfull \hbox (badness 1033) in paragraph at lines 158--159
+\T1/ppl/m/n/9 fea-ture for-ag-ing ($\OML/cmm/m/it/9 M \OT1/cmr/m/n/9 = 3\OML/cm
+m/m/it/9 :\OT1/cmr/m/n/9 16$\T1/ppl/m/n/9 , $\OML/cmm/m/it/9 SD \OT1/cmr/m/n/9 
+= 3\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 14$\T1/ppl/m/n/9 ) than
  []
 
 
-Underfull \hbox (badness 6173) in paragraph at lines 159--160
-\T1/ppl/m/n/9 for-ag-ing for mul-ti-ple tar-gets con-cur-rently
+Underfull \hbox (badness 3068) in paragraph at lines 158--159
+\OML/cmm/m/it/9 t\OT1/cmr/m/n/9 (55) = 8\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 74$\T1/
+ppl/m/n/9 , $\OML/cmm/m/it/9 p < :\OT1/cmr/m/n/9 001$ \T1/ppl/m/n/9 (PRE-FER DI
+F-FER-ENT
  []
 
 
-Underfull \hbox (badness 1292) in paragraph at lines 159--160
-\T1/ppl/m/n/9 sig-nif-i-cant in-di-vid-ual vari-a-tion: Fea-ture run
+Underfull \hbox (badness 6842) in paragraph at lines 158--159
+\T1/ppl/m/n/9 STATS HERE? CI [-9.97,-6.26]) sug-gest-ing
  []
 
 
-Underfull \hbox (badness 5908) in paragraph at lines 159--160
-\T1/ppl/m/n/9 length var-ied be-tween 1.87 and 20, and
+Underfull \hbox (badness 1210) in paragraph at lines 158--159
+\T1/ppl/m/n/9 more fre-quent for-ag-ing for mul-ti-ple tar-gets
  []
 
 
-Underfull \hbox (badness 4805) in paragraph at lines 159--160
+Underfull \hbox (badness 1048) in paragraph at lines 158--159
+\T1/ppl/m/n/9 by fea-tures than by con-junc-tions. How-ever,
+ []
+
+
+Underfull \hbox (badness 4805) in paragraph at lines 158--159
 \T1/ppl/m/n/9 ``super-searchers'' were re-vealed, iden-ti-fied
  []
 
 
-Underfull \hbox (badness 1831) in paragraph at lines 159--160
+Underfull \hbox (badness 1831) in paragraph at lines 158--159
 \T1/ppl/m/n/9 by short run lengths for both fea-ture and
  []
 
@@ -1406,7 +1412,7 @@ pt_hist.pdf> <../Scripts/adaptchoice/ac_switchRate_hist.pdf>]
 File: ../Scripts/foraging/fg_featureRunLength_hist.pdf Graphic file (type pdf)
  <use ../Scripts/foraging/fg_featureRunLength_hist.pdf>
 Package pdftex.def Info: ../Scripts/foraging/fg_featureRunLength_hist.pdf used 
-on input line 163.
+on input line 162.
 (pdftex.def)             Requested size: 184.9429pt x 105.68312pt.
 
 <../Scripts/foraging/fg_conjRunLength_hist.pdf, id=268, 252.945pt x 144.54pt>
@@ -1414,56 +1420,56 @@ File: ../Scripts/foraging/fg_conjRunLength_hist.pdf Graphic file (type pdf)
 
 <use ../Scripts/foraging/fg_conjRunLength_hist.pdf>
 Package pdftex.def Info: ../Scripts/foraging/fg_conjRunLength_hist.pdf used on 
-input line 164.
+input line 163.
 (pdftex.def)             Requested size: 184.9429pt x 105.68312pt.
 
-Overfull \hbox (3.89063pt too wide) in paragraph at lines 169--169
+Overfull \hbox (3.89063pt too wide) in paragraph at lines 168--168
 []\T1/phv/m/n/14 Correlations Be-tween Paradigms 
  []
 
 
-Underfull \hbox (badness 5022) in paragraph at lines 171--172
+Underfull \hbox (badness 5022) in paragraph at lines 170--171
 \T1/ppl/m/n/9 strat-egy in each of the three paradigms.
  []
 
 
-Underfull \hbox (badness 1430) in paragraph at lines 173--174
+Underfull \hbox (badness 1430) in paragraph at lines 172--173
 \T1/ppl/m/n/9 peo-ple search in the con-junc-tion con-di-tion.
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 176--176
+Underfull \hbox (badness 3118) in paragraph at lines 175--175
 [][][]\T1/ppl/m/n/7 More com-par-isons are pre-sented in the \T1/ppl/m/it/7 sup
 -ple-men-tary
  []
 
 
-Overfull \hbox (5.49057pt too wide) in paragraph at lines 176--178
+Overfull \hbox (5.49057pt too wide) in paragraph at lines 175--177
 []\T1/ppl/m/n/9 The re-sults pre-sented in Figure [][]5[][][] con-vinc-ingly
  []
 
 
-Overfull \hbox (3.41785pt too wide) in paragraph at lines 176--178
+Overfull \hbox (3.41785pt too wide) in paragraph at lines 175--177
 \T1/ppl/m/n/9 demon-strate that there are no strong cor-re-la-tions
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 176--178
+Underfull \hbox (badness 4846) in paragraph at lines 175--177
 \T1/ppl/m/n/9 be-tween any of the strate-gies cho-sen by
  []
 
 
-Overfull \hbox (9.03372pt too wide) in paragraph at lines 176--178
+Overfull \hbox (9.03372pt too wide) in paragraph at lines 175--177
 \T1/ppl/m/n/9 be-tween strate-gies across the dif-fer-ent paradigms,
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 176--178
+Underfull \hbox (badness 1320) in paragraph at lines 175--177
 \T1/ppl/m/n/9 per-haps there is still a cor-re-la-tion be-tween
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 176--178
+Underfull \hbox (badness 1448) in paragraph at lines 175--177
 \T1/ppl/m/n/9 or sta-ble speed-accuracy trade-offs be-tween
  []
 
@@ -1472,45 +1478,45 @@ File: ../Scripts/scratch/cor_comparison.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/cor_comparison.pdf>
 Package pdftex.def Info: ../Scripts/scratch/cor_comparison.pdf used on input li
-ne 191.
+ne 190.
 (pdftex.def)             Requested size: 184.9429pt x 258.91907pt.
 
-Underfull \hbox (badness 10000) detected at line 192
+Underfull \hbox (badness 10000) detected at line 191
 []
  []
 
 
-Underfull \hbox (badness 3068) in paragraph at lines 201--202
+Underfull \hbox (badness 3068) in paragraph at lines 200--201
 \T1/ppl/m/n/9 While we have suc-cess-fully repli-cated the
  []
 
 
-Underfull \hbox (badness 7362) in paragraph at lines 201--202
+Underfull \hbox (badness 7362) in paragraph at lines 200--201
 \T1/ppl/m/n/9 range of in-di-vid-ual dif-fer-ences found in
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 201--202
+Underfull \hbox (badness 1194) in paragraph at lines 200--201
 \T1/ppl/m/n/9 size than the orig-i-nal pa-pers, the between-
  []
 
 
-Underfull \hbox (badness 3240) in paragraph at lines 201--202
+Underfull \hbox (badness 3240) in paragraph at lines 200--201
 \T1/ppl/m/n/9 and this is a gen-er-ous in-ter-pre-ta-tion that
  []
 
 
-Underfull \hbox (badness 4403) in paragraph at lines 201--202
+Underfull \hbox (badness 4403) in paragraph at lines 200--201
 \T1/ppl/m/n/9 would fail to pass the usual cri-te-ria for
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 201--202
+Underfull \hbox (badness 1348) in paragraph at lines 200--201
 \T1/ppl/m/n/9 be con-trasted with the rel-a-tively high test-
  []
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 201--202
+Underfull \hbox (badness 1742) in paragraph at lines 200--201
 \T1/ppl/m/n/9 retest cor-re-la-tions of all three of the tasks
  []
 
@@ -1519,8 +1525,7 @@ Overfull \vbox (21.4162pt too high) has occurred while \output is active []
 
 
 [7 <../Scripts/foraging/fg_featureRunLength_hist.pdf> <../Scripts/foraging/fg_c
-onjRunLength_hist.pdf> <../Scripts/scratch/cor_comparison.pdf>]
-(./manuscript.bbl
+onjRunLength_hist.pdf>] (./manuscript.bbl
 Underfull \hbox (badness 1226) in paragraph at lines 4--6
 []\T1/ppl/m/n/9 Walter R Boot, Arthur F Kramer, En-sar
  []
@@ -1590,7 +1595,7 @@ Underfull \hbox (badness 1635) in paragraph at lines 81--83
 Overfull \vbox (21.51176pt too high) has occurred while \output is active []
 
 
-[8]
+[8 <../Scripts/scratch/cor_comparison.pdf>]
 Underfull \hbox (badness 1259) in paragraph at lines 92--93
 []\T1/ppl/m/n/9 Inefficient search strate-gies in sim-u-lated
  []
@@ -1622,14 +1627,14 @@ Overfull \vbox (21.51176pt too high) has occurred while \output is active []
 [9
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 220.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
  (./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 220.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 220.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 3DCF1B3AF429C1C24211BBE1FDAE123B;1078.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 220.
  ) 
 Here is how much of TeX's memory you used:
  8476 strings out of 493014
@@ -1638,7 +1643,7 @@ Here is how much of TeX's memory you used:
  11743 multiletter control sequences out of 15000+600000
  74133 words of font info for 128 fonts, out of 8000000 for 9000
  1152 hyphenation exceptions out of 8191
- 41i,18n,30p,1843b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,18n,30p,1843b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texli
@@ -1652,7 +1657,7 @@ onts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
 w/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palat
 ino/uplri8a.pfb>
-Output written on manuscript.pdf (9 pages, 555079 bytes).
+Output written on manuscript.pdf (9 pages, 555462 bytes).
 PDF statistics:
  376 PDF objects out of 1000 (max. 8388607)
  319 compressed objects within 4 object streams
