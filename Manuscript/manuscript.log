@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  29 NOV 2018 14:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  29 NOV 2018 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1286,13 +1286,29 @@ Underfull \hbox (badness 3199) in paragraph at lines 156--157
 \T1/ppl/m/n/9 be-tween the strat-egy met-rics in the three
  []
 
-<../Scripts/scratch/cor_comparison.pdf, id=243, 361.35pt x 505.89pt>
+
+Underfull \hbox (badness 1331) in paragraph at lines 156--157
+\T1/ppl/m/n/9 cor-re-la-tion in re-ac-tion times from one task
+ []
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 156--157
+\T1/ppl/m/n/9 to an-other, the mean cor-re-la-tion over the
+ []
+
+
+Underfull \hbox (badness 3189) in paragraph at lines 156--157
+\T1/ppl/m/n/9 cor-re-la-tion ac-counts for $\OML/cmm/m/it/9 R[] \OT1/cmr/m/n/9 
+= 0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 04 = 4%$ \T1/ppl/m/n/9 an
+ []
+
+<../Scripts/scratch/cor_comparison.pdf, id=242, 289.08pt x 361.35pt>
 File: ../Scripts/scratch/cor_comparison.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/cor_comparison.pdf>
 Package pdftex.def Info: ../Scripts/scratch/cor_comparison.pdf used on input li
 ne 160.
-(pdftex.def)             Requested size: 184.9429pt x 258.91907pt.
+(pdftex.def)             Requested size: 184.9429pt x 231.17499pt.
 LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 161.
 
 Underfull \hbox (badness 1142) in paragraph at lines 161--161
@@ -1322,23 +1338,13 @@ Overfull \hbox (7.5436pt too wide) in paragraph at lines 170--171
  []
 
 
-Underfull \hbox (badness 3240) in paragraph at lines 170--171
-\T1/ppl/m/n/9 and this is a gen-er-ous in-ter-pre-ta-tion that
+Overfull \hbox (5.70366pt too wide) in paragraph at lines 170--171
+\T1/ppl/m/n/9 will be-have in one of these paradigms ap-par-ently
  []
 
 
-Underfull \hbox (badness 4403) in paragraph at lines 170--171
-\T1/ppl/m/n/9 would fail to pass the usual cri-te-ria for
- []
-
-
-Underfull \hbox (badness 1348) in paragraph at lines 170--171
-\T1/ppl/m/n/9 be con-trasted with the rel-a-tively high test-
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 170--171
-\T1/ppl/m/n/9 retest cor-re-la-tions of all three of the tasks
+Underfull \hbox (badness 1577) in paragraph at lines 170--171
+\T1/ppl/m/n/9 in the oth-ers. This can be con-trasted with
  []
 
 
@@ -1347,18 +1353,33 @@ Overfull \hbox (13.9064pt too wide) in paragraph at lines 172--173
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 172--173
-\T1/ppl/m/n/9 or mea-sure-ment noise. The high test-retest
+Overfull \hbox (7.81277pt too wide) in paragraph at lines 172--173
+\T1/ppl/m/n/9 or mea-sure-ment noise. The test-retest cor-re-la-tions
  []
 
 
-Overfull \hbox (3.04883pt too wide) in paragraph at lines 172--173
-\T1/ppl/m/n/9 search tasks rules out many of these al-ter-na-tives,
+Underfull \hbox (badness 1436) in paragraph at lines 172--173
+\T1/ppl/m/n/9 a true ab-sence of shared vari-ance be-tween
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 172--173
-\T1/ppl/m/n/9 leav-ing a true ab-sence of shared vari-ance
+Underfull \hbox (badness 6188) in paragraph at lines 172--173
+\T1/ppl/m/n/9 these tasks as a likely ex-pla-na-tion. One
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 172--173
+\T1/ppl/m/n/9 least mod-estly cor-re-lated from one search
+ []
+
+
+Underfull \hbox (badness 3323) in paragraph at lines 172--173
+\T1/ppl/m/n/9 task to the next, even in the ab-sence of
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 172--173
+\T1/ppl/m/n/9 cor-re-la-tions in strat-egy, as a gen-eral fac-tor
  []
 
 
@@ -1405,6 +1426,9 @@ Underfull \hbox (badness 2005) in paragraph at lines 174--175
 Underfull \hbox (badness 1360) in paragraph at lines 174--175
 \T1/ppl/m/n/9 suc-cess in-volved min-i-miz-ing cog-ni-tive load
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 4927) in paragraph at lines 176--177
@@ -1488,7 +1512,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (21.4162pt too high) has occurred while \output is active []
 
 
-[7 <../Scripts/scratch/cor_comparison.pdf>] (./manuscript.bbl
+[7 <../Scripts/scratch/cor_comparison.pdf>]
+! Undefined control sequence.
+l.192 \acknowledgements
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(./manuscript.bbl
 Underfull \hbox (badness 1226) in paragraph at lines 4--6
 []\T1/ppl/m/n/9 Walter R Boot, Arthur F Kramer, En-sar
  []
@@ -1605,32 +1639,30 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
  ) 
 Here is how much of TeX's memory you used:
- 8522 strings out of 493014
- 124022 string characters out of 6133351
+ 8521 strings out of 493014
+ 124011 string characters out of 6133351
  214361 words of memory out of 5000000
  11786 multiletter control sequences out of 15000+600000
  78349 words of font info for 149 fonts, out of 8000000 for 9000
  1152 hyphenation exceptions out of 8191
  41i,18n,30p,1930b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
-urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/hel
-vetic/uhvro8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/
-uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a
-.pfb>
-Output written on manuscript.pdf (9 pages, 561536 bytes).
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
+w/helvetic/uhvro8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/pala
+tino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/up
+lri8a.pfb>
+Output written on manuscript.pdf (9 pages, 546191 bytes).
 PDF statistics:
- 366 PDF objects out of 1000 (max. 8388607)
- 311 compressed objects within 4 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 356 PDF objects out of 1000 (max. 8388607)
+ 303 compressed objects within 4 object streams
+ 67 named destinations out of 1000 (max. 500000)
  191 words of extra memory for PDF output out of 10000 (max. 10000000)
 

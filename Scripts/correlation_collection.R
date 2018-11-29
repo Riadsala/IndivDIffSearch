@@ -9,17 +9,15 @@ dat <- read_csv("summaryData.csv")
 
 
 cor_dat <- tibble(
-	comparison = c(
-		"sh-rt absent", 
-		"sh-rt a versus b hard", 
-		"sh-rt a versus b easy",
+	comparison = c(		
+		"sh-rt a versus b hard", 		
 		"sh - strategy",
 		"acvs prop optimal",	
-		"MCFT conjunction (rn)"),
-	estimate = c(0,0,0, 0.73, 0.83,  0.88),
-	lower = c(0.65, 0.66, 0.56, 0.585, 0.72,  .81),
-	upper = c(0.86, 0.87, 0.82, 0.832, 0.90, .92),
-	type = rep('test-retest', 6))
+		"MCFT (rn)"),
+	estimate = c(0, 0.73, 0.83,  0.88),
+	lower = c( 0.66, 0.585, 0.72,  .81),
+	upper = c( 0.87, 0.832, 0.90, .92),
+	type = rep('test-retest', 4))
 
 add_r_95 <- function(x1, x2, df, t) {
 	ci95 <- cor.test(x1[[1]], x2[[1]])
@@ -62,9 +60,7 @@ cor_dat$comparison <- fct_recode(cor_dat$comparison,
 	`SHLS (opt) - SHLS (rt)`  = "ls_prop_hetero-ls_mean_log_rt",
 	`ACVS (sw)`   = "acvs switch rate",
 	`ACVS (opt)`  = "acvs prop optimal",
-	`SHLS absent (rt)`  = "sh-rt absent",
-	`SHLS easy (rt)`  = "sh-rt a versus b easy",
-	`SHLS hard(rt)`  = "sh-rt a versus b hard",
+	`SHLS (rt)`  = "sh-rt a versus b hard",
 	`SHLS (opt)` = "sh - strategy",
 	`MCFT (rl) - MCFT (rt)`  = "fg_conj_run_length-fg_conj_log2",
 	`MCFT (rl) - MCFT (rt)`  = "fg_conj_run_length-fg_conj_log2",
@@ -91,5 +87,5 @@ plt <- plt + theme(
 	legend.position = "top",
 	axis.title.y = element_blank())
 plt
-ggsave("scratch/cor_comparison.pdf", width = 5, height = 7)
-ggsave("scratch/cor_comparison.png", width = 5, height = 7)
+ggsave("scratch/cor_comparison.pdf", width = 4, height = 5)
+ggsave("scratch/cor_comparison.png", width = 4, height = 5)
