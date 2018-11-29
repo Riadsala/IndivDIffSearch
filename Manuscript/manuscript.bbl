@@ -30,6 +30,13 @@ Marian Dawkins.
 \newblock Shifts of `attention' in chicks during feeding.
 \newblock {\em Animal Behaviour}, 19(3):575 -- 582, 1971.
 
+\bibitem{folk1992}
+Charles~L Folk, Roger~W Remington, and James~C Johnston.
+\newblock Involuntary covert orienting is contingent on attentional control
+  settings.
+\newblock {\em Journal of Experimental Psychology: Human perception and
+  performance}, 18(4):1030, 1992.
+
 \bibitem{gilchrist2006}
 Iain~D Gilchrist and Monika Harvey.
 \newblock Evidence for a systematic component within scan paths in visual
@@ -65,6 +72,11 @@ Jessica~L Irons and Andrew~B Leber.
   and Arni Kristj{\'a}nsson.
 \newblock Visual foraging with fingers and eye gaze.
 \newblock {\em i-Perception}, 7(2):2041669516637279, 2016.
+
+\bibitem{klein2000}
+Raymond~M Klein.
+\newblock Inhibition of return.
+\newblock {\em Trends in cognitive sciences}, 4(4):138--147, 2000.
 
 \bibitem{kristjansson2014}
 {\'A}rni Kristj{\'a}nsson, {\'O}mar~I J{\'o}hannesson, and Ian~M Thornton.
@@ -139,5 +151,17 @@ Jeremy Wolfe, Matthew Cain, Krista Ehinger, and Trafton Drew.
 \newblock Guided search 5.0: Meeting the challenge of hybrid search and
   multiple-target foraging.
 \newblock {\em Journal of vision}, 15(12):1106--1106, 2015.
+
+\bibitem{wolfe2007}
+Jeremy~M Wolfe.
+\newblock Guided search 4.0.
+\newblock {\em Integrated models of cognitive systems}, pages 99--119, 2007.
+
+\bibitem{yantis1999}
+Steven Yantis and Howard~E Egeth.
+\newblock On the distinction between visual salience and stimulus-driven
+  attentional capture.
+\newblock {\em Journal of Experimental Psychology: Human Perception and
+  Performance}, 25(3):661, 1999.
 
 \end{thebibliography}

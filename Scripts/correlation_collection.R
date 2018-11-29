@@ -14,14 +14,12 @@ cor_dat <- tibble(
 		"sh-rt a versus b hard", 
 		"sh-rt a versus b easy",
 		"sh - strategy",
-		"acvs prop optimal",
-		"acvs switch rate",
-		"MCFT feature (rn)",
+		"acvs prop optimal",	
 		"MCFT conjunction (rn)"),
-	estimate = c(0,0,0, 0.73, 0.83, 0.77,  0.7, 0.88),
-	lower = c(0.65, 0.66, 0.56, 0.585, 0.72, 0.63, 0.55, .81),
-	upper = c(0.86, 0.87, 0.82, 0.832, 0.90, 0.87, .8, .92),
-	type = rep('test-retest', 8))
+	estimate = c(0,0,0, 0.73, 0.83,  0.88),
+	lower = c(0.65, 0.66, 0.56, 0.585, 0.72,  .81),
+	upper = c(0.86, 0.87, 0.82, 0.832, 0.90, .92),
+	type = rep('test-retest', 6))
 
 add_r_95 <- function(x1, x2, df, t) {
 	ci95 <- cor.test(x1[[1]], x2[[1]])
