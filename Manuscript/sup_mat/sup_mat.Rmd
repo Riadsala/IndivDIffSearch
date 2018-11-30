@@ -1,0 +1,59 @@
+---
+title: "Supplementary Materials"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+  pdf_document:
+    toc: yes
+    toc_depth: '2'
+---
+
+```{r setup, include=FALSE}
+# setting options
+knitr::opts_chunk$set(echo = TRUE)
+
+# Packages
+library(tidyverse)
+library(ggthemes)
+
+# what data do we need?
+# get line seg acc and rt 
+ls_acc_RT <- readRDS(file = "../../Scripts/lineseg/scratch/processedRTandAccData.Rda")
+
+```
+
+# 1 Participants
+```{r Participants, echo = FALSE}
+# sort out participants 
+ls_acc_RT$observer <- as.factor(as.numeric(ls_acc_RT$observer))
+
+# number of participants used
+num_participants <- length(unique(ls_acc_RT$observer))
+
+avg_acc_all <- ls_acc_RT %>%
+  group_by(observer,targSide) %>%
+  summarise(Acc = mean(accuracy))
+
+```
+
+Data was collected from 64 Participants as originally planned. Four of these participants did not complete all parts of the experiment (either declining to participate in the second session, or could not be calibrated with the eye tracker), so four new participants were recruited to bring the total back up to `r num_participants`.
+
+## 1.1 Split-Half
+Accuracy data is shown in Figure 1. From this we can see that there are a number of outliers:  4, 21, 33, 56, and 58. These participants, in at least one session, either missed the majority of easy targets, or responded with false positives on the majority of target absent trials. After removing these participants, the lowest accuracy in either session was 84.6% for the easy targets, and 76.9% for target absent trials. This leaves us with 59 participants for the split-half paradigm.
+
+```{r Figure 1, echo = FALSE}
+
+# make the plot
+plt <- ls_acc_RT %>%
+  group_by(observer, targSide, session) %>%
+  summarise(Accuracy = mean(accuracy)) %>%
+  ggplot(aes(targSide, Accuracy, fill = session)) + 
+  geom_bar(stat = "identity", position = position_dodge()) + 
+  scale_y_continuous(breaks = c(0,1)) + 
+  theme_bw() +
+  theme(axis.text.x  = element_text(angle=90, vjust=0.5), legend.position = "top", strip.text.x = element_text(margin = margin(0.01,0,0.01,0, "mm"))) + 
+  scale_fill_ptol() +
+  facet_wrap(~observer)
+plt$labels$x <- "Target Condition"
+plt
