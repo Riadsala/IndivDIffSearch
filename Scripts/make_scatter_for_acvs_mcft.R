@@ -49,7 +49,7 @@ plt
 
 r <- (with(dat, cor.test(fg_conj_run_length, fg_conj_log2)))
 
-y_labels = seq(22.5, 60,  7.5)
+y_labels = seq(24, 60, 6)
 y_breaks = log(1000* y_labels, 2)
 
 
