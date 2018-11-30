@@ -1,20 +1,20 @@
 # Fdb version 3
-["bibtex manuscript"] 1543579439 "manuscript.aux" "manuscript.bbl" "manuscript" 1543585306
+["bibtex manuscript"] 1543579439 "manuscript.aux" "manuscript.bbl" "manuscript" 1543585778
   "/usr/local/texlive/2016/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "literature.bib" 1543406311 11567 b3f6bd5efa383ad70005b18031ca4342 ""
-  "manuscript.aux" 1543585306 7090 d7a0543cccc4e839bcd31f7d6b787701 ""
+  "manuscript.aux" 1543585778 7090 d7a0543cccc4e839bcd31f7d6b787701 ""
   "manuscript.bcf" 0 -1 0 ""
   (generated)
   "manuscript.blg"
   "manuscript.bbl"
-["pdflatex"] 1543585305 "manuscript.tex" "manuscript.pdf" "manuscript" 1543585306
+["pdflatex"] 1543585777 "manuscript.tex" "manuscript.pdf" "manuscript" 1543585778
   "../Scripts/lineseg/scratch/acc_correlation.pdf" 1541178682 9107 f5f3c7c383c44de6e73248b90ceeeb7c ""
   "../Scripts/lineseg/scratch/rt_correlation.pdf" 1541178970 15481 38c24754b8a87434a797a9606b86f61b ""
   "../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf" 1542732683 11503 52c3a73b3352e52f2a5c2c28b3c29934 ""
   "../Scripts/lineseg/scratch/strat_corr.pdf" 1542732683 8906 e5ea0fa1a6d4864d6df99eb8045492ea ""
-  "../Scripts/scratch/acvs_opt_rt.pdf" 1543575816 6635 9230e2bfbbf54e70821d3f7c9af6f350 ""
+  "../Scripts/scratch/acvs_opt_rt.pdf" 1543585696 6752 df32bc7ba7a0ba27e0ec82c4dda7cb0d ""
   "../Scripts/scratch/cor_comparison.pdf" 1543508879 5152 54c59ce93a5551af684ae725f799b22d ""
-  "../Scripts/scratch/mcft_rl_rt.pdf" 1543575677 6641 27e79f8c2081e8a6d80affa742f7d7e0 ""
+  "../Scripts/scratch/mcft_rl_rt.pdf" 1543585772 6668 5967ffc16cf789a06cb6d58d771d26f9 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -90,10 +90,10 @@
   "figures/adaptive.png" 1521818849 56825 624e4f0fe0e16b6bd99b2cb313c6b1e9 ""
   "figures/foraging.png" 1521821399 41089 9903e24c44c1c60cb2d69a891bdf6e31 ""
   "figures/split-half.png" 1521818768 315829 fbda65b00e3321404a4bf6ced36804a3 ""
-  "manuscript.aux" 1543585306 7090 d7a0543cccc4e839bcd31f7d6b787701 ""
+  "manuscript.aux" 1543585778 7090 d7a0543cccc4e839bcd31f7d6b787701 ""
   "manuscript.bbl" 1543579439 5717 3559a7a23d8781f20318c1eca05ce0f4 "bibtex manuscript"
-  "manuscript.out" 1543585306 973 6f9205736957a5fe93bf4f5d48701cb8 ""
-  "manuscript.tex" 1543585304 29504 afeacc658f5d06147cc0c7d11deb0f9e ""
+  "manuscript.out" 1543585778 973 6f9205736957a5fe93bf4f5d48701cb8 ""
+  "manuscript.tex" 1543585309 29504 afeacc658f5d06147cc0c7d11deb0f9e ""
   (generated)
   "manuscript.pdf"
   "manuscript.log"
