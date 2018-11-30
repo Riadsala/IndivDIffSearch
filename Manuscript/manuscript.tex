@@ -1,57 +1,64 @@
 
 \RequirePackage{fix-cm}
-\documentclass[]{rsos}%%%%where rsos is the template name
+\documentclass[twocolumn]{article}
 
 %% *** Do not adjust lengths that control margins, column widths, etc. ***
 \usepackage{subfigure}
 \usepackage{lineno}
 \usepackage{hyperref}
-\begin{document}
+\usepackage{graphicx}
+\usepackage{authblk}
+
+
 
 % \linenumbers
 %%%% Article title to be placed here
 \title{Stable individual differences in strategies within, but not between, visual search tasks}
 
-\author{%%%% Author details
-Alasdair D. F. Clarke$^1$, Jessica L Irons$^2$, Warren James$^3$, Andrew B Leber$^2$ and Amelia R Hunt$^3$}
+\author[1, *]{A. D. F. Clarke}
+\author[2]{J. L. Irons} 
+\author[3]{W. James}
+\author[2]{A. B. Leber}
+\author[3]{A. R. Hunt}
 
-%%%%%%%%% Insert author address here
-\address{$^{1}$Department of Psychology, University of Essex, Colchester, UK\\
-$^{2}$Department of Psychology, The Ohio State University, Columbus, USA\\
-$^{3}$School of Psychology, University of Aberdeen, Aberdeen, UK}
+\affil[1]{Department of Psychology, University of Essex, Colchester, UK}
+\affil[2]{Department of Psychology, The Ohio State University, Columbus, USA}
+\affil[3]{School of Psychology, University of Aberdeen, Aberdeen, UK}
+\affil[*]{Corresponding author: a.clarke@essex.ac.uk}
+\renewcommand\Affilfont{\itshape\small}
 
-%%%% Subject entries to be placed here %%%%
-\subject{Behaviour, evolution}
 
-%%%% Keyword entries to be placed here %%%%
-\keywords{visual search, optimal behaviour, eye movements}
+% %%%% Subject entries to be placed here %%%%
+% \subject{Behaviour, evolution}
 
-%%%% Insert corresponding author and its email address}
-\corres{Alasdair Clarke\\
-\email{a.clarke@essex.ac.uk}}
+% %%%% Keyword entries to be placed here %%%%
+% \keywords{visual search, optimal behaviour, eye movements}
+
+% %%%% Insert corresponding author and its email address}
+% \corres{Alasdair Clarke\\
+% \email{a.clarke@essex.ac.uk}}
+
+\begin{document}
+\maketitle
 
 \begin{abstract}
 A striking range of individual differences has recently been reported in three different visual search tasks. These differences in performance can be attributed to strategy, that is, the efficiency with which participants control their search to complete the task quickly and accurately. Here we ask if an individual's strategy and performance in one search task is correlated with how they perform in the other two. We tested 64 observers in the three tasks mentioned above over two sessions. Even though the test-retest reliability of the tasks is high, an observer’s performance and strategy in one task did not reliably predict their behaviour in the other two. These results suggest search strategies are stable over time, but context-specific. To understand visual search we therefore need to account not only for differences between individuals, but also how individuals interact with the search task and context. These context-specific but stable individual differences in strategy can account for a substantial proportion of variability in search performance.
 \end{abstract}
 
-%%%%%%%%%% Insert the texts which can accomdate on firstpage in the tag "fmtext" %%%%%
 
-\begin{fmtext}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-As is common in cognitive psychology, most visual search literature has focused on how the average participant performs in the task, despite it being well known that there is a great deal of variability between one subject and the next. From Treisman's work on \end{fmtext}
-\maketitle
-\twocolumn Feature Integration Theory\cite{treisman1980} to the latest incarnation of the Guided Search Model\cite{wolfe2015}, we now have a good understanding of what makes some search targets effortless to find, while others require careful inspection. However, these theories and models have neglected the question of why some observers find visual search so much harder than others. These differences can emerge from several different sources of variation: tiredness\cite{mackworth1948}, information-processing ability, speed-accuracy trade-off, motivation, visual impairments\cite{nowakowska2016}, and search strategies\cite{boot2006}. Although their existence has previously been noted\cite{mackworth1948}, a rigorous examination of individual differences in visual search is a challenge that has not been taken up by many researchers, and questions about their importance and stability remain relatively under explored. 
+As is common in cognitive psychology, most visual search literature has focused on how the average participant performs in the task, despite it being well known that there is a great deal of variability between one subject and the next. From Treisman's work on Feature Integration Theory\cite{treisman1980} to the latest incarnation of the Guided Search Model\cite{wolfe2015}, we now have a good understanding of what makes some search targets effortless to find, while others require careful inspection. However, these theories and models have neglected the question of why some observers find visual search so much harder than others. These differences can emerge from several different sources of variation: tiredness\cite{mackworth1948}, information-processing ability, speed-accuracy trade-off, motivation, visual impairments\cite{nowakowska2016}, and search strategies\cite{boot2006}. Although their existence has previously been noted\cite{mackworth1948}, a rigorous examination of individual differences in visual search is a challenge that has not been taken up by many researchers, and questions about their importance and stability remain relatively under explored. 
 
 In the current study, we focus on one source of individual differences in visual search: strategy. By search strategies, we refer to a collection of behaviours that all observers can freely choose from when they search a display. Examples include choosing to adopt a systematic left-to-right and top-to-bottom strategy\cite{gilchrist2006}, or the type of guided search behaviour in which locations that are more likely to contain the target are prioritised\cite{wolfe2015}. 
 
-A striking example of the effect of strategy is given by Boot and colleagues\cite{boot2006}. They asked participants to monitor a cluttered display for an object changing colour or suddenly appearing. Large individual differences were found with respect to the number of saccades participants made while monitoring the stimulus, and this was negatively correlated with detection performance. Proulx\cite{proulx2011} demonstrated that participants differed in how they prioritised visual features (color or orientation) when searching through a set of objects for one with a particular color-orientation combination. These differences in search strategy explained some of the variation in the extent to which participants were distracted by an irrelevant object of a unique size. However, participants were largely unaware of the search strategy they employed, and the majority were unable, or unwilling, to comply with instructions to employ a particular strategy.
+A striking example of the effect of strategy is given by Boot and colleagues\cite{boot2006}. They asked participants to monitor a cluttered display for an object changing colour or suddenly appearing. Large individual differences were found with respect to the number of saccades participants made while monitoring the stimulus, and this was negatively correlated with detection performance. Proulx\cite{proulx2011} demonstrated that participants differed in how they prioritised visual features (colour or orientation) when searching through a set of objects for one with a particular colour-orientation combination. These differences in search strategy explained some of the variation in the extent to which participants were distracted by an irrelevant object of a unique size. However, participants were largely unaware of the search strategy they employed, and the majority were unable, or unwilling, to comply with instructions to employ a particular strategy.
 
-Eye movement strategies have also been shown to be an important source of individual differences in visual search efficiency. Nowakowska, Clarke \& Hunt\cite{nowakowska2017} designed a simple search paradigm to discriminate between optimal\cite{najemnik-geisler2008} and stochastic \cite{clarke2016} search strategies. The task involved searching through arrays of line segments arranged such that those on one side of the display all had a very similar orientation ("homogeneous"), while those on the other side had higher variance ("heterogeneous", see Figure \ref{fig:exampleStimuli} for an example). This meant that targets appearing on the homogeneous side would be highly salient, and targets on the heterogeneous side  would be much harder to find. With these stimuli, the optimal eye movement strategy is to only search the heterogeneous half , as targets on the homogeneous side can be detected with peripheral vision. We will refer to this paradigm here as the Split-Half Line Segment task (SHLS). While some participants initially searched the displays near optimally, others carried out strategies counter to this, failing to even match the performance of the stochastic searcher. Furthermore, the degree to which they made saccades in line with the optimal search strategy was strongly correlated with their reaction times. A related version of this paradigm has been used in research investigating eye movement strategies in response to (simulated) hemianopia\cite{nowakowska2016,nowakowska2018}, with similar conclusions: the full spectrum of individual differences in strategy was observed, from near-optimal to the opposite of optimal. It is therefore not possible to conclude whether optimal or stochastic models better describe search without first explaining individual variablility.
+Eye movement strategies have also been shown to be an important source of individual differences in visual search efficiency. Nowakowska, Clarke \& Hunt\cite{nowakowska2017} designed a simple search paradigm to discriminate between optimal\cite{najemnik-geisler2008} and stochastic \cite{clarke2016} search strategies. The task involved searching through arrays of line segments arranged such that those on one side of the display all had a very similar orientation ("homogeneous"), while those on the other side had higher variance ("heterogeneous", see Figure \ref{fig:exampleStimuli} for an example). This meant that targets appearing on the homogeneous side would be highly salient, and targets on the heterogeneous side  would be much harder to find. With these stimuli, the optimal eye movement strategy is to only search the heterogeneous half , as targets on the homogeneous side can be detected with peripheral vision. We will refer to this paradigm here as the Split-Half Line Segment task (SHLS). While some participants initially searched the displays near optimally, others carried out strategies counter to this, failing to even match the performance of the stochastic searcher. Furthermore, the degree to which they made saccades in line with the optimal search strategy was strongly correlated with their reaction times. A related version of this paradigm has been used in research investigating eye movement strategies in response to (simulated) hemianopia\cite{nowakowska2016,nowakowska2018}, with similar conclusions: the full spectrum of individual differences in strategy was observed, from near-optimal to the opposite of optimal. It is therefore not possible to conclude whether optimal or stochastic models better describe search without first explaining individual variability.
 
-A similar range of strategies, from random to near-optimal, has been found by Irons \& Leber with the Adaptive Choice Visual Search (ACVS) paradigm\cite{irons-leber2016}, designed to explore how feature-based attention is used. This paradigm involves stimuli made up of small coloured boxes (red, blue, green and a fourth colour that varies from red, through purple, to blue and back again) with numerals written inside them (See Figure \ref{fig:exampleStimuli}). The target is a defined as a red or blue box containing one of four numerals (e.g., 2-5), and on each trial one target of each colour is present. The participant's task is to find one of either target as quickly as possible and report the numeral. On trials in which the fourth colour is red (or close to red), participants should search through the blue boxes and report the blue target, as there will be fewer distracters. As the fourth colour changes to through purple to blue, participants should update their strategy and search for the red target. The results showed that participants varied substantially along two key dimensions: how frequently they used the more effective target color to search (varying from chance performance to near optimal), and how often they changed between colours. Further work\cite{irons-leber2018} has shown that these differences are stable over time (between one and ten days) with test-retest correlations of around $r = 0.83$ ($95\%$ confidence interval $= [0.72, 0.90]$).
+A similar range of strategies, from random to near-optimal, has been found by Irons \& Leber with the Adaptive Choice Visual Search (ACVS) paradigm\cite{irons-leber2016}, designed to explore how feature-based attention is used. This paradigm involves stimuli made up of small coloured boxes (red, blue, green and a fourth colour that varies from red, through purple, to blue and back again) with numerals written inside them (See Figure \ref{fig:exampleStimuli}). The target is a defined as a red or blue box containing one of four numerals (e.g., 2-5), and on each trial one target of each colour is present. The participant's task is to find one of either target as quickly as possible and report the numeral. On trials in which the fourth colour is red (or close to red), participants should search through the blue boxes and report the blue target, as there will be fewer distracters. As the fourth colour changes to through purple to blue, participants should update their strategy and search for the red target. The results showed that participants varied substantially along two key dimensions: how frequently they used the more effective target colour to search (varying from chance performance to near optimal), and how often they changed between colours. Further work\cite{irons-leber2018} has shown that these differences are stable over time (between one and ten days) with test-retest correlations of around $r = 0.83$ ($95\%$ confidence interval $= [0.72, 0.90]$).
 
 \begin{figure*}
 \centering
@@ -66,7 +73,7 @@ Another example of differences in search strategy comes from the foraging litera
 
 Previous research has investigated the relationship between these behaviours to psychometric measures, but to date, these differences have not shown strong correlations with other attributes. In the ACVS paradigm, Irons \& Leber found no evidence of a correlation between the proportion of optimal choices made by observers and measures of visual working memory; trait impulsivity\cite{irons-leber2016}; novelty seeking; need for cognition; and intolerance of uncertainty\cite{irons-leber2018}. Similarly, the differences foraging behaviour are not accounted for by working memory or inhibitory control\cite{johannesson2017}. 
 
-A common theme emerging from these studies is the observation that individual strategies vary in their degree of effectiveness or optimality. However, ``visual search'' encompasses a wide range of specific tasks, each tapping into a different aspect of behaviour (e.g. feature-based attention, information sampling). The aim of the present study is to investigate the extent to which individual differences are stable across different visual search paradigms. Are observers who use the optimal strategy in the SHLS paradigm also more optimal in the ACVS task? Does it make sense to talk about `super-searchers' who show above average performance in a range of search tasks (analogous to the 'super-recognizers' of the face-recognition literature \cite{russell2009}? Are the super-foragers consistently better or worse than more typical searchers in the other two paradigms? As a secondary question, we will measure the test-retest reliability of the differences found in the SHLS paradigm, and compare it with existing estimates of reliability for ACVS and MCFT. 
+A common theme emerging from these studies is the observation that individual strategies vary in their degree of effectiveness or optimality. However, ``visual search'' encompasses a wide range of specific tasks, each tapping into a different aspect of behaviour (e.g. feature-based attention, information sampling). The aim of the present study is to investigate the extent to which individual differences are stable across different visual search paradigms. Are observers who use the optimal strategy in the SHLS paradigm also more optimal in the ACVS task? Does it make sense to talk about `super-searchers' who show above average performance in a range of search tasks (analogous to the 'super-recognizers' of the face-recognition literature \cite{russell2009})? Are the super-foragers consistently better or worse than more typical searchers in the other two paradigms? As a secondary question, we will measure the test-retest reliability of the differences found in the SHLS paradigm, and compare it with existing estimates of reliability for ACVS and MCFT. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Methods}

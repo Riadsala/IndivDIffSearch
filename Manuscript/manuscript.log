@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  30 NOV 2018 11:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  30 NOV 2018 13:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -11,247 +11,62 @@ Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-)) (./rsos.cls
-Document Class: rsos 2005/12/01 v1.1 Standard LaTeX document class
-(/usr/local/texlive/2016/texmf-dist/tex/latex/vruler/vruler.sty 2.3 <24/10/96>
-    VRULER version 2.3 Octorber 1996 By Z Jiang
-    University of New England, Australia
-    Email: zhuhan@neumann.une.edu.au
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/crop/crop.sty
-Package: crop 2003/05/20 v1.9 crop marks (mf)
-\stockwidth=\dimen107
-\stockheight=\dimen108
-\CROP@index=\count89
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2016/05/09 v1.1c Standard LaTeX Color (DPC)
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 144.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count90
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip43
+\subfigcapskip=\skip44
+\subfigcaptopadj=\dimen103
+\subfigbottomskip=\skip45
+\subfigcapmargin=\dimen104
+\subfiglabelskip=\skip46
+\c@subfigure=\count87
+\c@lofdepth=\count88
+\c@subtable=\count89
+\c@lotdepth=\count90
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2016/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip47
+\subfig@bottom=\skip48
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count91
+\output=\toks14
+\linenoprevgraf=\count92
+\linenumbersep=\dimen105
+\linenumberwidth=\dimen106
+\c@linenumber=\count93
+\c@pagewiselinenumber=\count94
+\c@LN@truepage=\count95
+\c@internallinenumber=\count96
+\c@internallinenumbers=\count97
+\quotelinenumbersep=\dimen107
+\bframerule=\dimen108
+\bframesep=\dimen109
+\bframebox=\box26
+LaTeX Info: Redefining \\ on input line 3056.
 )
-Package graphics Info: Driver file: pdftex.def on input line 96.
-)
-\CROP@offset=\count91
-Package crop Info: Local config file crop.cfg used on input line 605.
-
-(/usr/local/texlive/2016/texmf-dist/tex/xelatex/xetexconfig/crop.cfg))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/10 v2.15b AMS math features
-\@mathmargin=\skip41
-
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks31
-\ex@=\dimen109
-))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen110
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
-)
-\inf@bad=\count92
-LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count93
-\leftroot@=\count94
-LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count95
-\DOTSCASE@=\count96
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box32
-\strutbox@=\box33
-\big@size=\dimen111
-LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
-\macc@depth=\count97
-\c@MaxMatrixCols=\count98
-\dotsspace@=\muskip10
-\c@parentequation=\count99
-\dspbrk@lvl=\count100
-\tag@help=\toks32
-\row@=\count101
-\column@=\count102
-\maxfields@=\count103
-\andhelp@=\toks33
-\eqnshift@=\dimen112
-\alignsep@=\dimen113
-\tagshift@=\dimen114
-\tagwidth@=\dimen115
-\totwidth@=\dimen116
-\lineht@=\dimen117
-\@envbody=\toks34
-\multlinegap=\skip42
-\multlinetaggap=\skip43
-\mathdisplay@stack=\toks35
-LaTeX Info: Redefining \[ on input line 2739.
-LaTeX Info: Redefining \] on input line 2740.
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amscls/upref.sty
-Package: upref 2007/03/14 v2.04
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/endnotes/endnotes.sty
-\c@endnote=\count104
-\endnotesep=\dimen118
-\@enotes=\write3
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2015/03/04 v2.20.2
-\thm@style=\toks36
-\thm@bodyfont=\toks37
-\thm@headfont=\toks38
-\thm@notefont=\toks39
-\thm@headpunct=\toks40
-\thm@preskip=\skip44
-\thm@postskip=\skip45
-\thm@headsep=\skip46
-\dth@everypar=\toks41
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/marginnote/marginnote.sty
-Package: marginnote 2012/03/29 v1.1i non floating margin notes for LaTeX
-\c@mn@abspage=\count105
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/soul/soul.sty
-Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks42
-\SOUL@lasttoken=\toks43
-\SOUL@cmds=\toks44
-\SOUL@buffer=\toks45
-\SOUL@token=\toks46
-\SOUL@spaceskip=\skip47
-\SOUL@ttwidth=\dimen119
-\SOUL@uldp=\dimen120
-\SOUL@ulht=\dimen121
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks47
-)
-\Gin@req@height=\dimen122
-\Gin@req@width=\dimen123
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/rotating/rotating.sty
-Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\c@r@tfl@t=\count106
-\rotFPtop=\skip48
-\rotFPbot=\skip49
-\rot@float@box=\box34
-\rot@mess@toks=\toks48
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/dcolumn.sty
-Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/array.sty
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen124
-\extrarowheight=\dimen125
-\NC@list=\toks49
-\extratabsurround=\skip50
-\backup@length=\skip51
-))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/palatino.sty
-Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR) 
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/helvet.sty
-Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
-)
-\catchlinewd=\dimen126
-\dcht=\dimen127
-\frametextht=\dimen128
-\myrunhwidth=\skip52
-LaTeX Font Info:    Try loading font information for T1+phv on input line 478.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1phv.fd
-File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
-)
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.35007pt on input line 478.
-\c@part=\count107
-\c@section=\count108
-\c@subsection=\count109
-\c@subsubsection=\count110
-\c@paragraph=\count111
-\c@subparagraph=\count112
-\c@figure=\count113
-\c@scheme=\count114
-\c@table=\count115
-\abovecaptionskip=\skip53
-\belowcaptionskip=\skip54
-\leftnoteskip=\dimen129
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-\everycr=\toks50
-\minrowclearance=\skip55
-)
-\bibindent=\dimen130
-\absbox=\box35
-\fmtextbox=\box36
-\c@mythm=\count116
-\rotdimen=\dimen131
-\symEulerExtension=\mathgroup6
-LaTeX Font Info:    Redeclaring math symbol \intop on input line 1446.
-LaTeX Font Info:    Redeclaring math symbol \ointop on input line 1447.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/cite/cite.sty
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 332.
-Package: cite 2015/02/27  v 5.5
-)
-\eqntext=\dimen132
-
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
 
@@ -262,8 +77,8 @@ Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package hobsub Info: Skipping package `infwarerr' (already loaded).
-Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
@@ -296,9 +111,12 @@ Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)
-Package atbegshi Info: Package `crop' patched.
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
@@ -309,22 +127,18 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen133
-\Hy@linkcounter=\count117
-\Hy@pagecounter=\count118
+\@linkdim=\dimen110
+\Hy@linkcounter=\count98
+\Hy@pagecounter=\count99
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count119
+\Hy@SavedSpaceFactor=\count100
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4322
-.
-Package hyperref Info: Option `raiselinks' set `true' on input line 4322.
-Package hyperref Info: Option `breaklinks' set `true' on input line 4322.
 Package hyperref Info: Hyper figures OFF on input line 4446.
 Package hyperref Info: Link nesting OFF on input line 4451.
 Package hyperref Info: Hyper index ON on input line 4454.
@@ -332,17 +146,17 @@ Package hyperref Info: Plain pages OFF on input line 4461.
 Package hyperref Info: Backreferencing OFF on input line 4466.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4691.
-\c@Hy@tempcnt=\count120
+\c@Hy@tempcnt=\count101
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip11
+\Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5044.
-\XeTeXLinkMargin=\dimen134
-\Fld@menulength=\count121
-\Field@Width=\dimen135
-\Fld@charsize=\dimen136
+\XeTeXLinkMargin=\dimen111
+\Fld@menulength=\count102
+\Field@Width=\dimen112
+\Fld@charsize=\dimen113
 Package hyperref Info: Hyper figures OFF on input line 6298.
 Package hyperref Info: Link nesting OFF on input line 6303.
 Package hyperref Info: Hyper index ON on input line 6306.
@@ -352,102 +166,106 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6323.
 Package hyperref Info: PDF/A mode OFF on input line 6328.
 LaTeX Info: Redefining \ref on input line 6368.
 LaTeX Info: Redefining \pageref on input line 6372.
-\Hy@abspage=\count122
-\c@Item=\count123
-\c@Hfootnote=\count124
+\Hy@abspage=\count103
+\c@Item=\count104
+\c@Hfootnote=\count105
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
-\Fld@listcount=\count125
-\c@bookmark@seq@number=\count126
+\Fld@listcount=\count106
+\c@bookmark@seq@number=\count107
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip56
+\Hy@SectionHShift=\skip49
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 1509.
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/subfigure/subfigure.sty
-Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip57
-\subfigcapskip=\skip58
-\subfigcaptopadj=\dimen137
-\subfigbottomskip=\skip59
-\subfigcapmargin=\dimen138
-\subfiglabelskip=\skip60
-\c@subfigure=\count127
-\c@lofdepth=\count128
-\c@subtable=\count129
-\c@lotdepth=\count130
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-****************************************
-* Local config file subfigure.cfg used *
-****************************************
-(/usr/local/texlive/2016/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip61
-\subfig@bottom=\skip62
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/lineno/lineno.sty
-Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count131
-\output=\toks51
-\linenoprevgraf=\count132
-\linenumbersep=\dimen139
-\linenumberwidth=\dimen140
-\c@linenumber=\count133
-\c@pagewiselinenumber=\count134
-\c@LN@truepage=\count135
-\c@internallinenumber=\count136
-\c@internallinenumbers=\count137
-\quotelinenumbersep=\dimen141
-\bframerule=\dimen142
-\bframesep=\dimen143
-\bframebox=\box37
-LaTeX Info: Redefining \\ on input line 3056.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 96.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count108
+))
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/preprint/authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip50
+\@affilsep=\skip51
+\c@Maxaffil=\count109
+\c@authors=\count110
+\c@affil=\count111
 )
 (./manuscript.aux)
 \openout1 = `manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+\AtBeginShipoutBox=\box27
+Package hyperref Info: Link coloring OFF on input line 41.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1ppl.fd
-File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
+\c@section@level=\count112
+)
+LaTeX Info: Redefining \ref on input line 41.
+LaTeX Info: Redefining \pageref on input line 41.
+LaTeX Info: Redefining \nameref on input line 41.
+
+(./manuscript.out) (./manuscript.out)
+\@outlinefile=\write3
+\openout3 = `manuscript.out'.
+
+
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count138
-\scratchdimen=\dimen144
-\scratchbox=\box38
-\nofMPsegments=\count139
-\nofMParguments=\count140
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count141
-\MPscratchDim=\dimen145
-\MPnumerator=\count142
-\makeMPintoPDFobject=\count143
-\everyMPtoPDFconversion=\toks53
+\scratchcounter=\count113
+\scratchdimen=\dimen116
+\scratchbox=\box28
+\nofMPsegments=\count114
+\nofMParguments=\count115
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count116
+\MPscratchDim=\dimen117
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
+\everyMPtoPDFconversion=\toks17
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -463,1255 +281,182 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package crop Info: requested driver: `' on input line 9.
-Package crop Info: detected driver: `pdftex' on input line 9.
-Package crop Info: using `pdftex' graphics driver on input line 9.
-Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
-(marginnote)             Extended position detection mode activated.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip63
-\LTright=\skip64
-\LTpre=\skip65
-\LTpost=\skip66
-\LTchunksize=\count144
-\LTcapwidth=\dimen146
-\LT@head=\box39
-\LT@firsthead=\box40
-\LT@foot=\box41
-\LT@lastfoot=\box42
-\LT@cols=\count145
-\LT@rows=\count146
-\c@LT@tables=\count147
-\c@LT@chunks=\count148
-\LT@p@ftn=\toks54
-)
-\AtBeginShipoutBox=\box43
-Package hyperref Info: Link coloring ON on input line 9.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
-)
-\c@section@level=\count149
-)
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
-
-(./manuscript.out) (./manuscript.out)
-\@outlinefile=\write4
-\openout4 = `manuscript.out'.
-
-
-Underfull \hbox (badness 1019) in paragraph at lines 33--35
-\T1/ppl/m/n/9 need to ac-count not only for dif-fer-ences be-tween 
- []
-
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 13.6001pt on input line 41.
-
-Underfull \hbox (badness 1297) in paragraph at lines 44--44
-\T1/ppl/m/n/9 As is com-mon in cog-ni-tive psy-chol-ogy, most vi-sual
- []
-
-
-Underfull \hbox (badness 3849) in paragraph at lines 44--44
-\T1/ppl/m/n/9 search lit-er-a-ture has fo-cused on how the av-er-age
- []
-
-<OPENSCIENCE.pdf, id=64, 153.57375pt x 33.12375pt>
-File: OPENSCIENCE.pdf Graphic file (type pdf)
- <use OPENSCIENCE.pdf>
-Package pdftex.def Info: OPENSCIENCE.pdf used on input line 46.
-(pdftex.def)             Requested size: 153.57336pt x 33.12366pt.
-
-Overfull \hbox (11.30959pt too wide) in paragraph at lines 46--46
-[][] 
- []
-
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.47508pt on input line 46.
-
-Overfull \hbox (13.63518pt too wide) in paragraph at lines 46--46
-[][]\T1/phv/m/n/13.5 rsos.royalsocietypublishing.org[] 
- []
-
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 15.30011pt on input line 46.
-<openaccesslogo_bw.pdf, id=66, 20.075pt x 32.12pt>
-File: openaccesslogo_bw.pdf Graphic file (type pdf)
- <use openaccesslogo_bw.pdf>
-Package pdftex.def Info: openaccesslogo_bw.pdf used on input line 46.
-(pdftex.def)             Requested size: 20.07494pt x 32.1199pt.
-
-<RS_crossmark_logo.pdf, id=67, 37.1508pt x 46.1725pt>
-File: RS_crossmark_logo.pdf Graphic file (type pdf)
-
-<use RS_crossmark_logo.pdf>
-Package pdftex.def Info: RS_crossmark_logo.pdf used on input line 46.
-(pdftex.def)             Requested size: 37.15071pt x 46.17236pt.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 46.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.50006pt on input line 46.
-LaTeX Font Info:    Try loading font information for U+msa on input line 46.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 46.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+euex on input line 46.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueuex.fd
-File: ueuex.fd 2013/01/14 v3.01 Euler extra symbols
-)
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 17.00012pt on input line 46.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.90009pt on input line 46.
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 46.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 46.
-
-Overfull \hbox (170.71654pt too wide) in paragraph at lines 46--46
-[] 
- []
-
-
-Overfull \hbox (11.48364pt too wide) in paragraph at lines 46--46
-$[]$|  $[]$ 
- []
-
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 42.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
+
+]
+Underfull \hbox (badness 1552) in paragraph at lines 59--60
+\OT1/cmr/m/n/10 search strate-gies. The task in-volved search-ing
  []
 
-<RSOS_Pubs_Logo_Line_CMYK.pdf, id=69, 153.57375pt x 20.075pt>
-File: RSOS_Pubs_Logo_Line_CMYK.pdf Graphic file (type pdf)
-
-<use RSOS_Pubs_Logo_Line_CMYK.pdf>
-Package pdftex.def Info: RSOS_Pubs_Logo_Line_CMYK.pdf used on input line 46.
-(pdftex.def)             Requested size: 153.57336pt x 20.07494pt.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.37505pt on input line 46.
-LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 46.
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 46.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsphv.fd
-File: omsphv.fd 
-)
-LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <7.5> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 46.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.4625pt on input line 46.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 3.18752pt on input line 46.
-
-Overfull \hbox (14.27687pt too wide) has occurred while \output is active
-[]  [][][][][][] 
- []
-
-[1
-
-
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./OPENS
-CIENCE.pdf> <./openaccesslogo_bw.pdf> <./RS_crossmark_logo.pdf> <./RSOS_Pubs_Lo
-go_Line_CMYK.pdf>]
-Underfull \hbox (badness 5563) in paragraph at lines 46--47
-[]\T1/ppl/m/n/9 Feature In-te-gra-tion The-ory [[][]22[][]] to the
- []
-
-
-Underfull \hbox (badness 3118) in paragraph at lines 46--47
-\T1/ppl/m/n/9 How-ever, these the-o-ries and mod-els have
- []
-
-
-Underfull \hbox (badness 2165) in paragraph at lines 46--47
-\T1/ppl/m/n/9 These dif-fer-ences can emerge from sev-eral
- []
-
-
-Underfull \hbox (badness 6910) in paragraph at lines 46--47
-\T1/ppl/m/n/9 and search strate-gies [[][]1[][]]. Al-though their
- []
-
-
-Underfull \hbox (badness 1048) in paragraph at lines 46--47
-\T1/ppl/m/n/9 ex-is-tence has pre-vi-ously been noted [[][]15[][]], a
- []
-
-
-Underfull \hbox (badness 4168) in paragraph at lines 48--49
-\T1/ppl/m/n/9 of in-di-vid-ual dif-fer-ences in vi-sual search:
- []
-
-
-Underfull \hbox (badness 3271) in paragraph at lines 48--49
-\T1/ppl/m/n/9 col-lec-tion of be-haviours that all ob-servers
- []
-
-
-Underfull \hbox (badness 1997) in paragraph at lines 48--49
-\T1/ppl/m/n/9 a sys-tem-atic left-to-right and top-to-bottom
- []
-
-
-Underfull \hbox (badness 2165) in paragraph at lines 48--49
-\T1/ppl/m/n/9 strat-egy [[][]7[][]], or the type of guided search
- []
-
-
-Underfull \hbox (badness 2197) in paragraph at lines 50--51
-\T1/ppl/m/n/9 par-tic-i-pants to mon-i-tor a clut-tered dis-play
- []
-
-
-Underfull \hbox (badness 1728) in paragraph at lines 50--51
-\T1/ppl/m/n/9 for an ob-ject chang-ing colour or sud-denly
- []
-
-
-Overfull \hbox (7.89037pt too wide) in paragraph at lines 50--51
-\T1/ppl/m/n/9 par-tic-i-pants made while mon-i-tor-ing the stim-u-lus,
- []
-
-
-Overfull \hbox (5.57755pt too wide) in paragraph at lines 50--51
-\T1/ppl/m/n/9 and this was neg-a-tively cor-re-lated with de-tec-tion
- []
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 50--51
-\T1/ppl/m/n/9 per-for-mance. Proulx [[][]20[][]] demon-strated that
- []
-
-
-Underfull \hbox (badness 2418) in paragraph at lines 50--51
-\T1/ppl/m/n/9 vi-sual fea-tures (color or ori-en-ta-tion) when
- []
-
-
-Underfull \hbox (badness 2913) in paragraph at lines 50--51
-\T1/ppl/m/n/9 were dis-tracted by an ir-rel-e-vant ob-ject of
- []
-
-
-Underfull \hbox (badness 2564) in paragraph at lines 50--51
-\T1/ppl/m/n/9 a unique size. How-ever, par-tic-i-pants were
- []
-
-
-Underfull \hbox (badness 4156) in paragraph at lines 50--51
-\T1/ppl/m/n/9 em-ployed, and the ma-jor-ity were un-able,
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 52--53
-[]\T1/ppl/m/n/9 Eye move-ment strate-gies have also been
- []
-
-
-Overfull \hbox (18.39717pt too wide) in paragraph at lines 52--53
-\T1/ppl/m/n/9 dif-fer-ences in vi-sual search ef-fi-ciency. Nowakowska,
- []
-
-
-Underfull \hbox (badness 3108) in paragraph at lines 52--53
-\T1/ppl/m/n/9 paradigm to dis-crim-i-nate be-tween op-ti-mal
- []
-
-
-Underfull \hbox (badness 3039) in paragraph at lines 52--53
-\T1/ppl/m/n/9 task in-volved search-ing through ar-rays of
- []
-
-
-Underfull \hbox (badness 1454) in paragraph at lines 52--53
-\T1/ppl/m/n/9 line seg-ments ar-ranged such that those on
- []
-
-
-Underfull \hbox (badness 5490) in paragraph at lines 52--53
-\T1/ppl/m/n/9 one side of the dis-play all had a very
- []
-
-
-Underfull \hbox (badness 5711) in paragraph at lines 52--53
-\T1/ppl/m/n/9 sim-i-lar ori-en-ta-tion ("ho-mo-ge-neous"), while
- []
-
-
-Underfull \hbox (badness 3209) in paragraph at lines 52--53
-\T1/ppl/m/n/9 This meant that tar-gets ap-pear-ing on the
- []
-
-
-Underfull \hbox (badness 2894) in paragraph at lines 52--53
-\T1/ppl/m/n/9 search the het-ero-ge-neous half , as tar-gets
- []
-
-
-Underfull \hbox (badness 1953) in paragraph at lines 52--53
-\T1/ppl/m/n/9 on the ho-mo-ge-neous side can be de-tected
- []
-
-
-Underfull \hbox (badness 6691) in paragraph at lines 52--53
-\T1/ppl/m/n/9 with pe-riph-eral vi-sion. We will re-fer to
- []
-
-
-Underfull \hbox (badness 3039) in paragraph at lines 52--53
-\T1/ppl/m/n/9 this paradigm here as the Split-Half Line
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 52--53
-\T1/ppl/m/n/9 stochas-tic searcher. Fur-ther-more, the de-gree
- []
-
-
-Underfull \hbox (badness 1584) in paragraph at lines 52--53
-\T1/ppl/m/n/9 to which they made sac-cades in line with
- []
-
-
-Underfull \hbox (badness 5924) in paragraph at lines 52--53
-\T1/ppl/m/n/9 the op-ti-mal search strat-egy was strongly
- []
-
-
-Underfull \hbox (badness 1082) in paragraph at lines 52--53
-\T1/ppl/m/n/9 ver-sion of this paradigm has been used in
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 52--53
-\T1/ppl/m/n/9 with sim-i-lar con-clu-sions: the full spec-trum
- []
-
-
-Underfull \hbox (badness 6461) in paragraph at lines 52--53
-\T1/ppl/m/n/9 of in-di-vid-ual dif-fer-ences in strat-egy was
- []
-
-
-Underfull \hbox (badness 2753) in paragraph at lines 52--53
-\T1/ppl/m/n/9 of op-ti-mal. It is there-fore not pos-si-ble to
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.65005pt on input line 55.
-
-Overfull \vbox (21.4162pt too high) has occurred while \output is active []
-
-
-[2
-
-] <figures/split-half.png, id=129, 1009.7725pt x 734.745pt>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 61.
+<figures/split-half.png, id=98, 1009.7725pt x 734.745pt>
 File: figures/split-half.png Graphic file (type png)
 
 <use figures/split-half.png>
-Package pdftex.def Info: figures/split-half.png used on input line 58.
+Package pdftex.def Info: figures/split-half.png used on input line 65.
 (pdftex.def)             Requested size: 117.3001pt x 85.35826pt.
 
-<figures/adaptive.png, id=131, 778.91pt x 786.94pt>
+<figures/adaptive.png, id=100, 778.91pt x 786.94pt>
 File: figures/adaptive.png Graphic file (type png)
  <use figures/adaptive.png>
-Package pdftex.def Info: figures/adaptive.png used on input line 59.
+Package pdftex.def Info: figures/adaptive.png used on input line 66.
 (pdftex.def)             Requested size: 84.47995pt x 85.35826pt.
 
-<figures/foraging.png, id=132, 1606.0pt x 933.4875pt>
+<figures/foraging.png, id=101, 1606.0pt x 933.4875pt>
 File: figures/foraging.png Graphic file (type png)
 
 <use figures/foraging.png>
-Package pdftex.def Info: figures/foraging.png used on input line 60.
+Package pdftex.def Info: figures/foraging.png used on input line 67.
 (pdftex.def)             Requested size: 146.83728pt x 85.35826pt.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.22505pt on input line 61.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.22505pt on input line 61.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8.5> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 61.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 7.22505pt on input line 61.
-
-Underfull \hbox (badness 3158) in paragraph at lines 65--66
-\T1/ppl/m/n/9 with two cat-e-gories classed as tar-gets. In
- []
-
-
-Underfull \hbox (badness 2035) in paragraph at lines 65--66
-\T1/ppl/m/n/9 horizontal and green-vertical line seg-ments
- []
-
-
-Overfull \hbox (21.50758pt too wide) in paragraph at lines 65--66
-\T1/ppl/m/n/9 among red-vertical and green-horizontal dis-tracters),
- []
-
-
-Underfull \hbox (badness 1348) in paragraph at lines 65--66
-\T1/ppl/m/n/9 cat-e-gory. This strat-egy has pre-vi-ously been
- []
-
-
-Underfull \hbox (badness 1033) in paragraph at lines 65--66
-\T1/ppl/m/n/9 tem-plates. How-ever, a sub-set of ob-servers,
- []
-
-
-Underfull \hbox (badness 1019) in paragraph at lines 65--66
-\T1/ppl/m/n/9 on as many tar-gets as they can as quickly
- []
-
-
-Underfull \hbox (badness 1895) in paragraph at lines 65--66
-\T1/ppl/m/n/9 as pos-si-ble) and a 3D com-puter game (in
- []
-
-
-Underfull \hbox (badness 3058) in paragraph at lines 65--66
-\T1/ppl/m/n/9 of a six day long mind-ful-ness re-treat on
- []
-
-
-Underfull \hbox (badness 7907) in paragraph at lines 67--68
-[]\T1/ppl/m/n/9 Previous re-search has in-ves-ti-gated the
- []
-
-
-Overfull \hbox (29.32794pt too wide) in paragraph at lines 67--68
-\T1/ppl/m/n/9 re-la-tion-ship be-tween these be-haviours to psy-cho-me-t-ric
- []
-
-
-Underfull \hbox (badness 4859) in paragraph at lines 67--68
-\T1/ppl/m/n/9 not shown strong cor-re-la-tions with other
- []
-
-
-Underfull \hbox (badness 1337) in paragraph at lines 67--68
-\T1/ppl/m/n/9 at-tributes. In the ACVS paradigm, Irons &
- []
-
-
-Underfull \hbox (badness 3260) in paragraph at lines 67--68
-\T1/ppl/m/n/9 Leber found no ev-i-dence of a cor-re-la-tion
- []
-
-
-Underfull \hbox (badness 2119) in paragraph at lines 67--68
-\T1/ppl/m/n/9 be-tween the pro-por-tion of op-ti-mal choices
- []
-
-
-Underfull \hbox (badness 1137) in paragraph at lines 67--68
-\T1/ppl/m/n/9 made by ob-servers and mea-sures of vi-sual
- []
+ [2]
+Underfull \vbox (badness 2237) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \hbox (badness 2376) in paragraph at lines 69--70
-[]\T1/ppl/m/n/9 A com-mon theme emerg-ing from these
- []
-
-
-Underfull \hbox (badness 4647) in paragraph at lines 69--70
-\T1/ppl/m/n/9 stud-ies is the ob-ser-va-tion that in-di-vid-ual
- []
-
-
-Overfull \hbox (21.86246pt too wide) in paragraph at lines 69--70
-\T1/ppl/m/n/9 or op-ti-mal-ity. How-ever, ``vi-sual search'' en-com-passes
- []
-
-
-Underfull \hbox (badness 1127) in paragraph at lines 69--70
-\T1/ppl/m/n/9 based at-ten-tion, in-for-ma-tion sam-pling). The
- []
-
-
-Underfull \hbox (badness 2103) in paragraph at lines 69--70
-\T1/ppl/m/n/9 aim of the present study is to in-ves-ti-gate
- []
-
-
-Underfull \hbox (badness 2726) in paragraph at lines 69--70
-\T1/ppl/m/n/9 in the SHLS paradigm also more op-ti-mal
- []
-
-
-Underfull \hbox (badness 1590) in paragraph at lines 69--70
-\T1/ppl/m/n/9 in the ACVS task? Does it make sense to
- []
-
-
-Underfull \hbox (badness 1127) in paragraph at lines 69--70
-\T1/ppl/m/n/9 (anal-o-gous to the 'super-recognizers' of the
- []
-
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 75.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Underfull \hbox (badness 1024) in paragraph at lines 75--76
-\T1/ppl/m/n/9 The meth-ods and planned anal-y-sis for this
- []
-
-
-Underfull \hbox (badness 1077) in paragraph at lines 75--76
-\T1/ppl/m/n/9 study were reg-is-tered on the Open Sci-ence
- []
-
-
-Underfull \hbox (badness 1715) in paragraph at lines 78--79
-\T1/ppl/m/n/9 took part in this study[][][][][]. Par-tic-i-pants were
- []
-
-
-Underfull \hbox (badness 3407) in paragraph at lines 78--79
-\T1/ppl/m/n/9 con-sent. The study was ap-proved by the
- []
-
-
-Underfull \hbox (badness 4266) in paragraph at lines 78--79
-\T1/ppl/m/n/9 Uni-ver-sity of Ab-erdeen Psy-chol-ogy Ethics
- []
-
-
-Overfull \vbox (21.51176pt too high) has occurred while \output is active []
-
-
-[3]
-Underfull \hbox (badness 4752) in paragraph at lines 80--81
-\T1/ppl/m/n/9 with counter-balancing. $\OML/cmm/m/it/9 n \OT1/cmr/m/n/9 = 64$ \
-T1/ppl/m/n/9 par-tic-i-pants
- []
-
-
-Underfull \hbox (badness 2469) in paragraph at lines 80--81
-\T1/ppl/m/n/9 the dif-fer-ent vi-sual search paradigms. The
- []
-
-
-Underfull \hbox (badness 2245) in paragraph at lines 84--85
-\T1/ppl/m/n/9 the vi-sual search lit-er-a-ture in which large
- []
-
-
-Underfull \hbox (badness 3281) in paragraph at lines 84--85
-[][]\T1/ppl/m/n/9 1[][][]. A brief overview of each paradigm is
- []
-
-
-Underfull \hbox (badness 4072) in paragraph at lines 84--85
-\T1/ppl/m/it/9 ma-te-ri-als\T1/ppl/m/n/9 . The three tasks were com-pleted
- []
-
-
-Underfull \hbox (badness 1331) in paragraph at lines 84--85
-\T1/ppl/m/n/9 apart. The SHLS was run in both ses-sions
- []
-
-
-Underfull \hbox (badness 1635) in paragraph at lines 84--85
-\T1/ppl/m/n/9 The or-der in which par-tic-i-pants com-pleted
- []
-
-
-Underfull \hbox (badness 1137) in paragraph at lines 86--87
-[]\T1/ppl/m/n/9 The dis-play was pre-sented on a 17-inch
- []
-
-
-Underfull \hbox (badness 3009) in paragraph at lines 86--87
-\T1/ppl/m/n/9 CRT mon-i-tor with a res-o-lu-tion of $\OT1/cmr/m/n/9 1400 \OMS/c
-msy/m/n/9 ^^B
- []
-
-
-Underfull \hbox (badness 1308) in paragraph at lines 86--87
-\T1/ppl/m/n/9 gen-er-a-tion, pre-sen-ta-tion and data col-lec-tion
- []
-
-
-Overfull \hbox (17.50215pt too wide) in paragraph at lines 86--87
-\T1/ppl/m/n/9 were con-trolled by MAT-LAB and the psy-chophysics
- []
-
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.20007pt on input line 88.
-
-Underfull \hbox (badness 1043) in paragraph at lines 90--91
-\T1/ppl/m/n/9 of the dom-i-nant eye was recorded us-ing a
- []
-
-
-Underfull \hbox (badness 4024) in paragraph at lines 97--98
-\T1/ppl/m/n/9 green and variable-coloured small squares
- []
-
-
-Underfull \hbox (badness 3271) in paragraph at lines 97--98
-\T1/ppl/m/n/9 ar-ranged in three con-cen-tric rings around
- []
-
-
-Underfull \hbox (badness 1454) in paragraph at lines 97--98
-\T1/ppl/m/n/9 tri-als, then across a pe-riod of seven tri-als,
- []
-
-
-Underfull \hbox (badness 1715) in paragraph at lines 97--98
-\T1/ppl/m/n/9 be blue for five tri-als, and then grad-u-ally
- []
-
-
-Underfull \hbox (badness 1406) in paragraph at lines 99--100
-\T1/ppl/m/n/9 6-9. Green squares could con-tain any digit
- []
-
-
-Underfull \hbox (badness 4832) in paragraph at lines 99--100
-\T1/ppl/m/n/9 dis-trac-tor within the search dis-play were
- []
-
-
-Overfull \vbox (21.4162pt too high) has occurred while \output is active []
-
-
-[4 <./figures/split-half.png> <./figures/adaptive.png> <./figures/foraging.png>
-]
-Underfull \hbox (badness 2205) in paragraph at lines 103--104
-\T1/ppl/m/n/9 of the tar-gets within a trial by us-ing the
- []
-
-
-Underfull \hbox (badness 1769) in paragraph at lines 103--104
-\T1/ppl/m/n/9 If the par-tic-i-pant clicked er-ro-neously on a
- []
-
-
-Underfull \hbox (badness 2384) in paragraph at lines 103--104
-\T1/ppl/m/n/9 of tar-gets and dis-trac-tors was as-signed at
- []
-
-
-Underfull \hbox (badness 1072) in paragraph at lines 115--116
-\T1/ppl/m/n/9 SHLS study [[][]17[][]]: we find a large range of
- []
-
-
-Underfull \hbox (badness 1735) in paragraph at lines 115--116
-\T1/ppl/m/n/9 hard tar-gets, ($\OML/cmm/m/it/9 r \OMS/cmsy/m/n/9 2 \OT1/cmr/m/n
-/9 [0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 54 \OMS/cmsy/m/n/9 ^^@ \OT1/cmr/m/n/9 0\OM
-L/cmm/m/it/9 :\OT1/cmr/m/n/9 81]$\T1/ppl/m/n/9 ), easy tar-gets
- []
-
-
-<../Scripts/lineseg/scratch/acc_correlation.pdf, id=184, 180.675pt x 180.675pt>
+ [3 <./figures/split-half.png> <./figures/adaptive.png> <./figures/foraging.png
+>] [4]
+<../Scripts/lineseg/scratch/acc_correlation.pdf, id=166, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/acc_correlation.pdf Graphic file (type pdf)
 <use ../Scripts/lineseg/scratch/acc_correlation.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/acc_correlation.pdf used on
- input line 119.
+ input line 126.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/rt_correlation.pdf, id=185, 180.675pt x 180.675pt>
+<../Scripts/lineseg/scratch/rt_correlation.pdf, id=167, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/rt_correlation.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/rt_correlation.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/rt_correlation.pdf used on 
-input line 120.
+input line 127.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/strat_corr.pdf, id=186, 180.675pt x 180.675pt>
+<../Scripts/lineseg/scratch/strat_corr.pdf, id=168, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/strat_corr.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/strat_corr.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/strat_corr.pdf used on inpu
-t line 121.
+t line 128.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf, id=187, 180.675pt x 1
+<../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf, id=169, 180.675pt x 1
 80.675pt>
 File: ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf Graphic file (typ
 e pdf)
  <use ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pd
-f used on input line 122.
+f used on input line 129.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
-
-Underfull \hbox (badness 3690) in paragraph at lines 127--128
-[]\T1/ppl/m/n/9 We can also look at the ini-tial search
- []
-
-
-Underfull \hbox (badness 2205) in paragraph at lines 127--128
-\T1/ppl/m/n/9 Again, we see large and sta-ble in-di-vid-ual
- []
-
-
-Underfull \hbox (badness 2158) in paragraph at lines 127--128
-\T1/ppl/m/n/9 five sac-cades to the het-ero-ge-neous half of
- []
-
-
-Underfull \hbox (badness 2875) in paragraph at lines 127--128
-\T1/ppl/m/n/9 the dis-play for tar-get ab-sent tri-als). More
- []
-
-
-Underfull \hbox (badness 1320) in paragraph at lines 127--128
-\T1/ppl/m/n/9 times in both ses-sion a, $\OML/cmm/m/it/9 r \OMS/cmsy/m/n/9 2 \O
-T1/cmr/m/n/9 [0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 52\OML/cmm/m/it/9 ; \OT1/cmr/m/n
-/9 0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 82]$ \T1/ppl/m/n/9 and
- []
-
-
-Underfull \hbox (badness 4832) in paragraph at lines 131--132
-\T1/ppl/m/n/9 the fewest dis-trac-tors: When the vari-able
- []
-
-
-Underfull \hbox (badness 1424) in paragraph at lines 131--132
-\T1/ppl/m/n/9 dis-trac-tor was red, the op-ti-mal choice was
- []
-
-
-Underfull \hbox (badness 2762) in paragraph at lines 131--132
-\T1/ppl/m/n/9 blue, and vice versa). The re-sults for the
- []
-
-
-Underfull \hbox (badness 1675) in paragraph at lines 131--132
-\T1/ppl/m/n/9 [[][]9[][],[][]10[][]]. We can clearly see from figure [][]3[][][
-](a)
- []
-
-
-Underfull \hbox (badness 1540) in paragraph at lines 131--132
-\T1/ppl/m/n/9 that there are in-di-vid-ual dif-fer-ences in the
- []
-
-
-Underfull \hbox (badness 1014) in paragraph at lines 131--132
-\OT1/cmr/m/n/9 33\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 62%$ \T1/ppl/m/n/9 - $\OT1/cmr
-/m/n/9 100\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 00%$\T1/ppl/m/n/9 , $[] \OT1/cmr/m/n/
-9 = 59\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 15$\T1/ppl/m/n/9 , $\OML/cmm/m/it/9 s \OT
-1/cmr/m/n/9 = 16\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 54$\T1/ppl/m/n/9 ) and
- []
-
-
-Underfull \hbox (badness 1436) in paragraph at lines 131--132
-\OT1/cmr/m/n/9 4\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 80$ \T1/ppl/m/n/9 sec-onds). As
- with the SHLS task, the
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (21.51176pt too high) has occurred while \output is active []
-
 
 [5 <../Scripts/lineseg/scratch/acc_correlation.pdf> <../Scripts/lineseg/scratch
 /rt_correlation.pdf> <../Scripts/lineseg/scratch/strat_corr.pdf> <../Scripts/li
 neseg/scratch/strat_compare_meanlog_rt.pdf>]
-<../Scripts/scratch/acvs_opt_rt.pdf, id=236, 180.675pt x 180.675pt>
+<../Scripts/scratch/acvs_opt_rt.pdf, id=219, 180.675pt x 180.675pt>
 File: ../Scripts/scratch/acvs_opt_rt.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/acvs_opt_rt.pdf>
 Package pdftex.def Info: ../Scripts/scratch/acvs_opt_rt.pdf used on input line 
-135.
+142.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/scratch/mcft_rl_rt.pdf, id=237, 180.675pt x 180.675pt>
+<../Scripts/scratch/mcft_rl_rt.pdf, id=220, 180.675pt x 180.675pt>
 File: ../Scripts/scratch/mcft_rl_rt.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/mcft_rl_rt.pdf>
 Package pdftex.def Info: ../Scripts/scratch/mcft_rl_rt.pdf used on input line 1
-36.
+43.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-Underfull \hbox (badness 1189) in paragraph at lines 143--144
-\T1/ppl/m/n/9 with a run de-fined as a suc-ces-sion of one
- []
-
-
-Underfull \hbox (badness 1442) in paragraph at lines 143--144
-\T1/ppl/m/n/9 fol-lowed and pre-ceded by the other tar-get
- []
-
-
-Underfull \hbox (badness 2005) in paragraph at lines 143--144
-\T1/ppl/m/n/9 or no tar-get. The av-er-age run length was
- []
-
-
-Underfull \hbox (badness 1527) in paragraph at lines 143--144
-\T1/ppl/m/n/9 the mean num-ber of tar-get se-lec-tions in a
- []
-
-
-Underfull \hbox (badness 1092) in paragraph at lines 143--144
-\T1/ppl/m/n/9 in line with pre-vi-ous find-ings [[][]12[][],[][]14[][]], with
- []
-
-
-Underfull \hbox (badness 6173) in paragraph at lines 143--144
-\T1/ppl/m/n/9 for-ag-ing for mul-ti-ple tar-gets con-cur-rently
- []
-
-
-Underfull \hbox (badness 1377) in paragraph at lines 143--144
-\T1/ppl/m/n/9 and the cor-re-la-tion with re-ac-tion time ($\OML/cmm/m/it/9 r \
-OMS/cmsy/m/n/9 2
- []
-
-
-Underfull \hbox (badness 8038) in paragraph at lines 148--149
-\T1/ppl/m/n/9 find-ings around in-di-vid-ual dif-fer-ences in
- []
-
-
-Underfull \hbox (badness 5741) in paragraph at lines 150--151
-[]\T1/ppl/m/n/9 The re-sults show that the cor-re-la-tions
- []
-
-
-Underfull \hbox (badness 3199) in paragraph at lines 150--151
-\T1/ppl/m/n/9 be-tween the strat-egy met-rics in the three
- []
-
-
-Underfull \hbox (badness 1331) in paragraph at lines 150--151
-\T1/ppl/m/n/9 cor-re-la-tion in re-ac-tion times from one task
- []
-
-
-Underfull \hbox (badness 3158) in paragraph at lines 150--151
-\T1/ppl/m/n/9 to an-other, the mean cor-re-la-tion over the
- []
-
-
-Underfull \hbox (badness 3189) in paragraph at lines 150--151
-\T1/ppl/m/n/9 cor-re-la-tion ac-counts for $\OML/cmm/m/it/9 R[] \OT1/cmr/m/n/9 
-= 0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 04 = 4%$ \T1/ppl/m/n/9 an
- []
-
-<../Scripts/scratch/cor_comparison.pdf, id=242, 289.08pt x 361.35pt>
+<../Scripts/scratch/cor_comparison.pdf, id=225, 289.08pt x 361.35pt>
 File: ../Scripts/scratch/cor_comparison.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/cor_comparison.pdf>
 Package pdftex.def Info: ../Scripts/scratch/cor_comparison.pdf used on input li
-ne 154.
+ne 161.
 (pdftex.def)             Requested size: 184.9429pt x 231.17499pt.
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 155.
-
-Underfull \hbox (badness 1142) in paragraph at lines 155--155
-\T1/phv/m/n/8.5 re-ac-tion times (\T1/phv/m/sl/8.5 rt\T1/phv/m/n/8.5 ), op-ti-m
-al-ity (\T1/phv/m/sl/8.5 opt\T1/phv/m/n/8.5 ) or run length (\T1/phv/m/sl/8.5 r
-l\T1/phv/m/n/8.5 ).
+ [6 <../Scripts/scratch/acvs_opt_rt.pdf> <../Scripts/scratch/mcft_rl_rt.pdf>] [
+7 <../Scripts/scratch/cor_comparison.pdf>] (./manuscript.bbl
+Underfull \hbox (badness 1303) in paragraph at lines 34--39
+[]\OT1/cmr/m/n/10 Charles L Folk, Roger W Rem-ing-ton, and
  []
-
-
-Underfull \hbox (badness 2951) in paragraph at lines 164--165
-\T1/ppl/m/n/9 We suc-cess-fully repli-cated the wide range
- []
-
-
-Underfull \hbox (badness 6893) in paragraph at lines 164--165
-\T1/ppl/m/n/9 of in-di-vid-ual dif-fer-ences in strat-egy and
- []
-
-
-Overfull \hbox (0.96964pt too wide) in paragraph at lines 164--165
-\T1/ppl/m/n/9 per-for-mance that had pre-vi-ously been ob-served
- []
-
-
-Overfull \hbox (7.5436pt too wide) in paragraph at lines 164--165
-\T1/ppl/m/n/9 ex-per-i-ments. Sur-pris-ingly, how-ever, the between-
- []
-
-
-Overfull \hbox (5.70366pt too wide) in paragraph at lines 164--165
-\T1/ppl/m/n/9 will be-have in one of these paradigms ap-par-ently
- []
-
-
-Underfull \hbox (badness 1577) in paragraph at lines 164--165
-\T1/ppl/m/n/9 in the oth-ers. This can be con-trasted with
- []
-
-
-Overfull \hbox (13.9064pt too wide) in paragraph at lines 166--167
-[]\T1/ppl/m/n/9 There are many rea-sons why two mea-sure-ments
- []
-
-
-Overfull \hbox (7.81277pt too wide) in paragraph at lines 166--167
-\T1/ppl/m/n/9 or mea-sure-ment noise. The test-retest cor-re-la-tions
- []
-
-
-Underfull \hbox (badness 1436) in paragraph at lines 166--167
-\T1/ppl/m/n/9 a true ab-sence of shared vari-ance be-tween
- []
-
-
-Underfull \hbox (badness 6188) in paragraph at lines 166--167
-\T1/ppl/m/n/9 these tasks as a likely ex-pla-na-tion. One
- []
-
-
-Underfull \hbox (badness 3260) in paragraph at lines 166--167
-\T1/ppl/m/n/9 least mod-estly cor-re-lated from one search
- []
-
-
-Underfull \hbox (badness 3323) in paragraph at lines 166--167
-\T1/ppl/m/n/9 task to the next, even in the ab-sence of
- []
-
-
-Underfull \hbox (badness 1577) in paragraph at lines 166--167
-\T1/ppl/m/n/9 cor-re-la-tions in strat-egy, as a gen-eral fac-tor
- []
-
-
-Underfull \hbox (badness 1708) in paragraph at lines 166--167
-\T1/ppl/m/n/9 did ob-serve were cor-re-la-tions be-tween our
- []
-
-
-Underfull \hbox (badness 2980) in paragraph at lines 166--167
-\T1/ppl/m/n/9 each task, sug-gest-ing our strat-egy met-rics
- []
-
-
-Underfull \hbox (badness 3471) in paragraph at lines 166--167
-\T1/ppl/m/n/9 are pre-dic-tive of search per-for-mance, and
- []
-
-
-Overfull \vbox (21.51176pt too high) has occurred while \output is active []
-
-
-[6 <../Scripts/scratch/acvs_opt_rt.pdf> <../Scripts/scratch/mcft_rl_rt.pdf>]
-Underfull \hbox (badness 3965) in paragraph at lines 168--169
-\T1/ppl/m/n/9 with par-tic-u-lar in-di-vid-u-als' strengths, and
- []
-
-
-Underfull \hbox (badness 3271) in paragraph at lines 168--169
-\T1/ppl/m/n/9 not oth-ers. Our definition of a suc-cess-ful
- []
-
-
-Underfull \hbox (badness 1178) in paragraph at lines 168--169
-\T1/ppl/m/n/9 strat-egy in the SHLS task was fix-at-ing the
- []
-
-
-Underfull \hbox (badness 2005) in paragraph at lines 168--169
-\T1/ppl/m/n/9 lo-ca-tions that pro-vide new in-for-ma-tion. In
- []
-
-
-Underfull \hbox (badness 1360) in paragraph at lines 168--169
-\T1/ppl/m/n/9 suc-cess in-volved min-i-miz-ing cog-ni-tive load
- []
-
-
-Underfull \hbox (badness 4927) in paragraph at lines 170--171
-[]\T1/ppl/m/n/9 Individual dif-fer-ences pose a chal-lenge
- []
-
-
-Underfull \hbox (badness 1231) in paragraph at lines 170--171
-\T1/ppl/m/n/9 of vi-sual search. Our un-der-stand-ing of the
- []
-
-
-Underfull \hbox (badness 1953) in paragraph at lines 170--171
-\T1/ppl/m/n/9 un-der-ly-ing mech-a-nisms of vi-sual search is
- []
-
-
-Underfull \hbox (badness 5446) in paragraph at lines 170--171
-\T1/ppl/m/n/9 based pre-dom-i-nantly on ex-per-i-ments that
- []
-
-
-Underfull \hbox (badness 1137) in paragraph at lines 170--171
-\T1/ppl/m/n/9 in-di-vid-ual par-tic-i-pants. For all three of the
- []
-
-
-Underfull \hbox (badness 2012) in paragraph at lines 170--171
-\T1/ppl/m/n/9 ex-per-i-ments in-cluded in the cur-rent study,
- []
-
-
-Underfull \hbox (badness 1675) in paragraph at lines 170--171
-\T1/ppl/m/n/9 few of the in-di-vid-u-als who com-pleted the
- []
-
-
-Underfull \hbox (badness 1496) in paragraph at lines 170--171
-\T1/ppl/m/n/9 tasks. In the orig-i-nal SHLS study [[][]17[][]], for
- []
-
-
-Underfull \hbox (badness 3281) in paragraph at lines 170--171
-\T1/ppl/m/n/9 av-er-age search per-for-mance, the stochas-tic
- []
-
-
-Underfull \hbox (badness 1005) in paragraph at lines 170--171
-\T1/ppl/m/n/9 model was a good ex-pla-na-tion. Un-der-ly-ing
- []
-
-
-Underfull \hbox (badness 2269) in paragraph at lines 170--171
-\T1/ppl/m/n/9 that av-er-age per-for-mance, how-ever, was a
- []
-
-
-Underfull \hbox (badness 5274) in paragraph at lines 170--171
-\T1/ppl/m/n/9 very large spec-trum of search be-haviour,
- []
-
-
-Underfull \hbox (badness 1242) in paragraph at lines 170--171
-\T1/ppl/m/n/9 and some as nei-ther. The orig-i-nal ques-tion
- []
-
-
-Underfull \hbox (badness 1701) in paragraph at lines 170--171
-\T1/ppl/m/n/9 whom is search op-ti-mal and for whom is
- []
-
-
-Underfull \hbox (badness 1365) in paragraph at lines 170--171
-\T1/ppl/m/n/9 fur-ther chal-lenges for re-searchers in-ter-ested
- []
-
-
-Overfull \hbox (6.35555pt too wide) in paragraph at lines 172--173
-[]\T1/ppl/m/n/9 We view these find-ings, not as a dis-ap-point-ing
- []
-
-
-Underfull \hbox (badness 3449) in paragraph at lines 172--173
-\T1/ppl/m/n/9 null re-sult, but as thought-provoking and
- []
-
-
-Underfull \hbox (badness 2772) in paragraph at lines 172--173
-\T1/ppl/m/n/9 ex-cit-ing. Vo-gel and Awh [[][]23[][]] ar-gued that
- []
-
-
-Underfull \hbox (badness 1354) in paragraph at lines 172--173
-\T1/ppl/m/n/9 study-ing in-di-vid-ual dif-fer-ences in cog-ni-tive
- []
-
-
-Overfull \hbox (3.66914pt too wide) in paragraph at lines 172--173
-\T1/ppl/m/n/9 pro-vides valu-able in-sight to con-tain-ing po-ten-tial
- []
-
-
-Overfull \hbox (6.49544pt too wide) in paragraph at lines 172--173
-\T1/ppl/m/n/9 the-o-ries of the un-der-ly-ing cog-ni-tive mech-a-nisms.
- []
-
-
-Underfull \hbox (badness 3471) in paragraph at lines 172--173
-\T1/ppl/m/n/9 of the task also needs to be tak-ing into
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (21.4162pt too high) has occurred while \output is active []
-
-
-[7 <../Scripts/scratch/cor_comparison.pdf>]
-Overfull \hbox (8.63779pt too wide) in paragraph at lines 177--178
-\T1/ppl/m/n/9 data and their help-ful com-ments and sug-ges-tions.
- []
-
-
-Underfull \hbox (badness 3128) in paragraph at lines 177--178
-\T1/ppl/m/n/9 We would like to thank Charles Rig-i-tano
- []
-
-
-Underfull \hbox (badness 1755) in paragraph at lines 177--178
-\T1/ppl/m/n/9 and Jacque-line Von Seth who helped with
- []
-
-(./manuscript.bbl
-Underfull \hbox (badness 1226) in paragraph at lines 4--6
-[]\T1/ppl/m/n/9 Walter R Boot, Arthur F Kramer, En-sar
- []
-
-
-Underfull \hbox (badness 2856) in paragraph at lines 4--6
-\T1/ppl/m/n/9 Be-cic, Dou-glas A Wieg-mann, and Tate
- []
-
-
-Underfull \hbox (badness 2088) in paragraph at lines 6--8
-[]\T1/ppl/m/n/9 Detecting tran-sient changes in dy-namic
- []
-
-
-Underfull \hbox (badness 2495) in paragraph at lines 23--25
-[]\T1/ppl/m/n/9 The eye-link tool-box: eye track-ing with
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-[]\T1/ppl/m/n/9 Shifts of `at-ten-tion' in chicks dur-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--44
-[]\T1/ppl/m/n/9 Evidence for a sys-tem-atic com-po-nent
- []
-
-
-Underfull \hbox (badness 1242) in paragraph at lines 65--66
-[]\T1/ppl/m/n/9 Ómar I. Jóhan-nes-son, Árni Kristjáns-son,
- []
-
-
-Underfull \hbox (badness 2020) in paragraph at lines 68--69
-[]\T1/ppl/m/it/9 Japanese Psy-cho-log-i-cal Re-search\T1/ppl/m/n/9 , 59(2):152-
--
- []
-
-
-Underfull \hbox (badness 3088) in paragraph at lines 71--73
-[]\T1/ppl/m/n/9 Ómar I Jóhan-nes-son, Ian M Thorn-ton,
- []
-
-
-Underfull \hbox (badness 1205) in paragraph at lines 71--73
-\T1/ppl/m/n/9 Irene J Smith, An-drey Chetverikov, and
- []
-
-
-Underfull \hbox (badness 2600) in paragraph at lines 79--80
-[]\T1/ppl/m/it/9 Trends in cog-ni-tive sci-ences\T1/ppl/m/n/9 , 4(4):138--147,
- []
-
-
-Underfull \hbox (badness 2042) in paragraph at lines 82--83
-[]\T1/ppl/m/n/9 Árni Kristjáns-son, Ómar I Jóhan-nes-son,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-[]\T1/ppl/m/n/9 The break-down of vig-i-lance dur-ing
- []
-
-
-Underfull \hbox (badness 1635) in paragraph at lines 93--95
-[]\T1/ppl/m/n/9 Eye move-ment statis-tics in hu-mans are
- []
-
-
-Overfull \vbox (21.51176pt too high) has occurred while \output is active []
-
 
 [8]
-Underfull \hbox (badness 1259) in paragraph at lines 104--105
-[]\T1/ppl/m/n/9 Inefficient search strate-gies in sim-u-lated
+Underfull \hbox (badness 10000) in paragraph at lines 71--75
+[][]\OT1/cmr/m/n/10 Omar I J^^Sohannesson, Ian M Thorn-ton,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--107
-\T1/ppl/m/it/9 Per-cep-tion and Per-for-mance\T1/ppl/m/n/9 , 42(11):1858,
+Underfull \hbox (badness 6477) in paragraph at lines 82--85
+\OT1/cmr/m/n/10 Ian M Thorn-ton.  Com-mon at-ten-tional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--124
-[]\T1/ppl/m/n/9 Super-recognizers: Peo-ple with
+Underfull \hbox (badness 2435) in paragraph at lines 82--85
+\OT1/cmr/m/n/10 con-straints in vi-sual for-ag-ing.  \OT1/cmr/m/it/10 PloS one\
+OT1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
-[]\T1/ppl/m/n/9 Jeremy Wolfe, Matthew Cain, Krista
+Underfull \hbox (badness 2134) in paragraph at lines 121--125
+[]\OT1/cmr/m/n/10 Richard Rus-sell, Brad Duchaine, and Ken
  []
 
-) Setting LastPage
-Overfull \vbox (21.51176pt too high) has occurred while \output is active []
-
-
-[9
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 190.
+ [9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 190.
  (./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 190.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 190.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 3FDAB7415645A19D3570C8D7FA7C8A70;1070.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 183.
+(rerunfilecheck)             Checksum: 6F9205736957A5FE93BF4F5D48701CB8;973.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 190.
  ) 
 Here is how much of TeX's memory you used:
- 8515 strings out of 493014
- 123806 string characters out of 6133351
- 215310 words of memory out of 5000000
- 11783 multiletter control sequences out of 15000+600000
- 78349 words of font info for 149 fonts, out of 8000000 for 9000
- 1151 hyphenation exceptions out of 8191
- 41i,18n,30p,1930b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-dist/
-fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
-w/helvetic/uhvro8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/pala
-tino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/up
-lri8a.pfb>
-Output written on manuscript.pdf (9 pages, 548854 bytes).
+ 6033 strings out of 493014
+ 93213 string characters out of 6133351
+ 174950 words of memory out of 5000000
+ 9454 multiletter control sequences out of 15000+600000
+ 10657 words of font info for 37 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 29i,8n,28p,1930b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmu10.pfb>
+Output written on manuscript.pdf (9 pages, 578926 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
- 309 compressed objects within 4 object streams
- 67 named destinations out of 1000 (max. 500000)
- 191 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 353 PDF objects out of 1000 (max. 8388607)
+ 303 compressed objects within 4 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 
