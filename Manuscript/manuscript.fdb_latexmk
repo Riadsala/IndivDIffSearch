@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex manuscript"] 1543579439 "manuscript.aux" "manuscript.bbl" "manuscript" 1543585778
+["bibtex manuscript"] 1543598694 "manuscript.aux" "manuscript.bbl" "manuscript" 1543598695
   "/usr/local/texlive/2016/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "literature.bib" 1543406311 11567 b3f6bd5efa383ad70005b18031ca4342 ""
-  "manuscript.aux" 1543585778 7090 d7a0543cccc4e839bcd31f7d6b787701 ""
+  "manuscript.aux" 1543598695 7090 415e574537950a3b5d89f9d65bad630c ""
   "manuscript.bcf" 0 -1 0 ""
   (generated)
   "manuscript.blg"
   "manuscript.bbl"
-["pdflatex"] 1543585777 "manuscript.tex" "manuscript.pdf" "manuscript" 1543585778
+["pdflatex"] 1543598694 "manuscript.tex" "manuscript.pdf" "manuscript" 1543598695
   "../Scripts/lineseg/scratch/acc_correlation.pdf" 1541178682 9107 f5f3c7c383c44de6e73248b90ceeeb7c ""
   "../Scripts/lineseg/scratch/rt_correlation.pdf" 1541178970 15481 38c24754b8a87434a797a9606b86f61b ""
   "../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf" 1542732683 11503 52c3a73b3352e52f2a5c2c28b3c29934 ""
@@ -90,12 +90,12 @@
   "figures/adaptive.png" 1521818849 56825 624e4f0fe0e16b6bd99b2cb313c6b1e9 ""
   "figures/foraging.png" 1521821399 41089 9903e24c44c1c60cb2d69a891bdf6e31 ""
   "figures/split-half.png" 1521818768 315829 fbda65b00e3321404a4bf6ced36804a3 ""
-  "manuscript.aux" 1543585778 7090 d7a0543cccc4e839bcd31f7d6b787701 ""
-  "manuscript.bbl" 1543579439 5717 3559a7a23d8781f20318c1eca05ce0f4 "bibtex manuscript"
-  "manuscript.out" 1543585778 973 6f9205736957a5fe93bf4f5d48701cb8 ""
-  "manuscript.tex" 1543585309 29504 afeacc658f5d06147cc0c7d11deb0f9e ""
+  "manuscript.aux" 1543598695 7090 415e574537950a3b5d89f9d65bad630c ""
+  "manuscript.bbl" 1543598694 5717 3559a7a23d8781f20318c1eca05ce0f4 "bibtex manuscript"
+  "manuscript.out" 1543598695 973 6f9205736957a5fe93bf4f5d48701cb8 ""
+  "manuscript.tex" 1543598692 29618 35523584e9976eecce60e9428628c609 ""
   (generated)
-  "manuscript.pdf"
-  "manuscript.log"
-  "manuscript.out"
   "manuscript.aux"
+  "manuscript.log"
+  "manuscript.pdf"
+  "manuscript.out"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  30 NOV 2018 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  30 NOV 2018 17:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -291,9 +291,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 42.
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -327,13 +324,16 @@ File: figures/foraging.png Graphic file (type png)
 Package pdftex.def Info: figures/foraging.png used on input line 67.
 (pdftex.def)             Requested size: 146.83728pt x 85.35826pt.
  [2]
-Underfull \vbox (badness 2237) has occurred while \output is active []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Underfull \vbox (badness 5696) has occurred while \output is active []
+
  [3 <./figures/split-half.png> <./figures/adaptive.png> <./figures/foraging.png
->] [4]
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
 <../Scripts/lineseg/scratch/acc_correlation.pdf, id=166, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/acc_correlation.pdf Graphic file (type pdf)
 <use ../Scripts/lineseg/scratch/acc_correlation.pdf>
@@ -433,11 +433,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 190.
 Here is how much of TeX's memory you used:
  6033 strings out of 493014
  93213 string characters out of 6133351
- 174950 words of memory out of 5000000
+ 173950 words of memory out of 5000000
  9454 multiletter control sequences out of 15000+600000
  10657 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,8n,28p,1930b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,28p,1930b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -453,7 +453,7 @@ ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
 2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmu10.pfb>
-Output written on manuscript.pdf (9 pages, 579072 bytes).
+Output written on manuscript.pdf (9 pages, 579756 bytes).
 PDF statistics:
  353 PDF objects out of 1000 (max. 8388607)
  303 compressed objects within 4 object streams
