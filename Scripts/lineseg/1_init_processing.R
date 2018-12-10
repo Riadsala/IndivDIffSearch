@@ -229,9 +229,23 @@ fixDat$x[which(fixDat$easySide=="right")] <- -fixDat$x[which(fixDat$easySide=="r
 # plt <- plt + facet_wrap(~observer)
 # plt
 
+
+# remove people who had a 1028 x 768 resolution 
+idx <- filter(resDat, xRes == 1024)$observer
+trlDat <- filter(trlDat, !(observer %in% idx))
+fixDat <- filter(fixDat, !(observer %in% idx))
+resDat <- filter(resDat, !(observer %in% idx))
+
+# save fixdat before filtering out fixations out of range
+save(fixDat, file = "scratch/unfiltered_fixDat")
+
 # only take fixations that fall within screen
 fixDat$x <- with(fixDat, ifelse(x > -1 & x <1, x, NaN))
 fixDat$y <- with(fixDat, ifelse(y > -1 & y <1, y, NaN))
+
+
+# save before filtering 
+save(trlDat, file = "scratch/unfiltered_trlDat")
 
 
 # remove trials which are invalid for one reason or another
@@ -244,15 +258,10 @@ incTrials <- with(trlDat, paste(observer, session, trial))
 fixDat <- filter(fixDat, paste(observer, session, trial) %in% incTrials)
 rm(incTrials)
 
-# remove people who had a 1028 x 768 resolution 
-idx <- filter(resDat, xRes == 1024)$observer
-trlDat <- filter(trlDat, !(observer %in% idx))
-fixDat <- filter(fixDat, !(observer %in% idx))
-resDat <- filter(resDat, !(observer %in% idx))
 
 trlDat$observer <- fct_drop(trlDat$observer)
 fixDat$observer <- fct_drop(fixDat$observer)
 
 # save
-saveRDS(trlDat, "scratch/processedRTandAccData.Rda")
-saveRDS(fixDat, "scratch/processedFixationData.Rda")
+save(trlDat, file = "scratch/processedRTandAccData")
+save(fixDat, file = "scratch/processedFixationData")

@@ -1,12 +1,10 @@
 ---
 title: "Supplementary Materials"
 output:
-  html_document:
+  bookdown::html_document2:
     toc: yes
     toc_depth: 2
-  pdf_document:
-    toc: yes
-    toc_depth: '2'
+    fig_caption: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -16,34 +14,80 @@ knitr::opts_chunk$set(echo = TRUE)
 # Packages
 library(tidyverse)
 library(ggthemes)
+library(gridExtra)
+library(knitr)
 
 # what data do we need?
 # get line seg acc and rt 
 ls_acc_RT <- readRDS(file = "../../Scripts/lineseg/scratch/processedRTandAccData.Rda")
 
+
 ```
 
-# 1 Participants
+# Participants
 ```{r Participants, echo = FALSE}
 # sort out participants 
-ls_acc_RT$observer <- as.factor(as.numeric(ls_acc_RT$observer))
+ls_acc_RT$observer <- as.numeric(as.factor(as.numeric(ls_acc_RT$observer)))
 
 # number of participants used
 num_participants <- length(unique(ls_acc_RT$observer))
 
-avg_acc_all <- ls_acc_RT %>%
-  group_by(observer,targSide) %>%
-  summarise(Acc = mean(accuracy))
-
 ```
 
+```{r processing ls data, echo = FALSE, include = FALSE}
+# load in unprocessed data 
+load("../../Scripts/lineseg/scratch/unfiltered_fixDat")
+load("../../Scripts/lineseg/scratch/unfiltered_trlDat")
+trlDat_unf <- trlDat
+# tidy 
+rm(trlDat)
+
+# sort out participant levels 
+fixDat$observer <- as.numeric(as.factor(as.numeric(fixDat$observer)))
+
+fixDat_unf <- fixDat
+# tidy 
+rm(fixDat)
+
+#### getting accuracy and mistaken keys ####
+invalid_kp <- trlDat_unf %>%
+  group_by(responseKey) %>%
+  summarise(n = n()) %>%
+  filter(responseKey == "Key_x")
+invalid_kp <- invalid_kp$n
+
+# filter out bad participants 
+avg_acc_all <- ls_acc_RT %>%
+  filter(observer != 15,
+         observer != 25,
+         observer != 47,
+         observer != 48) %>%
+  group_by(observer, targSide) %>%
+  summarise(Acc = mean(accuracy))
+
+# min acc easy 
+min_easy <- round(min(avg_acc_all$Acc[avg_acc_all$targSide == "easy"]), digits = 3)*100
+
+# min acc absent 
+min_absent <- round(min(avg_acc_all$Acc[avg_acc_all$targSide == "absent"]), digits = 3)*100
+
+
+#### sorting out fixation data #### 
+num_fixations <- nrow(fixDat_unf)
+
+# get removed fixations data 
+load("../../Scripts/lineseg/scratch/processedFixationData")
+# get difference value 
+num_removed <- num_fixations - nrow(fixDat)
+
+  
+```
 Data was collected from 64 Participants as originally planned. Four of these participants did not complete all parts of the experiment (either declining to participate in the second session, or could not be calibrated with the eye tracker), so four new participants were recruited to bring the total back up to `r num_participants`.
 
-## 1.1 Split-Half
-Accuracy data is shown in Figure 1. From this we can see that there are a number of outliers:  4, 21, 33, 56, and 58. These participants, in at least one session, either missed the majority of easy targets, or responded with false positives on the majority of target absent trials. After removing these participants, the lowest accuracy in either session was 84.6% for the easy targets, and 76.9% for target absent trials. This leaves us with 59 participants for the split-half paradigm.
+## Split-Half
+Accuracy data is shown in Figure \ref{fig:fig1}. From this we can see that there are a number of outliers: 15, 25, 47, and 48 (NB: these may have changed with new labelling). These participants, in at least one session, either missed the majority of easy targets, or responded with false positives on the majority of target absent trials. After removing these participants, the lowest accuracy in either session was `r paste(min_easy,"%", sep = "")` for the easy targets, and `r paste(min_absent, "%", sep = "")` for target absent trials. This leaves us with `r length(unique(avg_acc_all$observer))` participants for the split-half paradigm.
 
-```{r Figure 1, echo = FALSE}
-
+```{r fig1, fig.cap = "\\label{fig1} Accuracy data for each participant for the split-half paradigm. ", echo = FALSE, fig.align = "center"}
 # make the plot
 plt <- ls_acc_RT %>%
   group_by(observer, targSide, session) %>%
@@ -57,3 +101,70 @@ plt <- ls_acc_RT %>%
   facet_wrap(~observer)
 plt$labels$x <- "Target Condition"
 plt
+```
+
+```{r fig2, fig.cap = "\\label{fig2} Distribution of reaction times in split-half paradigm.", echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center"}
+plt <- ls_acc_RT %>%
+  ggplot(aes(rt)) + 
+  geom_histogram() + 
+  theme_bw() +  
+  facet_wrap(~targSide)
+plt$labels$x <- "Response Time (msecs)"
+plt2 <- ls_acc_RT %>%
+  mutate(log2_RT = log2(rt)) %>%
+  ggplot(aes(log2_RT)) + 
+  geom_histogram() + 
+  theme_bw() +
+  facet_wrap(~ targSide)
+plt2$labels$x <- "log2 Response Time"
+
+# put together 
+grid.arrange(plt,plt2)
+```
+
+# Data Processing
+
+
+## Split-Half 
+`r invalid_kp` trials with invalid key responses were removed. After removing data from the four outlier participants (see above), all remaining incorrect trials `r #find out what this number is meant to be` (n = 2529) were removed, leaving a total of `r nrow(trlDat_unf) - invalid_kp` trials over 60 participants.
+
+### Reaction Times 
+As expected, reaction times were highly skewed (Figure 2), so were log2 transformed (in ms units) before the participant means were calculated for each session and target condition (Figure )
+
+### Eye Movements
+`r num_fixations` fixations were recorded. Of these, `r num_removed` fell outside of the stimuli area and were removed. Fixations landing within a vertical strip consisting of 10% of the stimuli's width were classed as central. All remaining fixations were then classed as landing on the homogeneous or heterogeneous half of the stimulus. Initial fixations were not included in the analysis. Numbers of fixations are given in Table 2. 
+
+```{r make table, echo = FALSE, results='asis'}
+# get fixation location
+fixDat <- fixDat %>%
+  mutate(fix_loc = "central")
+fixDat$fix_loc[fixDat$x < -0.1 & fixDat$easySide == "left"] <- "homogenous"
+fixDat$fix_loc[fixDat$x > 0.1 & fixDat$easySide == "right"] <- "homogenous"
+fixDat$fix_loc[fixDat$x < -0.1 & fixDat$easySide == "right"] <- "heterogenous"
+fixDat$fix_loc[fixDat$x > 0.1 & fixDat$easySide == "left"] <- "heterogenous"
+
+# get num fixations in these locations 
+table_dat_all <- fixDat %>%
+  group_by(targSide, fix_loc) %>%
+  filter(n < 6) %>%
+  summarise(number = n()) %>%
+  mutate(range = "1 < n")
+
+table_dat_2_to_5 <- fixDat %>%
+  group_by(targSide, fix_loc) %>%
+  filter(n >= 2,
+         n <= 5) %>%
+  summarise(number = n()) %>%
+  mutate(range = "2 <= n <= 5")
+
+table_dat <- rbind(table_dat_all, table_dat_2_to_5) %>%
+  spread(range, number)
+
+# make table 
+kable(table_dat, caption = "table thing")
+```
+
+## Adaptive Choice
+
+## Foraging
+
