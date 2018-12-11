@@ -114,9 +114,9 @@ num_removed <- num_fixations - nrow(fixDat)
 Data was collected from 64 Participants as originally planned. Four of these participants did not complete all parts of the experiment (either declining to participate in the second session, or could not be calibrated with the eye tracker), so four new participants were recruited to bring the total back up to `r num_participants`.
 
 ## Split-Half
-Accuracy data is shown in Figure \ref{fig:fig1}. From this we can see that there are a number of outliers: 15, 25, 47, and 48 (NB: these may have changed with new labelling). These participants, in at least one session, either missed the majority of easy targets, or responded with false positives on the majority of target absent trials. After removing these participants, the lowest accuracy in either session was `r paste(min_easy,"%", sep = "")` for the easy targets, and `r paste(min_absent, "%", sep = "")` for target absent trials. This leaves us with `r length(unique(avg_acc_all$observer))` participants for the split-half paradigm.
+Accuracy data is shown in Figure \ref{fig:acc_plt}. From this we can see that there are a number of outliers: 15, 25, 47, and 48 (NB: these may have changed with new labelling). These participants, in at least one session, either missed the majority of easy targets, or responded with false positives on the majority of target absent trials. After removing these participants, the lowest accuracy in either session was `r paste(min_easy,"%", sep = "")` for the easy targets, and `r paste(min_absent, "%", sep = "")` for target absent trials. This leaves us with `r length(unique(avg_acc_all$observer))` participants for the split-half paradigm.
 
-```{r acc_plt, fig.cap = "Accuracy data for each participant for the split-half paradigm. ", echo = FALSE, fig.align = "center"}
+```{r acc_plt, fig.cap = "\\label{fig:acc_plt} Accuracy data for each participant for the split-half paradigm. ", echo = FALSE, fig.align = "center"}
 # make the plot
 plt <- ls_acc_RT %>%
   group_by(observer, targSide, session) %>%
@@ -132,7 +132,7 @@ plt$labels$x <- "Target Condition"
 plt
 ```
 
-```{r rt_plt, fig.cap = "Distribution of reaction times in split-half paradigm.", echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center"}
+```{r rt_plt, fig.cap = "\\label{fig:rt_plt} Distribution of reaction times in split-half paradigm.", echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center"}
 plt <- ls_acc_RT %>%
   ggplot(aes(rt)) + 
   geom_histogram() + 
