@@ -114,7 +114,40 @@ for(pp in participants){
 # tidy
 rm(d, search_info, idx, participants, pp, participant, search_type, Targets, temp)
 
+# need to calculate run length and switch rate 
+# setup columns to fill 
+dat_for$run_length <- 0
+dat_for$repetition <- 0 
+
+# start counter?
+run_length <- 0
+
+# anyone that knows a quicker way, please feel free to edit
+# start loop
+for(row in 1:nrow(dat_for)){
+  # store information 
+  if(dat_for[row, 2] == 1){
+    # if first click, store as na?
+    dat_for[row, 15] <- NA
+    run_length <- 0
+    dat_for[row, 14] <- NA
+  } else {
+    if(dat_for[row, 9] == dat_for[row-1, 9]){
+      run_length <- run_length + 1
+      dat_for[row, 14] <- run_length
+      dat_for[row, 15] <- 1
+    } else{
+      run_length <- 0
+      dat_for[row, 14] <- run_length
+      dat_for[row, 15] <- 0
+    }
+  }
+}
+
+# tidy 
+rm(row, run_length)
 
 # save these files 
 save(dat_ACS, file = "scratch/dat_ACS")
 save(dat_for, file = "scratch/dat_for")
+

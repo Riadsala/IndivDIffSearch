@@ -77,19 +77,13 @@ invalid_kp <- invalid_kp$n
 
 # filter out bad participants 
 avg_acc_all <- ls_acc_RT %>%
-  filter(observer != 15,
-         observer != 25,
-         observer != 47,
-         observer != 48) %>%
+  filter(!observer %in% c(15, 25, 47, 48)) %>%
   group_by(observer, targSide) %>%
   summarise(Acc = mean(accuracy))
 
 #### get number of incorrect trials ####
 incorrect_trials <- ls_acc_RT %>%
-  filter(observer != 15,
-         observer != 25,
-         observer != 47,
-         observer != 48,
+  filter(!observer %in% c(15, 25, 47, 48),
          responseKey != "Key_x") %>%
   group_by(accuracy) %>%
   summarise(n = n())
@@ -122,6 +116,13 @@ dat_ACS <- dat_ACS %>%
 
 # probably want to work out things like accuracy etc?
 # as in, exclude participants that are around chance level 
+
+# add in log2 RT 
+# there is a trial with RT 0 so make sure RT is greater than that too
+dat_ACS <- dat_ACS %>%
+  mutate(log2_RT = log2(RT)) %>%
+  filter(RT > 0)
+
 
 ```
 
@@ -225,20 +226,41 @@ plt <- dat_ACS %>%
   na.omit() %>%
   mutate(Optimal_Choice = as.factor(Optimal_Choice)) %>%
   filter(Block_num > 0) %>%
-  mutate(se = sd(RT)/sqrt(n())) %>%
-  filter(RT > RT - 3*se,
-         RT < RT + 3*se,
+  mutate(sdev = sd(RT)) %>%
+  filter(RT > RT - 3*sdev,
+         RT < RT + 3*sdev,
          RT > 300) %>%
-  ggplot(aes(RT/1000, fill = Optimal_Choice)) + 
+  ggplot(aes(RT, fill = Optimal_Choice)) + 
   geom_histogram() +
   theme_bw() + 
   theme(strip.text.x =  element_blank()) + 
   coord_cartesian(expand = FALSE) + 
   scale_fill_ptol() +
   facet_wrap(~ Optimal_Choice) 
-plt$labels$x <- "Response Time (secs)"
+plt$labels$x <- "Response Time (msecs)"
 plt$labels$fill <- "Optimal Choice"
-plt
+
+
+plt1_5 <- dat_ACS %>%
+  na.omit() %>%
+  mutate(Optimal_Choice = as.factor(Optimal_Choice)) %>%
+  filter(Block_num > 0) %>%
+  mutate(sdev = sd(RT)) %>%
+  filter(RT > RT - 3*sdev,
+         RT < RT + 3*sdev,
+         RT > 300) %>%
+  ggplot(aes(log2_RT, fill = Optimal_Choice)) + 
+  geom_histogram() +
+  theme_bw() + 
+  theme(strip.text.x =  element_blank()) + 
+  coord_cartesian(expand = FALSE) + 
+  scale_fill_ptol() +
+  facet_wrap(~ Optimal_Choice) 
+plt1_5$labels$x <- "log2 transformed Response Time"
+plt1_5$labels$fill <- "Optimal Choice"
+
+# plot together 
+grid.arrange(plt,plt1_5)
 
 # what about RT by number of optimal choices
 # only: - correct trials
@@ -246,9 +268,9 @@ plt
 plt2 <- dat_ACS %>%
   na.omit() %>%
   filter(Block_num > 0) %>%
-  mutate(se = sd(RT)/sqrt(n())) %>%
-  filter(RT > RT - 3*se,
-         RT < RT + 3*se,
+  mutate(sdev = sd(RT)) %>%
+  filter(RT > RT - 3*sdev,
+         RT < RT + 3*sdev,
          RT > 300) %>%
   group_by(SubNo) %>%
   summarise(mean_RT = mean(RT),
@@ -257,15 +279,36 @@ plt2 <- dat_ACS %>%
   geom_point() + 
   geom_text() + 
   theme_bw()
-plt2
+plt2$labels$X <- "No. of Optimal Choices"
+plt2$labels$y <- "Mean RT (msecs)"
+
+# same as above but using the log2_RT as criteria to exclude
+plt2_5 <- dat_ACS %>%
+  na.omit() %>%
+  filter(Block_num > 0) %>%
+  mutate(sdev = sd(log2_RT)) %>%
+  filter(log2_RT > log2(300),
+         log2_RT < log2_RT + 3 * sdev,
+         log2_RT > log2_RT - 3 * sdev) %>%
+  group_by(SubNo) %>%
+  summarise(mean_RT = mean(log2_RT),
+            sum_optchoices = sum(Optimal_Choice)) %>%
+  ggplot(aes(sum_optchoices, mean_RT, label = SubNo)) + 
+  geom_point() + 
+  geom_text() + 
+  theme_bw()
+plt2_5$labels$x <- "No. Optimal Choices"
+plt2_5$labels$y <- "Mean log2 RT"
+
+grid.arrange(plt2, plt2_5)
 
 # Get accuracy for each participant 
 # probably want to exclude participant 39 going by their accuracy 
 plt3 <- dat_ACS %>%
   filter(Block_num > 0) %>%
-  mutate(se = sd(RT)/sqrt(n())) %>%
-  filter(RT > RT - 3*se,
-         RT < RT + 3*se,
+  mutate(sdev = sd(RT)) %>%
+  filter(RT > RT - 3*sdev,
+         RT < RT + 3*sdev,
          RT > 300) %>%
   group_by(SubNo) %>%
   summarise(mean_acc = mean(Acc)) %>%
@@ -275,8 +318,53 @@ plt3 <- dat_ACS %>%
   theme_bw()
 plt3
 
+# RT and Acc, does this help at all?
+plt4 <- dat_ACS %>%
+  filter(Block_num > 0) %>%
+  mutate(sdev = sd(RT)) %>%
+  filter(RT > RT - 3*sdev,
+         RT < RT + 3*sdev,
+         RT > 300) %>%
+  group_by(SubNo) %>%
+  summarise(mean_RT = mean(RT), 
+            Accuracy = mean(Acc)) %>%
+  ggplot(aes(mean_RT, Accuracy, label = SubNo)) +
+  geom_point() + 
+  geom_text() + 
+  theme_bw()
+plt4
+
 ```
 
 
 ## Foraging
 
+```{r plotting foraging, echo = FALSE, warnings = FALSE, message = FALSE, fig.align = "center"}
+# again, what sort of plots are we interester in?
+
+# mean RT by repetition rate? in each condition?
+plt <- dat_for %>%
+  na.omit() %>%
+  mutate(sub_no = as.numeric(as.factor(sub_no))) %>%
+  # filter(!sub_no %in% c(27,40:43)) %>% # missing data for these participants
+  group_by(sub_no, search_type, Trial) %>%
+  mutate(RT_max = max(RT)) %>%
+  group_by(sub_no, search_type) %>%
+  summarise(mean_RT = mean(RT_max),
+            mean_SW = mean(repetition)) %>%
+  ggplot(aes(mean_SW, mean_RT, colour = search_type)) + 
+  geom_point() +
+  # geom_line(aes(group = sub_no), alpha = 0.3, colour = "black") + # do we want it on one plot?
+  theme_bw() + 
+  scale_x_continuous(breaks = c(0.5)) +
+  scale_y_continuous(breaks = c(10, 30, 50)) + 
+  theme(legend.position = "bottom", strip.text.x = element_text(margin = margin(0.01,0,0.01,0, "mm"))) +
+  scale_colour_ptol() +
+  facet_wrap(~sub_no)
+plt$labels$y <- "Response Time (secs)"
+plt$labels$x <- "Average Repetition Rate"
+plt$labels$colour <- "Search Condition"
+plt
+
+
+```
