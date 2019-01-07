@@ -232,7 +232,7 @@ kable(table_dat)
 # what sort of things do we care about....
 
 # RT by optimal choice
-plt1 <- dat_ACS %>%
+plt_ACS_rt_opt <- dat_ACS %>%
   na.omit() %>%
   mutate(Optimal_Choice = as.factor(Optimal_Choice)) %>%
   filter(Block_num > 0) %>%
@@ -247,11 +247,11 @@ plt1 <- dat_ACS %>%
   coord_cartesian(expand = FALSE) + 
   scale_fill_ptol() +
   facet_wrap(~ Optimal_Choice) 
-plt1$labels$x <- "Response Time (msecs)"
-plt1$labels$fill <- "Optimal Choice"
+plt_ACS_rt_opt$labels$x <- "Response Time (msecs)"
+plt_ACS_rt_opt$labels$fill <- "Optimal Choice"
 
 
-plt1_5 <- dat_ACS %>%
+plt_ACS_logrt_opt <- dat_ACS %>%
   na.omit() %>%
   mutate(Optimal_Choice = as.factor(Optimal_Choice)) %>%
   filter(Block_num > 0) %>%
@@ -266,8 +266,8 @@ plt1_5 <- dat_ACS %>%
   coord_cartesian(expand = FALSE) + 
   scale_fill_ptol() +
   facet_wrap(~ Optimal_Choice) 
-plt1_5$labels$x <- "log2 transformed Response Time"
-plt1_5$labels$fill <- "Optimal Choice"
+plt_ACS_logrt_opt$labels$x <- "log2 transformed Response Time"
+plt_ACS_logrt_opt$labels$fill <- "Optimal Choice"
 
 # plot together 
 # grid.arrange(plt,plt1_5)
@@ -275,7 +275,7 @@ plt1_5$labels$fill <- "Optimal Choice"
 # what about RT by number of optimal choices
 # only: - correct trials
 #       - RT > 300ms
-plt2 <- dat_ACS %>%
+plt_ACS_meanrt_opt <- dat_ACS %>%
   na.omit() %>%
   filter(Block_num > 0) %>%
   mutate(sdev = sd(RT)) %>%
@@ -289,8 +289,8 @@ plt2 <- dat_ACS %>%
   geom_point() + 
   geom_text() + 
   theme_bw()
-plt2$labels$x <- "No. of Optimal Choices"
-plt2$labels$y <- "Mean RT (msecs)"
+plt_ACS_meanrt_opt$labels$x <- "No. of Optimal Choices"
+plt_ACS_meanrt_opt$labels$y <- "Mean RT (msecs)"
 
 # same as above but using the log2_RT as criteria to exclude
 plt2_5 <- dat_ACS %>%
@@ -314,7 +314,7 @@ plt2_5$labels$y <- "Mean log2 RT"
 
 # Get accuracy for each participant 
 # probably want to exclude participant 39 going by their accuracy 
-plt3 <- dat_ACS %>%
+plt_ACS_mean_acc <- dat_ACS %>%
   filter(Block_num > 0) %>%
   mutate(sdev = sd(RT)) %>%
   filter(RT > RT - 3*sdev,
@@ -326,8 +326,8 @@ plt3 <- dat_ACS %>%
   ggplot(aes(SubNo, mean_acc)) + 
   geom_point() + 
   theme_bw()
-plt3$labels$x <- "Participant"
-plt3$labels$y <- "Mean Accuracy"
+plt_ACS_mean_acc$labels$x <- "Participant"
+plt_ACS_mean_acc$labels$y <- "Mean Accuracy"
 # plt3
 
 # RT and Acc, does this help at all?
@@ -349,15 +349,15 @@ plt4 <- dat_ACS %>%
 ```
 
 ```{r ACS_rt, fig.cap = "\\label{fig:ACS_rt_plt} Distribution of reaction times in Adaptive Choice paradigm.", echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center"}
-grid.arrange(plt1, plt1_5)
+grid.arrange(plt_ACS_rt_opt, plt_ACS_logrt_opt)
 ```
 
 ```{r ACS_rt_optchoice, fig.cap = "\\label{fig:ACS_rt_opt_plt} Response Time (ms) by number of optimal choices", echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center"}
-plt2
+plt_ACS_meanrt_opt
 ```
 
 ```{r ACS_acc, fig.cap = "\\label{fig:ACS_acc} Mean Accuracy for each Participant", echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center"}
-plt3
+plt_ACS_mean_acc
 ```
 
 ## Foraging
@@ -366,7 +366,7 @@ plt3
 # again, what sort of plots are we interester in?
 
 # mean RT by repetition rate? in each condition?
-plt <- dat_for %>%
+plt_for_sr_rt <- dat_for %>%
   na.omit() %>%
   mutate(sub_no = as.numeric(as.factor(sub_no))) %>%
   # filter(!sub_no %in% c(27,40:43)) %>% # missing data for these participants
@@ -384,10 +384,10 @@ plt <- dat_for %>%
   theme(legend.position = "bottom", strip.text.x = element_text(margin = margin(0.01,0,0.01,0, "mm"))) +
   scale_colour_ptol() +
   facet_wrap(~sub_no)
-plt$labels$y <- "Response Time (secs)"
-plt$labels$x <- "Average Repetition Rate"
-plt$labels$colour <- "Search Condition"
-plt
+plt_for_sr_rt$labels$y <- "Response Time (secs)"
+plt_for_sr_rt$labels$x <- "Average Repetition Rate"
+plt_for_sr_rt$labels$colour <- "Search Condition"
+plt_for_sr_rt
 
 
 ```
