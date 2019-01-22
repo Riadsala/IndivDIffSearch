@@ -21,7 +21,7 @@ library(knitr)
 
 # what data do we need?
 # get line seg acc and rt 
-ls_acc_RT <- readRDS(file = "../../Scripts/lineseg/scratch/processedRTandAccData.Rda")
+ls_acc_RT <- readRDS(file = "../Scripts/lineseg/scratch/processedRTandAccData.Rda")
 
 
 ```
@@ -64,8 +64,8 @@ num_participants <- length(unique(ls_acc_RT$observer))
 
 ```{r processing ls data, echo = FALSE, include = FALSE}
 # load in unprocessed data 
-load("../../Scripts/lineseg/scratch/unfiltered_fixDat")
-load("../../Scripts/lineseg/scratch/unfiltered_trlDat")
+load("../Scripts/lineseg/scratch/unfiltered_fixDat")
+load("../Scripts/lineseg/scratch/unfiltered_trlDat")
 trlDat_unf <- trlDat
 # tidy 
 rm(trlDat)
@@ -109,7 +109,7 @@ min_absent <- round(min(avg_acc_all$Acc[avg_acc_all$targSide == "absent"]), digi
 num_fixations <- nrow(fixDat_unf)
 
 # get removed fixations data 
-load("../../Scripts/lineseg/scratch/processedFixationData")
+load("../Scripts/lineseg/scratch/processedFixationData")
 # get difference value 
 num_removed <- num_fixations - nrow(fixDat)
 
@@ -320,9 +320,13 @@ plt_ACS_mean_acc <- dat_ACS %>%
   filter(RT > RT - 3*sdev,
          RT < RT + 3*sdev,
          RT > 300) %>%
+  ungroup() %>%
+  mutate(mean_acc_ov = mean(Acc)) %>%
   group_by(SubNo) %>%
-  summarise(mean_acc = mean(Acc)) %>%
-  mutate(mean_acc_ov = mean(mean_acc)) %>%
+  summarise(mean_acc = mean(Acc),
+            mean_acc_ov = mean(mean_acc_ov)) %>%
+  mutate(sd_acc = sd(mean_acc)) %>%
+  filter(mean_acc > mean_acc_ov - 3*sd_acc) %>%
   ggplot(aes(SubNo, mean_acc)) + 
   geom_point() + 
   theme_bw()
