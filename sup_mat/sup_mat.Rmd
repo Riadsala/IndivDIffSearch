@@ -26,25 +26,54 @@ ls_acc_RT <- readRDS(file = "../Scripts/lineseg/scratch/processedRTandAccData.Rd
 
 ```
 
-# Methods 
-The experiment took part over two sessions, each lasting approximately 1 hour. All participants reported normal or corrected to normal vision and were from the University of Aberdeen. Participants were either compensated with course credit or Â£15 for their time. All participants gave informed consent. 
+```{r processing ACS data, echo = FALSE}
+# load data 
+load("scratch/dat_ACS")
 
-All tasks were completed on a 17-inch CRT monitor with a resolution of 1400$x$1050 (*n* = 40) or 1600$x$1200 (*n* = 24). All tasks were programmed in MATLAB (which version?) using psychtoolbox and eyelinktoolbox. 
+# filter out participants that were removed 
+dat_ACS <- dat_ACS %>%
+  filter(SubNo >= 5)
+
+# probably want to work out things like accuracy etc?
+# as in, exclude participants that are around chance level 
+
+# add in log2 RT 
+# there is a trial with RT 0 so make sure RT is greater than that too
+dat_ACS <- dat_ACS %>%
+  mutate(log2_RT = log2(RT)) %>%
+  filter(RT > 0)
+
+
+```
+
+```{r processing Foraging data, echo = FALSE}
+# load data 
+load("scratch/dat_for")
+
+# filter out participants that were removed 
+dat_for <- dat_for %>%
+  filter(sub_no >= 5)
+
+```
+# Methods 
+The experiment took part over two sessions, each lasting approximately 1 hour. All participants reported normal or corrected to normal vision and were from the University of Aberdeen. Participants were either compensated with course credit or £15 for their time. All participants gave informed consent. 
+
+All tasks were completed on a 17-inch CRT monitor with a resolution of 1400x1050 (*n* = 40) or 1600x1200 (*n* = 24). All tasks were programmed in MATLAB R2009b (version 7.9.0.529) using psychtoolbox and eyelinktoolbox. 
 
 
 
 ## Split-Half
-This task lasted approximately 30 minutes and was carried out in both sessions. A chin rest with forehead bar ensured a viewing distance of 47cm. Participants' fixations were tracked using a deskmounted Eylink 1000 to record eye position at 1000 Hz. Prior to every block, a 9-point calibration was carried out. Participants were instructed to state the presence, or absence, of a small target line segment that was tilted 45&deg; to the right. The distractor line segments (how many, i.e. how many rows/columns?) were arranged in such a way to create a "hard" and "easy" search side. The mean orientation of the distractors was orthogonal to the target orientation, with either a low variance (18&deg;) which created a relatively homogenous texture ("easy" side), or a high amount of variance (95&deg;) creating a more heterogeneous texture ("hard" side). Each line segment subtended approximately 1.6&deg; of visual angle. For 50% of the trials, there was a target present. Participants were told to report (how?) whether the target was present or absent on each trial as quickly and as accuractely as possible. 
+This task lasted approximately 30 minutes and was carried out in both sessions. A chin rest with forehead bar ensured a viewing distance of 47cm. Participants' fixations were tracked using a deskmounted Eylink 1000 to record eye position at 1000 Hz. Prior to every block, a 9-point calibration was carried out. Participants were instructed to state the presence, or absence, of a small target line segment that was tilted 45&deg; to the right. The distractor line segments were arranged in such a way to create a "hard" and "easy" search side. `r 16*22` line segemets were arranged in 16 rows and 22 columns, with the easy and hard search sides being split vertically. The mean orientation of the distractors was orthogonal to the target orientation, with either a low variance (18&deg;) which created a relatively homogenous texture ("easy" side), or a high amount of variance (95&deg;) creating a more heterogeneous texture ("hard" side). Each line segment subtended approximately 1.6&deg; of visual angle. For 50% of the trials, there was a target present. Participants were told to report whether the target was present or absent on each trial as quickly and as accuractely as possible by pressing either the left or right arrow key respectively. 
 
 In total, particiapnts completed 160 trials in each session with the hetero- and homogenous side randomly varying from trial to trial. 
 
 
 ## Adaptive Choice
-For this task, participants viewed the display from approximately 47cm away, but no chin rest was used to ensure a constant viewing distance. The search display consisted of small red, blue, and green squares arranged in three rings around a fixation point (how many of each colour?). the squares subtended between ~1.1&deg; and ~1.3&deg; depending on the screen resolution the participant was tested at (either 1600$x$1200 or 1400$x$1050, respectively). The participants' task was to find either a blue or a red square that contained a number between 2 and 5 inclusive. On every trial, just one blue and one red square contained a number between 2 and 5. Participants were instructed to find and report one of them. To ensure we could tell which colour they had decided, the blue and red target squares would always have a different number inside. The distractor blue and red squares would always contain numbers between 6 and 9. The green squares contained numbers between 2 and 9. Participants were instructed to complete the task as quickly and as accurately as possible. 
+For this task, participants viewed the display from approximately 47cm away, but no chin rest was used to ensure a constant viewing distance. The search display consisted of 54 small red, blue, and green squares arranged in three rings around a fixation point (how many of each colour?). the squares subtended between ~1.1&deg; and ~1.3&deg; depending on the screen resolution the participant was tested at (either 1600x1200 or 1400x1050, respectively). The participants' task was to find either a blue or a red square that contained a number between 2 and 5 inclusive. On every trial, just one blue and one red square contained a number between 2 and 5. Participants were instructed to find and report one of them. To ensure we could tell which colour they had decided, the blue and red target squares would always have a different number inside. The distractor blue and red squares would always contain numbers between 6 and 9. The green squares contained numbers between 2 and 9. Participants were instructed to complete the task as quickly and as accurately as possible. 
 
-Before starting the task, participants were given 10 practice trials and were free to ask any questions before starting the main expriment. If a participant reported a number that was not in one of the two target boxes, a tone would sound to alert them to their mistake. (How many trials in the experiment?)
+Before starting the task, participants were given 10 practice trials and were free to ask any questions before starting the main expriment. If a participant reported a number that was not in one of the two target boxes, a tone would sound to alert them to their mistake. After the practice trials, they would then complete `r max(dat_ACS$Trial)` trials split into 4 equal length blocks (`r max(dat_ACS$Block_trial)` trials per block).
 
-At the beginning of the experiment, there would be more red than blue squares (**need to check this is accuracte**) for five trials. Then, across the next seven trials, the red squares would gradually change from red to blue, stay blue for five trials, and then change from blue to red across seven trials, stay red for five trials, and so on. The number of green squares was constant. After completing the task, participants were then asked to fill out a short three-item questionnaire asking them about their strategy and whether they noticed the gradual shift from one colour being the majority to the other. 
+At the beginning of the experiment, there would be more red than blue squares for five trials. Then, across the next seven trials, the red squares would gradually change from red to blue, stay blue for five trials, and then change from blue to red across seven trials, stay red for five trials, and so on. The number of green squares was constant. After completing the task, participants were then asked to fill out a short three-item questionnaire asking them about their strategy and whether they noticed the gradual shift from one colour being the majority to the other. 
 
 ## Foraging 
 Viewing distance was approximately 47cm (no chin rest was used). At the beginning of each trial, participants were presented with 84 small shapes on the screen which subtended between ~0.6&deg; and ~0.7&deg; depending on the screen resolution the participant was tested at (either 1600$x$1200 or 1400$x$1050, respectively). Half of these were target items that participants were to click on, using the mouse cursor, until they had "collected" all of them (they disappeared when clicked). There were two types of search with this task. In feature search, participants were presented with circles of 4 different colours (red, blue, yellow, and green) and were instructed to click on all circles of two of the colours (e.g. click on the red and green, not the blue and yellow). In conjunction search, there were squares and circles coloured with two of the four possible colours, for example, they could be instructed to collect the blue squares and yellow circles, but to avoid the blue circles and yellow squares. In both conditions, if participants clicked on a non-target shape the trial immediately ended and re-started with 84 shapes in a new set of locations. Participants completed both of these conditions and the order was counterbalanced with the colours of the targets being randomised across participants.  
@@ -116,35 +145,7 @@ num_removed <- num_fixations - nrow(fixDat)
   
 ```
 
-```{r processing ACS data, echo = FALSE}
-# load data 
-load("scratch/dat_ACS")
 
-# filter out participants that were removed 
-dat_ACS <- dat_ACS %>%
-  filter(SubNo >= 5)
-
-# probably want to work out things like accuracy etc?
-# as in, exclude participants that are around chance level 
-
-# add in log2 RT 
-# there is a trial with RT 0 so make sure RT is greater than that too
-dat_ACS <- dat_ACS %>%
-  mutate(log2_RT = log2(RT)) %>%
-  filter(RT > 0)
-
-
-```
-
-```{r processing Foraging data, echo = FALSE}
-# load data 
-load("scratch/dat_for")
-
-# filter out participants that were removed 
-dat_for <- dat_for %>%
-  filter(sub_no >= 5)
-
-```
 Data was collected from 64 Participants as originally planned. Four of these participants did not complete all parts of the experiment (either declining to participate in the second session, or could not be calibrated with the eye tracker), so four new participants were recruited to bring the total back up to `r num_participants`.
 
 ## Split-Half
@@ -350,7 +351,22 @@ plt4 <- dat_ACS %>%
   theme_bw()
 # plt4
 
+excluded <- dat_ACS %>%
+  filter(Block_num > 0) %>%
+  ungroup() %>%
+  mutate(mean_acc_ov = mean(Acc)) %>%
+  group_by(SubNo) %>%
+  summarise(mean_acc = mean(Acc),
+            mean_acc_ov = mean(mean_acc_ov)) %>%
+  mutate(sd_acc = sd(mean_acc)) %>%
+  filter(mean_acc < mean_acc_ov - 3*sd_acc)
+excluded <- unique(excluded$SubNo)
+
+# average accuracy
+avg_1 <- mean(dat_ACS$Acc) 
+
 ```
+A participant was excluded if their accuracy in the task was more than 3 standard deviations below the average for all participants. Participants `r paste(excluded[1], "&", excluded[2])` were excluded for having an accuracy that was 3 standard deviations below the global average of `r round(avg_1, digits = 2)`.
 
 ```{r ACS_rt, fig.cap = "\\label{fig:ACS_rt_plt} Distribution of reaction times in Adaptive Choice paradigm. Optimal choice corresponds to reporting the number that was in the box with the minority colour group.", echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center"}
 grid.arrange(plt_ACS_rt_opt, plt_ACS_logrt_opt)
