@@ -352,40 +352,46 @@ plt4 <- dat_ACS %>%
 
 ```
 
-```{r ACS_rt, fig.cap = "\\label{fig:ACS_rt_plt} Distribution of reaction times in Adaptive Choice paradigm.", echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center"}
+```{r ACS_rt, fig.cap = "\\label{fig:ACS_rt_plt} Distribution of reaction times in Adaptive Choice paradigm. Optimal choice corresponds to reporting the number that was in the box with the minority colour group.", echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center"}
 grid.arrange(plt_ACS_rt_opt, plt_ACS_logrt_opt)
 ```
 
-```{r ACS_rt_optchoice, fig.cap = "\\label{fig:ACS_rt_opt_plt} Response Time (ms) by number of optimal choices", echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center"}
+```{r ACS_rt_optchoice, fig.cap = "\\label{fig:ACS_rt_opt_plt} Response Time (ms) by number of optimal choices in the Adaptive Choice Task", echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center"}
 plt_ACS_meanrt_opt
 ```
 
-```{r ACS_acc, fig.cap = "\\label{fig:ACS_acc} Mean Accuracy for each Participant", echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center"}
+```{r ACS_acc, fig.cap = "\\label{fig:ACS_acc} Mean Accuracy for each Participant in the Adaptive Choice Task", echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center"}
 plt_ACS_mean_acc
 ```
 
 ## Foraging
 
-```{r plotting foraging, fig.cap = "\\label{fig:For_switch_rt} Switch Rate and Response Times (seconds) for each participant accross conditions", echo = FALSE, warnings = FALSE, message = FALSE, fig.align = "center"}
+```{r plotting foraging, fig.cap = "\\label{fig:For_switch_rt} Average repetition rate (i.e. when the curret clicked on target is the same as the previously clicked target) and Response Times (seconds) for each participant accross conditions in the Foraging task", echo = FALSE, warnings = FALSE, message = FALSE, fig.align = "center"}
 # again, what sort of plots are we interester in?
 
 # mean RT by repetition rate? in each condition?
 plt_for_sr_rt <- dat_for %>%
   na.omit() %>%
-  mutate(sub_no = as.numeric(as.factor(sub_no))) %>%
+  mutate(sub_no = as.numeric(as.factor(sub_no)))
+
+plt_for_sr_rt$Search_cond <- "Feature"
+plt_for_sr_rt$Search_cond[plt_for_sr_rt$search_type == 2] <- "Conjunctive"
+
+plt_for_sr_rt <- plt_for_sr_rt %>%
   # filter(!sub_no %in% c(27,40:43)) %>% # missing data for these participants
-  group_by(sub_no, search_type, Trial) %>%
+  group_by(sub_no, Search_cond, Trial) %>%
   mutate(RT_max = max(RT)) %>%
-  group_by(sub_no, search_type) %>%
+  group_by(sub_no, Search_cond) %>%
   summarise(mean_RT = mean(RT_max),
             mean_SW = mean(repetition)) %>%
-  ggplot(aes(mean_SW, mean_RT, colour = search_type)) + 
+  ggplot(aes(mean_SW, mean_RT, colour = Search_cond)) + 
   geom_point() +
   # geom_line(aes(group = sub_no), alpha = 0.3, colour = "black") + # do we want it on one plot?
   theme_bw() + 
   scale_x_continuous(breaks = c(0.5)) +
   scale_y_continuous(breaks = c(10, 30, 50)) + 
-  theme(legend.position = "bottom", strip.text.x = element_text(margin = margin(0.01,0,0.01,0, "mm"))) +
+  theme(legend.position = "bottom",
+        strip.text.x = element_text(margin = margin(0.01,0,0.01,0, "mm"))) +
   scale_colour_ptol() +
   facet_wrap(~sub_no)
 plt_for_sr_rt$labels$y <- "Response Time (secs)"
