@@ -56,7 +56,7 @@ dat_for <- dat_for %>%
 
 ```
 # Methods 
-The experiment took part over two sessions, each lasting approximately 1 hour. All participants reported normal or corrected to normal vision and were from the University of Aberdeen. Participants were either compensated with course credit or £15 for their time. All participants gave informed consent. 
+The experiment took part over two sessions, each lasting approximately 1 hour. All participants reported normal or corrected to normal vision and were from the University of Aberdeen. Participants were either compensated with course credit or Â£15 for their time. All participants gave informed consent. 
 
 All tasks were completed on a 17-inch CRT monitor with a resolution of 1400x1050 (*n* = 40) or 1600x1200 (*n* = 24). All tasks were programmed in MATLAB R2009b (version 7.9.0.529) using psychtoolbox and eyelinktoolbox. 
 
@@ -69,7 +69,7 @@ In total, particiapnts completed 160 trials in each session with the hetero- and
 
 
 ## Adaptive Choice
-For this task, participants viewed the display from approximately 47cm away, but no chin rest was used to ensure a constant viewing distance. The search display consisted of 54 small red, blue, and green squares arranged in three rings around a fixation point (how many of each colour?). the squares subtended between ~1.1&deg; and ~1.3&deg; depending on the screen resolution the participant was tested at (either 1600x1200 or 1400x1050, respectively). The participants' task was to find either a blue or a red square that contained a number between 2 and 5 inclusive. On every trial, just one blue and one red square contained a number between 2 and 5. Participants were instructed to find and report one of them. To ensure we could tell which colour they had decided, the blue and red target squares would always have a different number inside. The distractor blue and red squares would always contain numbers between 6 and 9. The green squares contained numbers between 2 and 9. Participants were instructed to complete the task as quickly and as accurately as possible. 
+For this task, participants viewed the display from approximately 47cm away, but no chin rest was used to ensure a constant viewing distance. The search display consisted of two target squares (one red and one blue), and 52 distractor squares: 12 red, 12 blue, 14 green, and 14 squares of variable colour, arranged in three rings around a fixation point. The squares subtended between ~1.1&deg; and ~1.3&deg; depending on the screen resolution the participant was tested at (either 1600x1200 or 1400x1050, respectively). The participants' task was to find either a blue or a red square that contained a number between 2 and 5 inclusive. On every trial, just one blue and one red square contained a number between 2 and 5. Participants were instructed to find and report one of them. To ensure we could tell which colour they had decided, the blue and red target squares would always have a different number inside. The distractor blue and red squares would always contain numbers between 6 and 9. The green squares contained numbers between 2 and 9. Participants were instructed to complete the task as quickly and as accurately as possible. 
 
 Before starting the task, participants were given 10 practice trials and were free to ask any questions before starting the main expriment. If a participant reported a number that was not in one of the two target boxes, a tone would sound to alert them to their mistake. After the practice trials, they would then complete `r max(dat_ACS$Trial)` trials split into 4 equal length blocks (`r max(dat_ACS$Block_trial)` trials per block).
 
@@ -148,8 +148,8 @@ num_removed <- num_fixations - nrow(fixDat)
 
 Data was collected from 64 Participants as originally planned. Four of these participants did not complete all parts of the experiment (either declining to participate in the second session, or could not be calibrated with the eye tracker), so four new participants were recruited to bring the total back up to `r num_participants`.
 
-## Split-Half
-Accuracy data is shown in Figure \ref{fig:acc_plt}. From this we can see that there are a number of outliers: 15, 25, 47, and 48. These participants, in at least one session, either missed the majority of easy targets, or responded with false positives on the majority of target absent trials. After removing these participants, the lowest accuracy in either session was `r paste(min_easy,"%", sep = "")` for the easy targets, and `r paste(min_absent, "%", sep = "")` for target absent trials. This leaves us with `r length(unique(avg_acc_all$observer))` participants for the split-half paradigm.
+## Participant exclusions in the Split-Half task
+Accuracy data is shown in Figure \ref{fig:acc_plt}. From this we can see that there are a number of participants who did not perform the task to a reasonable standard: 15, 25, 47, and 48. These participants, in at least one session, either missed the majority of easy targets, or responded with false positives on the majority of target absent trials. After removing these participants, the lowest accuracy in either session was `r paste(min_easy,"%", sep = "")` for the easy targets, and `r paste(min_absent, "%", sep = "")` for target absent trials. This leaves us with `r length(unique(avg_acc_all$observer))` participants for the split-half paradigm.
 
 ```{r acc_plt, fig.cap = "\\label{fig:acc_plt} Accuracy data for each participant for the split-half paradigm. ", echo = FALSE, fig.align = "center"}
 # make the plot
@@ -188,6 +188,7 @@ grid.arrange(plt,plt2)
 
 # Data Processing
 
+The 
 
 ## Split-Half 
 `r invalid_kp` trials with invalid key responses were removed. After removing data from the four outlier participants (see above), all remaining incorrect trials (n = `r incorrect_trials$n[incorrect_trials$accuracy == 0]`) were removed, leaving a total of `r incorrect_trials$n[incorrect_trials$accuracy == 1]` trials over 60 participants.
