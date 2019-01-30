@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_depth: 4
     fig_caption: yes
-fig_height: 4
+fig_height: 2
 fig_width: 6
 ---
 
@@ -150,7 +150,7 @@ num_removed <- num_fixations - nrow(fixDat)
 ### Split-Half task
 Accuracy data is shown in Figure \ref{fig:ls_acc_plt}. From this we can see that there are a number of participants who did not perform the task to a reasonable standard: 15, 25, 47, and 48. These participants, in at least one session, either missed the majority of easy targets, or responded with false positives on the majority of target absent trials. After removing these participants, the lowest accuracy in either session was `r paste(min_easy,"%", sep = "")` for the easy targets, and `r paste(min_absent, "%", sep = "")` for target absent trials. This leaves us with `r length(unique(avg_acc_all$observer))` participants for the split-half paradigm.
 
-```{r ls_acc_plt, fig.cap = "\\label{fig:ls_acc_plt} Accuracy data for each participant for the split-half paradigm. ", echo = FALSE, fig.align = "center"}
+```{r ls_acc_plt, fig.cap = "\\label{fig:ls_acc_plt} Accuracy data for each participant for the split-half paradigm. ", echo = FALSE, fig.align = "center", fig.asp = 0.6}
 # make the plot
 plt <- ls_acc_RT %>%
   group_by(observer, targSide, session) %>%
@@ -316,13 +316,13 @@ We excluded any participant with accuracy more than 3 standard deviations below 
 # plt_ACS_meanrt_opt
 ```
 
-```{r ACS_acc, fig.cap = "\\label{fig:ACS_acc} Mean Accuracy for each Participant in the Adaptive Choice Task", echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center"}
+```{r ACS_acc, fig.cap = "\\label{fig:ACS_acc} Mean Accuracy for each Participant in the Adaptive Choice Task", echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center", fig.asp = 0.6}
 plt_ACS_mean_acc
 ```
 ### Foraging
 No participants were excluded for poor performance on the foraging task. However, participant 27 and participants 40 to 43 were missing their data from the feature search condition (Figure \ref{fig:For_switch_rt}). We had not planned to use the results from the feature search condition in the correlation calculations, so these participants were not excluded. 
 
-```{r plotting foraging, fig.cap = "\\label{fig:For_switch_rt} Average repetition rate (i.e. when the curret clicked on target is the same as the previously clicked target) and Response Times (seconds) for each participant accross conditions in the Foraging task", echo = FALSE, warnings = FALSE, message = FALSE, fig.align = "center"}
+```{r plotting foraging, fig.cap = "\\label{fig:For_switch_rt} Average repetition rate (i.e. when the curret clicked on target is the same as the previously clicked target) and Response Times (seconds) for each participant accross conditions in the Foraging task", echo = FALSE, warnings = FALSE, message = FALSE, fig.align = "center", fig.asp = 0.6}
 # again, what sort of plots are we interester in?
 
 # mean RT by repetition rate? in each condition?
@@ -347,7 +347,7 @@ plt_for_sr_rt <- plt_for_sr_rt %>%
   scale_x_continuous(breaks = c(0.5)) +
   scale_y_continuous(breaks = c(10, 30, 50)) + 
   theme(legend.position = "bottom",
-        strip.text.x = element_text(margin = margin(0.01,0,0.01,0, "mm"))) +
+        strip.text.x = element_text(margin = margin(0.008,0,0.008,0, "mm"))) +
   scale_colour_ptol() +
   facet_wrap(~sub_no)
 plt_for_sr_rt$labels$y <- "Response Time (secs)"
@@ -362,26 +362,25 @@ plt_for_sr_rt
 Response Times in the Adaptive Choice and Split-Half tasks were skewed, as can be seen in Figure \ref{fig:ACS_SH_rt}. We therefore normalised the data by applying a log2 transformation. Response times that were 3 standard deviations from the mean were discarded. 
 
 
-```{r ACS_SH_rt, fig.cap = "\\label{fig:ACS_SH_rt} Log2 transformed Response time distributions for the Split-Half (top) and Adaptive Choice (bottom) tasks. The plot for the Adaptive Choice task is split between RTs for optimal choices (i.e. picking the colour in the minority as indicated by a 1) and the suboptimal choice", echo = F, warnings = F, message = F, fig.align = "centre"}
+```{r ACS_SH_rt, fig.cap = "\\label{fig:ACS_SH_rt} Response time distributions for the Split-Half (top) and Adaptive Choice (bottom) tasks. The plot for the Adaptive Choice task is split between RTs for optimal choices (i.e. picking the colour in the minority as indicated by a 1) and the suboptimal choice", echo = F, warnings = F, message = F, fig.align = "centre", fig.asp = 0.6}
 # make rt plots 
 # do SH first 
 plt_sh_rt <- ls_acc_RT %>%
-  mutate(log2rt = log2(rt)) %>%
-  ggplot(aes(log2rt)) + 
+  ggplot(aes(rt)) + 
   geom_histogram() + 
   theme_bw() + 
   facet_wrap(~targSide)
-plt_sh_rt$labels$x <- "Log2 Response Time (msecs)"
+plt_sh_rt$labels$x <- "Response Time (msecs)"
 
 plt_acs_logrt <- dat_ACS %>%
   na.omit() %>%
   mutate(Optimal_Choice = as.factor(Optimal_Choice),
-         sdev = sd(log2_RT),
-         mean_rt = mean(log2_RT)) %>%
-  filter(log2_RT > mean_rt - 3*sdev,
-         log2_RT < mean_rt + 3*sdev,
-         log2_RT > log2(300)) %>%  
-  ggplot(aes(log2_RT,
+         sdev = sd(RT),
+         mean_rt = mean(RT)) %>%
+  filter(RT > mean_rt - 3*sdev,
+         RT < mean_rt + 3*sdev,
+         RT > 300) %>%  
+  ggplot(aes(RT,
              colour = Optimal_Choice,
              fill = Optimal_Choice)) + 
   geom_histogram() +
@@ -391,7 +390,7 @@ plt_acs_logrt <- dat_ACS %>%
   scale_colour_ptol() + 
   scale_fill_ptol() + 
   facet_wrap(~Optimal_Choice)
-plt_acs_logrt$labels$x <- "Log2 Response Time (msecs)"
+plt_acs_logrt$labels$x <- "Response Time (msecs)"
   
 
 grid.arrange(plt_sh_rt, plt_acs_logrt, ncol = 1)
