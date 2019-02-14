@@ -1,49 +1,63 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript.aux
-The style file: plain.bst
+The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: literature.bib
-Warning--empty year in johannesson2017
-Warning--empty journal in prpic2018
+I was expecting a `,' or a `}'---line 211 of file literature.bib
+ : 
+ : keywords = {foraging, working memory, inhibitory control, visual search, attention},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No journal in prpic2018
 You've used 27 entries,
-            2118 wiz_defined-function locations,
-            671 strings with 8690 characters,
-and the built_in function-call counts, 9072 in all, are:
-= -- 896
-> -- 435
-< -- 2
-+ -- 176
-- -- 144
-* -- 704
-:= -- 1549
-add.period$ -- 81
+            6951 wiz_defined-function locations,
+            1441 strings with 15505 characters,
+and the built_in function-call counts, 53141 in all, are:
+= -- 6562
+> -- 459
+< -- 2565
++ -- 2813
+- -- 59
+* -- 3471
+:= -- 9703
+add.period$ -- 108
 call.type$ -- 27
-change.case$ -- 153
+change.case$ -- 459
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 305
-empty$ -- 682
-format.name$ -- 144
-if$ -- 1832
+cite$ -- 55
+duplicate$ -- 1495
+empty$ -- 2016
+format.name$ -- 786
+if$ -- 10007
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 27
-newline$ -- 138
-num.names$ -- 54
-pop$ -- 115
+int.to.str$ -- 81
+missing$ -- 0
+newline$ -- 696
+num.names$ -- 216
+pop$ -- 700
 preamble$ -- 1
-purify$ -- 126
+purify$ -- 108
 quote$ -- 0
-skip$ -- 210
+skip$ -- 3453
 stack$ -- 0
-substring$ -- 649
-swap$ -- 38
-text.length$ -- 2
+substring$ -- 3071
+swap$ -- 862
+text.length$ -- 54
 text.prefix$ -- 0
-top$ -- 0
-type$ -- 108
-warning$ -- 2
-while$ -- 94
-width$ -- 29
-write$ -- 293
-(There were 2 warnings)
+top$ -- 1
+type$ -- 2160
+warning$ -- 1
+while$ -- 263
+width$ -- 0
+write$ -- 889
+(There was 1 error message)
