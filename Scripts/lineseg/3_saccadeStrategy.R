@@ -11,6 +11,16 @@ figYn <- 2.5
 fix_dat <- readRDS(file="scratch/processedFixationData.Rda")
 trl_dat <- readRDS(file="scratch/processedRTandAccData.Rda")
 
+
+# load demographic data
+datFolder <- '../../Data/'
+demDat <- read_delim(paste(datFolder, "demographics.txt", sep = ""), delim = "\t")
+names(demDat)[1] <- c("observer")
+demDat$observer <- as.factor(demDat$observer)
+fix_dat <- full_join(fix_dat, demDat)
+fix_dat$gender <- as_factor(fix_dat$gender)
+
+
 # only take correct trials
 fix_dat <- filter(left_join(fix_dat, trl_dat), accuracy == 1)
 trl_dat <- filter(trl_dat, accuracy == 1)
@@ -105,6 +115,9 @@ r_df = tibble(
 a_labels = c(1, 2, 4, 8, 16)
 a_breaks = log(1000*a_labels, 2)
 
+
+dat <- full_join(dat, demDat)
+
 plt <- ggplot(dat, aes(x = prop_homo, xmin = lowerS, xmax = upperS, y = meanlogrt, ymin = lowerRT, ymax = upperRT, colour = session))
 plt <- plt + geom_errorbar(size=0.25, colour = "grey")
 plt <- plt + geom_errorbarh(size=0.25, colour = "grey")
@@ -123,8 +136,21 @@ plt <- plt + theme(
   panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank())
 plt
-ggsave("./scratch/strat_compare_meanlog_rt.pdf", width = figYn, height = figYn)
-ggsave("./scratch/strat_compare_meanlog_rt.png", width = figYn, height = figYn)
+ggsave("/scratch/strat_compare_meanlog_rt.pdf", width = figYn, height = figYn)
+ggsave("/scratch/strat_compare_meanlog_rt.png", width = figYn, height = figYn)
+
+
+# --------------------------------------------------------------------------------
+# check for gender difference
+# --------------------------------------------------------------------------------
+plt <- ggplot(dat, aes( x = prop_hetero, fill = gender))
+plt <- plt + geom_density(alpha = 0.5)
+plt <- plt + facet_wrap(~ session)
+plt <- plt + scale_fill_viridis_d()
+plt
+ggsave("scratch/gender_strat.pdf")
+
+
 
 # --------------------------------------------------------------------------------
 # how consistent is stratety between session a and b?
