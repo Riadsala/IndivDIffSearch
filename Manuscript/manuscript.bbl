@@ -532,59 +532,6 @@ Nowakowska, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Proulx%
-}{%
-Proulx%
-}{%
-{\protect \APACyear {2011}}%
-}]{%
-proulx2011}
-\APACinsertmetastar {%
-proulx2011}%
-\begin{APACrefauthors}%
-Proulx, M\BPBI J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2011}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Individual differences and metacognitive knowledge of
-  visual search strategy} {Individual differences and metacognitive knowledge
-  of visual search strategy}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{PLoS One}{6}{10}{e27043}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Prpic%
-\ \protect \BOthers {.}}{%
-Prpic%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2018}}%
-}]{%
-prpic2018}
-\APACinsertmetastar {%
-prpic2018}%
-\begin{APACrefauthors}%
-Prpic, V.%
-, Kniestedt, I.%
-, Camilleri, E.%
-, Maureira, M\BPBI G.%
-, Kristjansson, A.%
-\BCBL {}\ \BBA {} Thornton, I\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2018}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {A serious game to explore human foraging in a 3D
-  environment} {A serious game to explore human foraging in a 3d
-  environment}.{\BBCQ}
-\newblock
-
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Russell%
 , Duchaine%
 \BCBL {}\ \BBA {} Nakayama%

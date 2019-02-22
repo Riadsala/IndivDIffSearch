@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  14 FEB 2019 14:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  22 FEB 2019 15:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -16,8 +16,8 @@ File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Document Class: apa6 2014/11/20 v2.14 APA formatting (6th edition)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -93,83 +93,6 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/txfonts.sty
-Package: txfonts 2008/01/22 v3.2.1
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/txr/m/n on input line 21.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/txr/m/n on input line 21.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/txr/m/n --> OT1/txr/bx/n on input line 22.
-\symitalic=\mathgroup4
-LaTeX Font Info:    Overwriting symbol font `italic' in version `bold'
-(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 26.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> OT1/txr/bx/n on input line 29.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/txr/bx/n on input line 29.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> OT1/txr/m/it on input line 30.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> OT1/txr/m/it on input line 30.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 31.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 40.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> OT1/txss/m/n on input line 40.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> OT1/txss/m/n on input line 40.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/txss/m/n --> OT1/txss/b/n on input line 41.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 50.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> OT1/txtt/m/n on input line 50.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> OT1/txtt/m/n on input line 50.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/txtt/m/n --> OT1/txtt/b/n on input line 51.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 58.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/lmm/m/it --> OML/txmi/m/it on input line 58.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/lmm/b/it --> OML/txmi/m/it on input line 58.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/txmi/m/it --> OML/txmi/bx/it on input line 59.
-\symlettersA=\mathgroup5
-LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
-(Font)                  U/txmia/m/it --> U/txmia/bx/it on input line 67.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 77.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> OMS/txsy/m/n on input line 77.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> OMS/txsy/m/n on input line 77.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/txsy/m/n --> OMS/txsy/bx/n on input line 78.
-\symAMSa=\mathgroup6
-LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
-(Font)                  U/txsya/m/n --> U/txsya/bx/n on input line 94.
-\symAMSb=\mathgroup7
-LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
-(Font)                  U/txsyb/m/n --> U/txsyb/bx/n on input line 103.
-\symsymbolsC=\mathgroup8
-LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
-(Font)                  U/txsyc/m/n --> U/txsyc/bx/n on input line 113.
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 120.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> OMX/txex/m/n on input line 120.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> OMX/txex/m/n on input line 120.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/txex/m/n --> OMX/txex/bx/n on input line 121.
-\symlargesymbolsA=\mathgroup9
-LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
-(Font)                  U/txexa/m/n --> U/txexa/bx/n on input line 129.
-LaTeX Info: Redefining \not on input line 1043.
-)
-apa6.cls: Using txfonts
 (/usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -287,116 +210,85 @@ Package caption Info: threeparttable package is loaded.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2016/02/27 v1.2a Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup10
-\symboldletters=\mathgroup11
-\symboldsymbols=\mathgroup12
-\symboldlargesymbols=\mathgroup13
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 142.
 LaTeX Info: Redefining \bm on input line 208.
 )
 \c@appendix=\count99
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/sttools/flushend.sty
-Package: flushend 2015/04/14 v3.1 Balancing columns in twocolumn mode
-\flushend@@lastskip@a=\skip63
-\flushend@@lastskip@b=\skip64
-\flushend@@lastskip@c=\skip65
-\flushend@@penalty@a=\count100
-\flushend@@lastkern@a=\dimen133
-\var@@temp@spread=\dimen134
-\var@@temp@a=\dimen135
-\flushend@@page@rule=\dimen136
-\flushend@@varbox@a=\box28
-\flushend@@varbox@c=\box29
-\flushend@@tempbox@a=\box30
-\flushend@@tempbox@c=\box31
-\@viper=\box32
-\hold@viper=\box33
-\atColsBreak=\toks16
-\atColsEnd=\toks17
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count101
+(/usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip63
+\f@ncyO@elh=\skip64
+\f@ncyO@erh=\skip65
+\f@ncyO@olh=\skip66
+\f@ncyO@orh=\skip67
+\f@ncyO@elf=\skip68
+\f@ncyO@erf=\skip69
+\f@ncyO@olf=\skip70
+\f@ncyO@orf=\skip71
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/endfloat/endfloat.sty
+Package: endfloat 2011/12/25 v2.5d LaTeX2e package puts figures and tables at e
+nd (jdm)
+\c@posttable=\count100
+\efloat@postttt=\write3
+\@ef@tttopen=\count101
+\c@postfigure=\count102
+\efloat@postfff=\write4
+\@ef@fffopen=\count103
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count104
+\float@exts=\toks16
+\float@box=\box28
+\@float@everytoks=\toks17
+\@floatcapt=\box29
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/ftnright.sty
-Package: ftnright 2014/10/28 v1.1f footnote layout package (FMi)
-\rcol@footinsskip=\skip66
-\ftn@amount=\dimen137
-)
-\auone@box=\box34
-\autwo@box=\box35
-\autot@box=\box36
-\auone@boxwidth=\skip67
-\autwo@boxwidth=\skip68
-\autot@boxwidth=\skip69
-)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip70
-\subfigcapskip=\skip71
-\subfigcaptopadj=\dimen138
-\subfigbottomskip=\skip72
-\subfigcapmargin=\dimen139
-\subfiglabelskip=\skip73
-\c@subfigure=\count102
-\c@lofdepth=\count103
-\c@subtable=\count104
-\c@lotdepth=\count105
+\subfigtopskip=\skip72
+\subfigcapskip=\skip73
+\subfigcaptopadj=\dimen133
+\subfigbottomskip=\skip74
+\subfigcapmargin=\dimen134
+\subfiglabelskip=\skip75
+\c@subfigure=\count105
+\c@lofdepth=\count106
+\c@subtable=\count107
+\c@lotdepth=\count108
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
 (/usr/local/texlive/2016/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip74
-\subfig@bottom=\skip75
+\subfig@top=\skip76
+\subfig@bottom=\skip77
 )
 (./manuscript.aux)
 \openout1 = `manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 37.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 37.
-
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/omltxmi.fd
-File: omltxmi.fd 2000/12/15 v3.1
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 24.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 37.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 37.
-
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/omstxsy.fd
-File: omstxsy.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 37.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 37.
-
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/omxtxex.fd
-File: omxtxex.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 37.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 37.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/utxexa.fd
-File: utxexa.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Try loading font information for T1+txr on input line 37.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/t1txr.fd
-File: t1txr.fd 2000/12/15 v3.1
-)
-\c@maskedRefs=\count106
+\c@maskedRefs=\count109
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/apacite/english.apc
 File: english.apc 2013/07/21 v6.03 apacite language file
@@ -415,19 +307,19 @@ LaTeX Info: Redefining \BHBI on input line 130.
 * v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=501.55397pt
-* \textheight=643.20255pt
-* \oddsidemargin=-18.06749pt
-* \evensidemargin=-18.06749pt
-* \topmargin=-19.8738pt
-* \headheight=13.4457pt
-* \headsep=13.72546pt
-* \topskip=10.0pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=15.2pt
+* \headsep=25.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=121.0pt
-* \marginparsep=11.0pt
-* \columnsep=18.06749pt
-* \skip\footins=10.0pt plus 5.0pt minus 3.0pt
+* \marginparwidth=95.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -439,16 +331,16 @@ LaTeX Info: Redefining \BHBI on input line 130.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count107
-\scratchdimen=\dimen140
-\scratchbox=\box37
-\nofMPsegments=\count108
-\nofMParguments=\count109
+\scratchcounter=\count110
+\scratchdimen=\dimen135
+\scratchbox=\box30
+\nofMPsegments=\count111
+\nofMParguments=\count112
 \everyMPshowfont=\toks18
-\MPscratchCnt=\count110
-\MPscratchDim=\dimen141
-\MPnumerator=\count111
-\makeMPintoPDFobject=\count112
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen136
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
 \everyMPtoPDFconversion=\toks19
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
@@ -498,178 +390,192 @@ e
 File: APAamerican.txt 2012/02/23 v1.25 apa6 configuration for American English
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Class apa6 Info: Keywords not defined on input line 38.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 38.
+Class apa6 Info: Keywords not defined on input line 25.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/ot1txr.fd
-File: ot1txr.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Try loading font information for U+txmia on input line 38.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/utxmia.fd
-File: utxmia.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Try loading font information for U+txsya on input line 38.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/utxsya.fd
-File: utxsya.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 38.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/utxsyb.fd
-File: utxsyb.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 38.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/utxsyc.fd
-File: utxsyc.fd 2000/12/15 v3.1
-)
-Underfull \vbox (badness 1062) has occurred while \output is active []
-
-
-Underfull \vbox (badness 1173) has occurred while \output is active []
-
- [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
+[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<figures/split-half.png, id=9, 1009.7725pt x 734.745pt>
-File: figures/split-half.png Graphic file (type png)
+[2] [3]
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 38.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 38.
 
-<use figures/split-half.png>
-Package pdftex.def Info: figures/split-half.png used on input line 57.
-(pdftex.def)             Requested size: 117.3001pt x 85.35826pt.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 38.
 
-<figures/adaptive.png, id=11, 778.91pt x 786.94pt>
-File: figures/adaptive.png Graphic file (type png)
- <use figures/adaptive.png>
-Package pdftex.def Info: figures/adaptive.png used on input line 58.
-(pdftex.def)             Requested size: 84.47995pt x 85.35826pt.
 
-<figures/foraging.png, id=12, 1606.0pt x 933.4875pt>
-File: figures/foraging.png Graphic file (type png)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 38.
 
-<use figures/foraging.png>
-Package pdftex.def Info: figures/foraging.png used on input line 59.
-(pdftex.def)             Requested size: 146.83728pt x 85.35826pt.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 38.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 38.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 38.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [4]
+\openout4 = `manuscript.fff'.
 
+
+(manuscript.fff)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2]
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 74.
+ [5]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 59.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 59.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 59.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 59.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/t1txtt.fd
-File: t1txtt.fd 2000/12/15 v3.1
-) [3 <./figures/split-half.png> <./figures/adaptive.png> <./figures/foraging.pn
-g>]
-<../Scripts/lineseg/scratch/acc_correlation.pdf, id=26, 180.675pt x 180.675pt>
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [6] [7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+<../Scripts/lineseg/scratch/acc_correlation.pdf, id=39, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/acc_correlation.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/acc_correlation.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/acc_correlation.pdf used on
- input line 118.
+ input line 103.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/rt_correlation.pdf, id=27, 180.675pt x 180.675pt>
+<../Scripts/lineseg/scratch/rt_correlation.pdf, id=40, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/rt_correlation.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/rt_correlation.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/rt_correlation.pdf used on 
-input line 119.
+input line 104.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/strat_corr.pdf, id=28, 180.675pt x 180.675pt>
+<../Scripts/lineseg/scratch/strat_corr.pdf, id=41, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/strat_corr.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/strat_corr.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/strat_corr.pdf used on inpu
-t line 120.
+t line 105.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf, id=29, 180.675pt x 18
+<../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf, id=42, 180.675pt x 18
 0.675pt>
 File: ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf Graphic file (typ
 e pdf)
  <use ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pd
-f used on input line 121.
+f used on input line 106.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
-
-<../Scripts/scratch/acvs_opt_rt.pdf, id=30, 180.675pt x 180.675pt>
+ [9 <../Scripts/lineseg/scratch/acc_correlation.pdf> <../Scripts/lineseg/scratc
+h/rt_correlation.pdf> <../Scripts/lineseg/scratch/strat_corr.pdf> <../Scripts/l
+ineseg/scratch/strat_compare_meanlog_rt.pdf>]
+<../Scripts/scratch/acvs_opt_rt.pdf, id=80, 180.675pt x 180.675pt>
 File: ../Scripts/scratch/acvs_opt_rt.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/acvs_opt_rt.pdf>
 Package pdftex.def Info: ../Scripts/scratch/acvs_opt_rt.pdf used on input line 
-134.
+119.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/scratch/mcft_rl_rt.pdf, id=31, 180.675pt x 180.675pt>
+<../Scripts/scratch/mcft_rl_rt.pdf, id=81, 180.675pt x 180.675pt>
 File: ../Scripts/scratch/mcft_rl_rt.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/mcft_rl_rt.pdf>
 Package pdftex.def Info: ../Scripts/scratch/mcft_rl_rt.pdf used on input line 1
-35.
+20.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-Underfull \vbox (badness 1515) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <../Scripts/lineseg/scratch/acc_correlation.pdf> <../Scripts/lineseg/scratc
-h/rt_correlation.pdf> <../Scripts/lineseg/scratch/strat_corr.pdf> <../Scripts/l
-ineseg/scratch/strat_compare_meanlog_rt.pdf> <../Scripts/scratch/acvs_opt_rt.pd
-f> <../Scripts/scratch/mcft_rl_rt.pdf>]
-<../Scripts/scratch/cor_comparison.pdf, id=87, 289.08pt x 361.35pt>
+ [10 <../Scripts/scratch/acvs_opt_rt.pdf> <../Scripts/scratch/mcft_rl_rt.pdf>]
+<../Scripts/scratch/cor_comparison.pdf, id=104, 289.08pt x 361.35pt>
 File: ../Scripts/scratch/cor_comparison.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/cor_comparison.pdf>
 Package pdftex.def Info: ../Scripts/scratch/cor_comparison.pdf used on input li
-ne 153.
+ne 138.
 (pdftex.def)             Requested size: 184.9429pt x 231.17499pt.
-
-Underfull \vbox (badness 1320) has occurred while \output is active []
-
- [5 <../Scripts/scratch/cor_comparison.pdf>] (./manuscript.bbl
-Overfull \hbox (95.10619pt too wide) in paragraph at lines 483--505
-\T1/txtt/m/n/9 http://www.sciencedirect.com/science/article/pii/S00283932183002
-16
- []
-
-
+ [11 <../Scripts/scratch/cor_comparison.pdf>] [12]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6])
-- LAST -
-Extra skip:11.33751pt
-Left:175.0pt/1.9485pt
-Right:164.0pt/1.611pt
-Output:175.0pt
+ [13]
+(./manuscript.bbl [14]
+Underfull \vbox (badness 2310) has occurred while \output is active []
 
-[7] (./manuscript.aux) ) 
+ [15
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16])
+AED endfloat: Processing end Figures and Tables [17] (./manuscript.fff
+<figures/split-half.png, id=133, 1009.7725pt x 734.745pt>
+File: figures/split-half.png Graphic file (type png)
+
+<use figures/split-half.png>
+Package pdftex.def Info: figures/split-half.png used on input line 3.
+(pdftex.def)             Requested size: 117.3001pt x 85.35826pt.
+
+<figures/adaptive.png, id=135, 778.91pt x 786.94pt>
+File: figures/adaptive.png Graphic file (type png)
+ <use figures/adaptive.png>
+Package pdftex.def Info: figures/adaptive.png used on input line 4.
+(pdftex.def)             Requested size: 84.47995pt x 85.35826pt.
+
+<figures/foraging.png, id=136, 1606.0pt x 933.4875pt>
+File: figures/foraging.png Graphic file (type png)
+
+<use figures/foraging.png>
+Package pdftex.def Info: figures/foraging.png used on input line 5.
+(pdftex.def)             Requested size: 146.83728pt x 85.35826pt.
+ [18
+
+
+ <./figures/split-half.png> <./figures/adaptive.png> <./figures/foraging.png>])
+ (./manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 6475 strings out of 493014
- 96187 string characters out of 6133351
- 160757 words of memory out of 5000000
- 9865 multiletter control sequences out of 15000+600000
- 56588 words of font info for 114 fonts, out of 8000000 for 9000
+ 5756 strings out of 493014
+ 88582 string characters out of 6133351
+ 148383 words of memory out of 5000000
+ 9159 multiletter control sequences out of 15000+600000
+ 67974 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,8n,40p,1938b,364s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/bas
-e/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxi.pf
-b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
-pe1/urw/times/utmri8a.pfb>
-Output written on manuscript.pdf (7 pages, 459245 bytes).
+ 43i,11n,47p,1808b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-
+ec.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/l
+ocal/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texli
+ve/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
+/public/lm/lmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/
+lmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr7.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/lm/lmtt10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
+lm/lmtt12.pfb>
+Output written on manuscript.pdf (18 pages, 595641 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
+ 186 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

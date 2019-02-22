@@ -12,52 +12,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: literature.bib
-I was expecting a `,' or a `}'---line 211 of file literature.bib
+I was expecting a `,' or a `}'---line 223 of file literature.bib
  : 
  : keywords = {foraging, working memory, inhibitory control, visual search, attention},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-Warning--No journal in prpic2018
-You've used 27 entries,
+You've used 25 entries,
             6951 wiz_defined-function locations,
-            1441 strings with 15505 characters,
-and the built_in function-call counts, 53141 in all, are:
-= -- 6562
-> -- 459
-< -- 2565
-+ -- 2813
-- -- 59
-* -- 3471
-:= -- 9703
-add.period$ -- 108
-call.type$ -- 27
-change.case$ -- 459
+            1431 strings with 15163 characters,
+and the built_in function-call counts, 49069 in all, are:
+= -- 6069
+> -- 422
+< -- 2359
++ -- 2587
+- -- 55
+* -- 3204
+:= -- 8950
+add.period$ -- 100
+call.type$ -- 25
+change.case$ -- 425
 chr.to.int$ -- 0
-cite$ -- 55
-duplicate$ -- 1495
-empty$ -- 2016
-format.name$ -- 786
-if$ -- 10007
+cite$ -- 50
+duplicate$ -- 1377
+empty$ -- 1868
+format.name$ -- 718
+if$ -- 9257
 int.to.chr$ -- 0
-int.to.str$ -- 81
+int.to.str$ -- 75
 missing$ -- 0
-newline$ -- 696
-num.names$ -- 216
-pop$ -- 700
+newline$ -- 647
+num.names$ -- 200
+pop$ -- 648
 preamble$ -- 1
-purify$ -- 108
+purify$ -- 100
 quote$ -- 0
-skip$ -- 3453
+skip$ -- 3188
 stack$ -- 0
-substring$ -- 3071
-swap$ -- 862
-text.length$ -- 54
+substring$ -- 2827
+swap$ -- 797
+text.length$ -- 50
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 2160
-warning$ -- 1
-while$ -- 263
+type$ -- 2000
+warning$ -- 0
+while$ -- 241
 width$ -- 0
-write$ -- 889
+write$ -- 828
 (There was 1 error message)

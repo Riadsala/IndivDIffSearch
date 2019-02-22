@@ -119,6 +119,11 @@ fixDat <- tibble(observer=numeric(), session=character(), trial=numeric(), n=num
 trlDat <- tibble(observer=numeric(), session=character(), trial=numeric(), targPres=character(), targSide=character(), row=character(), column=character(), easySide=character(), responseKey=character())
 resDat <- tibble(observer=numeric(), session=character(), xRes=numeric(), yRes=numeric())	
 
+
+# load demographic data
+demDat <- read_delim(paste(datFolder, "demographics.txt", sep = ""), delim = "\t")
+
+
 for (pp in participants) {
 	print(pp)
 	for (ss in c('a', 'b')) 	{
@@ -147,6 +152,7 @@ temp <- resDat %>%
   group_by(xRes,session) %>%
   summarise(num_participants = n())
 
+names(demDat) <- c("observer")
 
 ##### Tidy up trlDat
 
@@ -264,4 +270,5 @@ fixDat$observer <- fct_drop(fixDat$observer)
 
 # save
 save(trlDat, file = "scratch/processedRTandAccData")
+
 save(fixDat, file = "scratch/processedFixationData")
