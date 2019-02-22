@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  22 FEB 2019 15:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  22 FEB 2019 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -430,13 +430,27 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-\openout4 = `manuscript.fff'.
+<figures/split-half.png, id=17, 1009.7725pt x 734.745pt>
+File: figures/split-half.png Graphic file (type png)
 
+<use figures/split-half.png>
+Package pdftex.def Info: figures/split-half.png used on input line 42.
+(pdftex.def)             Requested size: 117.3001pt x 85.35826pt.
 
-(manuscript.fff)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<figures/adaptive.png, id=19, 778.91pt x 786.94pt>
+File: figures/adaptive.png Graphic file (type png)
+ <use figures/adaptive.png>
+Package pdftex.def Info: figures/adaptive.png used on input line 43.
+(pdftex.def)             Requested size: 84.47995pt x 85.35826pt.
 
- [5]
+<figures/foraging.png, id=20, 1606.0pt x 933.4875pt>
+File: figures/foraging.png Graphic file (type png)
+
+<use figures/foraging.png>
+Package pdftex.def Info: figures/foraging.png used on input line 44.
+(pdftex.def)             Requested size: 146.83728pt x 85.35826pt.
+ [5 <./figures/split-half.png> <./figures/adaptive.png> <./figures/foraging.png
+>]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 59.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -447,11 +461,15 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 59.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [6] [7]
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [6]
+[7]
+Underfull \vbox (badness 2035) has occurred while \output is active []
+
  [8]
-<../Scripts/lineseg/scratch/acc_correlation.pdf, id=39, 180.675pt x 180.675pt>
+<../Scripts/lineseg/scratch/acc_correlation.pdf, id=46, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/acc_correlation.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/acc_correlation.pdf>
@@ -459,7 +477,7 @@ Package pdftex.def Info: ../Scripts/lineseg/scratch/acc_correlation.pdf used on
  input line 103.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/rt_correlation.pdf, id=40, 180.675pt x 180.675pt>
+<../Scripts/lineseg/scratch/rt_correlation.pdf, id=47, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/rt_correlation.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/rt_correlation.pdf>
@@ -467,7 +485,7 @@ Package pdftex.def Info: ../Scripts/lineseg/scratch/rt_correlation.pdf used on
 input line 104.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/strat_corr.pdf, id=41, 180.675pt x 180.675pt>
+<../Scripts/lineseg/scratch/strat_corr.pdf, id=48, 180.675pt x 180.675pt>
 File: ../Scripts/lineseg/scratch/strat_corr.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/strat_corr.pdf>
@@ -475,7 +493,7 @@ Package pdftex.def Info: ../Scripts/lineseg/scratch/strat_corr.pdf used on inpu
 t line 105.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf, id=42, 180.675pt x 18
+<../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf, id=49, 180.675pt x 18
 0.675pt>
 File: ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf Graphic file (typ
 e pdf)
@@ -483,10 +501,8 @@ e pdf)
 Package pdftex.def Info: ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pd
 f used on input line 106.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
- [9 <../Scripts/lineseg/scratch/acc_correlation.pdf> <../Scripts/lineseg/scratc
-h/rt_correlation.pdf> <../Scripts/lineseg/scratch/strat_corr.pdf> <../Scripts/l
-ineseg/scratch/strat_compare_meanlog_rt.pdf>]
-<../Scripts/scratch/acvs_opt_rt.pdf, id=80, 180.675pt x 180.675pt>
+ [9]
+<../Scripts/scratch/acvs_opt_rt.pdf, id=53, 180.675pt x 180.675pt>
 File: ../Scripts/scratch/acvs_opt_rt.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/acvs_opt_rt.pdf>
@@ -494,7 +510,7 @@ Package pdftex.def Info: ../Scripts/scratch/acvs_opt_rt.pdf used on input line
 119.
 (pdftex.def)             Requested size: 92.47145pt x 92.47108pt.
 
-<../Scripts/scratch/mcft_rl_rt.pdf, id=81, 180.675pt x 180.675pt>
+<../Scripts/scratch/mcft_rl_rt.pdf, id=54, 180.675pt x 180.675pt>
 File: ../Scripts/scratch/mcft_rl_rt.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/mcft_rl_rt.pdf>
@@ -504,15 +520,20 @@ Package pdftex.def Info: ../Scripts/scratch/mcft_rl_rt.pdf used on input line 1
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10 <../Scripts/scratch/acvs_opt_rt.pdf> <../Scripts/scratch/mcft_rl_rt.pdf>]
-<../Scripts/scratch/cor_comparison.pdf, id=104, 289.08pt x 361.35pt>
+ [10 <../Scripts/lineseg/scratch/acc_correlation.pdf> <../Scripts/lineseg/scrat
+ch/rt_correlation.pdf> <../Scripts/lineseg/scratch/strat_corr.pdf> <../Scripts/
+lineseg/scratch/strat_compare_meanlog_rt.pdf>]
+<../Scripts/scratch/cor_comparison.pdf, id=93, 289.08pt x 361.35pt>
 File: ../Scripts/scratch/cor_comparison.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/cor_comparison.pdf>
 Package pdftex.def Info: ../Scripts/scratch/cor_comparison.pdf used on input li
 ne 138.
 (pdftex.def)             Requested size: 184.9429pt x 231.17499pt.
- [11 <../Scripts/scratch/cor_comparison.pdf>] [12]
+ [11 <../Scripts/scratch/acvs_opt_rt.pdf> <../Scripts/scratch/mcft_rl_rt.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <../Scripts/scratch/cor_comparison.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
@@ -525,57 +546,33 @@ Underfull \vbox (badness 2310) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16])
-AED endfloat: Processing end Figures and Tables [17] (./manuscript.fff
-<figures/split-half.png, id=133, 1009.7725pt x 734.745pt>
-File: figures/split-half.png Graphic file (type png)
-
-<use figures/split-half.png>
-Package pdftex.def Info: figures/split-half.png used on input line 3.
-(pdftex.def)             Requested size: 117.3001pt x 85.35826pt.
-
-<figures/adaptive.png, id=135, 778.91pt x 786.94pt>
-File: figures/adaptive.png Graphic file (type png)
- <use figures/adaptive.png>
-Package pdftex.def Info: figures/adaptive.png used on input line 4.
-(pdftex.def)             Requested size: 84.47995pt x 85.35826pt.
-
-<figures/foraging.png, id=136, 1606.0pt x 933.4875pt>
-File: figures/foraging.png Graphic file (type png)
-
-<use figures/foraging.png>
-Package pdftex.def Info: figures/foraging.png used on input line 5.
-(pdftex.def)             Requested size: 146.83728pt x 85.35826pt.
- [18
-
-
- <./figures/split-half.png> <./figures/adaptive.png> <./figures/foraging.png>])
- (./manuscript.aux) ) 
+AED endfloat: Processing end Figures and Tables [17] (./manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 5756 strings out of 493014
- 88582 string characters out of 6133351
- 148383 words of memory out of 5000000
- 9159 multiletter control sequences out of 15000+600000
+ 5752 strings out of 493014
+ 88533 string characters out of 6133351
+ 149383 words of memory out of 5000000
+ 9158 multiletter control sequences out of 15000+600000
  67974 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,11n,47p,1808b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-
-ec.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/l
-ocal/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texli
-ve/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2016/te
-xmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2016/texmf-dist/f
-onts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
-/public/lm/lmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/
-lmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr7.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/public/lm/lmtt10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
-lm/lmtt12.pfb>
-Output written on manuscript.pdf (18 pages, 595641 bytes).
+ 43i,11n,47p,1705b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/
+local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/
+2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2016/texmf-dis
+t/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2016/texmf-dist/fonts/en
+c/dvips/lm/lm-mathit.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public
+/lm/lmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi12
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/lm/lmri12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
+lic/lm/lmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lms
+y8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on manuscript.pdf (17 pages, 595611 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
+ 183 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

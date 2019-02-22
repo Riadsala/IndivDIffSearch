@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex manuscript"] 1550848180 "manuscript.aux" "manuscript.bbl" "manuscript" 1550848205
+["bibtex manuscript"] 1550850094 "manuscript.aux" "manuscript.bbl" "manuscript" 1550850196
   "/usr/local/texlive/2016/texmf-dist/bibtex/bst/apacite/apacite.bst" 1374530685 141073 9d7b79dbf9d91133318126032cff8c27 ""
   "literature.bib" 1550503159 12203 579a9bca4320952fb475520ed759e517 ""
-  "manuscript.aux" 1550848181 7222 878e0b973e5b4096808fd657935056fe ""
+  "manuscript.aux" 1550850095 7195 ed4759a43576f8cd7a9c044249a30527 ""
   "manuscript.bcf" 0 -1 0 ""
   (generated)
   "manuscript.blg"
   "manuscript.bbl"
-["pdflatex"] 1550848181 "manuscript.tex" "manuscript.pdf" "manuscript" 1550848205
+["pdflatex"] 1550850095 "manuscript.tex" "manuscript.pdf" "manuscript" 1550850196
   "../Scripts/lineseg/scratch/acc_correlation.pdf" 1541178682 9107 f5f3c7c383c44de6e73248b90ceeeb7c ""
   "../Scripts/lineseg/scratch/rt_correlation.pdf" 1541178970 15481 38c24754b8a87434a797a9606b86f61b ""
   "../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf" 1550675877 4669 e76c2c02aa029b5dca5848ffe3a1c4f7 ""
@@ -128,11 +128,11 @@
   "figures/adaptive.png" 1521818849 56825 624e4f0fe0e16b6bd99b2cb313c6b1e9 ""
   "figures/foraging.png" 1521821399 41089 9903e24c44c1c60cb2d69a891bdf6e31 ""
   "figures/split-half.png" 1521818768 315829 fbda65b00e3321404a4bf6ced36804a3 ""
-  "manuscript.aux" 1550848181 7222 878e0b973e5b4096808fd657935056fe ""
-  "manuscript.bbl" 1550848181 16561 32c239cf2af87a0627a59e86bc90be7f "bibtex manuscript"
-  "manuscript.tex" 1550848177 27229 af1fa67cf3ea6fd25d564d00e35563ae ""
+  "manuscript.aux" 1550850095 7195 ed4759a43576f8cd7a9c044249a30527 ""
+  "manuscript.bbl" 1550850095 16561 32c239cf2af87a0627a59e86bc90be7f "bibtex manuscript"
+  "manuscript.tex" 1550850196 26847 c01bdd1c2a5be97715ab2981acf2eb6a ""
   (generated)
-  "manuscript.fff"
-  "manuscript.aux"
-  "manuscript.log"
   "manuscript.pdf"
+  "manuscript.log"
+  "manuscript.aux"
+  "manuscript.fff"
