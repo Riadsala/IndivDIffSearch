@@ -1,101 +1,87 @@
-# simple power analysis for the line segment / icon search experiment
 library(tidyverse)
 library(rstan)
 library(rethinking)
 
-probs = array()
+# simple power analysis for the line segment / icon search experiment
+# we will fit beta distributions to the proportion data
 
-for (jj in 1:10)
-{
-	print (ii)
-n <- 30
-shape1 = 8
-shape2 = 3
+# baseline data taken from Clarke et al (2018)
 read_csv("summaryData_75.csv") %>%
 	select(score = ls_prop_hetero) %>%
 	mutate(stimulus = "lines") %>%
 	filter(is.finite(score)) -> d
 
+clarke2018_sample_mean <- mean(d$score)
+print('***************')
+print(paste("full sample mean = ", format(clarke2018_sample_mean, digits = 3)))
+print(paste("full sample sd = ", format(sd(d$score), digits = 3)))
+
+# assume new proportions come from a beta distribution 
+alpha <- 8
+beta <- 3
+
+sim_mean <- 1/ (1 + beta/alpha)
+sim_sd  <-  sqrt((alpha * beta) / ((alpha + beta)^2 * (alpha + beta + 1)))
+print(paste("full sample mean = ", format(sim_mean, digits = 3)))
+print(paste("full sample sd = ", format(sim_sd, digits = 3)))
+print('***************')
 
 
+# in each simulation, we will sample 30 participants
+n <-30
 
-ohio_sample_mean <- mean(d$score)
-sim_line_mean <- 1/ (1 + shape2/shape1)
-# generate pretend data for icon search
+# create empty array to put probabilities in
+probs = array()
 
+for (jj in 1:100)
+{
 
-d <- rbind(
-	sample_n(d, n),
-	tibble(score = rbeta(n=n, shape1=shape1, shape2=shape2), stimulus = "icons"))
+	# generate pretend data for icon search
+	d_sim <- rbind(
+		sample_n(d, n),
+		tibble(
+			score = rbeta(n=n, shape1=alpha, shape2=beta), 
+			stimulus = "icons"))
 
-d$x <- ifelse(d$stimulus == "icons", 0.5, -0.5)
-X <- cbind(1, d$x)
+	# create dummy variable
+	d_sim$x <- ifelse(d_sim$stimulus == "icons", 0.5, -0.5)
+	X <- cbind(1, d_sim$x)
 
-stan_df <- list(
-  N = nrow(d),
-  K = ncol(X),
-  y = d$score,
-  X = X)
+	# create list of data to pass to Sta
+	stan_df <- list(
+	  N = nrow(d_sim),
+	  K = ncol(X),
+	  y = d_sim$score,
+	  X = X)
 
-m <- stan(
-  file = "beta_simple.stan", 
-  data = stan_df,
-  chains = 4,
-  warmup = 2000,
-  iter = 5000,
-  refresh = 1000
-)
+	# fit model in Stan
+	m <- stan(
+	  file = "beta_simple.stan", 
+	  data = stan_df,
+	  chains = 1,
+	  warmup = 2000,
+	  iter = 5000,
+	  refresh = 1000
+	)
 
-samples <- rstan::extract(m)
+	# exract samples 
+	samples <- rstan::extract(m)
 
-pred_dat <- tibble(x = c(-0.5, 0.5))
+	# generate posterior predictions from model
+	pred_dat <- tibble(x = c(-0.5, 0.5))
 
-X = as.matrix(pred_dat)
-X <- cbind(1, X)
+	X = as.matrix(pred_dat)
+	X <- cbind(1, X)
 
-# Look at prior predictions for mmu
-mu <- array(0, dim = c(100000, nrow(X)))
-for (ii in 1:100000) {
-	# generate a random beta from priors
-	beta <- as.vector(c(
-		rnorm(1, mean=0, sd=.5), 
-		rnorm(1, mean=0, sd=.1)
-		))
-	mu[ii, ] <- plogis(X %*% beta)
+	mu <- array(0, dim = c(nrow(samples$beta), nrow(X)))
+	for (ii in 1:nrow(samples$beta)) {
+		mu[ii, ] <- plogis(X %*% samples$beta[ii, ])
+	}
+
+	# compute prob(group mean of group2 is larger than group1 | data)
+	probs[jj] <- mean((mu[,2]-mu[,1])>0)
+
+	rm(m, d_sim, mu, samples, pred_dat, X)
 }
 
-
-
-# Look at posterior predictions for mu
-
-mu <- array(0, dim = c(nrow(samples$beta), nrow(X)))
-for (ii in 1:nrow(samples$beta)) {
-	mu[ii, ] <- plogis(X %*% samples$beta[ii, ])
-}
-
-
-hpdi <- purrr::map_df(as.tibble(mu), HPDI, prob = 0.90)
-
-
-mu_df <- tibble(
-	stimulus = rep(c("lines", "icons", "difference"), each = 12000),
-	mu  = c(mu[,1], mu[,2], mu[,2] - mu[,1]))
-
-mu_df$stimulus <- as_factor(mu_df$stimulus)
-mu_df$stimulus <- fct_relevel(mu_df$stimulus, c("lines", "difference", "icons"))
-
-plt <- ggplot(mu_df, aes(x = mu, fill = stimulus))
-plt <- plt + geom_density(alpha = 0.5)
-plt <- plt + geom_vline(xintercept = 0, linetype = 1)
-plt <- plt + geom_vline(xintercept = ohio_sample_mean, linetype = 2)
-plt <- plt + geom_vline(xintercept = sim_line_mean, linetype = 2)
-plt <- plt + scale_x_continuous(
-	"group mean proportion posterior estimates", limits = c(-0.1, 1.0))
-# plt <- plt + scale_y_continuous(limits = c(0, 10), expand = c(0, 0))
-plt <- plt + scale_fill_viridis_d()
-plt <- plt + theme_bw() #+ theme(legend.position="none")
-plt
-ggsave("scratch/strat_diff.pdf", width = 4, height = 3)
-
-probs[jj] <- mean((mu[,2]-mu[,1])>0)
-}
+print(mean(probs > 0.95))
