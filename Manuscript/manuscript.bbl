@@ -223,6 +223,35 @@ Hartkamp, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Hedge%
+, Powell%
+\BCBL {}\ \BBA {} Sumner%
+}{%
+Hedge%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+hedge2018}
+\APACinsertmetastar {%
+hedge2018}%
+\begin{APACrefauthors}%
+Hedge, C.%
+, Powell, G.%
+\BCBL {}\ \BBA {} Sumner, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The reliability paradox: Why robust cognitive tasks do
+  not produce reliable individual differences} {The reliability paradox: Why
+  robust cognitive tasks do not produce reliable individual
+  differences}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Behavior Research Methods}{50}{3}{1166--1186}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Irons%
 \ \BBA {} Leber%
 }{%
