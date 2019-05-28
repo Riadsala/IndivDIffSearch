@@ -1,146 +1,172 @@
-\begin{thebibliography}{26}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\providecommand{\urlprefix}{URL }
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{DOI:\discretionary{}{}{}#1}\else
-  \providecommand{\doi}{DOI:\discretionary{}{}{}\begingroup
-  \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{}
 
-\bibitem[{Boot et~al.(2006)Boot, Kramer, Becic, Wiegmann and Kubose}]{boot2006}
-Boot WR, Kramer AF, Becic E, Wiegmann DA and Kubose T (2006) Detecting
-  transient changes in dynamic displays: The more you look, the less you see.
-\newblock \emph{Human Factors} 48(4): 759--773.
+\bibitem[\protect\citeauthoryear{Boot, Kramer, Becic, Wiegmann \& Kubose}{Boot
+  et~al.}{2006}{}]{boot2006}
+Boot, W.~R., Kramer, A.~F., Becic, E., Wiegmann, D.~A. \& Kubose, T. (2006).
+\newblock Detecting transient changes in dynamic displays: The more you look,
+  the less you see.
+\newblock {\em Human Factors}, {\em 48(4)}, 759--773.
 
-\bibitem[{Brainard(1997)}]{brainard1997}
-Brainard DH (1997) The psychophysics toolbox.
-\newblock \emph{Spatial vision} 10: 433--436.
+\bibitem[\protect\citeauthoryear{Brainard}{Brainard}{1997}{}]{brainard1997}
+Brainard, D.~H. (1997).
+\newblock The psychophysics toolbox.
+\newblock {\em Spatial vision}, {\em 10}, 433--436.
 
-\bibitem[{Clarke et~al.(2016)Clarke, Green, Chantler and Hunt}]{clarke2016}
-Clarke AD, Green P, Chantler MJ and Hunt AR (2016) Human search for a target on
-  a textured background is consistent with a stochastic model.
-\newblock \emph{Journal of vision} 16(7): 4--4.
+\bibitem[\protect\citeauthoryear{Clarke, Green, Chantler \& Hunt}{Clarke
+  et~al.}{2016}{}]{clarke2016}
+Clarke, A.~D., Green, P., Chantler, M.~J. \& Hunt, A.~R. (2016).
+\newblock Human search for a target on a textured background is consistent with
+  a stochastic model.
+\newblock {\em Journal of vision}, {\em 16(7)}, 4--4.
 
-\bibitem[{Cornelissen et~al.(2002)Cornelissen, Peters and
-  Palmer}]{cornelissen2002}
-Cornelissen FW, Peters EM and Palmer J (2002) The eyelink toolbox: eye tracking
-  with matlab and the psychophysics toolbox.
-\newblock \emph{Behavior Research Methods, Instruments, \& Computers} 34(4):
-  613--617.
+\bibitem[\protect\citeauthoryear{Cornelissen, Peters \& Palmer}{Cornelissen
+  et~al.}{2002}{}]{cornelissen2002}
+Cornelissen, F.~W., Peters, E.~M. \& Palmer, J. (2002).
+\newblock The eyelink toolbox: eye tracking with matlab and the psychophysics
+  toolbox.
+\newblock {\em Behavior Research Methods, Instruments, \& Computers}, {\em
+  34(4)}, 613--617.
 
-\bibitem[{Dawkins(1971)}]{dawkins1971}
-Dawkins M (1971) Shifts of `attention' in chicks during feeding.
-\newblock \emph{Animal Behaviour} 19(3): 575 -- 582.
-\newblock \doi{https://doi.org/10.1016/S0003-3472(71)80114-8}.
+\bibitem[\protect\citeauthoryear{Dawkins}{Dawkins}{1971}{}]{dawkins1971}
+Dawkins, M. (1971).
+\newblock Shifts of `attention' in chicks during feeding.
+\newblock {\em Animal Behaviour}, {\em 19(3)}, 575 -- 582.
 
-\bibitem[{Folk et~al.(1992)Folk, Remington and Johnston}]{folk1992}
-Folk CL, Remington RW and Johnston JC (1992) Involuntary covert orienting is
-  contingent on attentional control settings.
-\newblock \emph{Journal of Experimental Psychology: Human perception and
-  performance} 18(4): 1030.
+\bibitem[\protect\citeauthoryear{Folk, Remington \& Johnston}{Folk
+  et~al.}{1992}{}]{folk1992}
+Folk, C.~L., Remington, R.~W. \& Johnston, J.~C. (1992).
+\newblock Involuntary covert orienting is contingent on attentional control
+  settings.
+\newblock {\em Journal of Experimental Psychology: Human perception and
+  performance}, {\em 18(4)}, 1030.
 
-\bibitem[{Gilchrist and Harvey(2006)}]{gilchrist2006}
-Gilchrist ID and Harvey M (2006) Evidence for a systematic component within
-  scan paths in visual search.
-\newblock \emph{Visual Cognition} 14(4-8): 704--715.
+\bibitem[\protect\citeauthoryear{Gilchrist \& Harvey}{Gilchrist \&
+  Harvey}{2006}{}]{gilchrist2006}
+Gilchrist, I.~D. \& Harvey, M. (2006).
+\newblock Evidence for a systematic component within scan paths in visual
+  search.
+\newblock {\em Visual Cognition}, {\em 14(4-8)}, 704--715.
 
-\bibitem[{Hartkamp and Thornton(2017)}]{hartkamp2017}
-Hartkamp M and Thornton IM (2017) Meditation, cognitive flexibility and
-  well-being.
-\newblock \emph{Journal of Cognitive Enhancement} 1(2): 182--196.
+\bibitem[\protect\citeauthoryear{Hartkamp \& Thornton}{Hartkamp \&
+  Thornton}{2017}{}]{hartkamp2017}
+Hartkamp, M. \& Thornton, I.~M. (2017).
+\newblock Meditation, cognitive flexibility and well-being.
+\newblock {\em Journal of Cognitive Enhancement}, {\em 1(2)}, 182--196.
 
-\bibitem[{Hedge et~al.(2018)Hedge, Powell and Sumner}]{hedge2018}
-Hedge C, Powell G and Sumner P (2018) The reliability paradox: Why robust
-  cognitive tasks do not produce reliable individual differences.
-\newblock \emph{Behavior Research Methods} 50(3): 1166--1186.
+\bibitem[\protect\citeauthoryear{Hedge, Powell \& Sumner}{Hedge
+  et~al.}{2018}{}]{hedge2018}
+Hedge, C., Powell, G. \& Sumner, P. (2018).
+\newblock The reliability paradox: Why robust cognitive tasks do not produce
+  reliable individual differences.
+\newblock {\em Behavior Research Methods}, {\em 50(3)}, 1166--1186.
 
-\bibitem[{Irons and Leber(2016)}]{irons-leber2016}
-Irons JL and Leber AB (2016) Choosing attentional control settings in a
-  dynamically changing environment.
-\newblock \emph{Attention, Perception, \& Psychophysics} .
+\bibitem[\protect\citeauthoryear{Irons \& Leber}{Irons \&
+  Leber}{2016}{}]{irons-leber2016}
+Irons, J.~L. \& Leber, A.~B. (2016).
+\newblock Choosing attentional control settings in a dynamically changing
+  environment.
+\newblock {\em Attention, Perception, \& Psychophysics}.
 
-\bibitem[{Irons and Leber(2018)}]{irons-leber2018}
-Irons JL and Leber AB (2018) Characterizing individual variation in the
-  strategic use of attentional control.
-\newblock \emph{Journal of Experimental Psychology: Human Perception and
-  Performance} : 1--18.
+\bibitem[\protect\citeauthoryear{Irons \& Leber}{Irons \&
+  Leber}{2018}{}]{irons-leber2018}
+Irons, J.~L. \& Leber, A.~B. (2018).
+\newblock Characterizing individual variation in the strategic use of
+  attentional control.
+\newblock {\em Journal of Experimental Psychology: Human Perception and
+  Performance} (pp.\ 1--18).
 
-\bibitem[{J{\'o}hannesson et~al.(2017)J{\'o}hannesson, Kristj{\'a}nsson and
-  Thornton}]{johannesson2017}
-J{\'o}hannesson {\'O}I, Kristj{\'a}nsson {\'A} and Thornton IM (2017) Are
-  foraging patterns in humans related to working memory and inhibitory control?
-\newblock \emph{Japanese Psychological Research} 59(2): 152--166.
+\bibitem[\protect\citeauthoryear{J{\'o}hannesson, Kristj{\'a}nsson \&
+  Thornton}{J{\'o}hannesson et~al.}{2017}{}]{johannesson2017}
+J{\'o}hannesson, {\'O}.~I., Kristj{\'a}nsson, {\'A}. \& Thornton, I.~M. (2017).
+\newblock Are foraging patterns in humans related to working memory and
+  inhibitory control?
+\newblock {\em Japanese Psychological Research}, {\em 59(2)}, 152--166.
 
-\bibitem[{J{\'o}hannesson et~al.(2016)J{\'o}hannesson, Thornton, Smith,
-  Chetverikov and Kristj{\'a}nsson}]{johannesson2016}
-J{\'o}hannesson {\'O}I, Thornton IM, Smith IJ, Chetverikov A and
-  Kristj{\'a}nsson A (2016) Visual foraging with fingers and eye gaze.
-\newblock \emph{i-Perception} 7(2): 2041669516637279.
+\bibitem[\protect\citeauthoryear{J{\'o}hannesson, Thornton, Smith, Chetverikov
+  \& Kristj{\'a}nsson}{J{\'o}hannesson et~al.}{2016}{}]{johannesson2016}
+J{\'o}hannesson, {\'O}.~I., Thornton, I.~M., Smith, I.~J., Chetverikov, A. \&
+  Kristj{\'a}nsson, A. (2016).
+\newblock Visual foraging with fingers and eye gaze.
+\newblock {\em i-Perception}, {\em 7(2)}, 2041669516637279.
 
-\bibitem[{Klein(2000)}]{klein2000}
-Klein RM (2000) Inhibition of return.
-\newblock \emph{Trends in cognitive sciences} 4(4): 138--147.
+\bibitem[\protect\citeauthoryear{Klein}{Klein}{2000}{}]{klein2000}
+Klein, R.~M. (2000).
+\newblock Inhibition of return.
+\newblock {\em Trends in cognitive sciences}, {\em 4(4)}, 138--147.
 
-\bibitem[{Kristj{\'a}nsson et~al.(2014)Kristj{\'a}nsson, J{\'o}hannesson and
-  Thornton}]{kristjansson2014}
-Kristj{\'a}nsson {\'A}, J{\'o}hannesson {\'O}I and Thornton IM (2014) Common
-  attentional constraints in visual foraging.
-\newblock \emph{PloS one} 9(6): e100752.
+\bibitem[\protect\citeauthoryear{Kristj{\'a}nsson, J{\'o}hannesson \&
+  Thornton}{Kristj{\'a}nsson et~al.}{2014}{}]{kristjansson2014}
+Kristj{\'a}nsson, {\'A}., J{\'o}hannesson, {\'O}.~I. \& Thornton, I.~M. (2014).
+\newblock Common attentional constraints in visual foraging.
+\newblock {\em PloS one}, {\em 9(6)}, e100752.
 
-\bibitem[{Mackworth(1948)}]{mackworth1948}
-Mackworth NH (1948) The breakdown of vigilance during prolonged visual search.
-\newblock \emph{Quarterly Journal of Experimental Psychology} 1(1): 6--21.
+\bibitem[\protect\citeauthoryear{Mackworth}{Mackworth}{1948}{}]{mackworth1948}
+Mackworth, N.~H. (1948).
+\newblock The breakdown of vigilance during prolonged visual search.
+\newblock {\em Quarterly Journal of Experimental Psychology}, {\em 1(1)},
+  6--21.
 
-\bibitem[{Najemnik and Geisler(2008)}]{najemnik-geisler2008}
-Najemnik J and Geisler WS (2008) Eye movement statistics in humans are
-  consistent with an optimal search strategy.
-\newblock \emph{Journal of Vision} 8(3): 4--4.
+\bibitem[\protect\citeauthoryear{Najemnik \& Geisler}{Najemnik \&
+  Geisler}{2008}{}]{najemnik-geisler2008}
+Najemnik, J. \& Geisler, W.~S. (2008).
+\newblock Eye movement statistics in humans are consistent with an optimal
+  search strategy.
+\newblock {\em Journal of Vision}, {\em 8(3)}, 4--4.
 
-\bibitem[{Nowakowska et~al.(2016)Nowakowska, Clarke, Sahraie and
-  Hunt}]{nowakowska2016}
-Nowakowska A, Clarke AD, Sahraie A and Hunt AR (2016) Inefficient search
-  strategies in simulated hemianopia.
-\newblock \emph{Journal of Experimental Psychology: Human Perception and
-  Performance} 42(11): 1858.
+\bibitem[\protect\citeauthoryear{Nowakowska, Clarke, Sahraie \&
+  Hunt}{Nowakowska et~al.}{2016}{}]{nowakowska2016}
+Nowakowska, A., Clarke, A.~D., Sahraie, A. \& Hunt, A.~R. (2016).
+\newblock Inefficient search strategies in simulated hemianopia.
+\newblock {\em Journal of Experimental Psychology: Human Perception and
+  Performance}, {\em 42(11)}, 1858.
 
-\bibitem[{Nowakowska et~al.(2018)Nowakowska, Clarke, Sahraie and
-  Hunt}]{nowakowska2018}
-Nowakowska A, Clarke AD, Sahraie A and Hunt AR (2018) Practice-related changes
-  in eye movement strategy in healthy adults with simulated hemianopia.
-\newblock \emph{Neuropsychologia} .
+\bibitem[\protect\citeauthoryear{Nowakowska, Clarke, Sahraie \&
+  Hunt}{Nowakowska et~al.}{2018}{}]{nowakowska2018}
+Nowakowska, A., Clarke, A.~D., Sahraie, A. \& Hunt, A.~R. (2018).
+\newblock Practice-related changes in eye movement strategy in healthy adults
+  with simulated hemianopia.
+\newblock {\em Neuropsychologia}.
 
-\bibitem[{Nowakowska et~al.(2017)Nowakowska, Clarke and Hunt}]{nowakowska2017}
-Nowakowska A, Clarke ADF and Hunt AR (2017) Human visual search behaviour is
-  far from ideal.
-\newblock \emph{Proceedings of the Royal Society B: Biological Sciences} .
+\bibitem[\protect\citeauthoryear{Nowakowska, Clarke \& Hunt}{Nowakowska
+  et~al.}{2017}{}]{nowakowska2017}
+Nowakowska, A., Clarke, A. D.~F. \& Hunt, A.~R. (2017).
+\newblock Human visual search behaviour is far from ideal.
+\newblock {\em Proceedings of the Royal Society B: Biological Sciences}.
 
-\bibitem[{Russell et~al.(2009)Russell, Duchaine and Nakayama}]{russell2009}
-Russell R, Duchaine B and Nakayama K (2009) Super-recognizers: People with
-  extraordinary face recognition ability.
-\newblock \emph{Psychonomic bulletin \& review} 16(2): 252--257.
+\bibitem[\protect\citeauthoryear{Russell, Duchaine \& Nakayama}{Russell
+  et~al.}{2009}{}]{russell2009}
+Russell, R., Duchaine, B. \& Nakayama, K. (2009).
+\newblock Super-recognizers: People with extraordinary face recognition
+  ability.
+\newblock {\em Psychonomic bulletin \& review}, {\em 16(2)}, 252--257.
 
-\bibitem[{Treisman and Gelade(1980)}]{treisman1980}
-Treisman AM and Gelade G (1980) A feature-integration theory of attention.
-\newblock \emph{Cognitive psychology} 12(1): 97--136.
+\bibitem[\protect\citeauthoryear{Treisman \& Gelade}{Treisman \&
+  Gelade}{1980}{}]{treisman1980}
+Treisman, A.~M. \& Gelade, G. (1980).
+\newblock A feature-integration theory of attention.
+\newblock {\em Cognitive psychology}, {\em 12(1)}, 97--136.
 
-\bibitem[{Vogel and Awh(2008)}]{vogel2008}
-Vogel EK and Awh E (2008) How to exploit diversity for scientific gain: Using
-  individual differences to constrain cognitive theory.
-\newblock \emph{Current Directions in Psychological Science} 17(2): 171--176.
+\bibitem[\protect\citeauthoryear{Vogel \& Awh}{Vogel \&
+  Awh}{2008}{}]{vogel2008}
+Vogel, E.~K. \& Awh, E. (2008).
+\newblock How to exploit diversity for scientific gain: Using individual
+  differences to constrain cognitive theory.
+\newblock {\em Current Directions in Psychological Science}, {\em 17(2)},
+  171--176.
 
-\bibitem[{Wolfe(2007)}]{wolfe2007}
-Wolfe JM (2007) Guided search 4.0.
-\newblock \emph{Integrated models of cognitive systems} : 99--119.
+\bibitem[\protect\citeauthoryear{Wolfe, Cain, Ehinger \& Drew}{Wolfe
+  et~al.}{2015}{}]{wolfe2015}
+Wolfe, J.~M., Cain, M., Ehinger, K. \& Drew, T. (2015).
+\newblock Guided search 5.0: Meeting the challenge of hybrid search and
+  multiple-target foraging.
+\newblock {\em Journal of vision}, {\em 15(12)}, 1106--1106.
 
-\bibitem[{Wolfe et~al.(2015)Wolfe, Cain, Ehinger and Drew}]{wolfe2015}
-Wolfe JM, Cain M, Ehinger K and Drew T (2015) Guided search 5.0: Meeting the
-  challenge of hybrid search and multiple-target foraging.
-\newblock \emph{Journal of vision} 15(12): 1106--1106.
-
-\bibitem[{Yantis and Egeth(1999)}]{yantis1999}
-Yantis S and Egeth HE (1999) On the distinction between visual salience and
-  stimulus-driven attentional capture.
-\newblock \emph{Journal of Experimental Psychology: Human Perception and
-  Performance} 25(3): 661.
+\bibitem[\protect\citeauthoryear{Yantis \& Egeth}{Yantis \&
+  Egeth}{1999}{}]{yantis1999}
+Yantis, S. \& Egeth, H.~E. (1999).
+\newblock On the distinction between visual salience and stimulus-driven
+  attentional capture.
+\newblock {\em Journal of Experimental Psychology: Human Perception and
+  Performance}, {\em 25(3)}, 661.
 
 \end{thebibliography}

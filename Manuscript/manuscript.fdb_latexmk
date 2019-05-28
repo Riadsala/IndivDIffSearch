@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex manuscript"] 1559051408 "manuscript.aux" "manuscript.bbl" "manuscript" 1559051409
-  "./sageh.bst" 1376139182 30846 01d0c4e084498df630f0d3adc8d9e106 ""
-  "literature.bib" 1559051406 12389 477ffeff6c94cabdd3f54e3da9a41d6a ""
-  "manuscript.aux" 1559051409 5788 d3c72a7a3dae16d226ca13ffdcce7605 ""
+["bibtex manuscript"] 1559053637 "manuscript.aux" "manuscript.bbl" "manuscript" 1559054349
+  "/usr/local/texlive/2016/texmf-dist/bibtex/bst/mslapa/mslapa.bst" 1227660432 34700 e618a00b0a9c04b3273a2b354751b397 ""
+  "literature.bib" 1559053622 12443 17213d032294ecaa19963ba443bf0f4e ""
+  "manuscript.aux" 1559054348 6342 1c5397706cbb28dd61fb1f053224ffd0 ""
   "manuscript.bcf" 0 -1 0 ""
   (generated)
-  "manuscript.blg"
   "manuscript.bbl"
-["pdflatex"] 1559051408 "manuscript.tex" "manuscript.pdf" "manuscript" 1559051409
+  "manuscript.blg"
+["pdflatex"] 1559054347 "manuscript.tex" "manuscript.pdf" "manuscript" 1559054349
   "../Scripts/lineseg/scratch/acc_correlation.pdf" 1541178682 9107 f5f3c7c383c44de6e73248b90ceeeb7c ""
   "../Scripts/lineseg/scratch/rt_correlation.pdf" 1541178970 15481 38c24754b8a87434a797a9606b86f61b ""
   "../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf" 1559051338 11506 8eeca1f0bf6ba05420a7d23424cbf1d7 ""
@@ -112,7 +112,7 @@
   "/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty" 1428932888 2594 d18d5e19aa8239cf867fa670c556d2e9 ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty" 1454284088 3980 0a268fbfda01e381fa95821ab13b6aee ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1279039959 678 4792914a8f45be57bb98413425e4c7af ""
-  "/usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty" 1291685959 45456 1c8843383c0bd05870c45fa0ebea6cc2 ""
+  "/usr/local/texlive/2016/texmf-dist/tex/latex/mslapa/mslapa.sty" 1227660432 3955 03f20c95bf0bfd1cfb12077794c8c273 ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty" 1463608860 12095 5337833c991d80788a43d3ce26bd1c46 ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty" 1463608860 7075 2fe3d848bba95f139de11ded085e74aa ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty" 1463608860 22417 1d9df1eb66848aa31b18a593099cf45c ""
@@ -136,12 +136,12 @@
   "figures/adaptive.png" 1521818849 56825 624e4f0fe0e16b6bd99b2cb313c6b1e9 ""
   "figures/foraging.png" 1521821399 41089 9903e24c44c1c60cb2d69a891bdf6e31 ""
   "figures/split-half.png" 1521818768 315829 fbda65b00e3321404a4bf6ced36804a3 ""
-  "manuscript.aux" 1559051409 5788 d3c72a7a3dae16d226ca13ffdcce7605 ""
-  "manuscript.bbl" 1559051408 6686 980a70a3edf8ea015b3d1ddbf2dbb488 "bibtex manuscript"
-  "manuscript.tex" 1559050868 27269 9a7ea5f157e21b2fe2087b2e35896451 ""
+  "manuscript.aux" 1559054348 6342 1c5397706cbb28dd61fb1f053224ffd0 ""
+  "manuscript.bbl" 1559053637 7614 c3461523582e37153b82bb516c20932f "bibtex manuscript"
+  "manuscript.tex" 1559054347 27239 c6de7c7fd5686c077367492e2427ec5e ""
   "sagej.cls" 1484403322 15958 5fa98adc3dbacfa813e0251e7c0042fe ""
   (generated)
-  "manuscript.ent"
-  "manuscript.aux"
-  "manuscript.log"
   "manuscript.pdf"
+  "manuscript.ent"
+  "manuscript.log"
+  "manuscript.aux"
