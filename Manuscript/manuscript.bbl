@@ -1,726 +1,146 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{26}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
 
-\bibitem [\protect \citeauthoryear {%
-Boot%
-, Kramer%
-, Becic%
-, Wiegmann%
-\BCBL {}\ \BBA {} Kubose%
-}{%
-Boot%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2006}}%
-}]{%
-boot2006}
-\APACinsertmetastar {%
-boot2006}%
-\begin{APACrefauthors}%
-Boot, W\BPBI R.%
-, Kramer, A\BPBI F.%
-, Becic, E.%
-, Wiegmann, D\BPBI A.%
-\BCBL {}\ \BBA {} Kubose, T.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2006}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Detecting transient changes in dynamic displays: The
-  more you look, the less you see} {Detecting transient changes in dynamic
-  displays: The more you look, the less you see}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Human Factors}{48}{4}{759--773}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Boot et~al.(2006)Boot, Kramer, Becic, Wiegmann and Kubose}]{boot2006}
+Boot WR, Kramer AF, Becic E, Wiegmann DA and Kubose T (2006) Detecting
+  transient changes in dynamic displays: The more you look, the less you see.
+\newblock \emph{Human Factors} 48(4): 759--773.
 
-\bibitem [\protect \citeauthoryear {%
-Brainard%
-}{%
-Brainard%
-}{%
-{\protect \APACyear {1997}}%
-}]{%
-brainard1997}
-\APACinsertmetastar {%
-brainard1997}%
-\begin{APACrefauthors}%
-Brainard, D\BPBI H.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1997}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {The psychophysics toolbox} {The psychophysics
-  toolbox}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Spatial vision}{10}{}{433--436}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Brainard(1997)}]{brainard1997}
+Brainard DH (1997) The psychophysics toolbox.
+\newblock \emph{Spatial vision} 10: 433--436.
 
-\bibitem [\protect \citeauthoryear {%
-Clarke%
-, Green%
-, Chantler%
-\BCBL {}\ \BBA {} Hunt%
-}{%
-Clarke%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2016}}%
-}]{%
-clarke2016}
-\APACinsertmetastar {%
-clarke2016}%
-\begin{APACrefauthors}%
-Clarke, A\BPBI D.%
-, Green, P.%
-, Chantler, M\BPBI J.%
-\BCBL {}\ \BBA {} Hunt, A\BPBI R.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2016}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Human search for a target on a textured background is
-  consistent with a stochastic model} {Human search for a target on a textured
-  background is consistent with a stochastic model}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of vision}{16}{7}{4--4}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Clarke et~al.(2016)Clarke, Green, Chantler and Hunt}]{clarke2016}
+Clarke AD, Green P, Chantler MJ and Hunt AR (2016) Human search for a target on
+  a textured background is consistent with a stochastic model.
+\newblock \emph{Journal of vision} 16(7): 4--4.
 
-\bibitem [\protect \citeauthoryear {%
-Cornelissen%
-, Peters%
-\BCBL {}\ \BBA {} Palmer%
-}{%
-Cornelissen%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2002}}%
-}]{%
-cornelissen2002}
-\APACinsertmetastar {%
-cornelissen2002}%
-\begin{APACrefauthors}%
-Cornelissen, F\BPBI W.%
-, Peters, E\BPBI M.%
-\BCBL {}\ \BBA {} Palmer, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2002}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {The Eyelink Toolbox: eye tracking with MATLAB and the
-  Psychophysics Toolbox} {The eyelink toolbox: eye tracking with matlab and the
-  psychophysics toolbox}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Behavior Research Methods, Instruments, \&
-  Computers}{34}{4}{613--617}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Cornelissen et~al.(2002)Cornelissen, Peters and
+  Palmer}]{cornelissen2002}
+Cornelissen FW, Peters EM and Palmer J (2002) The eyelink toolbox: eye tracking
+  with matlab and the psychophysics toolbox.
+\newblock \emph{Behavior Research Methods, Instruments, \& Computers} 34(4):
+  613--617.
 
-\bibitem [\protect \citeauthoryear {%
-Dawkins%
-}{%
-Dawkins%
-}{%
-{\protect \APACyear {1971}}%
-}]{%
-dawkins1971}
-\APACinsertmetastar {%
-dawkins1971}%
-\begin{APACrefauthors}%
-Dawkins, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1971}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Shifts of `attention' in chicks during feeding} {Shifts
-  of `attention' in chicks during feeding}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Animal Behaviour}{19}{3}{575 - 582}.
-\newblock
-\begin{APACrefDOI} \doi{https://doi.org/10.1016/S0003-3472(71)80114-8}
-  \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Dawkins(1971)}]{dawkins1971}
+Dawkins M (1971) Shifts of `attention' in chicks during feeding.
+\newblock \emph{Animal Behaviour} 19(3): 575 -- 582.
+\newblock \doi{https://doi.org/10.1016/S0003-3472(71)80114-8}.
 
-\bibitem [\protect \citeauthoryear {%
-Folk%
-, Remington%
-\BCBL {}\ \BBA {} Johnston%
-}{%
-Folk%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {1992}}%
-}]{%
-folk1992}
-\APACinsertmetastar {%
-folk1992}%
-\begin{APACrefauthors}%
-Folk, C\BPBI L.%
-, Remington, R\BPBI W.%
-\BCBL {}\ \BBA {} Johnston, J\BPBI C.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1992}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Involuntary covert orienting is contingent on
-  attentional control settings.} {Involuntary covert orienting is contingent on
-  attentional control settings.}{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Experimental Psychology: Human perception
-  and performance}{18}{4}{1030}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Folk et~al.(1992)Folk, Remington and Johnston}]{folk1992}
+Folk CL, Remington RW and Johnston JC (1992) Involuntary covert orienting is
+  contingent on attentional control settings.
+\newblock \emph{Journal of Experimental Psychology: Human perception and
+  performance} 18(4): 1030.
 
-\bibitem [\protect \citeauthoryear {%
-Gilchrist%
-\ \BBA {} Harvey%
-}{%
-Gilchrist%
-\ \BBA {} Harvey%
-}{%
-{\protect \APACyear {2006}}%
-}]{%
-gilchrist2006}
-\APACinsertmetastar {%
-gilchrist2006}%
-\begin{APACrefauthors}%
-Gilchrist, I\BPBI D.%
-\BCBT {}\ \BBA {} Harvey, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2006}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Evidence for a systematic component within scan paths in
-  visual search} {Evidence for a systematic component within scan paths in
-  visual search}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Visual Cognition}{14}{4-8}{704--715}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Gilchrist and Harvey(2006)}]{gilchrist2006}
+Gilchrist ID and Harvey M (2006) Evidence for a systematic component within
+  scan paths in visual search.
+\newblock \emph{Visual Cognition} 14(4-8): 704--715.
 
-\bibitem [\protect \citeauthoryear {%
-Hartkamp%
-\ \BBA {} Thornton%
-}{%
-Hartkamp%
-\ \BBA {} Thornton%
-}{%
-{\protect \APACyear {2017}}%
-}]{%
-hartkamp2017}
-\APACinsertmetastar {%
-hartkamp2017}%
-\begin{APACrefauthors}%
-Hartkamp, M.%
-\BCBT {}\ \BBA {} Thornton, I\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2017}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Meditation, cognitive flexibility and well-being}
-  {Meditation, cognitive flexibility and well-being}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Cognitive Enhancement}{1}{2}{182--196}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Hartkamp and Thornton(2017)}]{hartkamp2017}
+Hartkamp M and Thornton IM (2017) Meditation, cognitive flexibility and
+  well-being.
+\newblock \emph{Journal of Cognitive Enhancement} 1(2): 182--196.
 
-\bibitem [\protect \citeauthoryear {%
-Hedge%
-, Powell%
-\BCBL {}\ \BBA {} Sumner%
-}{%
-Hedge%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2018}}%
-}]{%
-hedge2018}
-\APACinsertmetastar {%
-hedge2018}%
-\begin{APACrefauthors}%
-Hedge, C.%
-, Powell, G.%
-\BCBL {}\ \BBA {} Sumner, P.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2018}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {The reliability paradox: Why robust cognitive tasks do
-  not produce reliable individual differences} {The reliability paradox: Why
-  robust cognitive tasks do not produce reliable individual
-  differences}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Behavior Research Methods}{50}{3}{1166--1186}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Hedge et~al.(2018)Hedge, Powell and Sumner}]{hedge2018}
+Hedge C, Powell G and Sumner P (2018) The reliability paradox: Why robust
+  cognitive tasks do not produce reliable individual differences.
+\newblock \emph{Behavior Research Methods} 50(3): 1166--1186.
 
-\bibitem [\protect \citeauthoryear {%
-Irons%
-\ \BBA {} Leber%
-}{%
-Irons%
-\ \BBA {} Leber%
-}{%
-{\protect \APACyear {2016}}%
-}]{%
-irons-leber2016}
-\APACinsertmetastar {%
-irons-leber2016}%
-\begin{APACrefauthors}%
-Irons, J\BPBI L.%
-\BCBT {}\ \BBA {} Leber, A\BPBI B.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2016}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Choosing attentional control settings in a dynamically
-  changing environment} {Choosing attentional control settings in a dynamically
-  changing environment}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Attention, Perception, \& Psychophysics}{}{}{}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Irons and Leber(2016)}]{irons-leber2016}
+Irons JL and Leber AB (2016) Choosing attentional control settings in a
+  dynamically changing environment.
+\newblock \emph{Attention, Perception, \& Psychophysics} .
 
-\bibitem [\protect \citeauthoryear {%
-Irons%
-\ \BBA {} Leber%
-}{%
-Irons%
-\ \BBA {} Leber%
-}{%
-{\protect \APACyear {2018}}%
-}]{%
-irons-leber2018}
-\APACinsertmetastar {%
-irons-leber2018}%
-\begin{APACrefauthors}%
-Irons, J\BPBI L.%
-\BCBT {}\ \BBA {} Leber, A\BPBI B.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2018}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Characterizing individual variation in the strategic use
-  of attentional control} {Characterizing individual variation in the strategic
-  use of attentional control}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Experimental Psychology: Human Perception
-  and Performance}{}{}{1--18}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Irons and Leber(2018)}]{irons-leber2018}
+Irons JL and Leber AB (2018) Characterizing individual variation in the
+  strategic use of attentional control.
+\newblock \emph{Journal of Experimental Psychology: Human Perception and
+  Performance} : 1--18.
 
-\bibitem [\protect \citeauthoryear {%
-J{\'o}hannesson%
-, Kristj{\'a}nsson%
-\BCBL {}\ \BBA {} Thornton%
-}{%
-J{\'o}hannesson%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2017}}%
-}]{%
-johannesson2017}
-\APACinsertmetastar {%
-johannesson2017}%
-\begin{APACrefauthors}%
-J{\'o}hannesson, {\'O}\BPBI I.%
-, Kristj{\'a}nsson, {\'A}.%
-\BCBL {}\ \BBA {} Thornton, I\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2017}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Are Foraging Patterns in Humans Related to Working
-  Memory and Inhibitory Control?} {Are foraging patterns in humans related to
-  working memory and inhibitory control?}{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Japanese Psychological Research}{59}{2}{152-166}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{J{\'o}hannesson et~al.(2017)J{\'o}hannesson, Kristj{\'a}nsson and
+  Thornton}]{johannesson2017}
+J{\'o}hannesson {\'O}I, Kristj{\'a}nsson {\'A} and Thornton IM (2017) Are
+  foraging patterns in humans related to working memory and inhibitory control?
+\newblock \emph{Japanese Psychological Research} 59(2): 152--166.
 
-\bibitem [\protect \citeauthoryear {%
-J{\'o}hannesson%
-, Thornton%
-, Smith%
-, Chetverikov%
-\BCBL {}\ \BBA {} Kristj{\'a}nsson%
-}{%
-J{\'o}hannesson%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2016}}%
-}]{%
-johannesson2016}
-\APACinsertmetastar {%
-johannesson2016}%
-\begin{APACrefauthors}%
-J{\'o}hannesson, {\'O}\BPBI I.%
-, Thornton, I\BPBI M.%
-, Smith, I\BPBI J.%
-, Chetverikov, A.%
-\BCBL {}\ \BBA {} Kristj{\'a}nsson, A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2016}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Visual foraging with fingers and eye gaze} {Visual
-  foraging with fingers and eye gaze}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{i-Perception}{7}{2}{2041669516637279}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{J{\'o}hannesson et~al.(2016)J{\'o}hannesson, Thornton, Smith,
+  Chetverikov and Kristj{\'a}nsson}]{johannesson2016}
+J{\'o}hannesson {\'O}I, Thornton IM, Smith IJ, Chetverikov A and
+  Kristj{\'a}nsson A (2016) Visual foraging with fingers and eye gaze.
+\newblock \emph{i-Perception} 7(2): 2041669516637279.
 
-\bibitem [\protect \citeauthoryear {%
-Klein%
-}{%
-Klein%
-}{%
-{\protect \APACyear {2000}}%
-}]{%
-klein2000}
-\APACinsertmetastar {%
-klein2000}%
-\begin{APACrefauthors}%
-Klein, R\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2000}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Inhibition of return} {Inhibition of return}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Trends in cognitive sciences}{4}{4}{138--147}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Klein(2000)}]{klein2000}
+Klein RM (2000) Inhibition of return.
+\newblock \emph{Trends in cognitive sciences} 4(4): 138--147.
 
-\bibitem [\protect \citeauthoryear {%
-Kristj{\'a}nsson%
-, J{\'o}hannesson%
-\BCBL {}\ \BBA {} Thornton%
-}{%
-Kristj{\'a}nsson%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2014}}%
-}]{%
-kristjansson2014}
-\APACinsertmetastar {%
-kristjansson2014}%
-\begin{APACrefauthors}%
-Kristj{\'a}nsson, {\'A}.%
-, J{\'o}hannesson, {\'O}\BPBI I.%
-\BCBL {}\ \BBA {} Thornton, I\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2014}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Common attentional constraints in visual foraging}
-  {Common attentional constraints in visual foraging}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{PloS one}{9}{6}{e100752}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Kristj{\'a}nsson et~al.(2014)Kristj{\'a}nsson, J{\'o}hannesson and
+  Thornton}]{kristjansson2014}
+Kristj{\'a}nsson {\'A}, J{\'o}hannesson {\'O}I and Thornton IM (2014) Common
+  attentional constraints in visual foraging.
+\newblock \emph{PloS one} 9(6): e100752.
 
-\bibitem [\protect \citeauthoryear {%
-Mackworth%
-}{%
-Mackworth%
-}{%
-{\protect \APACyear {1948}}%
-}]{%
-mackworth1948}
-\APACinsertmetastar {%
-mackworth1948}%
-\begin{APACrefauthors}%
-Mackworth, N\BPBI H.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1948}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {The breakdown of vigilance during prolonged visual
-  search} {The breakdown of vigilance during prolonged visual search}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Quarterly Journal of Experimental
-  Psychology}{1}{1}{6--21}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Mackworth(1948)}]{mackworth1948}
+Mackworth NH (1948) The breakdown of vigilance during prolonged visual search.
+\newblock \emph{Quarterly Journal of Experimental Psychology} 1(1): 6--21.
 
-\bibitem [\protect \citeauthoryear {%
-Najemnik%
-\ \BBA {} Geisler%
-}{%
-Najemnik%
-\ \BBA {} Geisler%
-}{%
-{\protect \APACyear {2008}}%
-}]{%
-najemnik-geisler2008}
-\APACinsertmetastar {%
-najemnik-geisler2008}%
-\begin{APACrefauthors}%
-Najemnik, J.%
-\BCBT {}\ \BBA {} Geisler, W\BPBI S.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2008}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Eye movement statistics in humans are consistent with an
-  optimal search strategy} {Eye movement statistics in humans are consistent
-  with an optimal search strategy}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Vision}{8}{3}{4--4}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Najemnik and Geisler(2008)}]{najemnik-geisler2008}
+Najemnik J and Geisler WS (2008) Eye movement statistics in humans are
+  consistent with an optimal search strategy.
+\newblock \emph{Journal of Vision} 8(3): 4--4.
 
-\bibitem [\protect \citeauthoryear {%
-Nowakowska%
-, Clarke%
-, Sahraie%
-\BCBL {}\ \BBA {} Hunt%
-}{%
-Nowakowska%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2016}}%
-}]{%
-nowakowska2016}
-\APACinsertmetastar {%
-nowakowska2016}%
-\begin{APACrefauthors}%
-Nowakowska, A.%
-, Clarke, A\BPBI D.%
-, Sahraie, A.%
-\BCBL {}\ \BBA {} Hunt, A\BPBI R.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2016}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Inefficient search strategies in simulated hemianopia.}
-  {Inefficient search strategies in simulated hemianopia.}{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Experimental Psychology: Human Perception
-  and Performance}{42}{11}{1858}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Nowakowska et~al.(2016)Nowakowska, Clarke, Sahraie and
+  Hunt}]{nowakowska2016}
+Nowakowska A, Clarke AD, Sahraie A and Hunt AR (2016) Inefficient search
+  strategies in simulated hemianopia.
+\newblock \emph{Journal of Experimental Psychology: Human Perception and
+  Performance} 42(11): 1858.
 
-\bibitem [\protect \citeauthoryear {%
-Nowakowska%
-, Clarke%
-, Sahraie%
-\BCBL {}\ \BBA {} Hunt%
-}{%
-Nowakowska%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2018}}%
-}]{%
-nowakowska2018}
-\APACinsertmetastar {%
-nowakowska2018}%
-\begin{APACrefauthors}%
-Nowakowska, A.%
-, Clarke, A\BPBI D.%
-, Sahraie, A.%
-\BCBL {}\ \BBA {} Hunt, A\BPBI R.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2018}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Practice-related changes in eye movement strategy in
-  healthy adults with simulated hemianopia} {Practice-related changes in eye
-  movement strategy in healthy adults with simulated hemianopia}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Neuropsychologia}{}{}{}.
-\newblock
-\begin{APACrefURL}
-  \url{http://www.sciencedirect.com/science/article/pii/S0028393218300216}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.neuropsychologia.2018.01.020}
-  \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Nowakowska et~al.(2018)Nowakowska, Clarke, Sahraie and
+  Hunt}]{nowakowska2018}
+Nowakowska A, Clarke AD, Sahraie A and Hunt AR (2018) Practice-related changes
+  in eye movement strategy in healthy adults with simulated hemianopia.
+\newblock \emph{Neuropsychologia} .
 
-\bibitem [\protect \citeauthoryear {%
-Nowakowska%
-, Clarke%
-\BCBL {}\ \BBA {} Hunt%
-}{%
-Nowakowska%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2017}}%
-}]{%
-nowakowska2017}
-\APACinsertmetastar {%
-nowakowska2017}%
-\begin{APACrefauthors}%
-Nowakowska, A.%
-, Clarke, A\BPBI D\BPBI F.%
-\BCBL {}\ \BBA {} Hunt, A\BPBI R.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2017}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Human visual search behaviour is far from ideal} {Human
-  visual search behaviour is far from ideal}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Proceedings of the Royal Society B: Biological
-  Sciences}{}{}{}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Nowakowska et~al.(2017)Nowakowska, Clarke and Hunt}]{nowakowska2017}
+Nowakowska A, Clarke ADF and Hunt AR (2017) Human visual search behaviour is
+  far from ideal.
+\newblock \emph{Proceedings of the Royal Society B: Biological Sciences} .
 
-\bibitem [\protect \citeauthoryear {%
-Russell%
-, Duchaine%
-\BCBL {}\ \BBA {} Nakayama%
-}{%
-Russell%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2009}}%
-}]{%
-russell2009}
-\APACinsertmetastar {%
-russell2009}%
-\begin{APACrefauthors}%
-Russell, R.%
-, Duchaine, B.%
-\BCBL {}\ \BBA {} Nakayama, K.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2009}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Super-recognizers: People with extraordinary face
-  recognition ability} {Super-recognizers: People with extraordinary face
-  recognition ability}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Psychonomic bulletin \& review}{16}{2}{252--257}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Russell et~al.(2009)Russell, Duchaine and Nakayama}]{russell2009}
+Russell R, Duchaine B and Nakayama K (2009) Super-recognizers: People with
+  extraordinary face recognition ability.
+\newblock \emph{Psychonomic bulletin \& review} 16(2): 252--257.
 
-\bibitem [\protect \citeauthoryear {%
-Treisman%
-\ \BBA {} Gelade%
-}{%
-Treisman%
-\ \BBA {} Gelade%
-}{%
-{\protect \APACyear {1980}}%
-}]{%
-treisman1980}
-\APACinsertmetastar {%
-treisman1980}%
-\begin{APACrefauthors}%
-Treisman, A\BPBI M.%
-\BCBT {}\ \BBA {} Gelade, G.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1980}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {A feature-integration theory of attention} {A
-  feature-integration theory of attention}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Cognitive psychology}{12}{1}{97--136}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Treisman and Gelade(1980)}]{treisman1980}
+Treisman AM and Gelade G (1980) A feature-integration theory of attention.
+\newblock \emph{Cognitive psychology} 12(1): 97--136.
 
-\bibitem [\protect \citeauthoryear {%
-Vogel%
-\ \BBA {} Awh%
-}{%
-Vogel%
-\ \BBA {} Awh%
-}{%
-{\protect \APACyear {2008}}%
-}]{%
-vogel2008}
-\APACinsertmetastar {%
-vogel2008}%
-\begin{APACrefauthors}%
-Vogel, E\BPBI K.%
-\BCBT {}\ \BBA {} Awh, E.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2008}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {How to exploit diversity for scientific gain: Using
-  individual differences to constrain cognitive theory} {How to exploit
-  diversity for scientific gain: Using individual differences to constrain
-  cognitive theory}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Current Directions in Psychological
-  Science}{17}{2}{171--176}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Vogel and Awh(2008)}]{vogel2008}
+Vogel EK and Awh E (2008) How to exploit diversity for scientific gain: Using
+  individual differences to constrain cognitive theory.
+\newblock \emph{Current Directions in Psychological Science} 17(2): 171--176.
 
-\bibitem [\protect \citeauthoryear {%
-Wolfe%
-}{%
-Wolfe%
-}{%
-{\protect \APACyear {2007}}%
-}]{%
-wolfe2007}
-\APACinsertmetastar {%
-wolfe2007}%
-\begin{APACrefauthors}%
-Wolfe, J\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2007}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Guided search 4.0} {Guided search 4.0}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Integrated models of cognitive systems}{}{}{99--119}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Wolfe(2007)}]{wolfe2007}
+Wolfe JM (2007) Guided search 4.0.
+\newblock \emph{Integrated models of cognitive systems} : 99--119.
 
-\bibitem [\protect \citeauthoryear {%
-Wolfe%
-, Cain%
-, Ehinger%
-\BCBL {}\ \BBA {} Drew%
-}{%
-Wolfe%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2015}}%
-}]{%
-wolfe2015}
-\APACinsertmetastar {%
-wolfe2015}%
-\begin{APACrefauthors}%
-Wolfe, J\BPBI M.%
-, Cain, M.%
-, Ehinger, K.%
-\BCBL {}\ \BBA {} Drew, T.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2015}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Guided Search 5.0: Meeting the challenge of hybrid
-  search and multiple-target foraging} {Guided search 5.0: Meeting the
-  challenge of hybrid search and multiple-target foraging}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of vision}{15}{12}{1106--1106}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Wolfe et~al.(2015)Wolfe, Cain, Ehinger and Drew}]{wolfe2015}
+Wolfe JM, Cain M, Ehinger K and Drew T (2015) Guided search 5.0: Meeting the
+  challenge of hybrid search and multiple-target foraging.
+\newblock \emph{Journal of vision} 15(12): 1106--1106.
 
-\bibitem [\protect \citeauthoryear {%
-Yantis%
-\ \BBA {} Egeth%
-}{%
-Yantis%
-\ \BBA {} Egeth%
-}{%
-{\protect \APACyear {1999}}%
-}]{%
-yantis1999}
-\APACinsertmetastar {%
-yantis1999}%
-\begin{APACrefauthors}%
-Yantis, S.%
-\BCBT {}\ \BBA {} Egeth, H\BPBI E.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1999}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {On the distinction between visual salience and
-  stimulus-driven attentional capture.} {On the distinction between visual
-  salience and stimulus-driven attentional capture.}{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Experimental Psychology: Human Perception
-  and Performance}{25}{3}{661}.
-\PrintBackRefs{\CurrentBib}
+\bibitem[{Yantis and Egeth(1999)}]{yantis1999}
+Yantis S and Egeth HE (1999) On the distinction between visual salience and
+  stimulus-driven attentional capture.
+\newblock \emph{Journal of Experimental Psychology: Human Perception and
+  Performance} 25(3): 661.
 
 \end{thebibliography}

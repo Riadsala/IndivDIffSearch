@@ -1,62 +1,52 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/W32TeX)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript.aux
-The style file: apacite.bst
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=20001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+The style file: sageh.bst
 Database file #1: literature.bib
-I was expecting a `,' or a `}'---line 469 of file literature.bib
+I was expecting a `,' or a `}'---line 233 of file literature.bib
  : 
  : keywords = {foraging, working memory, inhibitory control, visual search, attention},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-apacite.bst [2013/07/21 v6.03 APA bibliography style]
 You've used 26 entries,
-            6951 wiz_defined-function locations,
-            1437 strings with 15359 characters,
-and the built_in function-call counts, 51257 in all, are:
-= -- 6327
-> -- 441
-< -- 2485
-+ -- 2710
-- -- 57
-* -- 3361
-:= -- 9390
-add.period$ -- 104
+            2921 wiz_defined-function locations,
+            769 strings with 9411 characters,
+and the built_in function-call counts, 25756 in all, are:
+= -- 2697
+> -- 596
+< -- 13
++ -- 240
+- -- 205
+* -- 1900
+:= -- 3217
+add.period$ -- 53
 call.type$ -- 26
-change.case$ -- 442
-chr.to.int$ -- 0
-cite$ -- 52
-duplicate$ -- 1431
-empty$ -- 1944
-format.name$ -- 750
-if$ -- 9648
-int.to.chr$ -- 0
-int.to.str$ -- 78
-missing$ -- 0
-newline$ -- 673
-num.names$ -- 208
-pop$ -- 673
+change.case$ -- 198
+chr.to.int$ -- 27
+cite$ -- 26
+duplicate$ -- 2571
+empty$ -- 1993
+format.name$ -- 288
+if$ -- 5232
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 242
+newline$ -- 114
+num.names$ -- 104
+pop$ -- 1192
 preamble$ -- 1
-purify$ -- 104
+purify$ -- 172
 quote$ -- 0
-skip$ -- 3315
+skip$ -- 396
 stack$ -- 0
-substring$ -- 2956
-swap$ -- 832
-text.length$ -- 52
+substring$ -- 2882
+swap$ -- 634
+text.length$ -- 0
 text.prefix$ -- 0
-top$ -- 1
-type$ -- 2080
+top$ -- 0
+type$ -- 234
 warning$ -- 0
-while$ -- 253
+while$ -- 184
 width$ -- 0
-write$ -- 863
+write$ -- 317
 (There was 1 error message)

@@ -1,25 +1,32 @@
 
-\RequirePackage{fix-cm}
-\documentclass[a4paper, man, natbib, floatsintext]{apa6}
+\documentclass[Afour, sageh, times]{sagej}
+% \RequirePackage{fix-cm}
+% \documentclass[a4paper, man, natbib, floatsintext]{apa6}
 
 %% *** Do not adjust lengths that control margins, column widths, etc. ***
 \usepackage{subfigure}
 % \usepackage{lineno}
 % \usepackage{hyperref}
 \usepackage{graphicx}
-
+\usepackage{natbib}
 
 % \linenumbers
 %%%% Article title to be placed here
 \title{Stable individual differences in strategies within, but not between, visual search tasks}
-\shorttitle{Differences in search}
-\fiveauthors{A. D. F. Clarke}{J. L. Irons}{W. James}{A. B. Leber}{A. R. Hunt}
+\runninghead{Clarke et al.}
+\author{A. D. F. Clarke\affilnum{1} and J. L. Irons\affilnum{2} and W. James\affilnum{3} and A. B. Leber\affilnum{2} and A. R. Hunt\affilnum{3}}
 
-\fiveaffiliations{Department of Psychology, University of Essex, Colchester, UK}{Department of Psychology, The Ohio State University, Columbus, USA}{School of Psychology, University of Aberdeen, Aberdeen, UK}{Department of Psychology, The Ohio State University, Columbus, USA}{School of Psychology, University of Aberdeen, Aberdeen, UK}
+\affiliation{\affilnum{1}Department of Psychology, University of Essex, Colchester, UK \\ 
+\affilnum{2}Department of Psychology, The Ohio State University, Columbus, USA \\ 
+\affilnum{3}School of Psychology, University of Aberdeen, Aberdeen, UK}
 
+\corrauth{Alasdair D. F. Clarke, Department of Psychology, University of Essex, Colchester, UK.}
 
-\abstract{
-A striking range of individual differences has recently been reported in three different visual search tasks. These differences in performance can be attributed to strategy, that is, the efficiency with which participants control their search to complete the task quickly and accurately. Here we ask if an individual's strategy and performance in one search task is correlated with how they perform in the other two. We tested 64 observers and found that even though the test-retest reliability of the tasks was high, an observer's performance and strategy in one task was not predictive of their behaviour in the other two. These results suggest search strategies are stable over time, but context-specific. To understand visual search we therefore need to account not only for differences between individuals, but also how individuals interact with the search task and context.}
+\email{a.clarke@essex.ac.uk}
+
+\begin{abstract}
+A striking range of individual differences has recently been reported in three different visual search tasks. These differences in performance can be attributed to strategy, that is, the efficiency with which participants control their search to complete the task quickly and accurately. Here we ask if an individual's strategy and performance in one search task is correlated with how they perform in the other two. We tested 64 observers and found that even though the test-retest reliability of the tasks was high, an observer's performance and strategy in one task was not predictive of their behaviour in the other two. These results suggest search strategies are stable over time, but context-specific. To understand visual search we therefore need to account not only for differences between individuals, but also how individuals interact with the search task and context.
+\end{abstract}
 
 \begin{document}
 \maketitle
@@ -37,14 +44,14 @@ Eye movement strategies have also been shown to be an important source of indivi
 
 A similar range of strategies, from random to near-optimal, has been found by \cite{irons-leber2016} with the Adaptive Choice Visual Search (ACVS) paradigm. This paradigm involves stimuli made up of small coloured boxes (red, blue, green and a fourth colour that varies from red, through purple, to blue and back again) with numerals written inside them (Figure \ref{fig:exampleStimuli}). The target is a defined as a red or blue box containing one of four numerals (e.g., 2-5), and on each trial one target of each colour is present. The participant's task is to find one of either target as quickly as possible and report the numeral. On trials in which the fourth colour is red (or close to red), participants should search through the blue boxes and report the blue target, as there will be fewer distracters. As the fourth colour changes to through purple to blue, participants should update their strategy and search for the red target. The results showed that participants varied substantially along two key dimensions: how frequently they used the more effective target colour to search (varying from chance performance to near optimal), and how often they changed between colours. Further work \citep{irons-leber2018} has shown that these differences are stable over time (between one and ten days) with test-retest correlations of around $r = 0.83$ ($95\%$ CI $= [0.72, 0.90]$) for optimal choices.
 
-\begin{figure}
+\begin{figure*}
 \centering
-\subfigure[][]{\includegraphics[height=3cm]{figures/split-half.png}}
-\subfigure[][]{\includegraphics[height=3cm]{figures/adaptive.png}}
-\subfigure[][]{\includegraphics[height=3cm]{figures/foraging.png}}
+\subfigure[][]{\includegraphics[height=5cm]{figures/split-half.png}}
+\subfigure[][]{\includegraphics[height=5cm]{figures/adaptive.png}}
+\subfigure[][]{\includegraphics[height=5cm]{figures/foraging.png}}
 \caption{Example stimulus from the (a) \textit{split-half line segment} (SHLS), (b) \textit{adaptive choice visual search} (ACVS) and (c) \textit{mouse click foraging task} (MCFT) paradigms.}
 \label{fig:exampleStimuli}
-\end{figure}
+\end{figure*}
 
 Another example of differences in search strategy comes from the foraging literature  \citep{kristjansson2014,johannesson2016}. In this context, foraging tasks involve searching for multiple targets on each trial. Participants were asked to search through a set of items from four categories, with two categories classed as targets. In the conjunction condition (searching for red-horizontal and green-vertical line segments among red-vertical and green-horizontal distracters), most observers searched in runs, finding all the targets of one target category, and then switching and finding the targets in the other category. This strategy has previously been observed in animal foraging  \citep{dawkins1971}, and suggests holding one complex target template in mind at a time is a better strategy than switching templates. However, a sub-set of participants, termed `super-foragers', were able to change between search target categories with no cost to performance. While test-retest reliability has not been measured explicitly for the foraging paradigm, the task was used as a measure to assess the effect of a six day mindfulness retreat on cognitive performance \citep{hartkamp2017}. From a re-analysis of these data, we can estimate that the test-retest reliability for the mean run length is $r \approx 0.7$ for the feature condition and $r \approx 0.88$ for the conjunction search.  
 
@@ -56,7 +63,7 @@ A common theme emerging from these studies is the observation that individual st
 \section{Methods}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The methods and planned analysis for this study were registered on the Open Science Framework\footnote{\url{https://osf.io/scv4u/}} before data collection started.
+The methods and planned analysis for this study were registered on the Open Science Framework\endnote{https://osf.io/scv4u/} before data collection started.
 
 \subsection{Participants}
 64 students with normal or corrected-to-normal vision from the University of Aberdeen took part in this study\footnote{data from an additional 11 participants was discarded due to being recorded with an inappropriate screen resolution. Another participant was excluded due to colour blindness.}. Participants were compensated for their time with either course credit or \pounds 15. All participants gave informed consent. The study was approved by the University of Aberdeen Psychology Ethics Committee. 
@@ -98,15 +105,15 @@ A brief summary of participants' behaviour is given below. More time is spent on
 
 Our results are consistent with the original SHLS study \citep{nowakowska2017}: we find a large range of individual differences in search reaction time and accuracy (see Figure \ref{fig:splithalf_summary}). These differences are stable across the two sessions, with Pearson's $r \in [0.71, 0.89]$ ($95\%$ CI.) for accuracy in finding hard targets. We get similar scores for the correlation in reaction times between sessions \textit{a} and \textit{b} for hard targets, ($r \in [0.54-0.81]$), easy targets ($r \in [0.52-0.80]$) and target absent trials ($r \in [0.66-0.86]$). 
 
-\begin{figure}
+\begin{figure*}
 \centering
-\subfigure[][]{\includegraphics[width=3.25cm]{../Scripts/lineseg/scratch/acc_correlation.pdf}}
-\subfigure[][]{\includegraphics[width=3.25cm]{../Scripts/lineseg/scratch/rt_correlation.pdf}}
-\subfigure[][]{\includegraphics[width=3.25cm]{../Scripts/lineseg/scratch/strat_corr.pdf}}
-\subfigure[][]{\includegraphics[width=3.25cm]{../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf}}
+\subfigure[][]{\includegraphics[width=6cm]{../Scripts/lineseg/scratch/acc_correlation.pdf}}
+\subfigure[][]{\includegraphics[width=6cm]{../Scripts/lineseg/scratch/rt_correlation.pdf}}
+\subfigure[][]{\includegraphics[width=6cm]{../Scripts/lineseg/scratch/strat_corr.pdf}}
+\subfigure[][]{\includegraphics[width=6cm]{../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf}}
 \caption{Correlation between the two sessions of the SHLS paradigm for (a)  accuracy (TP-heterogeneous trials only); (b) reaction times and (c) search strategy (TA trials only). (d) Initial search strategy correlates with reaction times in both sessions. Each point represents a participant and the error-bars indicate 95\% confidence intervals.}
 \label{fig:splithalf_summary}
-\end{figure}
+\end{figure*}
 
 We can also look at the initial search strategies adopted by our participants \ref{fig:splithalf_summary}(c, d). Again, we see large and stable individual differences across the two sessions (test-retest $r \in [0.63, 0.86]$ for the proportion of the first five saccades to the heterogeneous half of the display for target absent trials). More importantly, as with  \citep{nowakowska2017}, we see that the search strategies give a good correlation with reaction times in both session a, $r \in [0.52, 0.82]$ and session b, $r \in [0.50, 0.80]$.
 
@@ -114,13 +121,13 @@ We can also look at the initial search strategies adopted by our participants \r
  
 We measured an individual's strategy as the percent of plateau trials in which the individual chose the optimal target (i.e., the target with the fewest distractors: When the variable distractor was red, the optimal choice was blue, and vice versa). The results for the ACVS were consistent with previous findings  \citep{irons-leber2016,irons-leber2018}. We can clearly see from figure \ref{fig:acvs_mcft_summary}(a) that there are individual differences in the proportion of optimal targets reported (range $33.62\%$ - $100.00\%$, $\bar{x} = 59.15$, $s = 16.54$) and the mean ($\log_2$) reaction times (range $1.90$ - $4.80$ seconds). As with the SHLS task, the degree to which participants follow the optimal strategy is correlated with reaction times ($r \in [-0.65, -0.25]$).
 
-\begin{figure}
+\begin{figure*}
 \centering
-\subfigure[][]{\includegraphics[width=3.25cm]{../Scripts/scratch/acvs_opt_rt}}
-\subfigure[][]{\includegraphics[width=3.25cm]{../Scripts/scratch/mcft_rl_rt}}
+\subfigure[][]{\includegraphics[width=6cm]{../Scripts/scratch/acvs_opt_rt}}
+\subfigure[][]{\includegraphics[width=6cm]{../Scripts/scratch/mcft_rl_rt}}
 \caption{Correlation between strategy and reaction times for (a) ACVS and (b) MCFT. Each point represents a participant.}
 \label{fig:acvs_mcft_summary}
-\end{figure}
+\end{figure*}
 
 \subsubsection{Mouse Click Foraging Task}
  
@@ -133,12 +140,12 @@ We have successfully replicated the previous findings around individual differen
 
 The results show that the correlations between the strategy metrics in the three tasks (Figure \ref{fig:all_the_cor}) are weak. Perhaps even more surprisingly, there is also little evidence for meaningful correlations between reaction times in the different tasks. Even if we optimistically take all data together as suggesting a robust correlation in reaction times from one task to another, the mean correlation over the three tasks is only $r = 0.2$, implying that this correlation accounts for  $R^2 = 0.04 = 4\%$ an individual's performance. 
 
-\begin{figure}
+\begin{figure*}
 \centering
-\includegraphics[width=6.5cm]{../Scripts/scratch/cor_comparison.pdf}
+\includegraphics[width=10cm]{../Scripts/scratch/cor_comparison.pdf}
 \caption{The between- and within-task correlations for the three different search tasks. The bars indicate the $95\%$ confidence intervals for Pearson's correlation coefficient. Blue bars represent test-retest scores for each task for reaction times (\textit{rt}), optimality (\textit{opt}) or run length (\textit{rl}). Yellow bars indicate how well the strategy measures predict reaction times, while the red bars show that performance in one task is not a good indication of performance in another, either for reaction times or strategy.}
 \label{fig:all_the_cor}
-\end{figure}
+\end{figure*}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -160,7 +167,7 @@ We view these findings not as a discouraging result, but as thought-provoking an
 
 We would like to thanks Anna Nowakowska, {\'A}rn Kristj{\'a}nsson and Ian Thornton for sharing data and their helpful comments and suggestions. We would like to thank Charles Rigitano and Jacqueline Von Seth who helped with data collection. We acknowledge the funding support of the James S. McDonnell Foundation (Scholar Award to ARH) and NSF BCS-1632296 to ABL.
 
-
+\bibliographystyle{sageh}
 \bibliography{literature}
 
 \end{document}
