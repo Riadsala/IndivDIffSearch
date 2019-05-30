@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex manuscript"] 1559053637 "manuscript.aux" "manuscript.bbl" "manuscript" 1559054349
+["bibtex manuscript"] 1559132998 "manuscript.aux" "manuscript.bbl" "manuscript" 1559133639
   "/usr/local/texlive/2016/texmf-dist/bibtex/bst/mslapa/mslapa.bst" 1227660432 34700 e618a00b0a9c04b3273a2b354751b397 ""
   "literature.bib" 1559053622 12443 17213d032294ecaa19963ba443bf0f4e ""
-  "manuscript.aux" 1559054348 6342 1c5397706cbb28dd61fb1f053224ffd0 ""
+  "manuscript.aux" 1559133639 6342 098ac775f4654232cda3cbf5ec455fcf ""
   "manuscript.bcf" 0 -1 0 ""
   (generated)
-  "manuscript.bbl"
   "manuscript.blg"
-["pdflatex"] 1559054347 "manuscript.tex" "manuscript.pdf" "manuscript" 1559054349
+  "manuscript.bbl"
+["pdflatex"] 1559133638 "manuscript.tex" "manuscript.pdf" "manuscript" 1559133639
   "../Scripts/lineseg/scratch/acc_correlation.pdf" 1541178682 9107 f5f3c7c383c44de6e73248b90ceeeb7c ""
   "../Scripts/lineseg/scratch/rt_correlation.pdf" 1541178970 15481 38c24754b8a87434a797a9606b86f61b ""
   "../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf" 1559051338 11506 8eeca1f0bf6ba05420a7d23424cbf1d7 ""
@@ -136,12 +136,12 @@
   "figures/adaptive.png" 1521818849 56825 624e4f0fe0e16b6bd99b2cb313c6b1e9 ""
   "figures/foraging.png" 1521821399 41089 9903e24c44c1c60cb2d69a891bdf6e31 ""
   "figures/split-half.png" 1521818768 315829 fbda65b00e3321404a4bf6ced36804a3 ""
-  "manuscript.aux" 1559054348 6342 1c5397706cbb28dd61fb1f053224ffd0 ""
-  "manuscript.bbl" 1559053637 7614 c3461523582e37153b82bb516c20932f "bibtex manuscript"
-  "manuscript.tex" 1559054347 27239 c6de7c7fd5686c077367492e2427ec5e ""
+  "manuscript.aux" 1559133639 6342 098ac775f4654232cda3cbf5ec455fcf ""
+  "manuscript.bbl" 1559132998 7614 c3461523582e37153b82bb516c20932f "bibtex manuscript"
+  "manuscript.tex" 1559133638 27989 f7eca7aa21f11d53571a77e5e211462f ""
   "sagej.cls" 1484403322 15958 5fa98adc3dbacfa813e0251e7c0042fe ""
   (generated)
-  "manuscript.pdf"
   "manuscript.ent"
-  "manuscript.log"
+  "manuscript.pdf"
   "manuscript.aux"
+  "manuscript.log"
