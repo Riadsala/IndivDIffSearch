@@ -1,4 +1,4 @@
-PWD /Users/alasdairclarke/Desktop/IndivDIffSearch/Manuscript
+PWD /Users/alasdairclarke/Documents/ongoing projects/IndivDIffSearch/Manuscript
 INPUT /usr/local/texlive/2016/texmf.cnf
 INPUT /usr/local/texlive/2016/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -86,6 +86,10 @@ INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/subfigure/subfigure.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/subfigure/subfigure.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/subfigure/subfigure.cfg
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/subfigure/subfigure.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map

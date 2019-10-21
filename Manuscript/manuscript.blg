@@ -1,56 +1,56 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript.aux
-White space in argument---line 25 of file manuscript.aux
+White space in argument---line 27 of file manuscript.aux
  : \citation{nowakowska2017,
  :                           irons-leber2016, kristjansson2014}
 I'm skipping whatever remains of this command
 The style file: mslapa.bst
 Database file #1: literature.bib
-I was expecting a `,' or a `}'---line 237 of file literature.bib
+I was expecting a `,' or a `}'---line 238 of file literature.bib
  : 
  : keywords = {foraging, working memory, inhibitory control, visual search, attention},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You've used 25 entries,
+You've used 27 entries,
             2808 wiz_defined-function locations,
-            768 strings with 9070 characters,
-and the built_in function-call counts, 13176 in all, are:
-= -- 1269
-> -- 682
+            782 strings with 9514 characters,
+and the built_in function-call counts, 14529 in all, are:
+= -- 1393
+> -- 778
 < -- 13
-+ -- 278
-- -- 268
-* -- 1200
-:= -- 2550
-add.period$ -- 75
-call.type$ -- 25
-change.case$ -- 284
-chr.to.int$ -- 25
-cite$ -- 25
-duplicate$ -- 372
-empty$ -- 804
-format.name$ -- 309
-if$ -- 2407
++ -- 320
+- -- 308
+* -- 1335
+:= -- 2819
+add.period$ -- 81
+call.type$ -- 27
+change.case$ -- 316
+chr.to.int$ -- 27
+cite$ -- 27
+duplicate$ -- 402
+empty$ -- 870
+format.name$ -- 351
+if$ -- 2645
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 25
-newline$ -- 128
-num.names$ -- 125
-pop$ -- 218
+missing$ -- 27
+newline$ -- 138
+num.names$ -- 135
+pop$ -- 246
 preamble$ -- 1
-purify$ -- 259
+purify$ -- 289
 quote$ -- 0
-skip$ -- 316
+skip$ -- 340
 stack$ -- 0
-substring$ -- 751
-swap$ -- 30
+substring$ -- 813
+swap$ -- 32
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 225
+type$ -- 243
 warning$ -- 0
-while$ -- 137
+while$ -- 148
 width$ -- 0
-write$ -- 373
+write$ -- 403
 (There were 2 error messages)

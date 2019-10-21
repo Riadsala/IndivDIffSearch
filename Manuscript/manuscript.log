@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  29 MAY 2019 13:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  21 OCT 2019 11:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -290,39 +290,57 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfig@top=\skip60
 \subfig@bottom=\skip61
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 30.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 29.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 30.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 29.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 30.
+(Font)              scaled to size 9.49997pt on input line 29.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 30.
+(Font)              scaled to size 11.39996pt on input line 29.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 30.
+(Font)              scaled to size 11.39996pt on input line 29.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 30.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 32.
+(Font)              scaled to size 9.49997pt on input line 29.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 31.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 32.
+LaTeX Font Info:    Try loading font information for U+msa on input line 31.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 32.
+LaTeX Font Info:    Try loading font information for U+msb on input line 31.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -330,18 +348,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (./manuscript.aux)
 \openout1 = `manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -440,40 +458,40 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 17.09995pt on input line 35.
+(Font)              scaled to size 17.09995pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <18> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 35.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 17.09995pt on input line 35.
+(Font)              scaled to size 17.09995pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 35.
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 35.
+(Font)              scaled to size 6.64998pt on input line 34.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 34.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 35.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 7.59998pt on input line 35.
+(Font)              scaled to size 7.59998pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <6> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 35.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 5.69998pt on input line 35.
+(Font)              scaled to size 5.69998pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 35.
+(Font)              scaled to size 7.59998pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 35.
+(Font)              scaled to size 5.69998pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 35.
+(Font)              scaled to size 4.74998pt on input line 34.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 48.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 47.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 6.64998pt on input line 48.
+(Font)              scaled to size 6.64998pt on input line 47.
  [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -483,47 +501,44 @@ LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
 File: figures/split-half.png Graphic file (type png)
 
 <use figures/split-half.png>
-Package pdftex.def Info: figures/split-half.png used on input line 52.
+Package pdftex.def Info: figures/split-half.png used on input line 51.
 (pdftex.def)             Requested size: 195.51042pt x 142.26378pt.
 
 <figures/adaptive.png, id=14, 778.91pt x 786.94pt>
 File: figures/adaptive.png Graphic file (type png)
  <use figures/adaptive.png>
-Package pdftex.def Info: figures/adaptive.png used on input line 53.
+Package pdftex.def Info: figures/adaptive.png used on input line 52.
 (pdftex.def)             Requested size: 140.8039pt x 142.26378pt.
 
 <figures/foraging.png, id=15, 1606.0pt x 933.4875pt>
 File: figures/foraging.png Graphic file (type png)
 
 <use figures/foraging.png>
-Package pdftex.def Info: figures/foraging.png used on input line 54.
+Package pdftex.def Info: figures/foraging.png used on input line 53.
 (pdftex.def)             Requested size: 244.73698pt x 142.26378pt.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 55.
+(Font)              scaled to size 8.54997pt on input line 54.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 55.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 8.54997pt on input line 55.
+(Font)              scaled to size 8.54997pt on input line 54.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 55.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 54.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 8.54997pt on input line 55.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 69.
+(Font)              scaled to size 8.54997pt on input line 54.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 70.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 69.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 70.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 71.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 72.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 11.39996pt on input line 71.
+(Font)              scaled to size 11.39996pt on input line 72.
 LaTeX Font Info:    Font shape `OT1/ptm/m/ui' in size <10> not available
-(Font)              Font shape `OT1/ptm/m/it' tried instead on input line 72.
+(Font)              Font shape `OT1/ptm/m/it' tried instead on input line 73.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 81.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
@@ -535,7 +550,7 @@ File: ../Scripts/lineseg/scratch/acc_correlation.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/acc_correlation.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/acc_correlation.pdf used on
- input line 114.
+ input line 115.
 (pdftex.def)             Requested size: 170.71652pt x 170.7167pt.
 
 <../Scripts/lineseg/scratch/rt_correlation.pdf, id=30, 180.675pt x 180.675pt>
@@ -543,7 +558,7 @@ File: ../Scripts/lineseg/scratch/rt_correlation.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/rt_correlation.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/rt_correlation.pdf used on 
-input line 115.
+input line 116.
 (pdftex.def)             Requested size: 170.71652pt x 170.7167pt.
 
 <../Scripts/lineseg/scratch/strat_corr.pdf, id=31, 180.675pt x 180.675pt>
@@ -551,7 +566,7 @@ File: ../Scripts/lineseg/scratch/strat_corr.pdf Graphic file (type pdf)
 
 <use ../Scripts/lineseg/scratch/strat_corr.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/strat_corr.pdf used on inpu
-t line 116.
+t line 117.
 (pdftex.def)             Requested size: 170.71652pt x 170.7167pt.
 
 <../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf, id=32, 180.675pt x 18
@@ -560,7 +575,7 @@ File: ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf Graphic file (typ
 e pdf)
  <use ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf>
 Package pdftex.def Info: ../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pd
-f used on input line 117.
+f used on input line 118.
 (pdftex.def)             Requested size: 170.71652pt x 170.7167pt.
 
 <../Scripts/scratch/acvs_opt_rt.pdf, id=33, 180.675pt x 180.675pt>
@@ -568,7 +583,7 @@ File: ../Scripts/scratch/acvs_opt_rt.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/acvs_opt_rt.pdf>
 Package pdftex.def Info: ../Scripts/scratch/acvs_opt_rt.pdf used on input line 
-130.
+131.
 (pdftex.def)             Requested size: 170.71652pt x 170.7167pt.
 
 <../Scripts/scratch/mcft_rl_rt.pdf, id=34, 180.675pt x 180.675pt>
@@ -576,7 +591,7 @@ File: ../Scripts/scratch/mcft_rl_rt.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/mcft_rl_rt.pdf>
 Package pdftex.def Info: ../Scripts/scratch/mcft_rl_rt.pdf used on input line 1
-31.
+32.
 (pdftex.def)             Requested size: 170.71652pt x 170.7167pt.
 
 <../Scripts/scratch/cor_comparison.pdf, id=35, 289.08pt x 361.35pt>
@@ -584,9 +599,12 @@ File: ../Scripts/scratch/cor_comparison.pdf Graphic file (type pdf)
 
 <use ../Scripts/scratch/cor_comparison.pdf>
 Package pdftex.def Info: ../Scripts/scratch/cor_comparison.pdf used on input li
-ne 149.
+ne 150.
 (pdftex.def)             Requested size: 284.52756pt x 355.67546pt.
  [4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5 <../Scripts/lineseg/scratch/acc_correlation.pdf> <../Scripts/lineseg/scratc
@@ -595,24 +613,17 @@ ineseg/scratch/strat_compare_meanlog_rt.pdf> <../Scripts/scratch/acvs_opt_rt.pd
 f> <../Scripts/scratch/mcft_rl_rt.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-(./manuscript.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <../Scripts/scratch/cor_comparison.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-) [7]
-(./manuscript.aux) )
+ [6 <../Scripts/scratch/cor_comparison.pdf>] (./manuscript.bbl) [7] (./manuscri
+pt.aux) )
 (\end occurred when \iftrue on line 547 was incomplete) 
 Here is how much of TeX's memory you used:
- 4945 strings out of 493014
- 73708 string characters out of 6133351
- 151803 words of memory out of 5000000
- 8322 multiletter control sequences out of 15000+600000
+ 5380 strings out of 493014
+ 78671 string characters out of 6133351
+ 162323 words of memory out of 5000000
+ 8751 multiletter control sequences out of 15000+600000
  46686 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,9n,40p,1688b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,40p,1688b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016
 /texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/font
@@ -626,7 +637,7 @@ elvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic
 /uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvro8
 a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript.pdf (7 pages, 521879 bytes).
+Output written on manuscript.pdf (7 pages, 523125 bytes).
 PDF statistics:
  149 PDF objects out of 1000 (max. 8388607)
  106 compressed objects within 2 object streams
