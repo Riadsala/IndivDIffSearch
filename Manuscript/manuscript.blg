@@ -1,56 +1,60 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript.aux
+White space in argument---line 7 of file manuscript.aux
+ : \citation{mackworth1948,
+ :                          clarke2019}
+I'm skipping whatever remains of this command
 White space in argument---line 27 of file manuscript.aux
  : \citation{nowakowska2017,
  :                           irons-leber2016, kristjansson2014}
 I'm skipping whatever remains of this command
 The style file: mslapa.bst
 Database file #1: literature.bib
-I was expecting a `,' or a `}'---line 238 of file literature.bib
+I was expecting a `,' or a `}'---line 258 of file literature.bib
  : 
  : keywords = {foraging, working memory, inhibitory control, visual search, attention},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You've used 27 entries,
+You've used 28 entries,
             2808 wiz_defined-function locations,
-            782 strings with 9514 characters,
-and the built_in function-call counts, 14529 in all, are:
-= -- 1393
-> -- 778
+            788 strings with 9720 characters,
+and the built_in function-call counts, 15033 in all, are:
+= -- 1439
+> -- 808
 < -- 13
-+ -- 320
-- -- 308
-* -- 1335
-:= -- 2819
-add.period$ -- 81
-call.type$ -- 27
-change.case$ -- 316
-chr.to.int$ -- 27
-cite$ -- 27
-duplicate$ -- 402
-empty$ -- 870
-format.name$ -- 351
-if$ -- 2645
++ -- 332
+- -- 320
+* -- 1382
+:= -- 2921
+add.period$ -- 84
+call.type$ -- 28
+change.case$ -- 328
+chr.to.int$ -- 28
+cite$ -- 28
+duplicate$ -- 417
+empty$ -- 899
+format.name$ -- 364
+if$ -- 2735
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 27
-newline$ -- 138
-num.names$ -- 135
-pop$ -- 246
+missing$ -- 28
+newline$ -- 143
+num.names$ -- 140
+pop$ -- 256
 preamble$ -- 1
-purify$ -- 289
+purify$ -- 300
 quote$ -- 0
-skip$ -- 340
+skip$ -- 352
 stack$ -- 0
-substring$ -- 813
-swap$ -- 32
+substring$ -- 829
+swap$ -- 33
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 243
+type$ -- 252
 warning$ -- 0
-while$ -- 148
+while$ -- 153
 width$ -- 0
-write$ -- 403
-(There were 2 error messages)
+write$ -- 418
+(There were 3 error messages)
