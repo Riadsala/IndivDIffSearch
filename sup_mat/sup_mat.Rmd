@@ -62,7 +62,7 @@ All tasks were completed on a 17-inch CRT monitor with a resolution of 1400x1050
 
 
 
-## Split-Half
+## Split-Half Visual Search 
 This task lasted approximately 30 minutes and was carried out in both sessions. A chin rest with forehead bar ensured a viewing distance of 47cm. Participants' fixations were tracked using a deskmounted Eylink 1000 to record eye position at 1000 Hz. Prior to every block, a 9-point calibration was carried out. Participants were instructed to state the presence, or absence, of a small target line segment that was tilted 45&deg; to the right. The distractor line segments were arranged in such a way to create a "hard" and "easy" search side. `r 16*22` line segemets were arranged in 16 rows and 22 columns, with the easy and hard search sides being split vertically. The mean orientation of the distractors was orthogonal to the target orientation, with either a low variance (18&deg;) which created a relatively homogenous texture ("easy" side), or a high amount of variance (95&deg;) creating a more heterogeneous texture ("hard" side). Each line segment subtended approximately 1.6&deg; of visual angle. For 50% of the trials, there was a target present. Participants were told to report whether the target was present or absent on each trial as quickly and as accuractely as possible by pressing either the left or right arrow key respectively. 
 
 In total, particiapnts completed 160 trials in each session, with the hetero- and homogenous side randomly varying from trial to trial. 
@@ -147,10 +147,11 @@ num_removed <- num_fixations - nrow(fixDat)
 
 ```
 
-### Split-Half task
+### Split-Half Visual Search task
 Accuracy data is shown in Figure \ref{fig:ls_acc_plt}. From this we can see that there are a number of participants who did not perform the task to a reasonable standard: 15, 25, 47, and 48. These participants, in at least one session, either missed the majority of easy targets, or responded with false positives on the majority of target absent trials. After removing these participants, the lowest accuracy in either session was `r paste(min_easy,"%", sep = "")` for the easy targets, and `r paste(min_absent, "%", sep = "")` for target absent trials. This leaves us with `r length(unique(avg_acc_all$observer))` participants for the split-half paradigm.
 
 ```{r ls_acc_plt, fig.cap = "\\label{fig:ls_acc_plt} Accuracy data for each participant for the split-half paradigm. ", echo = FALSE, fig.align = "center", fig.asp = 0.6}
+#  fig.width = 6, fig.height = 6
 # make the plot
 plt <- ls_acc_RT %>%
   group_by(observer, targSide, session) %>%
@@ -159,9 +160,12 @@ plt <- ls_acc_RT %>%
   geom_bar(stat = "identity", position = position_dodge()) + 
   scale_y_continuous(breaks = c(0,1)) + 
   theme_bw() +
-  theme(axis.text.x  = element_text(angle=90, vjust=0.5), legend.position = "top", strip.text.x = element_text(margin = margin(0.01,0,0.01,0, "mm"))) + 
+  theme(axis.text.x  = element_text(angle=90, vjust=0.5),
+        legend.position = "top",
+        # strip.text.x = element_text(margin = margin(0.01,0,0.01,0, "mm"))) +
+        strip.text.x = element_blank()) + 
   scale_fill_ptol() +
-  facet_wrap(~observer)
+  facet_wrap(~observer) 
 plt$labels$x <- "Target Condition"
 plt
 ```
@@ -347,7 +351,8 @@ plt_for_sr_rt <- plt_for_sr_rt %>%
   scale_x_continuous(breaks = c(0.5)) +
   scale_y_continuous(breaks = c(10, 30, 50)) + 
   theme(legend.position = "bottom",
-        strip.text.x = element_text(margin = margin(0.008,0,0.008,0, "mm"))) +
+        # strip.text.x = element_text(margin = margin(0.008,0,0.008,0, "mm"))) +
+        strip.text.x = element_blank()) + 
   scale_colour_ptol() +
   facet_wrap(~sub_no)
 plt_for_sr_rt$labels$y <- "Response Time (secs)"
@@ -436,4 +441,96 @@ table_dat <- rbind(table_dat_all, table_dat_2_to_5) %>%
 
 # make table 
 kable(table_dat, caption = "\\label{tab:table} No. of fixations to each side in each condition.")
+```
+
+## Accuracy 
+The results of these experiments show there is no meaningful correlation with how accurate participants were in the ACS and SHVS tasks. Even when breaking the data from the SVHS task into the 3 different trial types, there were still no meaningful correlations. 
+
+```{r, echo = F}
+# clear above 
+rm(list = ls()) 
+
+# load in data 
+ls_acc_RT <- readRDS(file = "../Scripts/lineseg/scratch/processedRTandAccData.Rda")
+load("scratch/dat_ACS")
+
+# filter out participants that were removed 
+dat_ACS <- dat_ACS %>%
+  filter(SubNo >= 5)
+
+# average accuracy for each task
+acc_ACS <- dat_ACS %>% 
+  group_by(SubNo) %>% 
+  summarise(Accuracy = mean(Acc)) %>% 
+  ungroup() %>% 
+  mutate(Task = "ACS",
+         participant = SubNo) %>% 
+  select(-SubNo)
+acc_LS <- ls_acc_RT %>% 
+  group_by(observer, targSide) %>% 
+  summarise(Accuracy = mean(accuracy)) %>% 
+  ungroup() %>% 
+  mutate(Task = paste("SHVS_", targSide, sep = ""),
+         participant = observer) %>% 
+  select(-observer, -targSide)
+
+# plot accuracy across tasks 
+dat_all <- rbind(acc_ACS, acc_LS) %>% 
+  spread(key = Task,
+         value = Accuracy) %>% 
+  gather(SHVS_absent:SHVS_hard,
+         key = "s_type", 
+         value = "acc")
+plt_task <- dat_all %>% 
+  ggplot(aes(ACS, acc, colour = s_type)) + 
+  geom_point() + 
+  facet_wrap(~s_type)
+# plt_task
+
+# get some numbers 
+get_cors <- function(df_in, task){
+  # filter data 
+  ss <- df_in %>% 
+    filter(s_type == task)
+  
+  # get cor 
+  ci95 <- cor.test(ss$ACS, ss$acc)
+  
+  output <- tibble(comparison = paste("ACS", task, sep = " "),
+                   est = ci95$estimate,
+                   lower = ci95$conf.int[1],
+                   upper = ci95$conf.int[2])
+  return(output)
+}
+
+# get correlation data 
+dat_cor <- tibble()
+for(i in unique(dat_all$s_type)){
+  dat_cor <- rbind(dat_cor, get_cors(dat_all, i))
+}
+
+# plot 
+dat_cor %>% 
+  ggplot(aes(comparison, ymin = lower, ymax = upper)) +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_linerange(size = 1) +
+  scale_y_continuous(limits = c(-1,1)) +
+  coord_flip() +
+  theme_bw() 
+
+# session for LS
+acc_LS <- ls_acc_RT %>%
+  group_by(observer, session) %>%
+  summarise(Accuracy = mean(accuracy)) %>%
+  ungroup() %>%
+  mutate(Task = "LS",
+         participant = as.factor(observer)) %>%
+         # session = as.numeric(ifelse(session == "a", 1, 2))) %>%
+  select(-observer) %>%
+  spread(key = session, value = Accuracy)
+
+# cor plots
+plt_session_acc <- acc_LS %>%
+  ggplot(aes(a, b)) +
+  geom_point()
 ```
