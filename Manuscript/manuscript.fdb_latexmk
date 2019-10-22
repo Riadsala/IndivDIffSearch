@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex manuscript"] 1571654660 "manuscript.aux" "manuscript.bbl" "manuscript" 1571654661
+["bibtex manuscript"] 1571754404 "manuscript.aux" "manuscript.bbl" "manuscript" 1571754409
   "/usr/local/texlive/2016/texmf-dist/bibtex/bst/mslapa/mslapa.bst" 1227660432 34700 e618a00b0a9c04b3273a2b354751b397 ""
-  "literature.bib" 1571653754 13135 0e61c2be17b351a29ca365a156801eb7 ""
-  "manuscript.aux" 1571654661 6707 3e4d96c2ebacab963384cd29c339f2a4 ""
+  "literature.bib" 1571748350 13848 e91264012d3c0584be4512be830c0234 ""
+  "manuscript.aux" 1571754409 6904 57bfbdba577dd8144c40ca2828ab48f7 ""
   "manuscript.bcf" 0 -1 0 ""
   (generated)
   "manuscript.bbl"
   "manuscript.blg"
-["pdflatex"] 1571654660 "manuscript.tex" "manuscript.pdf" "manuscript" 1571654661
+["pdflatex"] 1571754408 "manuscript.tex" "manuscript.pdf" "manuscript" 1571754409
   "../Scripts/lineseg/scratch/acc_correlation.pdf" 1571646192 9107 f5f3c7c383c44de6e73248b90ceeeb7c ""
   "../Scripts/lineseg/scratch/rt_correlation.pdf" 1571646192 15481 38c24754b8a87434a797a9606b86f61b ""
   "../Scripts/lineseg/scratch/strat_compare_meanlog_rt.pdf" 1571646192 11506 8eeca1f0bf6ba05420a7d23424cbf1d7 ""
@@ -137,12 +137,12 @@
   "figures/adaptive.png" 1571646192 56825 624e4f0fe0e16b6bd99b2cb313c6b1e9 ""
   "figures/foraging.png" 1571646192 41089 9903e24c44c1c60cb2d69a891bdf6e31 ""
   "figures/split-half.png" 1571646192 315829 fbda65b00e3321404a4bf6ced36804a3 ""
-  "manuscript.aux" 1571654661 6707 3e4d96c2ebacab963384cd29c339f2a4 ""
-  "manuscript.bbl" 1571654660 8306 93021ff17e6e136dad614e6b21e8d532 "bibtex manuscript"
-  "manuscript.tex" 1571654656 28275 badf15386a072c1afb3a000928c58acf ""
+  "manuscript.aux" 1571754409 6904 57bfbdba577dd8144c40ca2828ab48f7 ""
+  "manuscript.bbl" 1571754404 8596 22cf507c23563105dd7a93dfa2bec4c6 "bibtex manuscript"
+  "manuscript.tex" 1571754408 29146 9e1af40ce28609dcc46e1a1275c9db24 ""
   "sagej.cls" 1571646192 15958 5fa98adc3dbacfa813e0251e7c0042fe ""
   (generated)
-  "manuscript.aux"
-  "manuscript.ent"
-  "manuscript.log"
   "manuscript.pdf"
+  "manuscript.log"
+  "manuscript.ent"
+  "manuscript.aux"
