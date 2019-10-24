@@ -7,7 +7,8 @@ figYn <- 2.5
 
 dat <- read_csv("summaryData.csv")
 
-
+# See manuscript introduction for explanation of where 
+# these values came from 
 cor_dat <- tibble(
 	comparison = c(		
 		"sh-rt a versus b hard", 		

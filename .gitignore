@@ -1,2 +1,11 @@
 
 Manuscript/sup_mat/.Rhistory
+*.aux
+*.aux
+*.log
+*.blg
+*.aux
+*.pdf
+*.gz
+Scripts/.Rhistory
+*.bbl
