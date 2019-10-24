@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/W32TeX)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript.aux
 White space in argument---line 7 of file manuscript.aux
  : \citation{mackworth1948,
@@ -11,98 +11,50 @@ White space in argument---line 27 of file manuscript.aux
 I'm skipping whatever remains of this command
 The style file: mslapa.bst
 Database file #1: literature.bib
-<<<<<<< HEAD
 I was expecting a `,' or a `}'---line 275 of file literature.bib
-=======
-I was expecting a `,' or a `}'---line 515 of file literature.bib
->>>>>>> 0ade114bb6ca745c5d5a4e053a814a186c87a125
  : 
  : keywords = {foraging, working memory, inhibitory control, visual search, attention},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-<<<<<<< HEAD
-You've used 30 entries,
+You've used 31 entries,
             2808 wiz_defined-function locations,
-            796 strings with 10035 characters,
-and the built_in function-call counts, 16012 in all, are:
-= -- 1535
-> -- 859
+            801 strings with 10181 characters,
+and the built_in function-call counts, 16666 in all, are:
+= -- 1593
+> -- 916
 < -- 15
-+ -- 354
-- -- 340
-* -- 1461
-:= -- 3113
-add.period$ -- 90
-call.type$ -- 30
-change.case$ -- 350
-chr.to.int$ -- 30
-cite$ -- 30
-duplicate$ -- 448
-empty$ -- 951
-format.name$ -- 388
-if$ -- 2915
++ -- 378
+- -- 364
+* -- 1524
+:= -- 3253
+add.period$ -- 93
+call.type$ -- 31
+change.case$ -- 368
+chr.to.int$ -- 31
+cite$ -- 31
+duplicate$ -- 461
+empty$ -- 973
+format.name$ -- 413
+if$ -- 3025
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 30
-newline$ -- 153
-num.names$ -- 150
-pop$ -- 271
+missing$ -- 31
+newline$ -- 158
+num.names$ -- 155
+pop$ -- 286
 preamble$ -- 1
-purify$ -- 320
+purify$ -- 337
 quote$ -- 0
-skip$ -- 385
+skip$ -- 398
 stack$ -- 0
-substring$ -- 870
-swap$ -- 40
+substring$ -- 880
+swap$ -- 41
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 270
+type$ -- 279
 warning$ -- 0
-while$ -- 164
+while$ -- 168
 width$ -- 0
-write$ -- 446
-=======
-You've used 29 entries,
-            2808 wiz_defined-function locations,
-            793 strings with 9866 characters,
-and the built_in function-call counts, 15687 in all, are:
-= -- 1497
-> -- 865
-< -- 13
-+ -- 356
-- -- 344
-* -- 1445
-:= -- 3061
-add.period$ -- 87
-call.type$ -- 29
-change.case$ -- 346
-chr.to.int$ -- 29
-cite$ -- 29
-duplicate$ -- 430
-empty$ -- 921
-format.name$ -- 389
-if$ -- 2845
-int.to.chr$ -- 1
-int.to.str$ -- 0
-missing$ -- 29
-newline$ -- 148
-num.names$ -- 145
-pop$ -- 271
-preamble$ -- 1
-purify$ -- 317
-quote$ -- 0
-skip$ -- 365
-stack$ -- 0
-substring$ -- 839
-swap$ -- 34
-text.length$ -- 1
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 261
-warning$ -- 0
-while$ -- 157
-width$ -- 0
-write$ -- 432
->>>>>>> 0ade114bb6ca745c5d5a4e053a814a186c87a125
+write$ -- 460
 (There were 3 error messages)
