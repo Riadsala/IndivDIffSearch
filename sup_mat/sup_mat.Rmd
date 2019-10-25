@@ -392,8 +392,8 @@ plt_acs_logrt <- dat_ACS %>%
   theme_bw() + 
   theme(legend.position = "bottom",
         strip.text.x = element_blank()) + 
-  scale_colour_ptol() + 
-  scale_fill_ptol() + 
+  scale_colour_ptol(name = "Optimal Choice") + 
+  scale_fill_ptol(name = "Optimal Choice") + 
   facet_wrap(~Optimal_Choice)
 plt_acs_logrt$labels$x <- "Response Time (msecs)"
   
@@ -444,7 +444,7 @@ kable(table_dat, caption = "\\label{tab:table} No. of fixations to each side in 
 ```
 
 ## Accuracy 
-The results of these experiments show there is no meaningful correlation with how accurate participants were in the ACS and SHVS tasks. Even when breaking the data from the SVHS task into the 3 different trial types, there were still no meaningful correlations. 
+The results of these experiments show there is no meaningful correlation with how accurate participants were in the ACS and SHLS tasks. Even when breaking the data from the SHLS task into the 3 different trial types, there were still no meaningful correlations. 
 
 ```{r, echo = F}
 # clear above 
@@ -470,7 +470,7 @@ acc_LS <- ls_acc_RT %>%
   group_by(observer, targSide) %>% 
   summarise(Accuracy = mean(accuracy)) %>% 
   ungroup() %>% 
-  mutate(Task = paste("SHVS_", targSide, sep = ""),
+  mutate(Task = paste("SHLS_", targSide, sep = ""),
          participant = observer) %>% 
   select(-observer, -targSide)
 
@@ -478,7 +478,7 @@ acc_LS <- ls_acc_RT %>%
 dat_all <- rbind(acc_ACS, acc_LS) %>% 
   spread(key = Task,
          value = Accuracy) %>% 
-  gather(SHVS_absent:SHVS_hard,
+  gather(SHLS_absent:SHLS_hard,
          key = "s_type", 
          value = "acc")
 plt_task <- dat_all %>% 
