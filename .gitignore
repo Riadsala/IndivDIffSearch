@@ -9,3 +9,4 @@ Manuscript/sup_mat/.Rhistory
 *.gz
 Scripts/.Rhistory
 *.bbl
+*.rds
